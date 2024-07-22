@@ -21,7 +21,7 @@ export default function MainNav() {
           key={link.href}
           href={link.href}
           className={cn(
-            "text-sm font-medium transition-colors hover:text-black",
+            "text-xl font-medium transition-colors hover:text-black",
             pathname === link.href ? "text-black" : "text-[#415064]"
           )}
         >
