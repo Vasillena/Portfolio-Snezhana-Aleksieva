@@ -96,7 +96,7 @@ export default function Footer(): JSX.Element {
           </div>
         </div>
         <div className="justify-self-center">
-          <div className="flex">
+          <div className="flex justify-center">
             <h2 className={cn("text-[40px]", myFont.className)}>Let&rsquo;s</h2>
             <Image
               src={image5}
