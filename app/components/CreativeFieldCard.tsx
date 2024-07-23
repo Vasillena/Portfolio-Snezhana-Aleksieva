@@ -29,12 +29,8 @@ export default function CreativeFieldCard({
         />
       </div>
       <div>
-        <p className={cn("text-3xl text-[#415064]", myFont.className)}>
-          {paragraph1}
-        </p>
-        <p className={cn("text-3xl text-[#415064] pl-6", myFont.className)}>
-          {paragraph2}
-        </p>
+        <p className={cn("text-3xl", myFont.className)}>{paragraph1}</p>
+        <p className={cn("text-3xl pl-6", myFont.className)}>{paragraph2}</p>
       </div>
     </div>
   );

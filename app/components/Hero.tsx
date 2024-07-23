@@ -1,9 +1,12 @@
 import Image from "next/image";
+import MainButton from "./MainButton";
+import SecondaryButton from "./SecondaryButton";
 import athena from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/welcome.svg";
 import image2 from "@/public/hero-1.png";
-import image3 from "@/public/dots.svg";
+
+// import image3 from "@/public/dots.svg";
 
 const myFont = athena({ src: "../../public/Athena-Regular.ttf" });
 
@@ -16,7 +19,7 @@ export default function Hero() {
       > */}
           <Image
             src={image1}
-            alt="Profile image"
+            alt="Text image"
             style={{
               width: "317px",
               height: "auto",
@@ -24,12 +27,7 @@ export default function Hero() {
               zIndex: 1,
             }}
           />
-          <h1
-            className={cn(
-              "text-6xl pl-[72px] mt-[-40px] text-[#415064]",
-              myFont.className
-            )}
-          >
+          <h1 className={cn("text-6xl pl-[72px] mt-[-40px]", myFont.className)}>
             to My Design Journey
           </h1>
           <p className="mt-16 text-2xl">
@@ -42,12 +40,8 @@ export default function Hero() {
             work?
           </p>
           <div className=" flex gap-5 pt-16">
-            <button className="px-11 py-3 bg-[#B0752A] text-white text-xl">
-              Explore My Projects
-            </button>
-            <button className="px-11 py-3 border border-[#B0752A] text-[#B0752A] text-xl">
-              Get in Touch
-            </button>
+            <MainButton text={" Explore My Projects"} />
+            <SecondaryButton text={"Get in Touch"} />
           </div>
         </div>
         <div className="justify-self-center">
@@ -61,7 +55,7 @@ export default function Hero() {
           />
         </div>
       </div>
-      <div className="max-w-7xl mx-auto mt-36">
+      {/* <div className="max-w-7xl mx-auto mt-36">
         <Image
           src={image3}
           alt="Profile image"
@@ -70,7 +64,7 @@ export default function Hero() {
             height: "auto",
           }}
         />
-      </div>
+      </div> */}
     </>
   );
 }

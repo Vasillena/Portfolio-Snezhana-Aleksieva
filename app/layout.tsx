@@ -1,5 +1,6 @@
 import "./globals.css";
 
+import Footer from "./components/Footer";
 import type { Metadata } from "next";
 import Navbar from "./components/Navbar";
 import futura from "next/font/local";
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={myFont.className}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
