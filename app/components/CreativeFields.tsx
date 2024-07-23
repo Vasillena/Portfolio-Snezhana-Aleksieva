@@ -27,17 +27,17 @@ export default function CreativeFields() {
         />
         <CreativeFieldCard
           image={image2}
-          paragraph1={"Brand"}
+          paragraph1={"Logo"}
           paragraph2={"Design"}
         />
         <CreativeFieldCard
           image={image3}
-          paragraph1={"Brand"}
+          paragraph1={"Layout"}
           paragraph2={"Design"}
         />
         <CreativeFieldCard
           image={image4}
-          paragraph1={"Brand"}
+          paragraph1={"UI/UX"}
           paragraph2={"Design"}
         />
       </div>
