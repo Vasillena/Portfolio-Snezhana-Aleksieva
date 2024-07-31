@@ -16,7 +16,7 @@ export default function FooterForm(): JSX.Element {
               name="name"
               aria-label="Full Name"
               required
-              className="block px-2.5 pb-2.5 pt-4 w-full bg-transparent rounded-lg border border-[#B0752A] appearance-none focus:outline-none focus:ring-0 peer"
+              className="block px-2.5 pb-1.5 pt-3 w-[340px] bg-transparent rounded-lg border border-[#B0752A] appearance-none focus:outline-none focus:ring-0 peer"
               placeholder=""
             />
             <label
@@ -33,7 +33,7 @@ export default function FooterForm(): JSX.Element {
               name="email"
               aria-label="Email"
               required
-              className="block px-2.5 pb-2.5 pt-4 w-full bg-transparent rounded-lg border border-[#B0752A] appearance-none focus:outline-none focus:ring-0 peer"
+              className="block px-2.5 pb-1.5 pt-3 w-[340px]  bg-transparent rounded-lg border border-[#B0752A] appearance-none focus:outline-none focus:ring-0 peer"
               placeholder=""
             />
             <label
@@ -50,7 +50,7 @@ export default function FooterForm(): JSX.Element {
               name="subject"
               aria-label="Subject"
               required
-              className="block px-2.5 pb-2.5 pt-4 w-full bg-transparent rounded-lg border border-[#B0752A] appearance-none focus:outline-none focus:ring-0 peer"
+              className="block px-2.5 pb-1.5 pt-3 w-[340px]  bg-transparent rounded-lg border border-[#B0752A] appearance-none focus:outline-none focus:ring-0 peer"
               placeholder=""
             />
             <label
@@ -61,27 +61,16 @@ export default function FooterForm(): JSX.Element {
             </label>
           </div>
 
-          <div>
-            <label htmlFor="email" />
-            <input type="hidden" name="_subject" value="New submission!" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input
-              type="hidden"
-              name="_next"
-              value="http://localhost:3000/thank-you"
-            />
-          </div>
-
           <div className="relative">
             <textarea
               id="message"
               name="message"
               aria-label="Message"
               cols={50}
-              rows={5}
+              rows={4}
               placeholder=""
               required
-              className="block px-2.5 pb-2.5 pt-4 w-full bg-transparent rounded-lg border border-[#B0752A] appearance-none focus:outline-none focus:ring-0 peer"
+              className="block px-2.5 pb-1.5 pt-3 w-[340px] bg-transparent rounded-lg border border-[#B0752A] appearance-none focus:outline-none focus:ring-0 peer resize-none"
             />
             <label
               htmlFor="message"
@@ -98,28 +87,30 @@ export default function FooterForm(): JSX.Element {
               aria-label="Terms and Conditions"
               //   value=""
               required
-              className="w-4 h-4 bg-[#F2EEE9] border-gray-300 rounded focus:ring-[#F2EEE9] focus:ring-2"
+              className="w-4 h-4 bg-[#F2EEE9] border-[#B0752A] rounded focus:ring-[#F2EEE9] focus:ring-2"
             />
-            <label htmlFor="link-checkbox" className="ms-2 text-lg">
-              I have read and agree to the{" "}
-              <Link href="#" className="text-[#B0752A] hover:underline">
-                Terms and Conditions
-              </Link>{" "}
-              and{" "}
-              <Link href="#" className="text-[#B0752A] hover:underline">
-                {" "}
-                Privacy Policy
-              </Link>
-              .
+            <label htmlFor="link-checkbox" className="ms-2 text-xl">
+              I agree to processing of personal data.
             </label>
           </div>
-          <div className="mx-auto">
+          <div>
             <button
               type="submit"
-              className=" px-11 py-3 bg-[#B0752A] text-white text-xl rounded"
+              className="w-[340px] px-11 py-3 bg-[#F2EEE9] text-[#B0752A] font-bold text-xl rounded border-b border-[#B0752A]"
             >
               Submit
             </button>
+          </div>
+
+          <div>
+            <label htmlFor="email" />
+            <input type="hidden" name="_subject" value="New submission!" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_next"
+              value="http://localhost:3000/thank-you"
+            />
           </div>
         </div>
       </form>
