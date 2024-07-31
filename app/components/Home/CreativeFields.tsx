@@ -1,4 +1,4 @@
-import CreativeFieldCard from "./CreativeFieldCard";
+import CreativeFieldsCard from "./CreativeFieldsCard";
 import Image from "next/image";
 import image1 from "@/public/cards-1.svg";
 import image2 from "@/public/cards-2.svg";
@@ -6,7 +6,7 @@ import image3 from "@/public/cards-3.svg";
 import image4 from "@/public/cards-4.svg";
 import image5 from "@/public/dots.svg";
 
-export default function CreativeFields() {
+export default function CreativeFields(): JSX.Element {
   return (
     <>
       <div className="max-w-7xl mx-auto mt-36">
@@ -20,22 +20,22 @@ export default function CreativeFields() {
         />
       </div>
       <div className="max-w-7xl mx-auto mt-20 grid lg:grid-cols-4 gap-36">
-        <CreativeFieldCard
+        <CreativeFieldsCard
           image={image1}
           paragraph1={"Brand"}
           paragraph2={"Design"}
         />
-        <CreativeFieldCard
+        <CreativeFieldsCard
           image={image2}
           paragraph1={"Logo"}
           paragraph2={"Design"}
         />
-        <CreativeFieldCard
+        <CreativeFieldsCard
           image={image3}
           paragraph1={"Layout"}
           paragraph2={"Design"}
         />
-        <CreativeFieldCard
+        <CreativeFieldsCard
           image={image4}
           paragraph1={"UI/UX"}
           paragraph2={"Design"}
@@ -44,7 +44,7 @@ export default function CreativeFields() {
       <div className="max-w-7xl mx-auto mt-20 flex justify-end">
         <Image
           src={image5}
-          alt="Profile image"
+          alt="Dots decor"
           style={{
             width: "160px",
             height: "auto",

@@ -12,7 +12,7 @@ export default function MainButton({
   return (
     <button
       className={cn(
-        "px-11 py-3 bg-[#B0752A] text-white text-xl rounded",
+        "px-11 py-3 bg-[#F2EEE9] text-[#B0752A] font-bold text-xl rounded border-b border-[#B0752A]",
         classProp
       )}
     >

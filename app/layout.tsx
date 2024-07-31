@@ -1,11 +1,11 @@
 import "./globals.css";
 
-import Footer from "./components/Footer";
+import Footer from "./components/Layout/Footer";
 import type { Metadata } from "next";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Layout/Navbar";
 import futura from "next/font/local";
 
-const myFont = futura({ src: "../public/Futura.ttf" });
+const myFont = futura({ src: "../public/FuturaL.ttf" });
 
 export const metadata: Metadata = {
   title: "Snezhana Aleksieva",

@@ -8,9 +8,9 @@ import image3 from "@/public/fproject-2.png";
 import image4 from "@/public/fproject-3.png";
 import image5 from "@/public/fproject-4.png";
 
-const myFont = athena({ src: "../../public/Athena-Regular.ttf" });
+const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 
-export default function FeaturedProjects() {
+export default function FeaturedProjects(): JSX.Element {
   return (
     <div className="max-w-full mt-24 bg-[#F2EEE9]">
       <div className=" max-w-7xl mx-auto py-11">

@@ -4,13 +4,13 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 
-export default function MainNav() {
+export default function MainNav(): JSX.Element {
   const pathname = usePathname();
 
   const links = [
     { href: "/", label: "Homepage" },
     { href: "/portfolio", label: "Portfolio" },
-    { href: "/about", label: "About Me" },
+    { href: "/about-me", label: "About Me" },
     { href: "/contacts", label: "Contacts" },
   ];
 

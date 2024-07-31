@@ -1,14 +1,14 @@
-import AboutShort from "./components/AboutShort";
-import CreativeFields from "./components/CreativeFields";
-import FeaturedProjects from "./components/FeaturedProjects";
-import Hero from "./components/Hero";
+import AboutMe from "./components/Home/AboutMe";
+import CreativeFields from "./components/Home/CreativeFields";
+import FeaturedProjects from "./components/Home/FeaturedProjects";
+import Hero from "./components/Home/Hero";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <CreativeFields />
-      <AboutShort />
+      <AboutMe />
       <FeaturedProjects />
     </>
   );

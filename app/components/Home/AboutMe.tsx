@@ -1,5 +1,5 @@
 import Image from "next/image";
-import MainButton from "./MainButton";
+import MainButton from "../Common/MainButton";
 import athena from "next/font/local";
 import { cn } from "@/lib/utils";
 import image2 from "@/public/about-short.png";
@@ -7,9 +7,9 @@ import image3 from "@/public/me.svg";
 
 // import image1 from "@/public/cards-1.svg";
 
-const myFont = athena({ src: "../../public/Athena-Regular.ttf" });
+const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 
-export default function AboutShort(): JSX.Element {
+export default function AboutMe(): JSX.Element {
   return (
     // <div className=" max-w-full mt-20">
     <div className=" max-w-7xl mt-20 mx-auto grid lg:grid-cols-3 gap-40">

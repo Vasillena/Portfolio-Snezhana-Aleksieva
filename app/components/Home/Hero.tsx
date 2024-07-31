@@ -1,6 +1,6 @@
 import Image from "next/image";
-import MainButton from "./MainButton";
-import SecondaryButton from "./SecondaryButton";
+import MainButton from "../Common/MainButton";
+import SecondaryButton from "../Common/SecondaryButton";
 import athena from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/welcome.svg";
@@ -8,12 +8,12 @@ import image2 from "@/public/hero-1.png";
 
 // import image3 from "@/public/dots.svg";
 
-const myFont = athena({ src: "../../public/Athena-Regular.ttf" });
+const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 
-export default function Hero() {
+export default function Hero(): JSX.Element {
   return (
     <>
-      <div className="max-w-7xl mx-auto mt-[55px] grid lg:grid-cols-3 gap-40">
+      <div className="max-w-7xl mx-auto mt-14 grid lg:grid-cols-3 gap-40">
         <div className="col-span-2 flex flex-col justify-center items-left">
           {/* // className="relative w-full h-[723px] before:absolute before:top-[-64px] before:right-0 before:w-full before:h-full before:bg-right-top before:bg-no-repeat before:bg-auto before:content-[''] before:bg-[url('../public/hero-2.svg')]"
       > */}

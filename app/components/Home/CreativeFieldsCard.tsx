@@ -3,7 +3,7 @@ import Image, { StaticImageData } from "next/image";
 import athena from "next/font/local";
 import { cn } from "@/lib/utils";
 
-const myFont = athena({ src: "../../public/Athena-Regular.ttf" });
+const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 
 interface CreativeFieldCardProps {
   image: StaticImageData;
@@ -11,11 +11,11 @@ interface CreativeFieldCardProps {
   paragraph2: string;
 }
 
-export default function CreativeFieldCard({
+export default function CreativeFieldsCard({
   image,
   paragraph1,
   paragraph2,
-}: CreativeFieldCardProps) {
+}: CreativeFieldCardProps): JSX.Element {
   return (
     <div className="flex justify-center items-center gap-4">
       <div>
