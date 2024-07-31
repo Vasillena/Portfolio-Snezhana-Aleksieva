@@ -44,7 +44,7 @@ export default function Hero(): JSX.Element {
             <SecondaryButton text={"Get in Touch"} />
           </div>
         </div>
-        <div className="justify-self-center">
+        <div className="justify-self-end relative -top-32">
           <Image
             src={image2}
             alt="Profile image"

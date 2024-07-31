@@ -2,8 +2,8 @@ import Image from "next/image";
 import MainButton from "../Common/MainButton";
 import athena from "next/font/local";
 import { cn } from "@/lib/utils";
-import image2 from "@/public/hero-3.png";
-import image3 from "@/public/dots.svg";
+import image1 from "@/public/hero-3.png";
+import image2 from "@/public/dots.svg";
 
 const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 
@@ -39,9 +39,9 @@ export default function Hero(): JSX.Element {
             <MainButton text={" Explore My Projects"} />
           </div>
         </div>
-        <div className="justify-self-center">
+        <div className="justify-self-end relative -top-32">
           <Image
-            src={image2}
+            src={image1}
             alt="Profile image"
             style={{
               width: "374px",
@@ -52,7 +52,7 @@ export default function Hero(): JSX.Element {
       </div>
       <div className="max-w-7xl mx-auto mt-[88px]">
         <Image
-          src={image3}
+          src={image2}
           alt="Dots"
           style={{
             width: "160px",
