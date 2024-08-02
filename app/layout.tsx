@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "./components/Layout/Footer";
 import type { Metadata } from "next";
 import Navbar from "./components/Layout/Navbar";
+import { cn } from "@/lib/utils";
 import futura from "next/font/local";
 
 const myFont = futura({ src: "../public/FuturaL.ttf" });
@@ -20,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={myFont.className}>
+      <body className={cn("px-2", myFont.className)}>
         <Navbar />
         {children}
         <Footer />

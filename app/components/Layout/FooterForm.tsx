@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function FooterForm(): JSX.Element {
   return (
-    <div className="mt-3 ">
+    <div className="mt-3 flex flex-col items-center lg:items-start">
       <form
         id="contact"
         action="https://formsubmit.co/vassito@abv.bg"

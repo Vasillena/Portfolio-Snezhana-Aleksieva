@@ -9,17 +9,17 @@ import image5 from "@/public/dots.svg";
 export default function CreativeFields(): JSX.Element {
   return (
     <>
-      <div className="max-w-7xl mx-auto mt-36">
+      <div className="max-w-7xl mx-auto mt-36 xl:-mt-12 flex justify-center lg:justify-start">
         <Image
           src={image5}
-          alt="Profile image"
+          alt="Dots decor"
           style={{
             width: "160px",
             height: "auto",
           }}
         />
       </div>
-      <div className="max-w-7xl mx-auto mt-20 grid lg:grid-cols-4 gap-36">
+      <div className="max-w-7xl mx-auto mt-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-36">
         <CreativeFieldsCard
           image={image1}
           paragraph1={"Brand"}
@@ -41,7 +41,7 @@ export default function CreativeFields(): JSX.Element {
           paragraph2={"Design"}
         />
       </div>
-      <div className="max-w-7xl mx-auto mt-20 flex justify-end">
+      <div className="max-w-7xl mx-auto mt-20 flex justify-center lg:justify-end">
         <Image
           src={image5}
           alt="Dots decor"

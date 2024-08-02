@@ -21,9 +21,9 @@ export default function CreativeFieldsCard({
       <div>
         <Image
           src={image}
-          alt="Profile image"
+          alt="Creative field image"
           style={{
-            width: "92px",
+            minWidth: "92px",
             height: "auto",
           }}
         />

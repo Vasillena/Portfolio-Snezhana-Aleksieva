@@ -35,8 +35,8 @@ export default function Hero(): JSX.Element {
             and skills to stay up to date with the latest trends and techniques
             .
           </p>
-          <div className=" flex gap-5 pt-16">
-            <MainButton text={" Explore My Projects"} />
+          <div className=" flex gap-5 pt-20">
+            <MainButton href={"/portfolio"} text={" Explore My Projects"} />
           </div>
         </div>
         <div className="justify-self-end relative -top-32">

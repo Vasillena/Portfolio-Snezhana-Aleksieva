@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/portfolio/page.js", "app/portfolio/illustrations-and-digital-art/page.js", "app/thank-you/page.tsx", "app/(thank-you)/layout.js"],
   "exclude": ["node_modules"]
 }

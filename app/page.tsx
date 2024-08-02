@@ -3,7 +3,7 @@ import CreativeFields from "./components/Home/CreativeFields";
 import FeaturedProjects from "./components/Home/FeaturedProjects";
 import Hero from "./components/Home/Hero";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <Hero />
