@@ -30,13 +30,17 @@ export default function ProjectsCard({
       <div>
         <h2 className={cn("text-4xl ", myFont.className)}>{title}</h2>
         <p
-          className="text-2xl mt-6 
+          className="text-2xl mt-6 leading-6
         "
         >
           {text}
         </p>
         <div className=" mt-3 font-bold">
-          <Link href={href} className="text-xl flex text-[#B0752A]">
+          <Link
+            href={href}
+            target="_blank"
+            className="text-xl flex text-[#B0752A]"
+          >
             View more on{" "}
             <Image
               src={image4}
@@ -49,7 +53,7 @@ export default function ProjectsCard({
           </Link>
         </div>
       </div>
-      <div className=" grid lg:grid-cols-3 gap-20 mt-16">
+      <div className="flex flex-wrap xl:flex-nowrap justify-center gap-20 mt-16">
         <Image
           src={image1}
           alt="Project image"
@@ -75,7 +79,7 @@ export default function ProjectsCard({
           }}
         />
       </div>
-      <div className="mt-16 mb-[68px]">
+      <div className="mt-16 mb-[68px] flex justify-center xl:justify-start">
         <Image
           src={image5}
           alt="Dots"

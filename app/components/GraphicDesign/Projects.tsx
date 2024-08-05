@@ -17,7 +17,7 @@ import image9 from "@/public/gd-9.png";
 
 export default function Projects(): JSX.Element {
   return (
-    <div className="max-w-7xl mx-auto mt-28">
+    <div className="max-w-7xl mx-auto mt-20">
       <ProjectsCard
         title={"My Personal Branding"}
         text={

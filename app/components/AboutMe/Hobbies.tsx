@@ -13,11 +13,11 @@ const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 
 export default function Hobbies(): JSX.Element {
   return (
-    <div className="mt-[72px]">
+    <div className="mt-36 xl:mt-[72px] flex flex-col items-center xl:items-start">
       <div>
         <h2 className={cn("text-[40px] mb-7", myFont.className)}>Hobbies</h2>
       </div>
-      <div className="flex gap-2 mt-10">
+      <div className="flex flex-wrap lg:flex-nowrap justify-center gap-2 mt-10">
         <HobbiesCard
           title={"Traveling"}
           icon={image1}

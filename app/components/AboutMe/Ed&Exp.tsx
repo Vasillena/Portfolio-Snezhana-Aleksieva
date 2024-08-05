@@ -8,7 +8,7 @@ const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 export default function EdExp(): JSX.Element {
   return (
     <>
-      <div className="ml-10">
+      <div className="ml-24 sm:ml-32 md:ml-44">
         <div className="flex justify-between h-[68px] px-20">
           <div className="w-1/10" />
           <div className="w-1/6 relative">

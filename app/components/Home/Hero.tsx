@@ -13,8 +13,8 @@ const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 export default function Hero(): JSX.Element {
   return (
     <>
-      <div className="max-w-7xl mx-auto mt-14 lg:mt-20 xl:mt-0 grid lg:grid-cols-3 gap-x-12 ">
-        <div className="sm:col-span-3 xl:col-span-2 flex flex-col items-left sm:mt-24">
+      <div className="max-w-7xl mx-auto mt-14 lg:mt-20 xl:mt-0 grid lg:grid-cols-3 gap-x-12 text-center lg:text-left">
+        <div className="sm:col-span-3 xl:col-span-2 flex flex-col items-center lg:items-start min-[400px]:mt-24">
           <div className="scale-90 sm:scale-100 pl-4">
             <Image
               src={image1}
@@ -30,7 +30,7 @@ export default function Hero(): JSX.Element {
 
           <h1
             className={cn(
-              "text-3xl sm:text-6xl pl-[30px] lg:pl-[72px] mt-[-30px] lg:mt-[-40px]",
+              "text-3xl min-[400px]:text-4xl sm:text-6xl pl-0 sm:pl-[30px] lg:pl-[72px] mt-[-30px] lg:mt-[-40px]",
               myFont.className
             )}
           >
@@ -45,7 +45,7 @@ export default function Hero(): JSX.Element {
             Welcome to my web portfolio - hope you enjoy it! Ready to explore my
             work?
           </p>
-          <div className="flex flex-col items-center lg:flex-row gap-5 pt-8 sm:pt-20">
+          <div className="flex flex-col items-center lg:flex-row gap-5 pt-8 min-[400px]:pt-20">
             <MainButton href={"/portfolio"} text={" Explore My Projects"} />
             <SecondaryButton href={"/"} text={"Get in Touch"} />
           </div>

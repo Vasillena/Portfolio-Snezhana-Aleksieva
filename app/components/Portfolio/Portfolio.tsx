@@ -5,7 +5,7 @@ import image3 from "@/public/portfolio-card-3.png";
 
 export default function Portfolio(): JSX.Element {
   return (
-    <div className="max-w-7xl mx-auto mt-14 flex flex-wrap justify-between gap-28">
+    <div className="max-w-7xl mx-auto mt-20 flex flex-wrap justify-center lg:justify-between gap-28">
       <PortfolioCard
         title1={"Graphic"}
         title2={"Design"}
@@ -33,9 +33,9 @@ export default function Portfolio(): JSX.Element {
       />
       <PortfolioCard
         title1={"Illustrations"}
-        title2={"& Digital Art"}
+        title2={"Digital Art"}
         image={image3}
-        mx={"mx-auto"}
+        mx={"xl:mx-auto"}
         color={"bg-[#F2EEE9]"}
         text1={
           "Explore my collection of illustrations and digital drawings, where my journey in art began."

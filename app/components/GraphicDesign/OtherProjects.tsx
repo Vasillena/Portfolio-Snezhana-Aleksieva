@@ -14,7 +14,7 @@ export default function OtherProjects(): JSX.Element {
             Explore my other work:
           </p>
         </div>
-        <div className=" grid lg:grid-cols-2 gap-20 mt-20">
+        <div className=" flex flex-wrap justify-center xl:justify-between gap-20 mt-20">
           <PortfolioCard
             title1={"UI/UX "}
             title2={"Design"}
@@ -25,11 +25,11 @@ export default function OtherProjects(): JSX.Element {
             }
             text2={"UI  Design"}
             text3={"UX Design"}
-            href={"/graphic-design"}
+            href={"/portfolio/ui-ux-design"}
           />
           <PortfolioCard
             title1={"Illustrations"}
-            title2={"& Digital Art"}
+            title2={"Digital Art"}
             image={image2}
             mx={"mx-auto"}
             color={"bg-[#F7F4F1]"}
@@ -38,7 +38,7 @@ export default function OtherProjects(): JSX.Element {
             }
             text2={"Illustrations"}
             text3={"Digital Drawings"}
-            href={"/graphic-design"}
+            href={"/portfolio/illustrations-and-digital-art"}
           />
         </div>
       </div>

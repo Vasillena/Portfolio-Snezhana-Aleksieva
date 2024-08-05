@@ -16,7 +16,7 @@ export default function PrivacyPolicyPage() {
         <div className="justify-self-end relative -top-32">
           <Image
             src={image2}
-            alt="Profile image"
+            alt="Decor image"
             style={{
               width: "374px",
               height: "auto",

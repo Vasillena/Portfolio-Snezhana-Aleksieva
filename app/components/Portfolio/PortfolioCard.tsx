@@ -33,13 +33,25 @@ export default function PortfolioCard({
   href,
 }: PortfolioCardProps): JSX.Element {
   return (
-    <div className={cn("flex", mx)}>
+    <div className={cn("flex")}>
       <div className="z-10">
         <div>
-          <h2 className={cn("text-[32px] leading-3", myFont.className)}>
+          <h2
+            className={cn(
+              "text-[20px] min-[400px]:text-[26px] sm:text-[32px] leading-3",
+              myFont.className
+            )}
+          >
             {title1}
           </h2>
-          <h2 className={cn("text-[32px]", myFont.className)}>{title2}</h2>
+          <h2
+            className={cn(
+              "text-[20px] min-[400px]:text-[26px] sm:text-[32px] ",
+              myFont.className
+            )}
+          >
+            {title2}
+          </h2>
         </div>
         <div>
           <Image

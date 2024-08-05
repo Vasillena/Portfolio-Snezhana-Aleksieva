@@ -20,7 +20,12 @@ const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 export default function Footer(): JSX.Element {
   const pathname = usePathname();
   return (
-    <div className={cn(pathname === "/thank-you" && "hidden")}>
+    <div
+      className={cn(
+        pathname === "/contacts" && "flex flex-col min-h-[calc(100vh-64px)]",
+        pathname === "/thank-you" && "hidden"
+      )}
+    >
       <div
         className={cn(
           "max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 py-24",
@@ -99,7 +104,7 @@ export default function Footer(): JSX.Element {
           />
         </div>
       </div>
-      <div className="max-w-full ">
+      <div className={cn("max-w-full ", pathname === "/contacts" && "mt-auto")}>
         <div className="flex justify-center items-center">
           <div className="max-w-[420px] w-3/12 h-[1px] bg-[#B0752A]" />
           <div className="flex gap-10 mx-20">

@@ -8,7 +8,12 @@ export default function SoftSkills(): JSX.Element {
   return (
     <div className="mt-[72px]">
       <div>
-        <h2 className={cn("text-[40px] mb-7", myFont.className)}>
+        <h2
+          className={cn(
+            "text-[40px] mb-7 text-center md:text-left",
+            myFont.className
+          )}
+        >
           Soft Skills
         </h2>
       </div>

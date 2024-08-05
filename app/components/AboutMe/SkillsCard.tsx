@@ -13,7 +13,7 @@ export default function SkillsCard({
 }: SkillsCardProps): JSX.Element {
   return (
     <div>
-      <div className="flex items-center">
+      <div className="flex items-center ml-4 xl:ml-0">
         <p className="text-2xl mb-1 mr-4">{title}</p>
         <div className="w-1/6 flex justify-center relative">
           <div

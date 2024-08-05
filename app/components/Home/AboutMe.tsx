@@ -9,7 +9,7 @@ const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 
 export default function AboutMe(): JSX.Element {
   return (
-    <div className=" max-w-7xl mt-20 mx-auto grid grid-cols-1 xl:grid-cols-3 gap-y-20 lg:gap-72">
+    <div className=" max-w-7xl mt-20 mx-auto grid grid-cols-1 xl:grid-cols-3 gap-y-20 lg:gap-72 text-center lg:text-left">
       <div className="mx-auto hidden xl:inline-block w-[374px] h-[515px] relative">
         <Image
           src={image2}
@@ -23,7 +23,7 @@ export default function AboutMe(): JSX.Element {
         />
       </div>
       <div className="col-span-2">
-        <div className="flex mt-6">
+        <div className="flex mt-6 justify-center lg:justify-left">
           <h2 className={cn("text-5xl lg:text-[40px]", myFont.className)}>
             About
           </h2>
