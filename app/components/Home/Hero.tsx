@@ -36,12 +36,12 @@ export default function Hero(): JSX.Element {
           >
             to My Design Journey
           </h1>
-          <p className="mt-16 text-2xl leading-[26px]">
+          <p className="mt-16 sm:text-2xl sm:leading-[26px]">
             Hi there! I&apos;m Snezhana, a junior graphic and UI/UX designer
             with a passion for creating visually appealing and user-friendly
             designs
           </p>
-          <p className="mt-4 text-2xl leading-[26px]">
+          <p className="mt-4 sm:text-2xl sm:leading-[26px]">
             Welcome to my web portfolio - hope you enjoy it! Ready to explore my
             work?
           </p>

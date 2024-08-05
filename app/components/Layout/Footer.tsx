@@ -29,7 +29,8 @@ export default function Footer(): JSX.Element {
       <div
         className={cn(
           "max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 py-24",
-          pathname === "/thank-you" && "hidden"
+          pathname === "/thank-you" && "hidden",
+          pathname === "/contacts" && "my-auto"
         )}
       >
         <div>
@@ -45,10 +46,10 @@ export default function Footer(): JSX.Element {
           </div>
           <div className="flex flex-col items-center xl:items-start">
             <h2 className={cn("text-[40px] ", myFont.className)}>Contacts</h2>
-            <p className="text-xl">design.by.snezhana@gmail.com</p>
+            <p className="sm:text-xl">design.by.snezhana@gmail.com</p>
             <p>
-              <span className="text-xl text-[#B0752A] font-bold">Phone</span> |
-              +359 882 94 95 98
+              <span className="sm:text-xl text-[#B0752A] font-bold">Phone</span>{" "}
+              | +359 882 94 95 98
             </p>
           </div>
           <div className="mt-12  lg:mt-48 flex flex-col items-center xl:items-start">
@@ -57,25 +58,27 @@ export default function Footer(): JSX.Element {
             </h2>
             <div className="flex">
               <div>
-                <p className="text-xl text-[#B0752A] pr-2 font-bold">
+                <p className="sm:text-xl text-[#B0752A] pr-2 font-bold">
                   LinkedIn
                 </p>
-                <p className="text-xl text-[#B0752A] pr-2 font-bold">Behance</p>
-                <p className="text-xl text-[#B0752A] pr-2 font-bold">
+                <p className="sm:text-xl text-[#B0752A] pr-2 font-bold">
+                  Behance
+                </p>
+                <p className="sm:text-xl text-[#B0752A] pr-2 font-bold">
                   Instagram
                 </p>
               </div>
               <div>
-                <p className="text-xl">| @snezhana-aleksieva</p>
-                <p className="text-xl">| @snezhana-aleksieva</p>
-                <p className="text-xl">| @design.by.snezhana</p>
+                <p className="sm:text-xl">| @snezhana-aleksieva</p>
+                <p className="sm:text-xl">| @snezhana-aleksieva</p>
+                <p className="sm:text-xl">| @design.by.snezhana</p>
               </div>
             </div>
           </div>
         </div>
         <div>
           <div className="flex justify-center xl:mr-16 mt-12 lg:mt-0 ">
-            <h2 className={cn("text-5xl", myFont.className)}>Let&rsquo;s</h2>
+            <h2 className={cn("text-[40px]", myFont.className)}>Let&rsquo;s</h2>
             <Image
               src={image6}
               alt="Text image"

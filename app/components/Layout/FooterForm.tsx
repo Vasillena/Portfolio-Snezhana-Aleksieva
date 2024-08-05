@@ -89,14 +89,14 @@ export default function FooterForm(): JSX.Element {
               required
               className="w-4 h-4 bg-[#F2EEE9] border-[#B0752A] rounded focus:ring-[#F2EEE9] focus:ring-2"
             />
-            <label htmlFor="link-checkbox" className="ms-2 text-xl">
+            <label htmlFor="link-checkbox" className="ms-2 sm:text-xl">
               I agree to processing of personal data.
             </label>
           </div>
           <div>
             <button
               type="submit"
-              className="w-[340px] px-11 py-3 bg-[#F2EEE9] text-[#B0752A] font-bold text-xl rounded border-b border-[#B0752A]"
+              className="w-[340px] px-11 py-3 bg-[#F2EEE9] text-[#B0752A] font-bold sm:text-xl rounded border-b border-[#B0752A]"
             >
               Submit
             </button>

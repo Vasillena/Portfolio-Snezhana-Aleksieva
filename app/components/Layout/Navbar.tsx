@@ -13,12 +13,12 @@ export default function Navbar(): JSX.Element {
   return (
     <div
       className={cn(
-        "hidden md:block max-w-7xl mx-auto",
-        pathname === "/thank-you" && "md:hidden"
+        " max-w-7xl mx-auto",
+        pathname === "/thank-you" && "hidden"
       )}
     >
       <div>
-        <div className=" px-4 sm:px-6 lg:px-8 flex h-16 items-center">
+        <div className="px-4 sm:px-6 lg:px-8 flex h-16 items-center">
           <Link href="/" className="ml-4 flex lg:ml-0 gap-x-2">
             <Image
               src={logo}

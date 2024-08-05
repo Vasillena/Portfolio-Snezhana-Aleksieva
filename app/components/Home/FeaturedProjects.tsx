@@ -31,50 +31,62 @@ export default function FeaturedProjects(): JSX.Element {
             }}
           />
         </div>
-        <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-20 lg:gap-20 mt-8">
-          <Link className="flex justify-center" href="/">
+        <div className="mx-auto flex flex-wrap justify-center xl:justify-between gap-y-20 gap-x-20 xl:gap-x-0  mt-8">
+          <div className="w-[300px] h-[300px] relative flex justify-center">
             <Image
               src={image2}
               alt="Project image"
-              style={{
-                width: "300px",
-                height: "auto",
-              }}
+              fill
+              object-fit="contain"
+              // style={{
+              //   width: "300px",
+              //   height: "auto",
+              // }}
             />
-          </Link>
-          <Link className="flex justify-center" href="/">
+          </div>
+
+          <div className="w-[300px] h-[300px] relative flex justify-center">
             <Image
               src={image3}
               alt="Project image"
-              style={{
-                width: "300px",
-                height: "auto",
-              }}
+              fill
+              object-fit="contain"
+              // style={{
+              //   width: "300px",
+              //   height: "auto",
+              // }}
             />
-          </Link>
-          <Link className="flex justify-center" href="/">
+          </div>
+          <div className="w-[300px] h-[300px] relative flex justify-center">
             <Image
               src={image4}
               alt="Project image"
-              style={{
-                width: "300px",
-                height: "auto",
-              }}
+              fill
+              object-fit="contain"
+              // style={{
+              //   width: "300px",
+              //   height: "auto",
+              // }}
             />
-          </Link>
-          <Link className="flex justify-center" href="/">
+          </div>
+          <div className="w-[300px] h-[300px] relative flex justify-center">
             <Image
               src={image5}
               alt="Project image"
-              style={{
-                width: "300px",
-                height: "auto",
-              }}
+              fill
+              object-fit="contain"
+              // style={{
+              //   width: "300px",
+              //   height: "auto",
+              // }}
             />
-          </Link>
+          </div>
         </div>
         <div className="mt-11 flex justify-center lg:justify-end">
-          <Link href="/" className="text-xl text-[#B0752A] font-bold">
+          <Link
+            href="/portfolio"
+            className="sm:text-xl text-[#B0752A] font-bold"
+          >
             View All
           </Link>
         </div>

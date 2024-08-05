@@ -40,23 +40,32 @@ export default function AboutMe(): JSX.Element {
             }}
           />
         </div>
-        <h2 className="text-2xl font-bold mt-16 leading-[26px]">
-          I&rsquo;m a junior graphic and UI/UX designer with
-        </h2>
-        <h2 className="text-2xl font-bold leading-[26px]">
-          a strong background in marketing and sales.
-        </h2>
-        <p className="text-2xl mt-4 leading-[26px]">
+        <div className="hidden md:block">
+          <h2 className="sm:text-2xl font-bold mt-16 sm:leading-[26px]">
+            I&rsquo;m a junior graphic and UI/UX designer with
+          </h2>
+          <h2 className="sm:text-2xl font-bold sm:leading-[26px]">
+            a strong background in marketing and sales.
+          </h2>
+        </div>
+        <div className="md:hidden">
+          <h2 className="sm:text-2xl font-bold mt-16 sm:leading-[26px]">
+            I&rsquo;m a junior graphic and UI/UX designer with a strong
+            background in marketing and sales.
+          </h2>
+        </div>
+
+        <p className="sm:text-2xl mt-4 sm:leading-[26px]">
           I bring a unique blend of creativity and strategic thinking to my
           projects.
         </p>
-        <p className="text-2xl leading-[26px]">
+        <p className="sm:text-2xl sm:leading-[26px]">
           Passionate about minimalist design and constantly expanding my skills,
           I strive to create visually stunning and functional work. My journey
           in design is driven by a commitment to continuous learning and
           innovation. Let&rsquo;s create something extraordinary together!
         </p>
-        <p className="text-2xl leading-[26px]">
+        <p className="sm:text-2xl sm:leading-[26px]">
           Let&rsquo;s create something extraordinary together!
         </p>
         <div className="mt-16 text-center lg:text-left">

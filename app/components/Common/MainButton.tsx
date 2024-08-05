@@ -16,7 +16,7 @@ export default function MainButton({
     <Link
       href={href}
       className={cn(
-        "w-max px-11 py-3 bg-[#F2EEE9] text-[#8D5002] font-bold text-xl rounded border-b border-[#B0752A]",
+        "w-max px-11 py-3 bg-[#F2EEE9] text-[#8D5002] font-bold sm:text-xl rounded border-b border-[#B0752A]",
         classProp
       )}
     >

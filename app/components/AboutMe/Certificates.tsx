@@ -23,7 +23,7 @@ export default function Certificates(): JSX.Element {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-y-6 gap-1 mt-12 justify-center">
           <div className="justify-self-center">
-            <Link href="/">
+            <Link href="https://creative.softuni.bg/certificates/details/47406/e9509b3a">
               <Image
                 src={image1}
                 alt="Certificate image"
@@ -35,7 +35,7 @@ export default function Certificates(): JSX.Element {
             </Link>
           </div>
           <div className="justify-self-center">
-            <Link href="/">
+            <Link href="https://creative.softuni.bg/certificates/details/49413/faf14f39">
               <Image
                 src={image2}
                 alt="Certificate image"
