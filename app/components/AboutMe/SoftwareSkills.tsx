@@ -10,7 +10,7 @@ export default function SoftwareSkills(): JSX.Element {
       <div>
         <h2
           className={cn(
-            "text-[40px] mb-7 text-center md:text-left",
+            "text-3xl min-[400px]:text-4xl sm:text-5xl lg:text-[40px] mb-7 text-center md:text-left",
             myFont.className
           )}
         >

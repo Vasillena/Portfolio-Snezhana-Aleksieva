@@ -45,7 +45,14 @@ export default function Footer(): JSX.Element {
             />
           </div>
           <div className="flex flex-col items-center xl:items-start">
-            <h2 className={cn("text-[40px] ", myFont.className)}>Contacts</h2>
+            <h2
+              className={cn(
+                "text-3xl min-[400px]:text-4xl sm:text-5xl lg:text-[40px] ",
+                myFont.className
+              )}
+            >
+              Contacts
+            </h2>
             <p className="text-lg sm:text-xl">design.by.snezhana@gmail.com</p>
             <p>
               <span className="text-lg sm:text-xl text-[#B0752A] font-bold">
@@ -55,7 +62,12 @@ export default function Footer(): JSX.Element {
             </p>
           </div>
           <div className="mt-12 lg:mt-48 flex flex-col items-center xl:items-start">
-            <h2 className={cn("text-[40px]", myFont.className)}>
+            <h2
+              className={cn(
+                "text-3xl min-[400px]:text-4xl sm:text-5xl lg:text-[40px]",
+                myFont.className
+              )}
+            >
               Follow me on
             </h2>
             <div className="flex">
@@ -80,15 +92,23 @@ export default function Footer(): JSX.Element {
         </div>
         <div>
           <div className="flex justify-center xl:mr-16 mt-12 lg:mt-0 ">
-            <h2 className={cn("text-[40px]", myFont.className)}>Let&rsquo;s</h2>
+            <h2
+              className={cn(
+                "text-3xl min-[400px]:text-4xl sm:text-5xl lg:text-[40px]",
+                myFont.className
+              )}
+            >
+              Let&rsquo;s
+            </h2>
             <Image
               src={image6}
               alt="Text image"
+              className="mt-[22px] sm:mt-[30px]"
               style={{
                 width: "111px",
                 height: "auto",
                 alignSelf: "flex-end",
-                marginTop: "30px",
+                // marginTop: "30px",
                 marginLeft: "-20px",
                 zIndex: 1,
               }}

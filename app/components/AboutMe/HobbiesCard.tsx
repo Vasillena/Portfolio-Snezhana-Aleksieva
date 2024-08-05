@@ -23,7 +23,7 @@ export default function HobbiesCard({
         <Image src={icon} alt="icon" width={24} height={24} />
       </div>
       <div>
-        <p className="text-xl">{title}</p>
+        <p className="text-lg sm:text-xl">{title}</p>
       </div>
     </div>
   );

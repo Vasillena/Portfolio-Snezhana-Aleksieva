@@ -14,7 +14,7 @@ export default function Certificates(): JSX.Element {
         <div>
           <h2
             className={cn(
-              "text-[40px] text-center xl:text-left",
+              "text-3xl min-[400px]:text-4xl sm:text-5xl lg:text-[40px] text-center xl:text-left",
               myFont.className
             )}
           >

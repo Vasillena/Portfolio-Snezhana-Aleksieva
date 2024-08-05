@@ -28,9 +28,16 @@ export default function ProjectsCard({
   return (
     <div>
       <div>
-        <h2 className={cn("text-4xl ", myFont.className)}>{title}</h2>
+        <h2
+          className={cn(
+            "text-3xl min-[400px]:text-4xl sm:text-5xl lg:text-[40px]",
+            myFont.className
+          )}
+        >
+          {title}
+        </h2>
         <p
-          className="text-2xl mt-6 leading-6
+          className="text-lg sm:text-2xl mt-6 sm:leading-6
         "
         >
           {text}
@@ -39,7 +46,7 @@ export default function ProjectsCard({
           <Link
             href={href}
             target="_blank"
-            className="text-xl flex text-[#B0752A]"
+            className="text-lg sm:text-xl flex text-[#B0752A]"
           >
             View more on{" "}
             <Image

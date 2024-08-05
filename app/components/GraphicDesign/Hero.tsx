@@ -19,15 +19,15 @@ export default function Hero(): JSX.Element {
           >
             Graphic Design
           </h1>
-          <h2 className="text-2xl font-bold">
+          <h2 className="text-lg sm:text-xl font-bold">
             Selection of my creative projects
           </h2>
-          <p className="mt-16 text-xl leading-6">
+          <p className="mt-16 text-lg sm:text-xl sm:leading-6">
             Explore a selection of my creative projects, showcasing my expertise
             in branding, logo design & layout design. Each project highlights my
             dedication to blending aesthetics with functionality
           </p>
-          <p className="text-xl leading-6">
+          <p className="text-lg sm:text-xl sm:leading-6">
             Click on the links to view more details on Behance and dive into the
             visuals that bring my ideas to life.
           </p>

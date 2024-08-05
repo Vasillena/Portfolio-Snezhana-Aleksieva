@@ -7,10 +7,10 @@ export default function OtherProjects(): JSX.Element {
     <div className="max-w-full mt-24 bg-[#F2EEE9]">
       <div className=" max-w-7xl mx-auto py-11">
         <div>
-          <p className="text-2xl text-center">
+          <p className="text-lg sm:text-2xl text-center">
             Thank you for exploring my UI/UX Design Portfolio!
           </p>
-          <p className="text-2xl text-center font-bold mt-6">
+          <p className="text-lg sm:text-2xl text-center font-bold mt-6">
             Explore my other work:
           </p>
         </div>

@@ -15,17 +15,23 @@ export default function FeaturedProjects(): JSX.Element {
     <div className="max-w-full mt-24 bg-[#F2EEE9] px-2">
       <div className=" max-w-7xl mx-auto py-11">
         <div className="flex justify-center">
-          <h2 className={cn("text-5xl lg:text-[40px] ", myFont.className)}>
+          <h2
+            className={cn(
+              "text-3xl min-[400px]:text-4xl sm:text-5xl lg:text-[40px] ",
+              myFont.className
+            )}
+          >
             Featured
           </h2>
           <Image
             src={image1}
             alt="Text image"
+            className="mt-[28px] sm:mt-[38px]"
             style={{
               width: "111px",
               height: "auto",
               alignSelf: "flex-end",
-              marginTop: "38px",
+              // marginTop: "38px",
               marginLeft: "-50px",
               zIndex: 1,
             }}

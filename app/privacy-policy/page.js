@@ -45,8 +45,10 @@ export default function PrivacyPolicyPage() {
       </div>
       <div className="max-w-7xl mx-auto mt-20">
         <div>
-          <h2 className={cn("text-2xl ", myFont.className)}>1. Introduction</h2>
-          <p className="text-2xl mt-4">
+          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
+            1. Introduction
+          </h2>
+          <p className="text-lg sm:text-2xl mt-4">
             Thank you for visiting snezhana-aleksieva.com. This privacy policy
             outlines how we collect, use, store, and protect personal
             information obtained from users of our website. By accessing or
@@ -54,12 +56,12 @@ export default function PrivacyPolicyPage() {
           </p>
         </div>
         <div className="mt-10">
-          <h2 className={cn("text-2xl ", myFont.className)}>
+          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
             2. Information We Collect
           </h2>
           <div className="flex items-center">
             <div className="w-[5px] h-[5px] bg-[#415064] rounded-full mr-3" />
-            <p className="text-2xl mt-4">
+            <p className="text-lg sm:text-2xl mt-4">
               Personal Information: When you contact us, we may collect certain
               personally identifiable information, including but not limited to
               name, email address, mailing address, phone number.
@@ -67,7 +69,7 @@ export default function PrivacyPolicyPage() {
           </div>
           <div className="flex items-center">
             <div className="w-[5px] h-[5px] bg-[#415064] rounded-full mr-3" />
-            <p className="text-2xl">
+            <p className="text-lg sm:text-2xl">
               Non-Personal Information: We may also collect non-personal
               information such as browser type, operating system, IP address,
               referring website.
@@ -75,10 +77,10 @@ export default function PrivacyPolicyPage() {
           </div>
         </div>
         <div className="mt-10">
-          <h2 className={cn("text-2xl ", myFont.className)}>
+          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
             3. Use of Cookies
           </h2>
-          <p className="text-2xl mt-4">
+          <p className="text-lg sm:text-2xl mt-4">
             We use cookies and similar technologies to enhance user experience,
             analyze website traffic, and personalize content. Cookies are small
             text files stored on your device that help improve website
@@ -88,10 +90,10 @@ export default function PrivacyPolicyPage() {
           </p>
         </div>
         <div className="mt-10">
-          <h2 className={cn("text-2xl ", myFont.className)}>
+          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
             4. Google Analytics
           </h2>
-          <p className="text-2xl mt-4">
+          <p className="text-lg sm:text-2xl mt-4">
             We use Google Analytics, a web analytics service provided by Google
             LLC („Google”). Google Analytics uses cookies or other tracking
             technologies to collect information about how users interact with
@@ -104,8 +106,10 @@ export default function PrivacyPolicyPage() {
           </p>
         </div>
         <div className="mt-10">
-          <h2 className={cn("text-2xl ", myFont.className)}>5. Contact Form</h2>
-          <p className="text-2xl mt-4">
+          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
+            5. Contact Form
+          </h2>
+          <p className="text-lg sm:text-2xl mt-4">
             If you use our contact form to get in touch with us, we may collect
             and store the information you provide, including your name, email
             address, and any other details you provide in your message. We use
@@ -114,10 +118,10 @@ export default function PrivacyPolicyPage() {
           </p>
         </div>
         <div className="mt-10">
-          <h2 className={cn("text-2xl ", myFont.className)}>
+          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
             6. Data Security
           </h2>
-          <p className="text-2xl mt-4">
+          <p className="text-lg sm:text-2xl mt-4">
             We are committed to ensuring the security of your personal
             information. We implement reasonable security measures to protect
             against unauthorized access, alteration, disclosure, or destruction
@@ -127,17 +131,17 @@ export default function PrivacyPolicyPage() {
           </p>
         </div>
         <div className="mt-10">
-          <h2 className={cn("text-2xl ", myFont.className)}>
+          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
             7. Third-Party Disclosure
           </h2>
-          <p className="text-2xl mt-4">
+          <p className="text-lg sm:text-2xl mt-4">
             We do not sell, trade, or transfer your personal information to
             third parties without your consent, except in the following
             circumstances:
           </p>
           <div className="flex items-center">
             <div className="w-[5px] h-[5px] bg-[#415064] rounded-full mr-3" />
-            <p className="text-2xl">
+            <p className="text-lg sm:text-2xl">
               We may share personal information with trusted third-party service
               providers who assist us in operating our website and delivering
               services to users.
@@ -145,7 +149,7 @@ export default function PrivacyPolicyPage() {
           </div>
           <div className="flex items-center">
             <div className="w-[5px] h-[5px] bg-[#415064] rounded-full mr-3" />
-            <p className="text-2xl">
+            <p className="text-lg sm:text-2xl">
               We may disclose personal information if required by law or to
               protect our rights, property, or safety, or the rights, property,
               or safety of others.
@@ -153,7 +157,7 @@ export default function PrivacyPolicyPage() {
           </div>
           <div className="flex items-center">
             <div className="w-[5px] h-[5px] bg-[#415064] rounded-full mr-3" />
-            <p className="text-2xl">
+            <p className="text-lg sm:text-2xl">
               In the event of a merger, acquisition, or sale of all or a portion
               of our assets, personal information may be transferred to the
               acquiring entity.
@@ -161,30 +165,32 @@ export default function PrivacyPolicyPage() {
           </div>
         </div>
         <div className="mt-10">
-          <h2 className={cn("text-2xl ", myFont.className)}>8. Your Rights</h2>
-          <p className="text-2xl mt-4">
+          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
+            8. Your Rights
+          </h2>
+          <p className="text-lg sm:text-2xl mt-4">
             You have certain rights regarding your personal information. You
             may:
           </p>
           <div className="flex items-center">
             <div className="w-[5px] h-[5px] bg-[#415064] rounded-full mr-3" />
-            <p className="text-2xl">
+            <p className="text-lg sm:text-2xl">
               Access, update, or correct your personal information by contacting
               us directly.
             </p>
           </div>
           <div className="flex items-center">
             <div className="w-[5px] h-[5px] bg-[#415064] rounded-full mr-3" />
-            <p className="text-2xl">
+            <p className="text-lg sm:text-2xl">
               Object to the processing of your personal information
             </p>
           </div>
         </div>
         <div className="mt-10">
-          <h2 className={cn("text-2xl ", myFont.className)}>
+          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
             9. Changes to this Privacy Policy
           </h2>
-          <p className="text-2xl mt-4">
+          <p className="text-lg sm:text-2xl mt-4">
             We reserve the right to update or modify this privacy policy at any
             time. Any changes will be effective immediately upon posting the
             revised version on our website. We encourage you to review this
@@ -192,8 +198,10 @@ export default function PrivacyPolicyPage() {
           </p>
         </div>
         <div className="mt-10">
-          <h2 className={cn("text-2xl ", myFont.className)}>10. Contact Us</h2>
-          <p className="text-2xl mt-4">
+          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
+            10. Contact Us
+          </h2>
+          <p className="text-lg sm:text-2xl mt-4">
             If you have any questions or concerns about this privacy policy or
             our data practices, please contact us
             at snezhana-aleksieva@gmail.com.

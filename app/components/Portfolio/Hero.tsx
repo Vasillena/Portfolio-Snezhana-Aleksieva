@@ -19,15 +19,17 @@ export default function Hero(): JSX.Element {
           >
             My Portfolio
           </h1>
-          <h2 className="text-2xl font-bold">
+          <h2 className="sm:text-xl font-bold">
             Explore My Creative Works and Diverse Design Projects
           </h2>
-          <p className="mt-16 text-xl leading-6">Welcome to my portfolio!</p>
-          <p className="text-xl leading-6">
+          <p className="mt-16 sm:text-xl sm:leading-6">
+            Welcome to my portfolio!
+          </p>
+          <p className="sm:text-xl sm:leading-6">
             Here, you can explore a variety of design projects that showcase my
             skills and creativity.
           </p>
-          <p className="text-xl leading-6">
+          <p className="sm:text-xl sm:leading-6">
             Select a category to see my work in different areas of design.
           </p>
         </div>

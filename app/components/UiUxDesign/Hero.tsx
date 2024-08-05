@@ -19,7 +19,7 @@ export default function Hero(): JSX.Element {
           >
             My UI/UX Projects
           </h1>
-          <p className="mt-16 text-xl xl:max-w-lg leading-6">
+          <p className="mt-16 text-lg sm:text-xl xl:max-w-lg sm:leading-6">
             Discover my user interface and user experience designs that
             prioritize usability and user satisfaction.
           </p>

@@ -19,7 +19,7 @@ export default function Hero(): JSX.Element {
           >
             Illustrations and Digital Art
           </h1>
-          <p className="mt-16 text-xl xl:max-w-lg leading-6">
+          <p className="mt-16 text-lg sm:text-xl xl:max-w-lg sm:leading-6">
             Explore my collection of illustrations and digital drawings, where
             my journey in art began.
           </p>

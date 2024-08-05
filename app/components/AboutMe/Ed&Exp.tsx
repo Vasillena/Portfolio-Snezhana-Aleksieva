@@ -14,14 +14,24 @@ export default function EdExp(): JSX.Element {
           <div className="w-1/6 relative">
             <div className="absolute w-[240px] top-1/2 transform -translate-y-1/2 left-full ml-[72px]">
               <div>
-                <h2 className={cn("text-[40px]", myFont.className)}>
+                <h2
+                  className={cn(
+                    "text-3xl min-[400px]:text-4xl sm:text-5xl lg:text-[40px]",
+                    myFont.className
+                  )}
+                >
                   Experience
                 </h2>
               </div>
             </div>
             <div className="absolute w-[240px] top-1/2 transform -translate-y-1/2 right-full mr-10">
               <div>
-                <h2 className={cn("text-[40px]", myFont.className)}>
+                <h2
+                  className={cn(
+                    "text-3xl min-[400px]:text-4xl sm:text-5xl lg:text-[40px]",
+                    myFont.className
+                  )}
+                >
                   Education
                 </h2>
               </div>

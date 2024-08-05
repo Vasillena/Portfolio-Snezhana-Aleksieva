@@ -24,17 +24,23 @@ export default function AboutMe(): JSX.Element {
       </div>
       <div className="col-span-2">
         <div className="flex mt-6 justify-center lg:justify-left">
-          <h2 className={cn("text-5xl lg:text-[40px]", myFont.className)}>
+          <h2
+            className={cn(
+              "text-3xl min-[400px]:text-4xl sm:text-5xl lg:text-[40px]",
+              myFont.className
+            )}
+          >
             About
           </h2>
           <Image
             src={image3}
             alt="Text image"
+            className="mt-[22px] sm:mt-[30px]"
             style={{
               width: "53px",
               height: "auto",
               alignSelf: "flex-end",
-              marginTop: "30px",
+              // marginTop: "30px",
               marginLeft: "-20px",
               zIndex: 1,
             }}
@@ -63,7 +69,7 @@ export default function AboutMe(): JSX.Element {
           Passionate about minimalist design and constantly expanding my skills,
           I strive to create visually stunning and functional work. My journey
           in design is driven by a commitment to continuous learning and
-          innovation. Let&rsquo;s create something extraordinary together!
+          innovation.
         </p>
         <p className="text-lg sm:text-2xl sm:leading-[26px]">
           Let&rsquo;s create something extraordinary together!

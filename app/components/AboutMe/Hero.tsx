@@ -20,13 +20,15 @@ export default function Hero(): JSX.Element {
           >
             Snezhana Aleksieva
           </h1>
-          <h2 className="text-2xl font-bold">Graphic Design | UI/UX Design</h2>
-          <p className="mt-16 text-xl leading-[26px]">
+          <h2 className="text-lg sm:text-xl font-bold">
+            Graphic Design | UI/UX Design
+          </h2>
+          <p className="mt-16 text-lg sm:text-xl sm:leading-[26px]">
             I’m Snezhana, a junior graphic and UI/UX designer with background in
             marketing and sales, currently based in Blagoevgrad, Bulgaria. I am
             a native Bulgarian speaker and am fluent in conversational English.
           </p>
-          <p className="mt-4 text-xl leading-[26px]">
+          <p className="mt-4 text-lg sm:text-xl sm:leading-[26px]">
             With over 12 years of experience in the hospitality industry, I have
             acquired a unique blend of skills, but my true passion lies in
             visual art. My work aims to balance aesthetics and functionality,
@@ -34,7 +36,7 @@ export default function Hero(): JSX.Element {
             minimalist graphic design, but sometimes I like to break the grid to
             create dynamic and engaging visuals.
           </p>
-          <p className="mt-4 text-xl leading-[26px]">
+          <p className="mt-4 text-lg sm:text-xl sm:leading-[26px]">
             My design education began at SoftUni Creative - academy for design,
             creativity and visualisation. I am constantly expanding my knowledge
             and skills to stay up to date with the latest trends and techniques

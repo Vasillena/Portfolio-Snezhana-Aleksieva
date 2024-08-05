@@ -64,23 +64,25 @@ export default function PortfolioCard({
       <div className="flex flex-col -ml-16">
         <div
           className={cn(
-            "w-[314px] h-[362px]  rounded-tr-[100px] rounded-bl-[100px]",
+            "w-[314px] h-[362px] rounded-tr-[100px] rounded-bl-[100px] flex flex-col justify-center sm:block",
             color
           )}
         >
-          <p className="text-xl w-[188px] ml-24 pt-[80px] leading-5">{text1}</p>
+          <p className="text-lg sm:text-xl w-[178px] sm:w-[188px] ml-24  sm:pt-[80px] sm:leading-5">
+            {text1}
+          </p>
           <div className="flex items-center w-[188px] ml-24 mt-12">
             <div className="w-[5px] h-[5px] bg-[#415064] rounded-full mr-3" />
-            <p className="text-xl leading-5">{text2}</p>
+            <p className="text-lg sm:text-xl sm:leading-5">{text2}</p>
           </div>
           <div className="flex items-center w-[188px] ml-24">
             <div className="w-[5px] h-[5px] bg-[#415064] rounded-full mr-3" />
-            <p className="text-xl leading-5">{text3}</p>
+            <p className="text-lg sm:text-xl sm:leading-5">{text3}</p>
           </div>
           {text4 && (
             <div className="flex items-center w-[188px] ml-24">
               <div className="w-[5px] h-[5px] bg-[#415064] rounded-full mr-3" />
-              <p className="text-xl leading-5">{text4}</p>
+              <p className="text-lg sm:text-xl sm:leading-5">{text4}</p>
             </div>
           )}
         </div>
