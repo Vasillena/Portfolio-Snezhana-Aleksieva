@@ -85,7 +85,7 @@ export default function FeaturedProjects(): JSX.Element {
         <div className="mt-11 flex justify-center lg:justify-end">
           <Link
             href="/portfolio"
-            className="sm:text-xl text-[#B0752A] font-bold"
+            className="text-lg sm:text-xl text-[#B0752A] font-bold"
           >
             View All
           </Link>

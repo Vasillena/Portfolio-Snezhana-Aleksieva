@@ -11,9 +11,9 @@ export default function MainNav(): JSX.Element {
   const pathname = usePathname();
 
   const links = [
-    { href: "/", label: "Homepage" },
+    { href: "/", label: "Home" },
     { href: "/portfolio", label: "Portfolio" },
-    { href: "/about-me", label: "About Me" },
+    { href: "/about-me", label: "About" },
     { href: "/contacts", label: "Contacts" },
   ];
 

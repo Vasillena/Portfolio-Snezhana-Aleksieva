@@ -9,22 +9,31 @@ const myFont = athena({ src: "../../public/Athena-Regular.ttf" });
 export default function PrivacyPolicyPage() {
   return (
     <>
-      <div className="max-w-7xl mx-auto mt-14 grid lg:grid-cols-3 gap-16">
+      <div className="max-w-7xl mx-auto mt-14 grid lg:grid-cols-3 gap-16 text-center lg:text-left">
         <div className="col-span-2">
-          <h1 className={cn("text-6xl ", myFont.className)}>Privacy Policy </h1>
+          <h1
+            className={cn(
+              "text-3xl min-[400px]:text-4xl sm:text-6xl",
+              myFont.className
+            )}
+          >
+            Privacy Policy
+          </h1>
         </div>
-        <div className="justify-self-end relative -top-32">
+        <div className="hidden xl:inline-block w-[415px] h-[331px] justify-self-end relative -top-32">
           <Image
             src={image2}
             alt="Decor image"
-            style={{
-              width: "374px",
-              height: "auto",
-            }}
+            fill
+            object-fit="contain"
+            // style={{
+            //   width: "374px",
+            //   height: "auto",
+            // }}
           />
         </div>
       </div>
-      <div className="max-w-7xl mx-auto -mt-[180px]">
+      <div className="max-w-7xl mx-auto mt-36 xl:-mt-[132px] flex justify-center lg:justify-start">
         <Image
           src={image3}
           alt="Dots"
@@ -34,7 +43,7 @@ export default function PrivacyPolicyPage() {
           }}
         />
       </div>
-      <div className="max-w-7xl mx-auto mt-28">
+      <div className="max-w-7xl mx-auto mt-20">
         <div>
           <h2 className={cn("text-2xl ", myFont.className)}>1. Introduction</h2>
           <p className="text-2xl mt-4">

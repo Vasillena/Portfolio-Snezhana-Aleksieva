@@ -46,32 +46,34 @@ export default function Footer(): JSX.Element {
           </div>
           <div className="flex flex-col items-center xl:items-start">
             <h2 className={cn("text-[40px] ", myFont.className)}>Contacts</h2>
-            <p className="sm:text-xl">design.by.snezhana@gmail.com</p>
+            <p className="text-lg sm:text-xl">design.by.snezhana@gmail.com</p>
             <p>
-              <span className="sm:text-xl text-[#B0752A] font-bold">Phone</span>{" "}
+              <span className="text-lg sm:text-xl text-[#B0752A] font-bold">
+                Phone
+              </span>{" "}
               | +359 882 94 95 98
             </p>
           </div>
-          <div className="mt-12  lg:mt-48 flex flex-col items-center xl:items-start">
+          <div className="mt-12 lg:mt-48 flex flex-col items-center xl:items-start">
             <h2 className={cn("text-[40px]", myFont.className)}>
               Follow me on
             </h2>
             <div className="flex">
               <div>
-                <p className="sm:text-xl text-[#B0752A] pr-2 font-bold">
+                <p className="text-lg sm:text-xl text-[#B0752A] pr-2 font-bold">
                   LinkedIn
                 </p>
-                <p className="sm:text-xl text-[#B0752A] pr-2 font-bold">
+                <p className="text-lg sm:text-xl text-[#B0752A] pr-2 font-bold">
                   Behance
                 </p>
-                <p className="sm:text-xl text-[#B0752A] pr-2 font-bold">
+                <p className="text-lg sm:text-xl text-[#B0752A] pr-2 font-bold">
                   Instagram
                 </p>
               </div>
               <div>
-                <p className="sm:text-xl">| @snezhana-aleksieva</p>
-                <p className="sm:text-xl">| @snezhana-aleksieva</p>
-                <p className="sm:text-xl">| @design.by.snezhana</p>
+                <p className="text-lg sm:text-xl">| @snezhana-aleksieva</p>
+                <p className="text-lg sm:text-xl">| @snezhana-aleksieva</p>
+                <p className="text-lg sm:text-xl">| @design.by.snezhana</p>
               </div>
             </div>
           </div>
