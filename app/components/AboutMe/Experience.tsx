@@ -15,7 +15,7 @@ export default function Experience({
       <div className="w-1/6 flex justify-center relative">
         <div className="w-[2px] h-full bg-[#B0752A] rounded relative"></div>
         <div className="absolute top-1/2 transform -translate-y-1/2 left-1/2 -ml-[1px] w-[60px] h-[0.5px] bg-[#B0752A]" />
-        <div className="absolute top-1/2 transform -translate-y-1/2 left-full ml-[6px] w-[3px] h-[3px] bg-[#415064] rounded-full" />
+        <div className="absolute top-1/2 transform -translate-y-1/2 left-full ml-[20px] w-[3px] h-[3px] bg-[#415064] rounded-full" />
         <div className="absolute w-[240px] top-1/2 transform -translate-y-1/2 left-full ml-10">
           <div className="text-xl sm:text-2xl font-semibold rounded-lg">
             {place}

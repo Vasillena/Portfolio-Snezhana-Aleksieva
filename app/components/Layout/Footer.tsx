@@ -56,8 +56,8 @@ export default function Footer(): JSX.Element {
             <p className="text-lg sm:text-xl">design.by.snezhana@gmail.com</p>
             <p>
               <span className="text-lg sm:text-xl text-[#B0752A] font-bold">
-                Phone
-              </span>{" "}
+                Phone{" "}
+              </span>
               | +359 882 94 95 98
             </p>
           </div>
