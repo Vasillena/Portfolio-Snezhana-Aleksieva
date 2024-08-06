@@ -13,12 +13,12 @@ export default function MainNav(): JSX.Element {
   const links = [
     { href: "/", label: "Home" },
     { href: "/portfolio", label: "Portfolio" },
-    { href: "/about-me", label: "About" },
+    { href: "/about", label: "About" },
     { href: "/contacts", label: "Contacts" },
   ];
 
   return (
-    <nav className="mx-6 flex items-center space-x-4 lg:space-x-6">
+    <nav className="mx-6 flex flex-col sm:flex-row items-center sm:space-x-4 lg:space-x-6 space-y-4 sm:space-y-0 ml-12 mt-6 sm:ml-6 sm:mt-0">
       {links.map((link) => {
         const isActive =
           link.href === "/"
@@ -34,7 +34,7 @@ export default function MainNav(): JSX.Element {
             )}
           >
             {isActive && (
-              <div className="w-[3px] h-[3px] bg-[#B0752A] rounded-full mr-2" />
+              <div className="hidden sm:block w-[3px] h-[3px] bg-[#B0752A] rounded-full mr-2" />
             )}
             {link.label}
           </Link>

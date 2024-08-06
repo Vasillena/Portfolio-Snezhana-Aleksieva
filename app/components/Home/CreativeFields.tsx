@@ -9,7 +9,7 @@ import image5 from "@/public/dots.svg";
 export default function CreativeFields(): JSX.Element {
   return (
     <>
-      <div className="max-w-7xl mx-auto mt-36 xl:-mt-12 flex justify-center lg:justify-start">
+      <div className="max-w-7xl mx-auto mt-16 xl:-mt-12 flex justify-center lg:justify-start">
         <Image
           src={image5}
           alt="Dots decor"

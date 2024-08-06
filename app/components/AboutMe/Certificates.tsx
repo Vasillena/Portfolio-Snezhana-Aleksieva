@@ -4,6 +4,7 @@ import athena from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/certificate-1.png";
 import image2 from "@/public/certificate-2.png";
+import image3 from "@/public/certificate-3.png";
 
 const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 
@@ -14,14 +15,14 @@ export default function Certificates(): JSX.Element {
         <div>
           <h2
             className={cn(
-              "text-3xl min-[400px]:text-4xl sm:text-5xl lg:text-[40px] text-center xl:text-left",
+              "text-3xl min-[400px]:text-4xl sm:text-5xl lg:text-[40px] text-center",
               myFont.className
             )}
           >
             Certificates
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-y-6 gap-1 mt-12 justify-center">
+        <div className="flex flex-wrap justify-center  gap-y-6 gap-1 mt-12">
           <div className="justify-self-center">
             <Link href="https://creative.softuni.bg/certificates/details/47406/e9509b3a">
               <Image
@@ -38,6 +39,18 @@ export default function Certificates(): JSX.Element {
             <Link href="https://creative.softuni.bg/certificates/details/49413/faf14f39">
               <Image
                 src={image2}
+                alt="Certificate image"
+                style={{
+                  minWidth: "200px",
+                  height: "auto",
+                }}
+              />
+            </Link>
+          </div>
+          <div className=" justify-self-center">
+            <Link href="https://creative.softuni.bg/certificates/details/50265/837eef76">
+              <Image
+                src={image3}
                 alt="Certificate image"
                 style={{
                   minWidth: "200px",

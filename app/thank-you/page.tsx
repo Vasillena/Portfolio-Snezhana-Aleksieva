@@ -39,7 +39,7 @@ export default function ThankYouPage() {
         />
       </div>
       <div>
-        <h2 className="text-2xl font-bold mt-16">
+        <h2 className="text-lg sm:text-2xl font-bold mt-16">
           Your message has been successfully sent. I will get back to you as
           soon as possible. Thank you for reaching out!
         </h2>

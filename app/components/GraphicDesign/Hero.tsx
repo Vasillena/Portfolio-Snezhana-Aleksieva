@@ -9,7 +9,7 @@ const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 export default function Hero(): JSX.Element {
   return (
     <>
-      <div className="max-w-7xl mx-auto mt-28 sm:mt-44 xl:mt-14 grid lg:grid-cols-3 gap-16 text-center lg:text-left">
+      <div className="max-w-7xl mx-auto mt-28 sm:mt-44 xl:mt-32 grid lg:grid-cols-3 gap-16 text-center lg:text-left">
         <div className="col-span-2 xl:max-w-lg">
           <h1
             className={cn(

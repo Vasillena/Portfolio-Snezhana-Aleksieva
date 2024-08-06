@@ -17,13 +17,26 @@ import { usePathname } from "next/navigation";
 
 const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 
+const knownPaths = [
+  "/",
+  "/about",
+  "/contacts",
+  "/portfolio",
+  "/portfolio/graphic-design",
+  "/portfolio/ui-ux-design",
+  "/portfolio/illustrations-and-digital-art",
+  "/thank-you",
+  "/privacy-policy",
+];
+
 export default function Footer(): JSX.Element {
   const pathname = usePathname();
   return (
     <div
       className={cn(
         pathname === "/contacts" && "flex flex-col min-h-[calc(100vh-64px)]",
-        pathname === "/thank-you" && "hidden"
+        pathname === "/thank-you" ||
+          (!knownPaths.includes(pathname) && "hidden")
       )}
     >
       <div
@@ -201,7 +214,9 @@ export default function Footer(): JSX.Element {
               <p className="font-bold">Privacy Policy</p>
             </Link>
             <p className="font-bold">|</p>
-            <p className="font-bold">Imprint</p>
+            <Link href="/imprint">
+              <p className="font-bold">Imprint</p>
+            </Link>
           </div>
           <div className="text-center">
             <p>

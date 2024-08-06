@@ -15,14 +15,22 @@ import image6 from "@/public/close.svg";
 import logo from "@/public/logo.svg";
 import { usePathname } from "next/navigation";
 
+const knownPaths = [
+  "/",
+  "/about",
+  "/contacts",
+  "/portfolio",
+  "/portfolio/graphic-design",
+  "/portfolio/ui-ux-design",
+  "/portfolio/illustrations-and-digital-art",
+  "/thank-you",
+  "/privacy-policy",
+];
+
 export default function Navbar(): JSX.Element {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
-  const closeMenu = () => {
-    setOpen(false);
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,11 +44,20 @@ export default function Navbar(): JSX.Element {
     };
   }, []);
 
+  const closeMenu = () => {
+    setOpen(false);
+  };
+
+  useEffect(() => {
+    closeMenu();
+  }, [pathname]);
+
   return (
     <div
       className={cn(
         " max-w-7xl mx-auto",
-        pathname === "/thank-you" && "hidden"
+        pathname === "/thank-you" ||
+          (!knownPaths.includes(pathname) && "hidden")
       )}
     >
       <div
@@ -152,7 +169,9 @@ export default function Navbar(): JSX.Element {
         </div>
       </div>
       {open && (
-        <div className="w-[240px] h-[324px] bg-[#f2eee9] fixed top-[64px] right-0 z-50 rounded-bl-full"></div>
+        <div className="sm:hidden w-[240px] h-[324px] bg-[#f2eee9] fixed top-[64px] right-0 z-50 rounded-bl-full flex justify-center">
+          <MainNav />
+        </div>
       )}
     </div>
   );
