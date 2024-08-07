@@ -6,11 +6,11 @@ const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 
 export default function SoftSkills(): JSX.Element {
   return (
-    <div className="mt-[72px]">
+    <div className="mt-[100px]">
       <div>
         <h2
           className={cn(
-            "text-3xl min-[400px]:text-4xl sm:text-5xl lg:text-[40px] mb-7 text-center md:text-left",
+            "text-3xl min-[400px]:text-4xl  lg:text-[40px] mb-7 text-center xl:text-left",
             myFont.className
           )}
         >

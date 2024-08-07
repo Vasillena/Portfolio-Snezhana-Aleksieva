@@ -17,7 +17,7 @@ export default function CreativeFieldsCard({
   paragraph2,
 }: CreativeFieldCardProps): JSX.Element {
   return (
-    <div className="flex justify-center items-center gap-4">
+    <div className="flex justify-center items-center gap-4 ">
       <div className="w-[62px] h-[62px] sm:w-[92px] sm:h-[92px] relative">
         <Image
           src={image}

@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import athena from "next/font/local";
 import { cn } from "@/lib/utils";

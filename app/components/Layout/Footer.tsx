@@ -47,7 +47,12 @@ export default function Footer(): JSX.Element {
         )}
       >
         <div>
-          <div className="mt-20 lg:mt-5 mb-12 flex justify-center xl:justify-start">
+          <div
+            className={cn(
+              "mt-20 lg:mt-5 mb-12 flex justify-center xl:justify-start",
+              pathname === "/contacts" && "hidden lg:block"
+            )}
+          >
             <Image
               src={image1}
               alt="Dots"
@@ -57,10 +62,10 @@ export default function Footer(): JSX.Element {
               }}
             />
           </div>
-          <div className="flex flex-col items-center xl:items-start">
+          <div className="mt-0 md:mt-16 flex flex-col items-center xl:items-start">
             <h2
               className={cn(
-                "text-3xl min-[400px]:text-4xl sm:text-5xl lg:text-[40px] ",
+                "text-3xl min-[400px]:text-4xl  lg:text-[40px] mb-3",
                 myFont.className
               )}
             >
@@ -77,7 +82,7 @@ export default function Footer(): JSX.Element {
           <div className="mt-12 lg:mt-48 flex flex-col items-center xl:items-start">
             <h2
               className={cn(
-                "text-3xl min-[400px]:text-4xl sm:text-5xl lg:text-[40px]",
+                "text-3xl min-[400px]:text-4xl  lg:text-[40px] mb-3",
                 myFont.className
               )}
             >
@@ -107,7 +112,7 @@ export default function Footer(): JSX.Element {
           <div className="flex justify-center xl:mr-16 mt-12 lg:mt-0 ">
             <h2
               className={cn(
-                "text-3xl min-[400px]:text-4xl sm:text-5xl lg:text-[40px]",
+                "text-3xl min-[400px]:text-4xl lg:text-[40px]",
                 myFont.className
               )}
             >

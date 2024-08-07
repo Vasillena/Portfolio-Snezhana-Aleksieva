@@ -8,15 +8,15 @@ const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 export default function EdExp(): JSX.Element {
   return (
     <>
-      <div className="ml-72 sm:ml-32 md:ml-44 xl:ml-6">
-        <div className="flex justify-between h-[68px] px-20">
-          <div className="w-1/10" />
+      <div className="ml-72 sm:ml-0">
+        <div className="flex justify-between xl:justify-start h-[68px]">
+          <div className="w-[150px] sm:w-[300px]" />
           <div className="w-1/6 relative">
-            <div className="absolute w-[240px] top-1/2 transform -translate-y-1/2 left-full ml-[36px]">
+            <div className="absolute w-[240px] top-1/2 transform -translate-y-1/2 left-full ml-20">
               <div>
                 <h2
                   className={cn(
-                    "hidden sm:block text-3xl min-[400px]:text-4xl sm:text-5xl lg:text-[40px]",
+                    "hidden sm:block text-3xl min-[400px]:text-4xl lg:text-[40px]",
                     myFont.className
                   )}
                 >
@@ -28,7 +28,7 @@ export default function EdExp(): JSX.Element {
               <div>
                 <h2
                   className={cn(
-                    "text-3xl min-[400px]:text-4xl sm:text-5xl lg:text-[40px]",
+                    "text-3xl min-[400px]:text-4xl lg:text-[40px]",
                     myFont.className
                   )}
                 >
@@ -37,16 +37,16 @@ export default function EdExp(): JSX.Element {
               </div>
             </div>
           </div>
-          <div className="w-1/3" />
+          <div className="w-[150px] sm:w-[300px]" />
         </div>
-        <div className="-mt-12 sm:mt-0 flex justify-between px-20 h-[120px]">
-          <div className="w-1/10" />
+        <div className="-mt-12 sm:mt-0 flex justify-between xl:justify-start h-[120px]">
+          <div className="w-[150px] sm:w-[300px]" />
           <div className="w-1/6 flex justify-center relative">
             <div className="w-[2px] h-full bg-[#B0752A] rounded relative">
               <div className="absolute w-[40px] h-[40px] rounded-full ring-2 ring-[#B0752A] bg-[#f9f7f4] -left-[18px]" />
             </div>
           </div>
-          <div className="w-1/3" />
+          <div className="w-[150px] sm:w-[300px]" />
         </div>
         <div className="hidden sm:block">
           <Experience
@@ -101,8 +101,8 @@ export default function EdExp(): JSX.Element {
           />
         </div>
 
-        <div className="flex justify-between px-20 h-[120px]">
-          <div className="w-1/10" />
+        <div className="flex justify-between xl:justify-start h-[120px]">
+          <div className="w-[150px] sm:w-[300px]" />
           <div className="w-1/6 flex justify-center relative">
             <div className="w-[2px] h-full bg-[#B0752A] rounded relative">
               <div className="absolute -bottom-[24px] transform -translate-y-1/2  w-[3px] h-[3px] bg-[#B0752A] rounded-full" />
@@ -110,19 +110,19 @@ export default function EdExp(): JSX.Element {
               <div className="absolute -bottom-[72px] transform -translate-y-1/2  w-[3px] h-[3px] bg-[#B0752A] rounded-full" />
             </div>
           </div>
-          <div className="w-1/3" />
+          <div className="w-[150px] sm:w-[300px]" />
         </div>
       </div>
 
       <div className="sm:hidden mt-32 mr-72 sm:ml-32 md:ml-44">
-        <div className="flex justify-between h-[68px] px-20">
-          <div className="w-1/10" />
+        <div className="flex justify-between h-[68px]">
+          <div className="w-[150px]" />
           <div className="w-1/6 relative">
             <div className="absolute w-[240px] top-1/2 transform -translate-y-1/2 left-full ml-[72px]">
               <div>
                 <h2
                   className={cn(
-                    "text-3xl min-[400px]:text-4xl sm:text-5xl lg:text-[40px]",
+                    "text-3xl min-[400px]:text-4xl lg:text-[40px]",
                     myFont.className
                   )}
                 >
@@ -131,16 +131,16 @@ export default function EdExp(): JSX.Element {
               </div>
             </div>
           </div>
-          <div className="w-1/3" />
+          <div className="w-[150px]" />
         </div>
-        <div className="-mt-12 sm:mt-0 flex justify-between px-20 h-[120px]">
-          <div className="w-1/10" />
+        <div className="-mt-12 sm:mt-0 flex justify-between h-[120px]">
+          <div className="w-[150px]" />
           <div className="w-1/6 flex justify-center relative">
             <div className="w-[2px] h-full bg-[#B0752A] rounded relative">
               <div className="absolute w-[40px] h-[40px] rounded-full ring-2 ring-[#B0752A] bg-[#f9f7f4] -left-[18px]" />
             </div>
           </div>
-          <div className="w-1/3" />
+          <div className="w-[150px]" />
         </div>
         <div>
           <Experience
@@ -174,8 +174,8 @@ export default function EdExp(): JSX.Element {
           />
         </div>
 
-        <div className="flex justify-between px-20 h-[120px]">
-          <div className="w-1/10" />
+        <div className="flex justify-between h-[120px]">
+          <div className="w-[150px]" />
           <div className="w-1/6 flex justify-center relative">
             <div className="w-[2px] h-full bg-[#B0752A] rounded relative">
               <div className="absolute -bottom-[24px] transform -translate-y-1/2  w-[3px] h-[3px] bg-[#B0752A] rounded-full" />
@@ -183,7 +183,7 @@ export default function EdExp(): JSX.Element {
               <div className="absolute -bottom-[72px] transform -translate-y-1/2  w-[3px] h-[3px] bg-[#B0752A] rounded-full" />
             </div>
           </div>
-          <div className="w-1/3" />
+          <div className="w-[150px]" />
         </div>
       </div>
     </>

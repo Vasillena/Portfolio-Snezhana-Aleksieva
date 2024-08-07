@@ -96,9 +96,9 @@ export default function FooterForm(): JSX.Element {
           <div>
             <button
               type="submit"
-              className="w-[340px] px-11 py-3 bg-[#F2EEE9] text-[#B0752A] font-bold text-lg sm:text-xl rounded border-b border-[#B0752A]"
+              className="w-[340px] px-11 py-3 bg-[#F2EEE9] text-[#B0752A] font-bold text-lg sm:text-xl rounded border-b border-[#B0752A] relative flex   items-center justify-center overflow-hidden  transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#B0752A]  before:duration-500 before:ease-out hover:shadow-2xl hover:shadow-[#B0752A] hover:text-[#F2EEE9]  hover:before:h-56 hover:before:w-96"
             >
-              Submit
+              <span className="relative z-10">Submit</span>
             </button>
           </div>
 

@@ -6,8 +6,6 @@ import { cn } from "@/lib/utils";
 import image1 from "@/public/welcome.svg";
 import image2 from "@/public/hero-1.png";
 
-// import image3 from "@/public/dots.svg";
-
 const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 
 export default function Hero(): JSX.Element {

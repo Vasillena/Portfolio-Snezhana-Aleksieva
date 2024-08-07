@@ -17,7 +17,7 @@ export default function Hobbies(): JSX.Element {
       <div>
         <h2
           className={cn(
-            "text-3xl min-[400px]:text-4xl sm:text-5xl lg:text-[40px] mb-7",
+            "text-3xl min-[400px]:text-4xl lg:text-[40px] mb-7",
             myFont.className
           )}
         >

@@ -10,7 +10,7 @@ export default function SoftwareSkills(): JSX.Element {
       <div>
         <h2
           className={cn(
-            "text-3xl min-[400px]:text-4xl sm:text-5xl lg:text-[40px] mb-7 text-center md:text-left",
+            "text-3xl min-[400px]:text-4xl  lg:text-[40px] mb-7 text-center xl:text-left",
             myFont.className
           )}
         >
@@ -35,12 +35,12 @@ export default function SoftwareSkills(): JSX.Element {
         />
         <SkillsCard
           title={"AfterEffects"}
-          margin1={"-ml-[7px]"}
+          margin1={"-ml-[3px] sm:-ml-[7px]"}
           margin2={"ml-[40px]"}
         />
         <SkillsCard
           title={"Figma"}
-          margin1={"ml-[39px]"}
+          margin1={"ml-[35px] sm:ml-[39px]"}
           margin2={"ml-[270px]"}
         />
       </div>

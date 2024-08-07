@@ -17,7 +17,7 @@ export default function FeaturedProjects(): JSX.Element {
         <div className="flex justify-center">
           <h2
             className={cn(
-              "text-3xl min-[400px]:text-4xl sm:text-5xl lg:text-[40px] ",
+              "text-3xl min-[400px]:text-4xl  lg:text-[40px] ",
               myFont.className
             )}
           >
@@ -91,7 +91,7 @@ export default function FeaturedProjects(): JSX.Element {
         <div className="mt-11 flex justify-center lg:justify-end">
           <Link
             href="/portfolio"
-            className="text-lg sm:text-xl text-[#B0752A] font-bold"
+            className="text-lg sm:text-xl text-[#B0752A] font-bold hover:text-[#415064]"
           >
             View All
           </Link>

@@ -30,7 +30,7 @@ export default function ProjectsCard({
       <div>
         <h2
           className={cn(
-            "text-3xl min-[400px]:text-4xl sm:text-5xl lg:text-[40px]",
+            "text-3xl min-[400px]:text-4xl  lg:text-[40px]",
             myFont.className
           )}
         >
@@ -46,7 +46,7 @@ export default function ProjectsCard({
           <Link
             href={href}
             target="_blank"
-            className="text-lg sm:text-xl flex text-[#B0752A]"
+            className="text-lg sm:text-xl flex text-[#B0752A] hover:text-[#415064]"
           >
             View more on{" "}
             <Image

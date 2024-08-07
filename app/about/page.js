@@ -8,13 +8,22 @@ export default function AboutMePage() {
   return (
     <>
       <Hero />
-      <div className="max-w-7xl mx-auto grid grid-cols-1 xl:grid-cols-3 mt-20">
-        <div className="col-span-1 xl:col-span-2 justify-self-center xl:justify-self-start">
-          <EdExp />
-          <Hobbies />
+      <div className="max-w-7xl mx-auto flex flex-col xl:flex-row mt-20 justify-center xl:justify-between items-center">
+        <div>
+          <div>
+            <EdExp />
+          </div>
+          <div className="hidden xl:block">
+            <Hobbies />
+          </div>
         </div>
-        <div className="col-span-1 justify-self-center xl:justify-self-end mt-10 xl:mt-0">
-          <Skills />
+        <div className="mt-32 xl:mt-0 flex flex-col items-center">
+          <div>
+            <Skills />
+          </div>
+          <div className="xl:hidden">
+            <Hobbies />
+          </div>
         </div>
       </div>
       <Certificates />
