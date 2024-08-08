@@ -1,5 +1,5 @@
 import Image from "next/image";
-import MainButton from "../components/Common/MainButton";
+import MainButton from "../../components/Common/MainButton";
 import image1 from "@/public/hero-5.png";
 import image2 from "@/public/thank-you.svg";
 import image3 from "@/public/dots.svg";

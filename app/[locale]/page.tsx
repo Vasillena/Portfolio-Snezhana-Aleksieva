@@ -2,11 +2,11 @@
 
 import { motion, useInView } from "framer-motion";
 
-import AboutMe from "./components/Home/AboutMe";
-import CreativeFields from "./components/Home/CreativeFields";
-import FeaturedProjects from "./components/Home/FeaturedProjects";
-import Hero from "./components/Home/Hero";
-import MotionPageWrapper from "./components/Common/MotionPageWrapper";
+import AboutMe from "../components/Home/AboutMe";
+import CreativeFields from "../components/Home/CreativeFields";
+import FeaturedProjects from "../components/Home/FeaturedProjects";
+import Hero from "../components/Home/Hero";
+import MotionPageWrapper from "../components/Common/MotionPageWrapper";
 import { useRef } from "react";
 
 export default function HomePage() {

@@ -2,13 +2,19 @@ import Image from "next/image";
 import MainButton from "../Common/MainButton";
 import SecondaryButton from "../Common/SecondaryButton";
 import athena from "next/font/local";
+import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/welcome.svg";
 import image2 from "@/public/hero-1.png";
+import { useTranslations } from "next-intl";
 
-const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
+const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
+const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
-export default function Hero(): JSX.Element {
+export default function Hero({ locale }): JSX.Element {
+  const myFont = locale === "en" ? athenaFont : blackSansFont;
+
+  const t = useTranslations();
   return (
     <>
       <div className="max-w-7xl mx-auto mt-14 lg:mt-20 xl:mt-0 grid lg:grid-cols-3 gap-x-12 text-center lg:text-left">
@@ -32,20 +38,17 @@ export default function Hero(): JSX.Element {
               myFont.className
             )}
           >
-            to My Design Journey
+            {t("home.title-1")}
           </h1>
           <p className="mt-12 sm:mt-16 text-lg sm:text-2xl sm:leading-[26px]">
-            Hi there! I&apos;m Snezhana, a junior graphic and UI/UX designer
-            with a passion for creating visually appealing and user-friendly
-            designs
+            {t("home.text-1")}
           </p>
           <p className="mt-4 text-lg sm:text-2xl sm:leading-[26px]">
-            Welcome to my web portfolio - hope you enjoy it! Ready to explore my
-            work?
+            {t("home.text-2")}
           </p>
           <div className="flex flex-col items-center lg:flex-row gap-5 pt-8 min-[400px]:pt-12 sm:pt-20">
-            <MainButton href={"/portfolio"} text={" Explore My Projects"} />
-            <SecondaryButton href={"/contacts"} text={"Get in Touch"} />
+            <MainButton href={"/portfolio"} text={t("home.button-1")} />
+            <SecondaryButton href={"/contacts"} text={t("home.button-2")} />
           </div>
         </div>
 

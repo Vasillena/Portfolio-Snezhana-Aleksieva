@@ -16,15 +16,24 @@ import logo from "@/public/logo.svg";
 import { usePathname } from "next/navigation";
 
 const knownPaths = [
-  "/",
-  "/about",
-  "/contacts",
-  "/portfolio",
-  "/portfolio/graphic-design",
-  "/portfolio/ui-ux-design",
-  "/portfolio/illustrations-and-digital-art",
-  "/thank-you",
-  "/privacy-policy",
+  "/bg",
+  "/bg/about",
+  "/bg/contacts",
+  "/bg/portfolio",
+  "/bg/portfolio/graphic-design",
+  "/bg/portfolio/ui-ux-design",
+  "/bg/portfolio/illustrations-and-digital-art",
+  "/bg/thank-you",
+  "/bg/privacy-policy",
+  "/en",
+  "/en/about",
+  "/en/contacts",
+  "/en/portfolio",
+  "/en/portfolio/graphic-design",
+  "/en/portfolio/ui-ux-design",
+  "/en/portfolio/illustrations-and-digital-art",
+  "/en/thank-you",
+  "/en/privacy-policy",
 ];
 
 export default function Navbar(): JSX.Element {

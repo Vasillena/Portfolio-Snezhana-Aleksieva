@@ -1,16 +1,21 @@
 import Image from "next/image";
 import MainButton from "../Common/MainButton";
 import athena from "next/font/local";
+import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image2 from "@/public/about-short.png";
 import image3 from "@/public/me.svg";
+import { useTranslations } from "next-intl";
 
 // import { useRef } from "react";
 // import { motion, useInView } from "framer-motion";
 
-const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
+const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
+const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
-export default function AboutMe(): JSX.Element {
+export default function AboutMe({ locale }): JSX.Element {
+  const myFont = locale === "en" ? athenaFont : blackSansFont;
+  const t = useTranslations();
   // const containerRef = useRef(null);
 
   // const aboutRef = useRef(null);
@@ -31,14 +36,14 @@ export default function AboutMe(): JSX.Element {
         />
       </div>
       <div className="col-span-2">
-        <div className="flex mt-6 justify-center lg:justify-left">
+        <div className="flex mt-6 justify-center lg:justify-start">
           <h2
             className={cn(
               "text-3xl min-[400px]:text-4xl  lg:text-[40px]",
               myFont.className
             )}
           >
-            About
+            {t("home.title-2")}
           </h2>
           <Image
             src={image3}
@@ -56,36 +61,31 @@ export default function AboutMe(): JSX.Element {
         </div>
         <div className="hidden md:block">
           <h2 className="text-lg sm:text-2xl font-bold mt-16 sm:leading-[26px]">
-            I&rsquo;m a junior graphic and UI/UX designer with
+            {t("home.text-3")}
           </h2>
           <h2 className="text-lg sm:text-2xl font-bold sm:leading-[26px]">
-            a strong background in marketing and sales.
+            {t("home.text-4")}
           </h2>
         </div>
         <div className="md:hidden">
           <h2 className="text-lg sm:text-2xl font-bold mt-16 sm:leading-[26px]">
-            I&rsquo;m a junior graphic and UI/UX designer with a strong
-            background in marketing and sales.
+            {t("home.text-5")}
           </h2>
         </div>
 
         <p className="text-lg sm:text-2xl mt-4 sm:leading-[26px]">
-          I bring a unique blend of creativity and strategic thinking to my
-          projects.
+          {t("home.text-6")}
         </p>
         <p className="text-lg sm:text-2xl sm:leading-[26px]">
-          Passionate about minimalist design and constantly expanding my skills,
-          I strive to create visually stunning and functional work. My journey
-          in design is driven by a commitment to continuous learning and
-          innovation.
+          {t("home.text-7")}
         </p>
         <p className="text-lg sm:text-2xl sm:leading-[26px]">
-          Let&rsquo;s create something extraordinary together!
+          {t("home.text-8")}
         </p>
-        <div className="mt-16 text-center lg:text-left">
+        <div className="flex justify-center lg:justify-start mt-16 text-center lg:text-left">
           <MainButton
             href={"/about-me"}
-            text={"Learn More"}
+            text={t("home.button-3")}
             // classProp={"mt-11"}
           />
         </div>
