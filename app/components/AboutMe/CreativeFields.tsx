@@ -1,10 +1,17 @@
+import { useLocale, useTranslations } from "next-intl";
+
 import CreativeAndSoftSkillsCard from "./CreativeAndSoftSkillsCard";
 import athena from "next/font/local";
+import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 
-const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
+const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
+const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
 export default function CreativeFields(): JSX.Element {
+  const locale = useLocale();
+  const t = useTranslations();
+  const myFont = locale === "en" ? athenaFont : blackSansFont;
   return (
     <div className="mt-[100px]">
       <div>
@@ -14,14 +21,14 @@ export default function CreativeFields(): JSX.Element {
             myFont.className
           )}
         >
-          Creative Fields
+          {t("about.card-5-title")}
         </h2>
       </div>
-      <CreativeAndSoftSkillsCard title={"Logo design"} />
-      <CreativeAndSoftSkillsCard title={"Branding"} />
-      <CreativeAndSoftSkillsCard title={"Layout design"} />
-      <CreativeAndSoftSkillsCard title={"Social media design"} />
-      <CreativeAndSoftSkillsCard title={"UX/UI design"} />
+      <CreativeAndSoftSkillsCard title={t("about.card-5-text-1")} />
+      <CreativeAndSoftSkillsCard title={t("about.card-5-text-2")} />
+      <CreativeAndSoftSkillsCard title={t("about.card-5-text-3")} />
+      <CreativeAndSoftSkillsCard title={t("about.card-5-text-4")} />
+      <CreativeAndSoftSkillsCard title={t("about.card-5-text-5")} />
     </div>
   );
 }

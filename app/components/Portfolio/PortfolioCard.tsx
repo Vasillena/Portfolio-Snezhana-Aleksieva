@@ -1,17 +1,20 @@
 import Image, { StaticImageData } from "next/image";
+import { useLocale, useTranslations } from "next-intl";
 
 import MainButton from "../Common/MainButton";
 import SecondaryButton from "../Common/SecondaryButton";
 import athena from "next/font/local";
+import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 
-const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
+const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
+const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
 interface PortfolioCardProps {
   title1: string;
   title2: string;
   image: StaticImageData;
-  mx?: string;
+  // mx?: string;
   color: string;
   text1: string;
   text2: string;
@@ -24,7 +27,7 @@ export default function PortfolioCard({
   title1,
   title2,
   image,
-  mx,
+  // mx,
   color,
   text1,
   text2,
@@ -32,6 +35,9 @@ export default function PortfolioCard({
   text4,
   href,
 }: PortfolioCardProps): JSX.Element {
+  const locale = useLocale();
+  const t = useTranslations();
+  const myFont = locale === "en" ? athenaFont : blackSansFont;
   return (
     <div className={cn("flex")}>
       <div className="z-10">
@@ -88,9 +94,9 @@ export default function PortfolioCard({
         </div>
         <div className="self-center mt-7 ml-14">
           {color === "bg-[#F7F4F1]" ? (
-            <SecondaryButton href={href} text={"Explore"} />
+            <SecondaryButton href={href} text={t("portfolio.button")} />
           ) : (
-            <MainButton href={href} text={"Explore"} />
+            <MainButton href={href} text={t("portfolio.button")} />
           )}
         </div>
       </div>

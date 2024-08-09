@@ -1,11 +1,11 @@
 "use client";
 
+import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 
 import Link from "next/link";
 import athena from "next/font/local";
 import { cn } from "@/lib/utils";
-import { useLocale } from "next-intl";
 import { useState } from "react";
 
 const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
@@ -13,6 +13,7 @@ const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 export default function MainNav(): JSX.Element {
   const pathname = usePathname();
   const currentLocale = useLocale();
+  const t = useTranslations();
   const router = useRouter();
   const [currentLanguage, setCurrentLanguage] = useState(currentLocale);
 
@@ -23,10 +24,10 @@ export default function MainNav(): JSX.Element {
   };
 
   const links = [
-    { href: "/", label: "Home" },
-    { href: "/portfolio", label: "Portfolio" },
-    { href: "/about", label: "About" },
-    { href: "/contacts", label: "Contacts" },
+    { href: "/", label: t("nav.home") },
+    { href: "/portfolio", label: t("nav.portfolio") },
+    { href: "/about", label: t("nav.about") },
+    { href: "/contacts", label: t("nav.contacts") },
   ];
 
   return (
@@ -59,7 +60,7 @@ export default function MainNav(): JSX.Element {
           myFont.className
         )}
       >
-        {currentLocale === "bg" ? "BG" : "EN"}
+        {currentLocale === "bg" ? "EN" : "BG"}
       </button>
     </nav>
   );

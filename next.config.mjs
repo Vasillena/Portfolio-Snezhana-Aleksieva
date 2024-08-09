@@ -1,5 +1,7 @@
 import createNextIntlPlugin from "next-intl/plugin";
 
+export const localePrefix = "as-needed";
+
 const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */

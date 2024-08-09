@@ -1,14 +1,22 @@
 "use client";
 
+import { useLocale, useTranslations } from "next-intl";
+
 import Image from "next/image";
 import athena from "next/font/local";
+import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image2 from "@/public/hero-4.png";
 import image3 from "@/public/dots.svg";
 
-const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
+const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
+const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
 export default function Hero(): JSX.Element {
+  const locale = useLocale();
+  const t = useTranslations();
+  const myFont = locale === "en" ? athenaFont : blackSansFont;
+
   return (
     <>
       <div className="max-w-7xl mx-auto mt-28 sm:mt-44 xl:mt-32 grid lg:grid-cols-3 gap-16 text-center lg:text-left">
@@ -19,21 +27,14 @@ export default function Hero(): JSX.Element {
               myFont.className
             )}
           >
-            My Portfolio
+            {t("portfolio.title")}
           </h1>
-          <h2 className="sm:text-xl font-bold">
-            Explore My Creative Works and Diverse Design Projects
-          </h2>
+          <h2 className="sm:text-xl font-bold">{t("portfolio.text-1")}</h2>
           <p className="mt-16 sm:text-xl sm:leading-6">
-            Welcome to my portfolio!
+            {t("portfolio.text-2")}
           </p>
-          <p className="sm:text-xl sm:leading-6">
-            Here, you can explore a variety of design projects that showcase my
-            skills and creativity.
-          </p>
-          <p className="sm:text-xl sm:leading-6">
-            Select a category to see my work in different areas of design.
-          </p>
+          <p className="sm:text-xl sm:leading-6">{t("portfolio.text-3")}</p>
+          <p className="sm:text-xl sm:leading-6">{t("portfolio.text-4")}</p>
         </div>
         <div className="hidden xl:inline-block w-[381px] h-[465px] justify-self-end relative -top-32">
           <Image

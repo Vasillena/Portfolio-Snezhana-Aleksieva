@@ -1,13 +1,21 @@
+import { useLocale, useTranslations } from "next-intl";
+
 import Image from "next/image";
 import MainButton from "../Common/MainButton";
 import athena from "next/font/local";
+import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/hero-3.png";
 import image2 from "@/public/dots.svg";
 
-const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
+const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
+const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
 export default function Hero(): JSX.Element {
+  const locale = useLocale();
+  const t = useTranslations();
+  const myFont = locale === "en" ? athenaFont : blackSansFont;
+
   return (
     <>
       <div className="max-w-7xl mx-auto mt-28 sm:mt-44 xl:mt-32 grid lg:grid-cols-3 gap-16 text-center lg:text-left">
@@ -18,32 +26,20 @@ export default function Hero(): JSX.Element {
               myFont.className
             )}
           >
-            Snezhana Aleksieva
+            {t("about.title")}
           </h1>
-          <h2 className="text-lg sm:text-xl font-bold">
-            Graphic Design | UI/UX Design
-          </h2>
+          <h2 className="text-lg sm:text-xl font-bold">{t("about.text-1")}</h2>
           <p className="mt-16 text-lg sm:text-xl sm:leading-[26px]">
-            I’m Snezhana, a junior graphic and UI/UX designer with background in
-            marketing and sales, currently based in Blagoevgrad, Bulgaria. I am
-            a native Bulgarian speaker and am fluent in conversational English.
+            {t("about.text-2")}
           </p>
           <p className="mt-4 text-lg sm:text-xl sm:leading-[26px]">
-            With over 12 years of experience in the hospitality industry, I have
-            acquired a unique blend of skills, but my true passion lies in
-            visual art. My work aims to balance aesthetics and functionality,
-            leveraging my marketing expertise to communicate effectively. I love
-            minimalist graphic design, but sometimes I like to break the grid to
-            create dynamic and engaging visuals.
+            {t("about.text-3")}
           </p>
           <p className="mt-4 text-lg sm:text-xl sm:leading-[26px]">
-            My design education began at SoftUni Creative - academy for design,
-            creativity and visualisation. I am constantly expanding my knowledge
-            and skills to stay up to date with the latest trends and techniques
-            .
+            {t("about.text-4")}
           </p>
           <div className=" flex gap-5 pt-14">
-            <MainButton href={"/portfolio"} text={" Explore My Projects"} />
+            <MainButton href={"/portfolio"} text={t("about.button")} />
           </div>
         </div>
         <div className="hidden xl:inline-block w-[446px] h-[723px] justify-self-end relative -top-32">

@@ -1,11 +1,18 @@
+import { useLocale, useTranslations } from "next-intl";
+
 import Education from "./Education";
 import Experience from "./Experience";
 import athena from "next/font/local";
+import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 
-const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
+const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
+const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
 export default function EdExp(): JSX.Element {
+  const locale = useLocale();
+  const t = useTranslations();
+  const myFont = locale === "en" ? athenaFont : blackSansFont;
   return (
     <>
       <div className="ml-72 sm:ml-0">
@@ -20,7 +27,7 @@ export default function EdExp(): JSX.Element {
                     myFont.className
                   )}
                 >
-                  Experience
+                  {t("about.card-2-title")}
                 </h2>
               </div>
             </div>
@@ -32,7 +39,7 @@ export default function EdExp(): JSX.Element {
                     myFont.className
                   )}
                 >
-                  Education
+                  {t("about.card-1-title")}
                 </h2>
               </div>
             </div>
@@ -50,54 +57,54 @@ export default function EdExp(): JSX.Element {
         </div>
         <div className="hidden sm:block">
           <Experience
-            place={"Park Hotel Moskva"}
-            position={"Front Office Manager"}
-            period={"September 2011 - January 2016"}
+            place={t("about.card-2-text-1")}
+            position={t("about.card-2-text-2")}
+            period={t("about.card-2-text-3")}
           />
         </div>
         <div>
           <Education
-            place={"College Of Tourism"}
-            position={"Management & Organisation of Tourists Service"}
-            period={"Blagoevgrad, 2009 - 2011"}
+            place={t("about.card-1-text-1")}
+            position={t("about.card-1-text-2")}
+            period={t("about.card-1-text-3")}
           />
         </div>
 
         <div className="hidden sm:block">
           <Experience
-            place={"Boyana Developers"}
-            position={"Sales & Events Manager"}
-            period={"February 2016 - Present"}
+            place={t("about.card-2-text-4")}
+            position={t("about.card-2-text-5")}
+            period={t("about.card-2-text-6")}
           />
         </div>
         <div className="mt-20 sm:mt-0">
           <Education
-            place={"Graphic Design"}
-            position={"at SoftUni Creative Academy"}
-            period={"March 2024 - Present"}
+            place={t("about.card-1-text-4")}
+            position={t("about.card-1-text-5")}
+            period={t("about.card-1-text-6")}
           />
         </div>
 
         <div className="hidden sm:block">
           <Experience
-            place={"Thracian Hoteliers"}
-            position={"Marketing Specialist"}
-            period={"November 2017 - Present"}
+            place={t("about.card-2-text-7")}
+            position={t("about.card-2-text-8")}
+            period={t("about.card-2-text-9")}
           />
         </div>
         <div className="mt-20 sm:mt-0">
           <Education
-            place={"UX/UI design"}
-            position={"at SoftUni Creative Academy"}
-            period={"March 2024 - Present"}
+            place={t("about.card-1-text-7")}
+            position={t("about.card-1-text-5")}
+            period={t("about.card-1-text-6")}
           />
         </div>
 
         <div className="hidden sm:block">
           <Experience
-            place={"Freelance"}
-            position={"Graphic Designer"}
-            period={"October 2023 - Present"}
+            place={t("about.card-2-text-10")}
+            position={t("about.card-2-text-11")}
+            period={t("about.card-2-text-12")}
           />
         </div>
 
@@ -126,7 +133,7 @@ export default function EdExp(): JSX.Element {
                     myFont.className
                   )}
                 >
-                  Experience
+                  {t("about.card-2-title")}
                 </h2>
               </div>
             </div>
@@ -144,33 +151,33 @@ export default function EdExp(): JSX.Element {
         </div>
         <div>
           <Experience
-            place={"Park Hotel Moskva"}
-            position={"Front Office Manager"}
-            period={"September 2011 - January 2016"}
+            place={t("about.card-2-text-1")}
+            position={t("about.card-2-text-2")}
+            period={t("about.card-2-text-3")}
           />
         </div>
 
         <div className="mt-20 sm:mt-0">
           <Experience
-            place={"Boyana Developers"}
-            position={"Sales & Events Manager"}
-            period={"February 2016 - Present"}
+            place={t("about.card-2-text-4")}
+            position={t("about.card-2-text-5")}
+            period={t("about.card-2-text-6")}
           />
         </div>
 
         <div className="mt-20 sm:mt-0">
           <Experience
-            place={"Thracian Hoteliers"}
-            position={"Marketing Specialist"}
-            period={"November 2017 - Present"}
+            place={t("about.card-2-text-7")}
+            position={t("about.card-2-text-8")}
+            period={t("about.card-2-text-9")}
           />
         </div>
 
         <div className="mt-20 sm:mt-0">
           <Experience
-            place={"Freelance"}
-            position={"Graphic Designer"}
-            period={"October 2023 - Present"}
+            place={t("about.card-2-text-10")}
+            position={t("about.card-2-text-11")}
+            period={t("about.card-2-text-12")}
           />
         </div>
 

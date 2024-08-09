@@ -1,13 +1,18 @@
 import Image from "next/image";
-import MainButton from "../components/Common/MainButton";
+import MainButton from "../../components/Common/MainButton";
 import athena from "next/font/local";
+import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/hero-5.png";
 import image2 from "@/public/dots.svg";
+import { useLocale } from "next-intl";
 
-const myFont = athena({ src: "../../public/Athena-Regular.ttf" });
+const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
+const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
-export default function ImprintPage() {
+export default function ImprintPage(): JSX.Element {
+  const locale = useLocale();
+  const myFont = locale === "en" ? athenaFont : blackSansFont;
   return (
     <div className="max-w-7xl mx-auto flex flex-col items-center mb-10">
       <div className="self-end relative -top-32">
@@ -23,21 +28,21 @@ export default function ImprintPage() {
       <div>
         <h1
           className={cn(
-            "text-3xl min-[400px]:text-4xl sm:text-6xl",
+            "text-3xl min-[400px]:text-4xl sm:text-6xl -mt-24",
             myFont.className
           )}
         >
           Imprint
         </h1>
       </div>
-      <div className="mb-28">
+      <div className="mb-20">
         <Image
           src={image2}
           alt="Dots"
           style={{
             width: "160px",
             height: "auto",
-            marginTop: "64px",
+            marginTop: "14px",
           }}
         />
       </div>

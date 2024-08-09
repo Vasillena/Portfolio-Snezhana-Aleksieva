@@ -1,10 +1,17 @@
+import { useLocale, useTranslations } from "next-intl";
+
 import SkillsCard from "./SkillsCard";
 import athena from "next/font/local";
+import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 
-const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
+const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
+const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
 export default function SoftwareSkills(): JSX.Element {
+  const locale = useLocale();
+  const t = useTranslations();
+  const myFont = locale === "en" ? athenaFont : blackSansFont;
   return (
     <div>
       <div>
@@ -14,7 +21,7 @@ export default function SoftwareSkills(): JSX.Element {
             myFont.className
           )}
         >
-          Software skills
+          {t("about.card-3-title")}
         </h2>
       </div>
       <div>

@@ -7,9 +7,12 @@ import CreativeFields from "../components/Home/CreativeFields";
 import FeaturedProjects from "../components/Home/FeaturedProjects";
 import Hero from "../components/Home/Hero";
 import MotionPageWrapper from "../components/Common/MotionPageWrapper";
+import { useLocale } from "next-intl";
 import { useRef } from "react";
 
-export default function HomePage() {
+export default function HomePage(): JSX.Element {
+  const locale = useLocale();
+
   const aboutRef = useRef(null);
   const isAboutRefInView = useInView(aboutRef, { margin: "-300px" });
 
@@ -20,7 +23,7 @@ export default function HomePage() {
   return (
     <>
       <MotionPageWrapper>
-        <Hero />
+        <Hero params={{ locale }} />
         <CreativeFields />
       </MotionPageWrapper>
       <div ref={aboutRef}>
@@ -29,7 +32,7 @@ export default function HomePage() {
           animate={isAboutRefInView ? { opacity: 1, y: "0" } : {}}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <AboutMe />
+          <AboutMe params={{ locale }} />
         </motion.div>
       </div>
 
@@ -39,7 +42,7 @@ export default function HomePage() {
           animate={isfeaturedProjectsRefInView ? { opacity: 1, y: "0" } : {}}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <FeaturedProjects />
+          <FeaturedProjects params={{ locale }} />
         </motion.div>
       </div>
     </>

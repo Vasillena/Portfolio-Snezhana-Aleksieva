@@ -8,12 +8,17 @@ import image2 from "@/public/fproject-1.png";
 import image3 from "@/public/fproject-2.png";
 import image4 from "@/public/fproject-3.png";
 import image5 from "@/public/fproject-4.png";
+import image6 from "@/public/projects-2.svg";
 import { useTranslations } from "next-intl";
 
 const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
-export default function FeaturedProjects({ locale }): JSX.Element {
+export default function FeaturedProjects({
+  params: { locale },
+}: {
+  params: { locale: string };
+}): JSX.Element {
   const myFont = locale === "en" ? athenaFont : blackSansFont;
   const t = useTranslations();
   return (
@@ -29,11 +34,11 @@ export default function FeaturedProjects({ locale }): JSX.Element {
             {t("home.title-3")}
           </h2>
           <Image
-            src={image1}
+            src={locale === "en" ? image2 : image6}
             alt="Text image"
-            className="mt-[28px] sm:mt-[38px]"
+            className={locale === "en" ? "mt-[28px] sm:mt-[38px]" : "mt-[10px]"}
             style={{
-              width: "111px",
+              width: locale === "en" ? "111px" : "197px",
               height: "auto",
               alignSelf: "flex-end",
               // marginTop: "38px",

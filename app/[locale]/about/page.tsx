@@ -4,7 +4,7 @@ import Hero from "../../components/AboutMe/Hero";
 import Hobbies from "../../components/AboutMe/Hobbies";
 import Skills from "../../components/AboutMe/Skills";
 
-export default function AboutMePage() {
+export default function AboutMePage(): JSX.Element {
   return (
     <>
       <Hero />

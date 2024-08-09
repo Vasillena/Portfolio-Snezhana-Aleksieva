@@ -9,7 +9,11 @@ import { getMessages } from "next-intl/server";
 
 const myFont = futura({ src: "../../public/FuturaL.ttf" });
 
-export async function generateMetadata({ params: { locale } }) {
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
   let title, description, keywords;
 
   if (locale === "bg") {

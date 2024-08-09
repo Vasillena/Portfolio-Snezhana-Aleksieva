@@ -8,18 +8,17 @@ const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
 interface CreativeFieldCardProps {
-  locale: string;
   image: StaticImageData;
   paragraph1: string;
   paragraph2: string;
 }
 
 export default function CreativeFieldsCard({
-  locale,
   image,
   paragraph1,
   paragraph2,
-}: CreativeFieldCardProps): JSX.Element {
+  locale,
+}: CreativeFieldCardProps & { locale: string }): JSX.Element {
   const myFont = locale === "en" ? athenaFont : blackSansFont;
   return (
     <div className="flex justify-center items-center gap-4 ">

@@ -1,12 +1,15 @@
 import Image, { StaticImageData } from "next/image";
+import { useLocale, useTranslations } from "next-intl";
 
 import Link from "next/link";
 import athena from "next/font/local";
+import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image4 from "@/public/icon-3.svg";
 import image5 from "@/public/dots.svg";
 
-const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
+const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
+const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
 interface ProjectsCardProps {
   title: string;
@@ -25,6 +28,9 @@ export default function ProjectsCard({
   image2,
   image3,
 }: ProjectsCardProps): JSX.Element {
+  const locale = useLocale();
+  const t = useTranslations();
+  const myFont = locale === "en" ? athenaFont : blackSansFont;
   return (
     <div>
       <div>
@@ -48,7 +54,7 @@ export default function ProjectsCard({
             target="_blank"
             className="text-lg sm:text-xl flex text-[#B0752A] hover:text-[#415064]"
           >
-            View more on{" "}
+            {t("graphic-design.card-1-text-2")}{" "}
             <Image
               src={image4}
               alt="Icon"

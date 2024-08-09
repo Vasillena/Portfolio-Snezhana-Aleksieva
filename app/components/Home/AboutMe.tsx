@@ -1,3 +1,5 @@
+import { useLocale, useTranslations } from "next-intl";
+
 import Image from "next/image";
 import MainButton from "../Common/MainButton";
 import athena from "next/font/local";
@@ -5,7 +7,7 @@ import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image2 from "@/public/about-short.png";
 import image3 from "@/public/me.svg";
-import { useTranslations } from "next-intl";
+import image4 from "@/public/me-2.svg";
 
 // import { useRef } from "react";
 // import { motion, useInView } from "framer-motion";
@@ -13,9 +15,10 @@ import { useTranslations } from "next-intl";
 const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
-export default function AboutMe({ locale }): JSX.Element {
-  const myFont = locale === "en" ? athenaFont : blackSansFont;
+export default function AboutMe(): JSX.Element {
+  const locale = useLocale();
   const t = useTranslations();
+  const myFont = locale === "en" ? athenaFont : blackSansFont;
   // const containerRef = useRef(null);
 
   // const aboutRef = useRef(null);
@@ -46,11 +49,11 @@ export default function AboutMe({ locale }): JSX.Element {
             {t("home.title-2")}
           </h2>
           <Image
-            src={image3}
+            src={locale === "en" ? image3 : image4}
             alt="Text image"
-            className="mt-[22px] sm:mt-[30px]"
+            className={locale == "en" ? "mt-[22px] sm:mt-[30px]" : "mt-[10px]"}
             style={{
-              width: "53px",
+              width: locale === "en" ? "53px" : "68px",
               height: "auto",
               alignSelf: "flex-end",
               // marginTop: "30px",

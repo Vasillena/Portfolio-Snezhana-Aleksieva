@@ -16,15 +16,14 @@ import logo from "@/public/logo.svg";
 import { usePathname } from "next/navigation";
 
 const knownPaths = [
-  "/bg",
-  "/bg/about",
-  "/bg/contacts",
-  "/bg/portfolio",
-  "/bg/portfolio/graphic-design",
-  "/bg/portfolio/ui-ux-design",
-  "/bg/portfolio/illustrations-and-digital-art",
-  "/bg/thank-you",
-  "/bg/privacy-policy",
+  "/",
+  "/about",
+  "/contacts",
+  "/portfolio",
+  "/portfolio/graphic-design",
+  "/portfolio/ui-ux-design",
+  "/portfolio/illustrations-and-digital-art",
+  "/privacy-policy",
   "/en",
   "/en/about",
   "/en/contacts",
@@ -32,7 +31,6 @@ const knownPaths = [
   "/en/portfolio/graphic-design",
   "/en/portfolio/ui-ux-design",
   "/en/portfolio/illustrations-and-digital-art",
-  "/en/thank-you",
   "/en/privacy-policy",
 ];
 
@@ -65,8 +63,7 @@ export default function Navbar(): JSX.Element {
     <div
       className={cn(
         " max-w-7xl mx-auto",
-        pathname === "/thank-you" ||
-          (!knownPaths.includes(pathname) && "hidden")
+        pathname === "/thank-you" && !knownPaths.includes(pathname) && "hidden"
       )}
     >
       <div
@@ -82,6 +79,7 @@ export default function Navbar(): JSX.Element {
             <Image
               src={logo}
               alt="Logo"
+              priority
               style={{
                 width: "100%",
                 height: "auto",
@@ -105,6 +103,7 @@ export default function Navbar(): JSX.Element {
               <Image
                 src={logo}
                 alt="Logo"
+                priority
                 style={{
                   width: "120px",
                   height: "auto",
