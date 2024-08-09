@@ -1,10 +1,11 @@
 "use client";
 
+import { Link, usePathname } from "@/lib/navigation";
+import { motion, useInView } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 
 import FooterForm from "./FooterForm";
 import Image from "next/image";
-import Link from "next/link";
 import athena from "next/font/local";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
@@ -18,7 +19,7 @@ import image6 from "@/public/connect.svg";
 import image7 from "@/public/footer.svg";
 import image8 from "@/public/cookie.svg";
 import image9 from "@/public/connect-2.svg";
-import { usePathname } from "next/navigation";
+import { useRef } from "react";
 
 const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
@@ -39,6 +40,10 @@ export default function Footer(): JSX.Element {
   const t = useTranslations();
   const myFont = locale === "en" ? athenaFont : blackSansFont;
   const pathname = usePathname();
+
+  const ref = useRef(null);
+  const isRefInView = useInView(ref);
+
   return (
     <div
       className={cn(
@@ -115,29 +120,39 @@ export default function Footer(): JSX.Element {
           </div>
         </div>
         <div>
-          <div className="flex justify-center mt-12 lg:mt-0 ">
-            <h2
-              className={cn(
-                "text-3xl min-[400px]:text-4xl lg:text-[40px]",
-                myFont.className
-              )}
+          <div ref={ref}>
+            <motion.div
+              className="flex justify-center mt-12 lg:mt-0 "
+              initial={{ opacity: 0, y: "-10%" }}
+              animate={isRefInView ? { opacity: 1, y: "0" } : {}}
+              transition={{ duration: 1, ease: "easeOut" }}
             >
-              {t("footer.title-1")}
-            </h2>
-            <Image
-              src={locale === "en" ? image6 : image9}
-              alt="Text image"
-              className={locale == "en" ? "mt-[22px] sm:mt-[30px]" : "mt-[0px]"}
-              style={{
-                width: locale == "en" ? "111px" : "104px",
-                height: "auto",
-                alignSelf: "flex-end",
-                // marginTop: "30px",
-                marginLeft: "-20px",
-                zIndex: 1,
-              }}
-            />
+              <h2
+                className={cn(
+                  "text-3xl min-[400px]:text-4xl lg:text-[40px]",
+                  myFont.className
+                )}
+              >
+                {t("footer.title-1")}
+              </h2>
+              <Image
+                src={locale === "en" ? image6 : image9}
+                alt="Text image"
+                className={
+                  locale == "en" ? "mt-[22px] sm:mt-[30px]" : "mt-[0px]"
+                }
+                style={{
+                  width: locale == "en" ? "111px" : "104px",
+                  height: "auto",
+                  alignSelf: "flex-end",
+                  // marginTop: "30px",
+                  marginLeft: "-20px",
+                  zIndex: 1,
+                }}
+              />
+            </motion.div>
           </div>
+
           <div className="mt-6 flex flex-col items-center ">
             <FooterForm />
           </div>

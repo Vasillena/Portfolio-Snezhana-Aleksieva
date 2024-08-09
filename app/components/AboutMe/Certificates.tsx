@@ -1,13 +1,17 @@
+"use client";
+
+import { motion, useInView } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 import athena from "next/font/local";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/certificate-1.png";
 import image2 from "@/public/certificate-2.png";
 import image3 from "@/public/certificate-3.png";
+import { useRef } from "react";
 
 const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
@@ -16,6 +20,9 @@ export default function Certificates(): JSX.Element {
   const locale = useLocale();
   const t = useTranslations();
   const myFont = locale === "en" ? athenaFont : blackSansFont;
+
+  const ref = useRef(null);
+  const isRefInView = useInView(ref);
   return (
     <div className="max-w-full mt-24 bg-[#F2EEE9]">
       <div className=" max-w-7xl mx-auto py-11">
@@ -29,43 +36,50 @@ export default function Certificates(): JSX.Element {
             {t("about.title-2")}
           </h2>
         </div>
-        <div className="flex flex-wrap justify-center  gap-y-6 gap-1 mt-12">
-          <div className="justify-self-center">
-            <Link href="https://creative.softuni.bg/certificates/details/47406/e9509b3a">
-              <Image
-                src={image1}
-                alt="Certificate image"
-                style={{
-                  width: "200px",
-                  height: "auto",
-                }}
-              />
-            </Link>
-          </div>
-          <div className="justify-self-center">
-            <Link href="https://creative.softuni.bg/certificates/details/49413/faf14f39">
-              <Image
-                src={image2}
-                alt="Certificate image"
-                style={{
-                  width: "200px",
-                  height: "auto",
-                }}
-              />
-            </Link>
-          </div>
-          <div className=" justify-self-center">
-            <Link href="https://creative.softuni.bg/certificates/details/50265/837eef76">
-              <Image
-                src={image3}
-                alt="Certificate image"
-                style={{
-                  width: "200px",
-                  height: "auto",
-                }}
-              />
-            </Link>
-          </div>
+        <div ref={ref}>
+          <motion.div
+            className="flex flex-wrap justify-center  gap-y-6 gap-1 mt-12"
+            initial={{ opacity: 0, y: "-10%" }}
+            animate={isRefInView ? { opacity: 1, y: "0" } : {}}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
+            <div className="justify-self-center">
+              <Link href="https://creative.softuni.bg/certificates/details/47406/e9509b3a">
+                <Image
+                  src={image1}
+                  alt="Certificate image"
+                  style={{
+                    width: "200px",
+                    height: "auto",
+                  }}
+                />
+              </Link>
+            </div>
+            <div className="justify-self-center">
+              <Link href="https://creative.softuni.bg/certificates/details/49413/faf14f39">
+                <Image
+                  src={image2}
+                  alt="Certificate image"
+                  style={{
+                    width: "200px",
+                    height: "auto",
+                  }}
+                />
+              </Link>
+            </div>
+            <div className=" justify-self-center">
+              <Link href="https://creative.softuni.bg/certificates/details/50265/837eef76">
+                <Image
+                  src={image3}
+                  alt="Certificate image"
+                  style={{
+                    width: "200px",
+                    height: "auto",
+                  }}
+                />
+              </Link>
+            </div>
+          </motion.div>
         </div>
       </div>
     </div>

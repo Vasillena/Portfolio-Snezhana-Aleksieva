@@ -1,9 +1,9 @@
 "use client";
 
+import { Link, usePathname } from "@/lib/navigation";
 import { useEffect, useState } from "react";
 
 import Image from "next/image";
-import Link from "next/link";
 import MainNav from "./MainNav";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/icon-1.svg";
@@ -13,7 +13,6 @@ import image4 from "@/public/icon-4.svg";
 import image5 from "@/public/menu.svg";
 import image6 from "@/public/close.svg";
 import logo from "@/public/logo.svg";
-import { usePathname } from "next/navigation";
 
 const knownPaths = [
   "/",

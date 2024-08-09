@@ -1,12 +1,16 @@
+"use client";
+
 import Image, { StaticImageData } from "next/image";
+import { motion, useInView } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 import athena from "next/font/local";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image4 from "@/public/icon-3.svg";
 import image5 from "@/public/dots.svg";
+import { useRef } from "react";
 
 const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
@@ -31,6 +35,9 @@ export default function ProjectsCard({
   const locale = useLocale();
   const t = useTranslations();
   const myFont = locale === "en" ? athenaFont : blackSansFont;
+
+  const ref = useRef(null);
+  const isRefInView = useInView(ref);
   return (
     <div>
       <div>
@@ -66,31 +73,38 @@ export default function ProjectsCard({
           </Link>
         </div>
       </div>
-      <div className="flex flex-wrap xl:flex-nowrap justify-center gap-20 mt-16">
-        <Image
-          src={image1}
-          alt="Project image"
-          style={{
-            width: "387px",
-            height: "auto",
-          }}
-        />
-        <Image
-          src={image2}
-          alt="Project image"
-          style={{
-            width: "387px",
-            height: "auto",
-          }}
-        />
-        <Image
-          src={image3}
-          alt="Project image"
-          style={{
-            width: "387px",
-            height: "auto",
-          }}
-        />
+      <div ref={ref}>
+        <motion.div
+          className="flex flex-wrap xl:flex-nowrap justify-center gap-20 mt-16"
+          initial={{ opacity: 0, y: "-10%" }}
+          animate={isRefInView ? { opacity: 1, y: "0" } : {}}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
+          <Image
+            src={image1}
+            alt="Project image"
+            style={{
+              width: "387px",
+              height: "auto",
+            }}
+          />
+          <Image
+            src={image2}
+            alt="Project image"
+            style={{
+              width: "387px",
+              height: "auto",
+            }}
+          />
+          <Image
+            src={image3}
+            alt="Project image"
+            style={{
+              width: "387px",
+              height: "auto",
+            }}
+          />
+        </motion.div>
       </div>
       <div className="mt-16 mb-[68px] flex justify-center xl:justify-start">
         <Image

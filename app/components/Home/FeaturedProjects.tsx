@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 import athena from "next/font/local";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
