@@ -23,7 +23,7 @@ export default function AboutMe(): JSX.Element {
   // const containerRef = useRef(null);
 
   const ref = useRef(null);
-  const isRefInView = useInView(ref);
+  const isRefInView = useInView(ref, { margin: "-300px" });
 
   return (
     <div className=" max-w-7xl mt-20 mx-auto grid grid-cols-1 xl:grid-cols-3 gap-y-20 lg:gap-72 text-center lg:text-left">
