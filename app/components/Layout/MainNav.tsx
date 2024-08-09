@@ -12,10 +12,10 @@ const myFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 
 export default function MainNav(): JSX.Element {
   const pathname = usePathname();
-  const currentLocale = useLocale();
+  const locale = useLocale();
   const t = useTranslations();
   const router = useRouter();
-  const [currentLanguage, setCurrentLanguage] = useState(currentLocale);
+  const [currentLanguage, setCurrentLanguage] = useState(locale);
 
   const changeLocale = (): void => {
     const newLanguage = currentLanguage === "bg" ? "en" : "bg";
@@ -60,7 +60,7 @@ export default function MainNav(): JSX.Element {
           myFont.className
         )}
       >
-        {currentLocale === "bg" ? "EN" : "BG"}
+        {locale === "bg" ? "EN" : "BG"}
       </button>
     </nav>
   );

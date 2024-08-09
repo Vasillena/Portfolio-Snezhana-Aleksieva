@@ -9,12 +9,11 @@ export default createMiddleware({
 
   // Used when no locale matches
   defaultLocale: "bg",
-  localePrefix,
+  // localePrefix,
 });
 
 export const config = {
   // Match only internationalized pathnames
-  matcher:
-    // ["/", "/(bg|en)/:path*"],
-    ["/((?!api|_next|_vercel|.*\\..*).*)"],
+  matcher: ["/", "/(bg|en)/:path*"],
+  // ["/((?!api|_next|_vercel|.*\\..*).*)"],
 };

@@ -1,3 +1,6 @@
+"use client";
+
+import { motion, useInView } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 
 import Image from "next/image";
@@ -11,6 +14,7 @@ import image3 from "@/public/fproject-2.png";
 import image4 from "@/public/fproject-3.png";
 import image5 from "@/public/fproject-4.png";
 import image6 from "@/public/projects-2.svg";
+import { useRef } from "react";
 
 const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
@@ -19,6 +23,10 @@ export default function FeaturedProjects(): JSX.Element {
   const locale = useLocale();
   const t = useTranslations();
   const myFont = locale === "en" ? athenaFont : blackSansFont;
+
+  const ref = useRef(null);
+  const isRefInView = useInView(ref);
+
   return (
     <div className="max-w-full mt-24 bg-[#F2EEE9] px-2">
       <div className=" max-w-7xl mx-auto py-11">
@@ -45,56 +53,63 @@ export default function FeaturedProjects(): JSX.Element {
             }}
           />
         </div>
-        <div className="mx-auto flex flex-wrap justify-center xl:justify-between gap-y-20 gap-x-20 xl:gap-x-0  mt-8">
-          <div className="w-[300px] h-[300px] relative flex justify-center">
-            <Image
-              src={image2}
-              alt="Project image"
-              fill
-              object-fit="contain"
-              // style={{
-              //   width: "300px",
-              //   height: "auto",
-              // }}
-            />
-          </div>
+        <div ref={ref}>
+          <motion.div
+            className="mx-auto flex flex-wrap justify-center xl:justify-between gap-y-20 gap-x-20 xl:gap-x-0  mt-8"
+            initial={{ opacity: 0, y: "-10%" }}
+            animate={isRefInView ? { opacity: 1, y: "0" } : {}}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
+            <div className="w-[300px] h-[300px] relative flex justify-center">
+              <Image
+                src={image2}
+                alt="Project image"
+                fill
+                object-fit="contain"
+                // style={{
+                //   width: "300px",
+                //   height: "auto",
+                // }}
+              />
+            </div>
 
-          <div className="w-[300px] h-[300px] relative flex justify-center">
-            <Image
-              src={image3}
-              alt="Project image"
-              fill
-              object-fit="contain"
-              // style={{
-              //   width: "300px",
-              //   height: "auto",
-              // }}
-            />
-          </div>
-          <div className="w-[300px] h-[300px] relative flex justify-center">
-            <Image
-              src={image4}
-              alt="Project image"
-              fill
-              object-fit="contain"
-              // style={{
-              //   width: "300px",
-              //   height: "auto",
-              // }}
-            />
-          </div>
-          <div className="w-[300px] h-[300px] relative flex justify-center">
-            <Image
-              src={image5}
-              alt="Project image"
-              fill
-              object-fit="contain"
-              // style={{
-              //   width: "300px",
-              //   height: "auto",
-              // }}
-            />
-          </div>
+            <div className="w-[300px] h-[300px] relative flex justify-center">
+              <Image
+                src={image3}
+                alt="Project image"
+                fill
+                object-fit="contain"
+                // style={{
+                //   width: "300px",
+                //   height: "auto",
+                // }}
+              />
+            </div>
+            <div className="w-[300px] h-[300px] relative flex justify-center">
+              <Image
+                src={image4}
+                alt="Project image"
+                fill
+                object-fit="contain"
+                // style={{
+                //   width: "300px",
+                //   height: "auto",
+                // }}
+              />
+            </div>
+            <div className="w-[300px] h-[300px] relative flex justify-center">
+              <Image
+                src={image5}
+                alt="Project image"
+                fill
+                object-fit="contain"
+                // style={{
+                //   width: "300px",
+                //   height: "auto",
+                // }}
+              />
+            </div>
+          </motion.div>
         </div>
         <div className="mt-11 flex justify-center lg:justify-end">
           <Link
