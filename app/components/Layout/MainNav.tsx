@@ -3,7 +3,6 @@
 import { Link, useRouter } from "@/lib/navigation";
 import { useLocale, useTranslations } from "next-intl";
 
-import LocaleSwitcher from "../Common/LocaleSwitcher";
 import athena from "next/font/local";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
@@ -20,12 +19,12 @@ export default function MainNav(): JSX.Element {
   const router = useRouter();
   const [currentLanguage, setCurrentLanguage] = useState(locale);
 
-  // console.log(url?.pathname);
-  // const changeLocale = (): void => {
-  //   const newLanguage = currentLanguage === "bg" ? "en" : "bg";
-  //   setCurrentLanguage(newLanguage);
-  //   router.replace(`${url?.pathname}`);
-  // };
+  console.log(url?.pathname);
+  const changeLocale = (): void => {
+    const newLanguage = currentLanguage === "bg" ? "en" : "bg";
+    setCurrentLanguage(newLanguage);
+    router.replace(`${url?.pathname}`);
+  };
 
   const links = [
     { href: "/", label: t("nav.home") },
@@ -55,8 +54,7 @@ export default function MainNav(): JSX.Element {
           </Link>
         );
       })}
-      <LocaleSwitcher />
-      {/* <button
+      <button
         onClick={changeLocale}
         className={cn(
           "w-[50px] h=[35px] drop-shadow-sm text-xl bg-[#F7F4F1]",
@@ -64,7 +62,7 @@ export default function MainNav(): JSX.Element {
         )}
       >
         {locale === "bg" ? "EN" : "BG"}
-      </button> */}
+      </button>
     </nav>
   );
 }
