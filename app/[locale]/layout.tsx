@@ -92,12 +92,12 @@ export async function generateMetadata({
     },
   };
 
-  // const metadataBase = new URL(
-  //   `https://snezhana-aleksieva.vercel.app/${locale === "en" ? "/en" : "/"}`
-  // );
   const metadataBase = new URL(
-    `https://localhost:3000/${locale === "en" ? "/en" : "/"}`
+    `https://snezhana-aleksieva.vercel.app/${locale === "en" ? "/en" : "/"}`
   );
+  // const metadataBase = new URL(
+  //   `https://localhost:3000/${locale === "en" ? "/en" : "/"}`
+  // );
 
   return {
     title,
