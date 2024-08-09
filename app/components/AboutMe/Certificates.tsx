@@ -36,7 +36,7 @@ export default function Certificates(): JSX.Element {
                 src={image1}
                 alt="Certificate image"
                 style={{
-                  minWidth: "200px",
+                  width: "200px",
                   height: "auto",
                 }}
               />
@@ -48,7 +48,7 @@ export default function Certificates(): JSX.Element {
                 src={image2}
                 alt="Certificate image"
                 style={{
-                  minWidth: "200px",
+                  width: "200px",
                   height: "auto",
                 }}
               />
@@ -60,7 +60,7 @@ export default function Certificates(): JSX.Element {
                 src={image3}
                 alt="Certificate image"
                 style={{
-                  minWidth: "200px",
+                  width: "200px",
                   height: "auto",
                 }}
               />

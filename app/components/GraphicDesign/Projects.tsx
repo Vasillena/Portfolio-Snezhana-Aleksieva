@@ -6,7 +6,19 @@ import image12 from "@/public/gd-12.png";
 import image13 from "@/public/gd-13.png";
 import image14 from "@/public/gd-14.png";
 import image15 from "@/public/gd-15.png";
+import image16 from "@/public/gd-25.png";
+import image17 from "@/public/gd-26.png";
+import image18 from "@/public/gd-27.png";
+import image19 from "@/public/gd-28.png";
 import image2 from "@/public/gd-2.png";
+import image20 from "@/public/gd-29.png";
+import image21 from "@/public/gd-30.png";
+import image22 from "@/public/gd-31.png";
+import image23 from "@/public/gd-32.png";
+import image24 from "@/public/gd-33.png";
+import image25 from "@/public/gd-34.png";
+import image26 from "@/public/gd-35.png";
+import image27 from "@/public/gd-36.png";
 import image3 from "@/public/gd-3.png";
 import image4 from "@/public/gd-4.png";
 import image5 from "@/public/gd-5.png";
@@ -29,6 +41,46 @@ export default function Projects(): JSX.Element {
         image1={image1}
         image2={image2}
         image3={image3}
+      />
+      <ProjectsCard
+        title={t("graphic-design.card-6")}
+        text={t("graphic-design.card-6-text")}
+        href={
+          "https://www.behance.net/gallery/205118819/Aurora-Hotel-Restaurant-Logo-Design"
+        }
+        image1={image16}
+        image2={image17}
+        image3={image18}
+      />
+      <ProjectsCard
+        title={t("graphic-design.card-7")}
+        text={t("graphic-design.card-7-text")}
+        href={
+          "https://www.behance.net/gallery/204968805/New-Moon-Book-Cover-Design"
+        }
+        image1={image19}
+        image2={image20}
+        image3={image21}
+      />
+      <ProjectsCard
+        title={t("graphic-design.card-8")}
+        text={t("graphic-design.card-8-text")}
+        href={
+          "https://www.behance.net/gallery/204968409/Fantasy-Book-Cover-Design"
+        }
+        image1={image22}
+        image2={image23}
+        image3={image24}
+      />
+      <ProjectsCard
+        title={t("graphic-design.card-9")}
+        text={t("graphic-design.card-9-text")}
+        href={
+          "https://www.behance.net/gallery/205123379/Music-Cover-part-of-my-Photoshop-homework"
+        }
+        image1={image25}
+        image2={image26}
+        image3={image27}
       />
       <ProjectsCard
         title={t("graphic-design.card-2")}

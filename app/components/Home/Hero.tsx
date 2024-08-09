@@ -8,9 +8,8 @@ import athena from "next/font/local";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/welcome.svg";
-import image2 from "@/public/hero-1.png";
+import image2 from "@/public/hero-1.json";
 import image3 from "@/public/welcome-2.svg";
-import image4 from "@/public/hero-11.json";
 
 const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
@@ -83,7 +82,7 @@ export default function Hero(): JSX.Element {
             // }
           /> */}
           <Lottie
-            animationData={image4}
+            animationData={image2}
             play
             loop
             style={{ width: "446px", height: "723px" }}
