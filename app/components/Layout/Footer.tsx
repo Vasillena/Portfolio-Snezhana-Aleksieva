@@ -9,6 +9,7 @@ import athena from "next/font/local";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/dots.svg";
+import image10 from "@/public/hero-6.png";
 import image2 from "@/public/icon-1.svg";
 import image3 from "@/public/icon-2.svg";
 import image4 from "@/public/icon-3.svg";
@@ -41,14 +42,14 @@ export default function Footer(): JSX.Element {
   return (
     <div
       className={cn(
-        pathname === "/contacts" && "flex flex-col min-h-[calc(100vh-64px)]",
+        pathname === "/contacts" && "flex flex-col min-h-screen",
         pathname === "/thank-you" && !knownPaths.includes(pathname) && "hidden"
       )}
     >
       <div
         className={cn(
           "max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 py-24",
-          pathname === "/contacts" && "my-auto"
+          pathname === "/contacts" && "my-auto py-0 pt-44"
         )}
       >
         <div>
@@ -67,7 +68,7 @@ export default function Footer(): JSX.Element {
               }}
             />
           </div>
-          <div className="mt-0 md:mt-16 flex flex-col items-center xl:items-start">
+          <div className="mt-0 md:mt-[72px] flex flex-col items-center xl:items-start">
             <h2
               className={cn(
                 "text-3xl min-[400px]:text-4xl  lg:text-[40px] mb-3",
@@ -141,7 +142,12 @@ export default function Footer(): JSX.Element {
             <FooterForm />
           </div>
         </div>
-        <div className="hidden xl:inline-block justify-self-end mt-20 lg:mt-5">
+        <div
+          className={cn(
+            "hidden xl:inline-block justify-self-end mt-20 lg:mt-5",
+            pathname === "/contacts" && "xl:hidden"
+          )}
+        >
           <Image
             src={image7}
             alt="Text image"
@@ -150,6 +156,23 @@ export default function Footer(): JSX.Element {
               width: "286px",
               height: "auto",
             }}
+          />
+        </div>
+        <div
+          className={cn(
+            "hidden xl:inline-block w-[320px] h-[670px] justify-self-end relative -top-64",
+            pathname !== "/contacts" && "xl:hidden"
+          )}
+        >
+          <Image
+            src={image10}
+            alt="Decor image"
+            fill
+            object-fit="contain"
+            // style={{
+            //   width: "374px",
+            //   height: "auto",
+            // }}
           />
         </div>
       </div>

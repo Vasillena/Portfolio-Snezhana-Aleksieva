@@ -70,18 +70,18 @@ export default function Navbar(): JSX.Element {
         className={cn(
           " max-w-7xl hidden fixed top-0 left-0 right-0 mx-auto sm:block z-50",
           isScrolled
-            ? "transition-all duration-500 bg-[#f9f7f4] border-b border-[#f2eee9] rounded-b-full"
+            ? "transition-all duration-500 bg-[#f9f7f4] border-b border-[#f2eee9] rounded-b-full px-8"
             : "transition-all duration-500"
         )}
       >
-        <div className="px-4 sm:px-6 lg:px-8 flex h-16 items-center">
+        <div className="px-4 sm:px-6 lg:px-0 flex h-16 items-center">
           <Link href="/" className="ml-4 flex lg:ml-0 gap-x-2">
             <Image
               src={logo}
               alt="Logo"
               priority
               style={{
-                width: "100%",
+                width: "171px",
                 height: "auto",
               }}
             />

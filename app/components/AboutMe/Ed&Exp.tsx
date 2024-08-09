@@ -23,7 +23,7 @@ export default function EdExp(): JSX.Element {
               <div>
                 <h2
                   className={cn(
-                    "hidden sm:block text-3xl min-[400px]:text-4xl lg:text-[40px]",
+                    "hidden sm:block text-3xl min-[400px]:text-4xl lg:text-[40px] -ml-10",
                     myFont.className
                   )}
                 >
@@ -31,7 +31,7 @@ export default function EdExp(): JSX.Element {
                 </h2>
               </div>
             </div>
-            <div className="absolute w-[240px] top-1/2 transform -translate-y-1/2 right-full mr-20 sm:mr-10">
+            <div className="absolute w-[240px] top-1/2 transform -translate-y-1/2 right-full mr-10 sm:mr-10">
               <div>
                 <h2
                   className={cn(

@@ -17,7 +17,7 @@ export default function FooterForm(): JSX.Element {
               name="name"
               aria-label="Full Name"
               required
-              className="block px-2.5 pb-1.5 pt-3 w-[340px] sm:w-[412px] bg-transparent rounded-lg border border-[#B0752A] appearance-none focus:outline-none focus:ring-0 peer"
+              className="block px-2.5 pb-1.5 pt-3 w-[340px] sm:w-[412px] bg-transparent rounded border border-[#B0752A] appearance-none focus:outline-none focus:ring-0 peer"
               placeholder=""
             />
             <label
@@ -34,7 +34,7 @@ export default function FooterForm(): JSX.Element {
               name="email"
               aria-label="Email"
               required
-              className="block px-2.5 pb-1.5 pt-3 w-[340px] sm:w-[412px]  bg-transparent rounded-lg border border-[#B0752A] appearance-none focus:outline-none focus:ring-0 peer"
+              className="block px-2.5 pb-1.5 pt-3 w-[340px] sm:w-[412px]  bg-transparent rounded border border-[#B0752A] appearance-none focus:outline-none focus:ring-0 peer"
               placeholder=""
             />
             <label
@@ -51,7 +51,7 @@ export default function FooterForm(): JSX.Element {
               name="subject"
               aria-label="Subject"
               required
-              className="block px-2.5 pb-1.5 pt-3 w-[340px] sm:w-[412px]  bg-transparent rounded-lg border border-[#B0752A] appearance-none focus:outline-none focus:ring-0 peer"
+              className="block px-2.5 pb-1.5 pt-3 w-[340px] sm:w-[412px]  bg-transparent rounded border border-[#B0752A] appearance-none focus:outline-none focus:ring-0 peer"
               placeholder=""
             />
             <label
@@ -71,7 +71,7 @@ export default function FooterForm(): JSX.Element {
               rows={4}
               placeholder=""
               required
-              className="block px-2.5 pb-1.5 pt-3 w-[340px] sm:w-[412px] bg-transparent rounded-lg border border-[#B0752A] appearance-none focus:outline-none focus:ring-0 peer resize-none"
+              className="block px-2.5 pb-1.5 pt-3 w-[340px] sm:w-[412px] bg-transparent rounded border border-[#B0752A] appearance-none focus:outline-none focus:ring-0 peer resize-none"
             />
             <label
               htmlFor="message"

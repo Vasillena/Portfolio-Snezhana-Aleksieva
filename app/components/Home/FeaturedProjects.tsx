@@ -32,7 +32,7 @@ export default function FeaturedProjects(): JSX.Element {
             {t("home.title-3")}
           </h2>
           <Image
-            src={locale === "en" ? image2 : image6}
+            src={locale === "en" ? image1 : image6}
             alt="Text image"
             className={locale === "en" ? "mt-[28px] sm:mt-[38px]" : "mt-[10px]"}
             style={{
@@ -101,7 +101,7 @@ export default function FeaturedProjects(): JSX.Element {
             href="/portfolio"
             className="text-lg sm:text-xl text-[#B0752A] font-bold hover:text-[#415064]"
           >
-            {t("home.text-9")}
+            {t("home.text-10")}
           </Link>
         </div>
       </div>

@@ -62,28 +62,28 @@ export default function AboutMe(): JSX.Element {
             }}
           />
         </div>
-        <div className="hidden md:block">
+        <div className="hidden xl:block">
           <h2 className="text-lg sm:text-2xl font-bold mt-16 sm:leading-[26px]">
-            {t("home.text-3")}
-          </h2>
-          <h2 className="text-lg sm:text-2xl font-bold sm:leading-[26px]">
             {t("home.text-4")}
           </h2>
-        </div>
-        <div className="md:hidden">
-          <h2 className="text-lg sm:text-2xl font-bold mt-16 sm:leading-[26px]">
+          <h2 className="text-lg sm:text-2xl font-bold sm:leading-[26px]">
             {t("home.text-5")}
+          </h2>
+        </div>
+        <div className="xl:hidden">
+          <h2 className="text-lg sm:text-2xl font-bold mt-16 sm:leading-[26px]">
+            {t("home.text-6")}
           </h2>
         </div>
 
         <p className="text-lg sm:text-2xl mt-4 sm:leading-[26px]">
-          {t("home.text-6")}
-        </p>
-        <p className="text-lg sm:text-2xl sm:leading-[26px]">
           {t("home.text-7")}
         </p>
         <p className="text-lg sm:text-2xl sm:leading-[26px]">
           {t("home.text-8")}
+        </p>
+        <p className="text-lg sm:text-2xl sm:leading-[26px]">
+          {t("home.text-9")}
         </p>
         <div className="flex justify-center lg:justify-start mt-16 text-center lg:text-left">
           <MainButton
