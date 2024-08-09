@@ -1,3 +1,5 @@
+import { useLocale, useTranslations } from "next-intl";
+
 import Image from "next/image";
 import Link from "next/link";
 import athena from "next/font/local";
@@ -9,18 +11,14 @@ import image3 from "@/public/fproject-2.png";
 import image4 from "@/public/fproject-3.png";
 import image5 from "@/public/fproject-4.png";
 import image6 from "@/public/projects-2.svg";
-import { useTranslations } from "next-intl";
 
 const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
-export default function FeaturedProjects({
-  params: { locale },
-}: {
-  params: { locale: string };
-}): JSX.Element {
-  const myFont = locale === "en" ? athenaFont : blackSansFont;
+export default function FeaturedProjects(): JSX.Element {
+  const locale = useLocale();
   const t = useTranslations();
+  const myFont = locale === "en" ? athenaFont : blackSansFont;
   return (
     <div className="max-w-full mt-24 bg-[#F2EEE9] px-2">
       <div className=" max-w-7xl mx-auto py-11">

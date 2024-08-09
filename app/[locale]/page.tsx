@@ -23,7 +23,7 @@ export default function HomePage(): JSX.Element {
   return (
     <>
       <MotionPageWrapper>
-        <Hero params={{ locale }} />
+        <Hero />
         <CreativeFields />
       </MotionPageWrapper>
       <div ref={aboutRef}>
@@ -32,7 +32,7 @@ export default function HomePage(): JSX.Element {
           animate={isAboutRefInView ? { opacity: 1, y: "0" } : {}}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <AboutMe params={{ locale }} />
+          <AboutMe />
         </motion.div>
       </div>
 
@@ -42,7 +42,7 @@ export default function HomePage(): JSX.Element {
           animate={isfeaturedProjectsRefInView ? { opacity: 1, y: "0" } : {}}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <FeaturedProjects params={{ locale }} />
+          <FeaturedProjects />
         </motion.div>
       </div>
     </>
