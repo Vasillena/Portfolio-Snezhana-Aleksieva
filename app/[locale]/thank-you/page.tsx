@@ -1,4 +1,4 @@
-import { useLocale, useTranslations } from "next-intl";
+import { getCurrentLocale, getI18n } from "@/locales/server";
 
 import Image from "next/image";
 import MainButton from "../../components/Common/MainButton";
@@ -7,9 +7,9 @@ import image2 from "@/public/thank-you.svg";
 import image3 from "@/public/dots.svg";
 import image4 from "@/public/thank-you-2.svg";
 
-export default function ThankYouPage(): JSX.Element {
-  const t = useTranslations();
-  const locale = useLocale();
+export default async function ThankYouPage(): Promise<JSX.Element> {
+  const locale = getCurrentLocale();
+  const t = await getI18n();
   return (
     <div className="max-w-7xl mx-auto flex flex-col items-center mb-10">
       <div className="self-end relative -top-32">

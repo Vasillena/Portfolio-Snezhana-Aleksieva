@@ -1,13 +1,11 @@
 import Image, { StaticImageData } from "next/image";
-import { useLocale, useTranslations } from "next-intl";
 
 import MainButton from "../Common/MainButton";
 import SecondaryButton from "../Common/SecondaryButton";
-import athena from "next/font/local";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
+import { getI18n } from "@/locales/server";
 
-const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
 interface PortfolioCardProps {
@@ -23,7 +21,7 @@ interface PortfolioCardProps {
   href: string;
 }
 
-export default function PortfolioCard({
+export default async function PortfolioCard({
   title1,
   title2,
   image,
@@ -34,10 +32,9 @@ export default function PortfolioCard({
   text3,
   text4,
   href,
-}: PortfolioCardProps): JSX.Element {
-  const locale = useLocale();
-  const t = useTranslations();
-  const myFont = locale === "en" ? athenaFont : blackSansFont;
+}: PortfolioCardProps): Promise<JSX.Element> {
+  const t = await getI18n();
+  const myFont = blackSansFont;
   return (
     <div className={cn("flex")}>
       <div className="z-10">

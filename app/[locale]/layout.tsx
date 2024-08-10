@@ -2,10 +2,9 @@ import "./globals.css";
 
 import Footer from "../components/Layout/Footer";
 import Navbar from "../components/Layout/Navbar";
-import { NextIntlClientProvider } from "next-intl";
+import { Provider } from "./provider";
 import { cn } from "@/lib/utils";
 import futura from "next/font/local";
-import { getMessages } from "next-intl/server";
 
 const myFont = futura({ src: "../../public/FuturaL.ttf" });
 
@@ -115,16 +114,14 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  const messages = await getMessages();
-
   return (
     <html lang={locale}>
       <body className={cn("px-2", myFont.className)}>
-        <NextIntlClientProvider messages={messages}>
+        <Provider locale={locale}>
           <Navbar />
           {children}
           <Footer />
-        </NextIntlClientProvider>
+        </Provider>
       </body>
     </html>
   );

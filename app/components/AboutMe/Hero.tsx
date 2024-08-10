@@ -1,24 +1,21 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
-import { useLocale, useTranslations } from "next-intl";
 
 import Image from "next/image";
 import MainButton from "../Common/MainButton";
-import athena from "next/font/local";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/hero-3.png";
 import image2 from "@/public/dots.svg";
+import { useI18n } from "@/locales/client";
 import { useRef } from "react";
 
-const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
 export default function Hero(): JSX.Element {
-  const locale = useLocale();
-  const t = useTranslations();
-  const myFont = locale === "en" ? athenaFont : blackSansFont;
+  const t = useI18n();
+  const myFont = blackSansFont;
 
   const ref = useRef(null);
   const isRefInView = useInView(ref);

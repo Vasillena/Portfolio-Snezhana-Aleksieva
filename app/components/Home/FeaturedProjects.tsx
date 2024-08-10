@@ -1,11 +1,10 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
-import { useLocale, useTranslations } from "next-intl";
+import { useCurrentLocale, useI18n } from "@/locales/client";
 
 import Image from "next/image";
-import { Link } from "@/lib/navigation";
-import athena from "next/font/local";
+import Link from "next/link";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/projects.svg";
@@ -16,13 +15,12 @@ import image5 from "@/public/fproject-4.png";
 import image6 from "@/public/projects-2.svg";
 import { useRef } from "react";
 
-const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
 export default function FeaturedProjects(): JSX.Element {
-  const locale = useLocale();
-  const t = useTranslations();
-  const myFont = locale === "en" ? athenaFont : blackSansFont;
+  const locale = useCurrentLocale();
+  const t = useI18n();
+  const myFont = blackSansFont;
 
   const ref = useRef(null);
   const isRefInView = useInView(ref);
@@ -42,7 +40,7 @@ export default function FeaturedProjects(): JSX.Element {
           <Image
             src={locale === "en" ? image1 : image6}
             alt="Text image"
-            className={locale === "en" ? "mt-[28px] sm:mt-[38px]" : "mt-[10px]"}
+            className={locale === "en" ? "mt-[28px] sm:mt-[30px]" : "mt-[10px]"}
             style={{
               width: locale === "en" ? "111px" : "197px",
               height: "auto",

@@ -1,58 +1,15 @@
-import createMiddleware from "next-intl/middleware";
-import { LocalePrefix } from "next-intl/routing";
+import { NextRequest } from "next/server";
+import { createI18nMiddleware } from "next-international/middleware";
 
-// export const localePrefix = "as-needed" satisfies LocalePrefix;
-export const localePrefix = "as-needed" satisfies LocalePrefix;
-
-export default createMiddleware({
-  // A list of all locales that are supported
+const I18nMiddleware = createI18nMiddleware({
   locales: ["en", "bg"],
-
-  // Used when no locale matches
   defaultLocale: "bg",
-  // localePrefix,
 });
 
+export function middleware(request: NextRequest) {
+  return I18nMiddleware(request);
+}
+
 export const config = {
-  // Match only internationalized pathnames
-  matcher: [
-    // Enable a redirect to a matching locale at the root
-    "/",
-    // Set a cookie to remember the previous locale for
-    // all requests that have a locale prefix
-    "/(nl|en)/:path*",
-    // Enable redirects that add missing locales
-    // (e.g. `/pathnames` -> `/en/pathnames`)
-    "/((?!_next|_vercel|.*\\..*).*)",
-  ],
+  matcher: ["/((?!api|static|.*\\..*|_next|favicon.ico|robots.txt).*)"],
 };
-
-// import createMiddleware from "next-intl/middleware";
-// import {
-//   defaultLocale,
-//   localePrefix,
-//   locales,
-//   pathnames,
-// } from "@/constants/config";
-
-// export default createMiddleware({
-//   defaultLocale,
-//   locales,
-//   pathnames,
-//   localePrefix,
-// });
-
-// export const config = {
-//   matcher: [
-//     // Enable a redirect to a matching locale at the root
-//     "/",
-
-//     // Set a cookie to remember the previous locale for
-//     // all requests that have a locale prefix
-//     "/(nl|en)/:path*",
-
-//     // Enable redirects that add missing locales
-//     // (e.g. `/pathnames` -> `/en/pathnames`)
-//     "/((?!_next|_vercel|.*\\..*).*)",
-//   ],
-// };

@@ -1,4 +1,4 @@
-import { Link } from "@/lib/navigation";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 interface MainButtonProps {

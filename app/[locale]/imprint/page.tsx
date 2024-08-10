@@ -1,18 +1,14 @@
 import Image from "next/image";
 import MainButton from "../../components/Common/MainButton";
-import athena from "next/font/local";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/hero-5.png";
 import image2 from "@/public/dots.svg";
-import { useLocale } from "next-intl";
 
-const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
 export default function ImprintPage(): JSX.Element {
-  const locale = useLocale();
-  const myFont = locale === "en" ? athenaFont : blackSansFont;
+  const myFont = blackSansFont;
   return (
     <div className="max-w-7xl mx-auto flex flex-col items-center mb-10">
       <div className="self-end relative -top-32">

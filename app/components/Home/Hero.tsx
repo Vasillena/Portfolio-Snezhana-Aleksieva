@@ -1,13 +1,12 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
-import { useLocale, useTranslations } from "next-intl";
+import { useCurrentLocale, useI18n } from "@/locales/client";
 
 import Image from "next/image";
 import Lottie from "react-lottie-player";
 import MainButton from "../Common/MainButton";
 import SecondaryButton from "../Common/SecondaryButton";
-import athena from "next/font/local";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/welcome.svg";
@@ -15,13 +14,12 @@ import image2 from "@/public/hero-1.json";
 import image3 from "@/public/welcome-2.svg";
 import { useRef } from "react";
 
-const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
 export default function Hero(): JSX.Element {
-  const locale = useLocale();
-  const t = useTranslations();
-  const myFont = locale === "en" ? athenaFont : blackSansFont;
+  const locale = useCurrentLocale();
+  const t = useI18n();
+  const myFont = blackSansFont;
 
   const ref = useRef(null);
   const isRefInView = useInView(ref);

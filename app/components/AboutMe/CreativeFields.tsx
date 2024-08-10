@@ -1,17 +1,13 @@
-import { useLocale, useTranslations } from "next-intl";
-
 import CreativeAndSoftSkillsCard from "./CreativeAndSoftSkillsCard";
-import athena from "next/font/local";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
+import { getI18n } from "@/locales/server";
 
-const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
-export default function CreativeFields(): JSX.Element {
-  const locale = useLocale();
-  const t = useTranslations();
-  const myFont = locale === "en" ? athenaFont : blackSansFont;
+export default async function CreativeFields(): Promise<JSX.Element> {
+  const t = await getI18n();
+  const myFont = blackSansFont;
   return (
     <div className="mt-[100px]">
       <div>

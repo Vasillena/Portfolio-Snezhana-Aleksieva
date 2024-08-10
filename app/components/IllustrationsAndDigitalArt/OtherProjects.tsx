@@ -1,10 +1,10 @@
 import PortfolioCard from "../Portfolio/PortfolioCard";
+import { getI18n } from "@/locales/server";
 import image1 from "@/public/portfolio-card-1.png";
 import image2 from "@/public/portfolio-card-2.png";
-import { useTranslations } from "next-intl";
 
-export default function OtherProjects(): JSX.Element {
-  const t = useTranslations();
+export default async function OtherProjects(): Promise<JSX.Element> {
+  const t = await getI18n();
   return (
     <div className="max-w-full mt-24 bg-[#F2EEE9]">
       <div className=" max-w-7xl mx-auto py-11">

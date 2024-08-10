@@ -1,11 +1,8 @@
 import Image, { StaticImageData } from "next/image";
 
-import athena from "next/font/local";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
-import { useLocale } from "next-intl";
 
-const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
 interface CreativeFieldCardProps {
@@ -19,8 +16,7 @@ export default function CreativeFieldsCard({
   paragraph1,
   paragraph2,
 }: CreativeFieldCardProps): JSX.Element {
-  const locale = useLocale();
-  const myFont = locale === "en" ? athenaFont : blackSansFont;
+  const myFont = blackSansFont;
   return (
     <div className="flex justify-center items-center gap-4 ">
       <div className="w-[62px] h-[62px] sm:w-[92px] sm:h-[92px] relative">

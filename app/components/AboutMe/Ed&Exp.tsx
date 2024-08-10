@@ -1,18 +1,14 @@
-import { useLocale, useTranslations } from "next-intl";
-
 import Education from "./Education";
 import Experience from "./Experience";
-import athena from "next/font/local";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
+import { getI18n } from "@/locales/server";
 
-const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
-export default function EdExp(): JSX.Element {
-  const locale = useLocale();
-  const t = useTranslations();
-  const myFont = locale === "en" ? athenaFont : blackSansFont;
+export default async function EdExp(): Promise<JSX.Element> {
+  const t = await getI18n();
+  const myFont = blackSansFont;
   return (
     <>
       <div className="ml-72 sm:ml-0">

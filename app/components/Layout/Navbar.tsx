@@ -1,9 +1,9 @@
 "use client";
 
-import { Link, usePathname } from "@/lib/navigation";
 import { useEffect, useState } from "react";
 
 import Image from "next/image";
+import Link from "next/link";
 import MainNav from "./MainNav";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/icon-1.svg";
@@ -13,27 +13,23 @@ import image4 from "@/public/icon-4.svg";
 import image5 from "@/public/menu.svg";
 import image6 from "@/public/close.svg";
 import logo from "@/public/logo.svg";
+import { useCurrentLocale } from "@/locales/client";
+import { usePathname } from "next/navigation";
 
-const knownPaths = [
-  "/",
-  "/about",
-  "/contacts",
-  "/portfolio",
-  "/portfolio/graphic-design",
-  "/portfolio/ui-ux-design",
-  "/portfolio/illustrations-and-digital-art",
-  "/privacy-policy",
-  "/en",
-  "/en/about",
-  "/en/contacts",
-  "/en/portfolio",
-  "/en/portfolio/graphic-design",
-  "/en/portfolio/ui-ux-design",
-  "/en/portfolio/illustrations-and-digital-art",
-  "/en/privacy-policy",
-];
+// const knownPaths = [
+//   "/",
+//   "/about",
+//   "/contacts",
+//   "/portfolio",
+//   "/portfolio/graphic-design",
+//   "/portfolio/ui-ux-design",
+//   "/portfolio/illustrations-and-digital-art",
+//   "/privacy-policy",
+//   "/cookie-policy",
+// ];
 
 export default function Navbar(): JSX.Element {
+  const locale = useCurrentLocale();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -62,7 +58,8 @@ export default function Navbar(): JSX.Element {
     <div
       className={cn(
         " max-w-7xl mx-auto",
-        pathname === "/thank-you" && !knownPaths.includes(pathname) && "hidden"
+        pathname === `/${locale}/thank-you` && "hidden",
+        pathname === `/${locale}/imprint` && "hidden"
       )}
     >
       <div

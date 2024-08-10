@@ -5,10 +5,10 @@ import image2 from "@/public/cards-2.svg";
 import image3 from "@/public/cards-3.svg";
 import image4 from "@/public/cards-4.svg";
 import image5 from "@/public/dots.svg";
-import { useTranslations } from "next-intl";
+import { useI18n } from "@/locales/client";
 
 export default function CreativeFields(): JSX.Element {
-  const t = useTranslations();
+  const t = useI18n();
   return (
     <>
       <div className="max-w-7xl mx-auto mt-16 xl:-mt-16 flex justify-center lg:justify-start">

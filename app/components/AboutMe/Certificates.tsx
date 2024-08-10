@@ -1,25 +1,22 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
-import { useLocale, useTranslations } from "next-intl";
 
 import Image from "next/image";
-import { Link } from "@/lib/navigation";
-import athena from "next/font/local";
+import Link from "next/link";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/certificate-1.png";
 import image2 from "@/public/certificate-2.png";
 import image3 from "@/public/certificate-3.png";
+import { useI18n } from "@/locales/client";
 import { useRef } from "react";
 
-const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
 export default function Certificates(): JSX.Element {
-  const locale = useLocale();
-  const t = useTranslations();
-  const myFont = locale === "en" ? athenaFont : blackSansFont;
+  const t = useI18n();
+  const myFont = blackSansFont;
 
   const ref = useRef(null);
   const isRefInView = useInView(ref);

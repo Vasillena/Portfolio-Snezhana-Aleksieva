@@ -12,7 +12,7 @@ import { useRef } from "react";
 
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
-export default function PrivacyPolicyPage(): JSX.Element {
+export default function CookiePolicyPage(): JSX.Element {
   const t = useI18n();
   const myFont = blackSansFont;
 
@@ -33,7 +33,7 @@ export default function PrivacyPolicyPage(): JSX.Element {
                 myFont.className
               )}
             >
-              {t("privacy-policy.title")}
+              {t("cookie-policy.title")}
             </h1>
           </motion.div>
         </div>
@@ -62,110 +62,72 @@ export default function PrivacyPolicyPage(): JSX.Element {
       </div>
       <div className="max-w-7xl mx-auto mt-20">
         <div>
-          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
-            {t("privacy-policy.text-1")}
-          </h2>
           <p className="text-lg sm:text-2xl mt-4">
-            {t("privacy-policy.text-2")}
+            {t("cookie-policy.text-1")}
+          </p>
+          <p className="text-lg sm:text-2xl mt-4">
+            {t("cookie-policy.text-2")}
           </p>
         </div>
+
         <div className="mt-10">
           <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
-            {t("privacy-policy.text-3")}
+            {t("cookie-policy.text-3")}
           </h2>
+          <p className="text-lg sm:text-2xl mt-4">
+            {t("cookie-policy.text-4")}
+          </p>
+        </div>
+
+        <div className="mt-10">
+          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
+            {t("cookie-policy.text-5")}
+          </h2>
+          <p className="text-lg sm:text-2xl mt-4">
+            {t("cookie-policy.text-6")}
+          </p>
           <div className="flex items-center">
             <div className="w-[5px] h-[5px] bg-[#415064] rounded-full mr-3" />
             <p className="text-lg sm:text-2xl mt-4">
-              {t("privacy-policy.text-4")}
+              {t("cookie-policy.text-7")}
             </p>
           </div>
           <div className="flex items-center">
             <div className="w-[5px] h-[5px] bg-[#415064] rounded-full mr-3" />
-            <p className="text-lg sm:text-2xl">{t("privacy-policy.text-5")}</p>
+            <p className="text-lg sm:text-2xl">{t("cookie-policy.text-8")}</p>
           </div>
         </div>
+
         <div className="mt-10">
           <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
-            {t("privacy-policy.text-6")}
+            {t("cookie-policy.text-9")}
           </h2>
-          <p className="text-lg sm:text-2xl mt-4">
-            {t("privacy-policy.text-7")}
-          </p>
-        </div>
-        <div className="mt-10">
-          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
-            {t("privacy-policy.text-8")}
-          </h2>
-          <p className="text-lg sm:text-2xl mt-4">
-            {t("privacy-policy.text-9")}
-          </p>
-        </div>
-        <div className="mt-10">
-          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
-            {t("privacy-policy.text-10")}
-          </h2>
-          <p className="text-lg sm:text-2xl mt-4">
-            {t("privacy-policy.text-11")}
-          </p>
-        </div>
-        <div className="mt-10">
-          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
-            {t("privacy-policy.text-12")}
-          </h2>
-          <p className="text-lg sm:text-2xl mt-4">
-            {t("privacy-policy.text-13")}
-          </p>
-        </div>
-        <div className="mt-10">
-          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
-            {t("privacy-policy.text-14")}
-          </h2>
-          <p className="text-lg sm:text-2xl mt-4">
-            {t("privacy-policy.text-15")}
-          </p>
+
           <div className="flex items-center">
             <div className="w-[5px] h-[5px] bg-[#415064] rounded-full mr-3" />
-            <p className="text-lg sm:text-2xl">{t("privacy-policy.text-16")}</p>
+            <p className="text-lg sm:text-2xl"> {t("cookie-policy.text-10")}</p>
           </div>
           <div className="flex items-center">
             <div className="w-[5px] h-[5px] bg-[#415064] rounded-full mr-3" />
-            <p className="text-lg sm:text-2xl">{t("privacy-policy.text-17")}</p>
-          </div>
-          <div className="flex items-center">
-            <div className="w-[5px] h-[5px] bg-[#415064] rounded-full mr-3" />
-            <p className="text-lg sm:text-2xl">{t("privacy-policy.text-18")}</p>
+            <p className="text-lg sm:text-2xl"> {t("cookie-policy.text-11")}</p>
           </div>
         </div>
+
         <div className="mt-10">
           <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
-            {t("privacy-policy.text-19")}
+            {t("cookie-policy.text-12")}
           </h2>
           <p className="text-lg sm:text-2xl mt-4">
-            {t("privacy-policy.text-20")}
-          </p>
-          <div className="flex items-center">
-            <div className="w-[5px] h-[5px] bg-[#415064] rounded-full mr-3" />
-            <p className="text-lg sm:text-2xl">{t("privacy-policy.text-21")}</p>
-          </div>
-          <div className="flex items-center">
-            <div className="w-[5px] h-[5px] bg-[#415064] rounded-full mr-3" />
-            <p className="text-lg sm:text-2xl">{t("privacy-policy.text-22")}</p>
-          </div>
-        </div>
-        <div className="mt-10">
-          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
-            {t("privacy-policy.text-23")}
-          </h2>
-          <p className="text-lg sm:text-2xl mt-4">
-            {t("privacy-policy.text-24")}
+            {t("cookie-policy.text-13")}
           </p>
         </div>
+
         <div className="mt-10">
           <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
-            {t("privacy-policy.text-25")}
+            {t("cookie-policy.text-14")}
           </h2>
           <p className="text-lg sm:text-2xl mt-4">
-            {t("privacy-policy.text-26")}
+            {t("cookie-policy.text-15")}
           </p>
         </div>
       </div>

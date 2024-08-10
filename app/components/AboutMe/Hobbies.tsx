@@ -1,9 +1,7 @@
-import { useLocale, useTranslations } from "next-intl";
-
 import HobbiesCard from "./HobbiesCard";
-import athena from "next/font/local";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
+import { getI18n } from "@/locales/server";
 import image1 from "@/public/hobby-1.svg";
 import image2 from "@/public/hobby-2.svg";
 import image3 from "@/public/hobby-3.svg";
@@ -12,13 +10,11 @@ import image5 from "@/public/hobby-5.svg";
 import image6 from "@/public/hobby-6.svg";
 import image7 from "@/public/hobby-7.svg";
 
-const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
-export default function Hobbies(): JSX.Element {
-  const locale = useLocale();
-  const t = useTranslations();
-  const myFont = locale === "en" ? athenaFont : blackSansFont;
+export default async function Hobbies(): Promise<JSX.Element> {
+  const t = await getI18n();
+  const myFont = blackSansFont;
   return (
     <div className="mt-36 xl:mt-[72px] flex flex-col items-center xl:items-start">
       <div>

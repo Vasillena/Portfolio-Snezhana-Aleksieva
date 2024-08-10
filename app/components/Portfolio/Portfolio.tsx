@@ -1,11 +1,11 @@
 import PortfolioCard from "./PortfolioCard";
+import { getI18n } from "@/locales/server";
 import image1 from "@/public/portfolio-card-1.png";
 import image2 from "@/public/portfolio-card-2.png";
 import image3 from "@/public/portfolio-card-3.png";
-import { useTranslations } from "next-intl";
 
-export default function Portfolio(): JSX.Element {
-  const t = useTranslations();
+export default async function Portfolio(): Promise<JSX.Element> {
+  const t = await getI18n();
   return (
     <div className="max-w-7xl mx-auto mt-20 flex flex-wrap justify-center xl:justify-between gap-28">
       <PortfolioCard

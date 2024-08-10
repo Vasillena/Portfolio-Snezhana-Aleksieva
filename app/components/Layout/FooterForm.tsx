@@ -1,7 +1,7 @@
-import { useTranslations } from "next-intl";
+import { useI18n } from "@/locales/client";
 
 export default function FooterForm(): JSX.Element {
-  const t = useTranslations();
+  const t = useI18n();
   return (
     <div className="mt-3 flex flex-col items-center lg:items-start">
       <form

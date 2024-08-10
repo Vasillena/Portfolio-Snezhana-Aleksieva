@@ -1,12 +1,11 @@
 "use client";
 
-import { Link, usePathname } from "@/lib/navigation";
 import { motion, useInView } from "framer-motion";
-import { useLocale, useTranslations } from "next-intl";
+import { useCurrentLocale, useI18n } from "@/locales/client";
 
 import FooterForm from "./FooterForm";
 import Image from "next/image";
-import athena from "next/font/local";
+import Link from "next/link";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/dots.svg";
@@ -19,49 +18,59 @@ import image6 from "@/public/connect.svg";
 import image7 from "@/public/footer.svg";
 import image8 from "@/public/cookie.svg";
 import image9 from "@/public/connect-2.svg";
+import { usePathname } from "next/navigation";
 import { useRef } from "react";
 
-const athenaFont = athena({ src: "../../../public/Athena-Regular.ttf" });
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
-const knownPaths = [
-  "/",
-  "/about",
-  "/contacts",
-  "/portfolio",
-  "/portfolio/graphic-design",
-  "/portfolio/ui-ux-design",
-  "/portfolio/illustrations-and-digital-art",
-  "/privacy-policy",
-];
-
 export default function Footer(): JSX.Element {
-  const locale = useLocale();
-  const t = useTranslations();
-  const myFont = locale === "en" ? athenaFont : blackSansFont;
+  const locale = useCurrentLocale();
+  const t = useI18n();
+  const myFont = blackSansFont;
   const pathname = usePathname();
 
   const ref = useRef(null);
   const isRefInView = useInView(ref);
 
+  // console.log(pathname);
+
+  // const knownPaths = [
+  //   `/${locale}`,
+  //   `/${locale}/about`,
+  //   `/${locale}/contacts`,
+  //   `/${locale}/portfolio`,
+  //   `/${locale}/portfolio/graphic-design`,
+  //   `/${locale}/portfolio/ui-ux-design`,
+  //   `/${locale}/portfolio/illustrations-and-digital-art`,
+  //   `/${locale}/privacy-policy`,
+  //   `/${locale}/cookie-policy`,
+  // ];
+
+  // console.log(knownPaths);
+
+  // const localizedPaths = knownPaths.map((link) => `/${locale}${link}`);
+
   return (
     <div
       className={cn(
-        pathname === "/contacts" && "flex flex-col min-h-screen",
-        pathname === "/thank-you" && !knownPaths.includes(pathname) && "hidden"
+        pathname === `/${locale}/contacts` && " flex flex-col min-h-screen",
+        pathname === `/${locale}/thank-you` && "hidden",
+        pathname === `/${locale}/imprint` &&
+          // !knownPaths.includes(pathname) &&
+          "hidden"
       )}
     >
       <div
         className={cn(
           "max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 py-24",
-          pathname === "/contacts" && "my-auto py-0 pt-44"
+          pathname === `/${locale}/contacts` && "my-auto py-0 pt-44"
         )}
       >
         <div>
           <div
             className={cn(
               "mt-20 lg:mt-5 mb-12 flex justify-center xl:justify-start",
-              pathname === "/contacts" && "hidden lg:block"
+              pathname === `/${locale}/contacts` && "hidden lg:block"
             )}
           >
             <Image
@@ -160,7 +169,7 @@ export default function Footer(): JSX.Element {
         <div
           className={cn(
             "hidden xl:inline-block justify-self-end mt-20 lg:mt-5",
-            pathname === "/contacts" && "xl:hidden"
+            pathname === `/${locale}/contacts` && "xl:hidden"
           )}
         >
           <Image
@@ -176,7 +185,7 @@ export default function Footer(): JSX.Element {
         <div
           className={cn(
             "hidden xl:inline-block w-[320px] h-[670px] justify-self-end relative -top-64",
-            pathname !== "/contacts" && "xl:hidden"
+            pathname !== `/${locale}/contacts` && "xl:hidden"
           )}
         >
           <Image
@@ -191,7 +200,12 @@ export default function Footer(): JSX.Element {
           />
         </div>
       </div>
-      <div className={cn("max-w-full ", pathname === "/contacts" && "mt-auto")}>
+      <div
+        className={cn(
+          "max-w-full ",
+          pathname === `/${locale}/contacts` && "mt-auto"
+        )}
+      >
         <div className="flex justify-center items-center">
           <div className="max-w-[420px] w-3/12 h-[1px] bg-[#B0752A]" />
           <div className="flex gap-10 mx-20">
@@ -257,7 +271,10 @@ export default function Footer(): JSX.Element {
                 height: "auto",
               }}
             />
-            <p className="font-bold">Cookie Settings</p>
+            <Link href="/cookie-policy">
+              <p className="font-bold">Cookie Settings</p>
+            </Link>
+
             <p className="font-bold">|</p>
             <Link href="/privacy-policy">
               <p className="font-bold">Privacy Policy</p>

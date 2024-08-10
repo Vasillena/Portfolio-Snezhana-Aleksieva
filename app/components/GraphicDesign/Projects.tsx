@@ -1,4 +1,5 @@
 import ProjectsCard from "../Common/ProjectsCard";
+import { getI18n } from "@/locales/server";
 import image1 from "@/public/gd-1.png";
 import image10 from "@/public/gd-10.png";
 import image11 from "@/public/gd-11.png";
@@ -26,10 +27,9 @@ import image6 from "@/public/gd-6.png";
 import image7 from "@/public/gd-7.png";
 import image8 from "@/public/gd-8.png";
 import image9 from "@/public/gd-9.png";
-import { useTranslations } from "next-intl";
 
-export default function Projects(): JSX.Element {
-  const t = useTranslations();
+export default async function Projects(): Promise<JSX.Element> {
+  const t = await getI18n();
   return (
     <div className="max-w-7xl mx-auto mt-20">
       <ProjectsCard
