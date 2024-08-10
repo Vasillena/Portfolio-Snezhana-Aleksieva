@@ -13,7 +13,6 @@ interface PortfolioCardProps {
   title1: string;
   title2: string;
   image: StaticImageData;
-  // mx?: string;
   color: string;
   text1: string;
   text2: string;
@@ -26,7 +25,6 @@ export default async function PortfolioCard({
   title1,
   title2,
   image,
-  // mx,
   color,
   text1,
   text2,

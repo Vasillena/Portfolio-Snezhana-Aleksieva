@@ -39,7 +39,6 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
               width: locale === "en" ? "111px" : "197px",
               height: "auto",
               alignSelf: "flex-end",
-              // marginTop: "38px",
               marginLeft: "-50px",
               zIndex: 1,
             }}
@@ -53,10 +52,6 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
                 alt="Project image"
                 fill
                 object-fit="contain"
-                // style={{
-                //   width: "300px",
-                //   height: "auto",
-                // }}
               />
             </div>
           </Reveal>
@@ -67,10 +62,6 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
                 alt="Project image"
                 fill
                 object-fit="contain"
-                // style={{
-                //   width: "300px",
-                //   height: "auto",
-                // }}
               />
             </div>
           </Reveal>
@@ -82,10 +73,6 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
                 alt="Project image"
                 fill
                 object-fit="contain"
-                // style={{
-                //   width: "300px",
-                //   height: "auto",
-                // }}
               />
             </div>
           </Reveal>
@@ -96,10 +83,6 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
                 alt="Project image"
                 fill
                 object-fit="contain"
-                // style={{
-                //   width: "300px",
-                //   height: "auto",
-                // }}
               />
             </div>
           </Reveal>

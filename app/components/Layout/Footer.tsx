@@ -27,32 +27,12 @@ export default function Footer(): JSX.Element {
   const myFont = blackSansFont;
   const pathname = usePathname();
 
-  // console.log(pathname);
-
-  // const knownPaths = [
-  //   `/${locale}`,
-  //   `/${locale}/about`,
-  //   `/${locale}/contacts`,
-  //   `/${locale}/portfolio`,
-  //   `/${locale}/portfolio/graphic-design`,
-  //   `/${locale}/portfolio/ui-ux-design`,
-  //   `/${locale}/portfolio/illustrations-and-digital-art`,
-  //   `/${locale}/privacy-policy`,
-  //   `/${locale}/cookie-policy`,
-  // ];
-
-  // console.log(knownPaths);
-
-  // const localizedPaths = knownPaths.map((link) => `/${locale}${link}`);
-
   return (
     <div
       className={cn(
         pathname === `/${locale}/contacts` && " flex flex-col min-h-screen",
         pathname === `/${locale}/thank-you` && "hidden",
-        pathname === `/${locale}/imprint` &&
-          // !knownPaths.includes(pathname) &&
-          "hidden"
+        pathname === `/${locale}/imprint` && "hidden"
       )}
     >
       <div
@@ -62,21 +42,6 @@ export default function Footer(): JSX.Element {
         )}
       >
         <div>
-          {/* <div
-            className={cn(
-              "mt-20 lg:mt-5 mb-12 flex justify-center xl:justify-start",
-              pathname === `/${locale}/contacts` && "hidden lg:block"
-            )}
-          >
-            <Image
-              src={image1}
-              alt="Dots"
-              style={{
-                width: "160px",
-                height: "auto",
-              }}
-            />
-          </div> */}
           <div className="mt-0 md:mt-24 flex flex-col items-center xl:items-start">
             <h2
               className={cn(
@@ -144,7 +109,6 @@ export default function Footer(): JSX.Element {
                   width: locale == "en" ? "111px" : "104px",
                   height: "auto",
                   alignSelf: "flex-end",
-                  // marginTop: "30px",
                   marginLeft: "-20px",
                   zIndex: 1,
                 }}
@@ -177,16 +141,7 @@ export default function Footer(): JSX.Element {
             pathname !== `/${locale}/contacts` && "xl:hidden"
           )}
         >
-          <Image
-            src={image10}
-            alt="Decor image"
-            fill
-            object-fit="contain"
-            // style={{
-            //   width: "374px",
-            //   height: "auto",
-            // }}
-          />
+          <Image src={image10} alt="Decor image" fill object-fit="contain" />
         </div>
       </div>
       <div

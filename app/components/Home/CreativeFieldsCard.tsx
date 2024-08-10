@@ -27,10 +27,6 @@ export default function CreativeFieldsCard({
             alt="Creative field image"
             fill
             object-fit="contain"
-            // style={{
-            //   minWidth: "92px",
-            //   height: "auto",
-            // }}
           />
         </div>
         <div>

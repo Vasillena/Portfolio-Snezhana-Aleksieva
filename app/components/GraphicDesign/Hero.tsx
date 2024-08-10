@@ -37,16 +37,7 @@ export default async function Hero(): Promise<JSX.Element> {
           </Reveal>
         </div>
         <div className="hidden xl:inline-block w-[381px] h-[465px] justify-self-end relative -top-32">
-          <Image
-            src={image2}
-            alt="Decor image"
-            fill
-            object-fit="contain"
-            // style={{
-            //   width: "374px",
-            //   height: "auto",
-            // }}
-          />
+          <Image src={image2} alt="Decor image" fill object-fit="contain" />
         </div>
       </div>
       <div className="max-w-7xl mx-auto mt-36 xl:-mt-[132px] flex justify-center lg:justify-start">

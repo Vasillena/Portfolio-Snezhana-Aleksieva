@@ -17,18 +17,6 @@ import { motion } from "framer-motion";
 import { useCurrentLocale } from "@/locales/client";
 import { usePathname } from "next/navigation";
 
-// const knownPaths = [
-//   "/",
-//   "/about",
-//   "/contacts",
-//   "/portfolio",
-//   "/portfolio/graphic-design",
-//   "/portfolio/ui-ux-design",
-//   "/portfolio/illustrations-and-digital-art",
-//   "/privacy-policy",
-//   "/cookie-policy",
-// ];
-
 export default function Navbar(): JSX.Element {
   const locale = useCurrentLocale();
   const pathname = usePathname();
@@ -159,7 +147,6 @@ export default function Navbar(): JSX.Element {
               />
             </Link>
           </div>
-          {/* <button onClick={() => setOpen((prev) => !prev)}> */}
           <button onClick={() => setOpen(true)}>
             <Image
               src={image5}
@@ -175,7 +162,6 @@ export default function Navbar(): JSX.Element {
         </div>
       </div>
       {open && (
-        // <div className="sm:hidden w-[240px] h-[324px] bg-[#f2eee9] fixed top-[64px] right-0 z-50 rounded-bl-full flex justify-center transition-all duration-500">
         <motion.div
           className="fixed top-0 right-0 z-50 w-[240px] h-[324px] rounded-bl-full flex flex-col justify-center bg-[#f2eee9]"
           initial={{ y: "-100%" }}
@@ -200,7 +186,6 @@ export default function Navbar(): JSX.Element {
             <MainNav />
           </div>
         </motion.div>
-        // </div>
       )}
     </div>
   );

@@ -8,16 +8,7 @@ export default function NotFound() {
   return (
     <div className="max-w-7xl mx-auto flex flex-col items-center mb-10 text-center">
       <div className="hidden xl:inline-block w-[381px] h-[364px] self-end relative -top-32">
-        <Image
-          src={image1}
-          alt="Decor image"
-          fill
-          object-fit="contain"
-          // style={{
-          //   width: "374px",
-          //   height: "auto",
-          // }}
-        />
+        <Image src={image1} alt="Decor image" fill object-fit="contain" />
       </div>
       <div className="mt-40 xl:mt-0">
         <div className="flex justify-center">

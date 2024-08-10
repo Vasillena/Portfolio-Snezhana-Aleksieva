@@ -1,5 +1,4 @@
 import { getCurrentLocale, getI18n } from "@/locales/server";
-import { useCurrentLocale, useI18n } from "@/locales/client";
 
 import Image from "next/image";
 import MainButton from "../Common/MainButton";
@@ -20,16 +19,7 @@ export default async function AboutMe(): Promise<JSX.Element> {
   return (
     <div className=" max-w-7xl mt-20 mx-auto grid grid-cols-1 xl:grid-cols-3 gap-y-20 lg:gap-72 text-center lg:text-left">
       <div className="mx-auto hidden xl:inline-block w-[374px] h-[515px] relative">
-        <Image
-          src={image2}
-          alt="Computer image"
-          fill
-          object-fit="contain"
-          // style={{
-          //   minWidth: "374px",
-          //   height: "auto",
-          // }}
-        />
+        <Image src={image2} alt="Computer image" fill object-fit="contain" />
       </div>
       <div className="col-span-2">
         <Reveal>
@@ -52,7 +42,6 @@ export default async function AboutMe(): Promise<JSX.Element> {
                 width: locale === "en" ? "53px" : "68px",
                 height: "auto",
                 alignSelf: "flex-end",
-                // marginTop: "30px",
                 marginLeft: "-20px",
                 zIndex: 1,
               }}
@@ -74,11 +63,7 @@ export default async function AboutMe(): Promise<JSX.Element> {
             {t("home.text-9")}
           </p>
           <div className="flex justify-center lg:justify-start mt-16 text-center lg:text-left">
-            <MainButton
-              href={"/about-me"}
-              text={t("home.button-3")}
-              // classProp={"mt-11"}
-            />
+            <MainButton href={"/about-me"} text={t("home.button-3")} />
           </div>
         </Reveal>
       </div>

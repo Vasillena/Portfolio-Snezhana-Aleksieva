@@ -52,15 +52,6 @@ export default function MainNav(): JSX.Element {
         );
       })}
       <Switch />
-      {/* <button
-        onClick={changeLocale}
-        className={cn(
-          "w-[50px] h=[35px] drop-shadow-sm text-xl bg-[#F7F4F1]",
-          myFont.className
-        )}
-      >
-        {locale === "bg" ? "EN" : "BG"}
-      </button> */}
     </nav>
   );
 }
