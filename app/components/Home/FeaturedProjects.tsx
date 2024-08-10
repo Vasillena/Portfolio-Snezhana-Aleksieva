@@ -5,6 +5,7 @@ import { useCurrentLocale, useI18n } from "@/locales/client";
 
 import Image from "next/image";
 import Link from "next/link";
+import Reveal from "../Common/Reveal";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/projects.svg";
@@ -51,13 +52,17 @@ export default function FeaturedProjects(): JSX.Element {
             }}
           />
         </div>
-        <div ref={ref}>
-          <motion.div
+        <div
+          ref={ref}
+          className="mx-auto flex flex-wrap justify-center xl:justify-between gap-y-20 gap-x-20 xl:gap-x-0  mt-8"
+        >
+          {/* <motion.div
             className="mx-auto flex flex-wrap justify-center xl:justify-between gap-y-20 gap-x-20 xl:gap-x-0  mt-8"
             initial={{ opacity: 0, y: "-10%" }}
             animate={isRefInView ? { opacity: 1, y: "0" } : {}}
             transition={{ duration: 1, ease: "easeOut" }}
-          >
+          > */}
+          <Reveal>
             <div className="w-[300px] h-[300px] relative flex justify-center">
               <Image
                 src={image2}
@@ -70,7 +75,8 @@ export default function FeaturedProjects(): JSX.Element {
                 // }}
               />
             </div>
-
+          </Reveal>
+          <Reveal>
             <div className="w-[300px] h-[300px] relative flex justify-center">
               <Image
                 src={image3}
@@ -83,6 +89,9 @@ export default function FeaturedProjects(): JSX.Element {
                 // }}
               />
             </div>
+          </Reveal>
+
+          <Reveal>
             <div className="w-[300px] h-[300px] relative flex justify-center">
               <Image
                 src={image4}
@@ -95,6 +104,8 @@ export default function FeaturedProjects(): JSX.Element {
                 // }}
               />
             </div>
+          </Reveal>
+          <Reveal>
             <div className="w-[300px] h-[300px] relative flex justify-center">
               <Image
                 src={image5}
@@ -107,7 +118,9 @@ export default function FeaturedProjects(): JSX.Element {
                 // }}
               />
             </div>
-          </motion.div>
+          </Reveal>
+
+          {/* </motion.div> */}
         </div>
         <div className="mt-11 flex justify-center lg:justify-end">
           <Link

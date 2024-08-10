@@ -4,6 +4,7 @@ import { motion, useInView } from "framer-motion";
 
 import Image from "next/image";
 import Link from "next/link";
+import Reveal from "../Common/Reveal";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/certificate-1.png";
@@ -33,13 +34,8 @@ export default function Certificates(): JSX.Element {
             {t("about.title-2")}
           </h2>
         </div>
-        <div ref={ref}>
-          <motion.div
-            className="flex flex-wrap justify-center  gap-y-6 gap-1 mt-12"
-            initial={{ opacity: 0, y: "-10%" }}
-            animate={isRefInView ? { opacity: 1, y: "0" } : {}}
-            transition={{ duration: 1, ease: "easeOut" }}
-          >
+        <div className="flex flex-wrap justify-center  gap-y-6 gap-1 mt-12">
+          <Reveal>
             <div className="justify-self-center">
               <Link href="https://creative.softuni.bg/certificates/details/47406/e9509b3a">
                 <Image
@@ -52,6 +48,8 @@ export default function Certificates(): JSX.Element {
                 />
               </Link>
             </div>
+          </Reveal>
+          <Reveal>
             <div className="justify-self-center">
               <Link href="https://creative.softuni.bg/certificates/details/49413/faf14f39">
                 <Image
@@ -64,6 +62,8 @@ export default function Certificates(): JSX.Element {
                 />
               </Link>
             </div>
+          </Reveal>
+          <Reveal>
             <div className=" justify-self-center">
               <Link href="https://creative.softuni.bg/certificates/details/50265/837eef76">
                 <Image
@@ -76,7 +76,7 @@ export default function Certificates(): JSX.Element {
                 />
               </Link>
             </div>
-          </motion.div>
+          </Reveal>
         </div>
       </div>
     </div>
