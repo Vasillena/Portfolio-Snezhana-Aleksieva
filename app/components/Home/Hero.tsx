@@ -1,6 +1,5 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
 import { useCurrentLocale, useI18n } from "@/locales/client";
 
 import Image from "next/image";
@@ -14,7 +13,6 @@ import image1 from "@/public/welcome.svg";
 import image2 from "@/public/hero-1.json";
 import image3 from "@/public/welcome-2.svg";
 import image4 from "@/public/logo-2.svg";
-import { useRef } from "react";
 
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
@@ -23,21 +21,10 @@ export default function Hero(): JSX.Element {
   const t = useI18n();
   const myFont = blackSansFont;
 
-  const ref = useRef(null);
-  const isRefInView = useInView(ref);
-
   return (
     <>
       <div className="max-w-7xl mx-auto mt-14 lg:mt-20 xl:mt-10 grid lg:grid-cols-3 gap-x-12 text-center lg:text-left">
-        <div
-          ref={ref}
-          className="sm:col-span-3 xl:col-span-2 flex flex-col items-center lg:items-start min-[400px]:mt-12 sm:mt-24"
-        >
-          {/* <motion.div
-            initial={{ opacity: 0, y: "-10%" }}
-            animate={isRefInView ? { opacity: 1, y: "0" } : {}}
-            transition={{ duration: 1, ease: "easeOut" }}
-          > */}
+        <div className="sm:col-span-3 xl:col-span-2 flex flex-col items-center lg:items-start min-[400px]:mt-12 sm:mt-24">
           <Reveal>
             <div className="scale-90 sm:scale-100">
               <Image
@@ -84,12 +71,10 @@ export default function Hero(): JSX.Element {
             <MainButton href={"/portfolio"} text={t("home.button-1")} />
             <SecondaryButton href={"/contacts"} text={t("home.button-2")} />
           </div>
-
-          {/* </motion.div> */}
         </div>
 
         <div
-          className="hidden xl:inline-block w-[555px] h-[555px] justify-self-end relative top-8 "
+          className="hidden xl:inline-block w-[555px] h-[555px] justify-self-end relative top-8 -mr-10 "
           style={{
             backgroundImage: `url(${image4.src})`,
             backgroundSize: "20%",
@@ -97,19 +82,6 @@ export default function Hero(): JSX.Element {
             backgroundPosition: "center",
           }}
         >
-          {/* <Image
-            src={image4}
-            alt="Coffee image"
-            fill
-            object-fit="contain"
-            priority
-            // style={
-            //   {
-            //     width: "374px",
-            //     height: "auto",
-            //   }
-            // }
-          /> */}
           <Lottie
             animationData={image2}
             play

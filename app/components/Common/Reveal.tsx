@@ -1,47 +1,22 @@
 "use client";
 
-import { motion, useAnimation, useInView } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
-import { cn } from "@/lib/utils";
+import { useRef } from "react";
 
 interface MotionPageWrapperProps {
   children: React.ReactNode;
-  classProp?: string;
-  // width?: "fit-content" | "100%";
 }
 
-export default function Reveal({
-  children,
-  classProp,
-}: // width = "100%",
-MotionPageWrapperProps) {
+export default function Reveal({ children }: MotionPageWrapperProps) {
   const ref = useRef(null);
-  const isInView = useInView(ref);
-
-  // const mainControls = useAnimation();
-
-  // useEffect(() => {
-  //   if (isInView) {
-  //     mainControls.start("visible");
-  //   }
-  // }, [isInView]);
+  const isInView = useInView(ref, { once: true });
 
   return (
-    <div
-      ref={ref}
-      className={cn(classProp)}
-      // style={{ position: "relative", overflow: "hidden" }}
-    >
+    <div ref={ref}>
       <motion.div
         initial={{ opacity: 0, y: "-10%" }}
         animate={isInView ? { opacity: 1, y: "0" } : {}}
-        // variants={{
-        //   hidden: { opacity: 0, y: "-10%" },
-        //   visible: { opacity: 1, y: 0 },
-        // }}
-        // initial="hidden"
-        // animate={mainControls}
         transition={{ duration: 1, ease: "easeOut" }}
       >
         {children}

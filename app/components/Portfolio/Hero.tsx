@@ -1,33 +1,22 @@
-"use client";
-
-import { motion, useInView } from "framer-motion";
-
 import Image from "next/image";
+import Reveal from "../Common/Reveal";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
+import { getI18n } from "@/locales/server";
 import image2 from "@/public/hero-4.png";
 import image3 from "@/public/dots.svg";
-import { useI18n } from "@/locales/client";
-import { useRef } from "react";
 
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
-export default function Hero(): JSX.Element {
-  const t = useI18n();
+export default async function Hero(): Promise<JSX.Element> {
+  const t = await getI18n();
   const myFont = blackSansFont;
-
-  const ref = useRef(null);
-  const isRefInView = useInView(ref);
 
   return (
     <>
       <div className="max-w-7xl mx-auto mt-28 sm:mt-44 xl:mt-32 grid lg:grid-cols-3 gap-16 text-center lg:text-left">
-        <div ref={ref} className="col-span-2">
-          <motion.div
-            initial={{ opacity: 0, y: "-10%" }}
-            animate={isRefInView ? { opacity: 1, y: "0" } : {}}
-            transition={{ duration: 1, ease: "easeOut" }}
-          >
+        <div className="col-span-2">
+          <Reveal>
             <h1
               className={cn(
                 "text-3xl min-[400px]:text-4xl sm:text-6xl",
@@ -42,7 +31,7 @@ export default function Hero(): JSX.Element {
             </p>
             <p className="sm:text-xl sm:leading-6">{t("portfolio.text-3")}</p>
             <p className="sm:text-xl sm:leading-6">{t("portfolio.text-4")}</p>
-          </motion.div>
+          </Reveal>
         </div>
         <div className="hidden xl:inline-block w-[381px] h-[465px] justify-self-end relative -top-32">
           <Image

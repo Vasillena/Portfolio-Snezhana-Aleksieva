@@ -1,14 +1,13 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
 import { useCurrentLocale, useI18n } from "@/locales/client";
 
 import FooterForm from "./FooterForm";
 import Image from "next/image";
 import Link from "next/link";
+import Reveal from "../Common/Reveal";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
-import image1 from "@/public/dots.svg";
 import image10 from "@/public/hero-6.png";
 import image2 from "@/public/icon-1.svg";
 import image3 from "@/public/icon-2.svg";
@@ -19,7 +18,6 @@ import image7 from "@/public/footer.svg";
 import image8 from "@/public/cookie.svg";
 import image9 from "@/public/connect-2.svg";
 import { usePathname } from "next/navigation";
-import { useRef } from "react";
 
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
@@ -28,9 +26,6 @@ export default function Footer(): JSX.Element {
   const t = useI18n();
   const myFont = blackSansFont;
   const pathname = usePathname();
-
-  const ref = useRef(null);
-  const isRefInView = useInView(ref);
 
   // console.log(pathname);
 
@@ -129,13 +124,8 @@ export default function Footer(): JSX.Element {
           </div>
         </div>
         <div>
-          <div ref={ref}>
-            <motion.div
-              className="flex justify-center mt-12 lg:mt-0 "
-              initial={{ opacity: 0, y: "-10%" }}
-              animate={isRefInView ? { opacity: 1, y: "0" } : {}}
-              transition={{ duration: 1, ease: "easeOut" }}
-            >
+          <Reveal>
+            <div className="flex justify-center mt-12 lg:mt-0 ">
               <h2
                 className={cn(
                   "text-3xl min-[400px]:text-4xl lg:text-[40px]",
@@ -159,9 +149,8 @@ export default function Footer(): JSX.Element {
                   zIndex: 1,
                 }}
               />
-            </motion.div>
-          </div>
-
+            </div>
+          </Reveal>
           <div className="mt-6 flex flex-col items-center ">
             <FooterForm />
           </div>

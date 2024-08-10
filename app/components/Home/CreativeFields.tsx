@@ -1,14 +1,14 @@
 import CreativeFieldsCard from "./CreativeFieldsCard";
 import Image from "next/image";
+import { getI18n } from "@/locales/server";
 import image1 from "@/public/cards-1.svg";
 import image2 from "@/public/cards-2.svg";
 import image3 from "@/public/cards-3.svg";
 import image4 from "@/public/cards-4.svg";
 import image5 from "@/public/dots.svg";
-import { useI18n } from "@/locales/client";
 
-export default function CreativeFields(): JSX.Element {
-  const t = useI18n();
+export default async function CreativeFields(): Promise<JSX.Element> {
+  const t = await getI18n();
   return (
     <>
       <div className="max-w-7xl mx-auto mt-16 xl:mt-20 flex justify-center lg:justify-start">

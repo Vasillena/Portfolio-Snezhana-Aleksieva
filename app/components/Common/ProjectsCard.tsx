@@ -1,15 +1,12 @@
-"use client";
-
 import Image, { StaticImageData } from "next/image";
-import { motion, useInView } from "framer-motion";
 
 import Link from "next/link";
+import Reveal from "./Reveal";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
+import { getI18n } from "@/locales/server";
 import image4 from "@/public/icon-3.svg";
 import image5 from "@/public/dots.svg";
-import { useI18n } from "@/locales/client";
-import { useRef } from "react";
 
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
@@ -22,19 +19,17 @@ interface ProjectsCardProps {
   image3: StaticImageData;
 }
 
-export default function ProjectsCard({
+export default async function ProjectsCard({
   title,
   text,
   href,
   image1,
   image2,
   image3,
-}: ProjectsCardProps): JSX.Element {
-  const t = useI18n();
+}: ProjectsCardProps): Promise<JSX.Element> {
+  const t = await getI18n();
   const myFont = blackSansFont;
 
-  const ref = useRef(null);
-  const isRefInView = useInView(ref);
   return (
     <div>
       <div>
@@ -70,13 +65,8 @@ export default function ProjectsCard({
           </Link>
         </div>
       </div>
-      <div ref={ref}>
-        <motion.div
-          className="flex flex-wrap xl:flex-nowrap justify-center gap-20 mt-16"
-          initial={{ opacity: 0, y: "-10%" }}
-          animate={isRefInView ? { opacity: 1, y: "0" } : {}}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
+      <Reveal>
+        <div className="flex flex-wrap xl:flex-nowrap justify-center gap-20 mt-16">
           <Image
             src={image1}
             alt="Project image"
@@ -101,8 +91,8 @@ export default function ProjectsCard({
               height: "auto",
             }}
           />
-        </motion.div>
-      </div>
+        </div>
+      </Reveal>
       <div className="mt-16 mb-[68px] flex justify-center xl:justify-start">
         <Image
           src={image5}

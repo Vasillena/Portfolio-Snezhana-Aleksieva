@@ -13,35 +13,38 @@ export default function MainNav(): JSX.Element {
   const t = useI18n();
 
   const links = [
-    { href: "/", label: t("nav.home") },
-    { href: "/portfolio", label: t("nav.portfolio") },
-    { href: "/about", label: t("nav.about") },
-    { href: "/contacts", label: t("nav.contacts") },
+    { href: "/", label: t("nav.home"), active: pathname === `/${locale}` },
+    {
+      href: "/portfolio",
+      label: t("nav.portfolio"),
+      active:
+        pathname === `/${locale}/portfolio` || pathname.includes("/portfolio/"),
+    },
+    {
+      href: "/about",
+      label: t("nav.about"),
+      active: pathname === `/${locale}/about`,
+    },
+    {
+      href: "/contacts",
+      label: t("nav.contacts"),
+      active: pathname === `/${locale}/contacts`,
+    },
   ];
-
-  const localizedLinks = links.map((link) => ({
-    ...link,
-    href: `/${locale}${link.href}`,
-  }));
 
   return (
     <nav className="mx-6 flex flex-col sm:flex-row items-center sm:space-x-4 lg:space-x-6 space-y-4 sm:space-y-0 ml-12 mt-6 sm:ml-6 sm:mt-0">
-      {localizedLinks.map((link) => {
-        const isActive =
-          link.href === "/"
-            ? pathname === link.href
-            : pathname.startsWith(link.href);
-
+      {links.map((link) => {
         return (
           <Link
             key={link.href}
             href={link.href}
             className={cn(
               "flex items-center text-xl font-bold hover:text-[#B0752A]",
-              isActive ? "text-[#6F848F]" : "text-[#415064]"
+              link.active ? "text-[#6F848F]" : "text-[#415064]"
             )}
           >
-            {isActive && (
+            {link.active && (
               <div className="hidden sm:block w-[3px] h-[3px] bg-[#B0752A] rounded-full mr-2" />
             )}
             {link.label}

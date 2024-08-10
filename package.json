@@ -13,7 +13,6 @@
     "framer-motion": "^11.3.21",
     "next": "14.2.5",
     "next-international": "^1.2.4",
-    "nextjs-current-url": "^1.0.3",
     "react": "^18",
     "react-dom": "^18",
     "react-lottie-player": "^2.1.0",

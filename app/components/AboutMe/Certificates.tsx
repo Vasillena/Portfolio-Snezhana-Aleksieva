@@ -1,26 +1,19 @@
-"use client";
-
-import { motion, useInView } from "framer-motion";
-
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "../Common/Reveal";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
+import { getI18n } from "@/locales/server";
 import image1 from "@/public/certificate-1.png";
 import image2 from "@/public/certificate-2.png";
 import image3 from "@/public/certificate-3.png";
-import { useI18n } from "@/locales/client";
-import { useRef } from "react";
 
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
-export default function Certificates(): JSX.Element {
-  const t = useI18n();
+export default async function Certificates(): Promise<JSX.Element> {
+  const t = await getI18n();
   const myFont = blackSansFont;
 
-  const ref = useRef(null);
-  const isRefInView = useInView(ref);
   return (
     <div className="max-w-full mt-24 bg-[#F2EEE9]">
       <div className=" max-w-7xl mx-auto py-11">
