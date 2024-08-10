@@ -31,7 +31,7 @@ export default {
     "card-4": "UI/UX",
     "title-2": "About",
     "text-6":
-      "I’m a junior graphic and UI/UX designer with a strong background in marketing and sales.",
+      "I’m a graphic and UI/UX designer with a strong background in marketing and sales.",
     "text-7":
       "I bring a unique blend of creativity and strategic thinking to my projects.",
     "text-8":

@@ -11,7 +11,7 @@ export default function CreativeFields(): JSX.Element {
   const t = useI18n();
   return (
     <>
-      <div className="max-w-7xl mx-auto mt-16 xl:-mt-16 flex justify-center lg:justify-start">
+      <div className="max-w-7xl mx-auto mt-16 xl:mt-20 flex justify-center lg:justify-start">
         <Image
           src={image5}
           alt="Dots decor"

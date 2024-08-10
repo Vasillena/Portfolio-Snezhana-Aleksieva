@@ -13,6 +13,7 @@ import image4 from "@/public/icon-4.svg";
 import image5 from "@/public/menu.svg";
 import image6 from "@/public/close.svg";
 import logo from "@/public/logo.svg";
+import { motion } from "framer-motion";
 import { useCurrentLocale } from "@/locales/client";
 import { usePathname } from "next/navigation";
 
@@ -71,7 +72,7 @@ export default function Navbar(): JSX.Element {
         )}
       >
         <div className="px-4 sm:px-6 lg:px-0 flex h-16 items-center">
-          <Link href="/" className="ml-4 flex lg:ml-0 gap-x-2">
+          <Link href="/" className="ml-4 flex lg:ml-0 lg:mr-6 gap-x-2">
             <Image
               src={logo}
               alt="Logo"
@@ -158,9 +159,10 @@ export default function Navbar(): JSX.Element {
               />
             </Link>
           </div>
-          <button onClick={() => setOpen((prev) => !prev)}>
+          {/* <button onClick={() => setOpen((prev) => !prev)}> */}
+          <button onClick={() => setOpen(true)}>
             <Image
-              src={open ? image6 : image5}
+              src={image5}
               alt="Menu image"
               style={{
                 width: "32px",
@@ -173,9 +175,32 @@ export default function Navbar(): JSX.Element {
         </div>
       </div>
       {open && (
-        <div className="sm:hidden w-[240px] h-[324px] bg-[#f2eee9] fixed top-[64px] right-0 z-50 rounded-bl-full flex justify-center">
-          <MainNav />
-        </div>
+        // <div className="sm:hidden w-[240px] h-[324px] bg-[#f2eee9] fixed top-[64px] right-0 z-50 rounded-bl-full flex justify-center transition-all duration-500">
+        <motion.div
+          className="fixed top-0 right-0 z-50 w-[240px] h-[324px] rounded-bl-full flex flex-col justify-center bg-[#f2eee9]"
+          initial={{ y: "-100%" }}
+          animate={{ y: 0 }}
+          exit={{ y: "-100%" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        >
+          <button
+            onClick={() => setOpen(false)}
+            className="self-end mr-2 -mt-16"
+          >
+            <Image
+              src={image6}
+              alt="Menu image"
+              style={{
+                width: "32px",
+                height: "auto",
+              }}
+            />
+          </button>
+          <div className="-mt-4">
+            <MainNav />
+          </div>
+        </motion.div>
+        // </div>
       )}
     </div>
   );

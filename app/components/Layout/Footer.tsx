@@ -67,7 +67,7 @@ export default function Footer(): JSX.Element {
         )}
       >
         <div>
-          <div
+          {/* <div
             className={cn(
               "mt-20 lg:mt-5 mb-12 flex justify-center xl:justify-start",
               pathname === `/${locale}/contacts` && "hidden lg:block"
@@ -81,8 +81,8 @@ export default function Footer(): JSX.Element {
                 height: "auto",
               }}
             />
-          </div>
-          <div className="mt-0 md:mt-[72px] flex flex-col items-center xl:items-start">
+          </div> */}
+          <div className="mt-0 md:mt-24 flex flex-col items-center xl:items-start">
             <h2
               className={cn(
                 "text-3xl min-[400px]:text-4xl  lg:text-[40px] mb-3",

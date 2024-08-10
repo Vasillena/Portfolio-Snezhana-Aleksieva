@@ -1,16 +1,15 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
 import { useCurrentLocale, useI18n } from "@/locales/client";
 
 import Image from "next/image";
 import MainButton from "../Common/MainButton";
+import Reveal from "../Common/Reveal";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image2 from "@/public/about-short.png";
 import image3 from "@/public/me.svg";
 import image4 from "@/public/me-2.svg";
-import { useRef } from "react";
 
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
@@ -19,8 +18,8 @@ export default function AboutMe(): JSX.Element {
   const t = useI18n();
   const myFont = blackSansFont;
 
-  const ref = useRef(null);
-  const isRefInView = useInView(ref, { margin: "-300px" });
+  // const ref = useRef(null);
+  // const isRefInView = useInView(ref, { margin: "-300px" });
 
   return (
     <div className=" max-w-7xl mt-20 mx-auto grid grid-cols-1 xl:grid-cols-3 gap-y-20 lg:gap-72 text-center lg:text-left">
@@ -36,12 +35,8 @@ export default function AboutMe(): JSX.Element {
           // }}
         />
       </div>
-      <div ref={ref} className="col-span-2">
-        <motion.div
-          initial={{ opacity: 0, y: "-10%" }}
-          animate={isRefInView ? { opacity: 1, y: "0" } : {}}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
+      <div className="col-span-2">
+        <Reveal>
           <div className="flex mt-6 justify-center lg:justify-start">
             <h2
               className={cn(
@@ -89,9 +84,8 @@ export default function AboutMe(): JSX.Element {
               // classProp={"mt-11"}
             />
           </div>
-        </motion.div>
+        </Reveal>
       </div>
     </div>
-    // </div>
   );
 }
