@@ -7,8 +7,9 @@
 ## ⭐️  Introduction
 
 Welcome to the portfolio page of this talented young designer. Finally had the opportunity to collaborate closely with a designer and to understand why developers and designers hate each other. Kidding, of course 😅. Amazing (and tough) experience, lessons well learned (like 1px to the left means exactly 1.000000px to the left). You can see her awesome work at: https://www.behance.net/snezhana-aleksieva
+  <br/>
 This project is built with Next.js, Tailwind and Framer motion.
-
+  <br/>
 View project at: https://snezhana-aleksieva.vercel.app/bg
 
 
@@ -147,7 +148,9 @@ Explore my friend's work and projects.
 ## 📷 Screenshots
 
 -----Mobile Version-----
+  <br/>
 ![Screenshot 01](https://github.com/user-attachments/assets/60bc4df6-d2fa-4458-a431-0d98ecf0e56e)
+  <br/>
 ![Screenshot 02](https://github.com/user-attachments/assets/fcf43346-14a9-4823-9f18-d32625e56542)
 
 ------------------------
