@@ -1,5 +1,7 @@
 import "./globals.css";
 
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+
 import Footer from "../components/Layout/Footer";
 import Navbar from "../components/Layout/Navbar";
 import { Provider } from "./provider";
@@ -154,6 +156,7 @@ export default async function RootLayout({
 }) {
   return (
     <html lang={locale}>
+      <GoogleTagManager gtmId="GTM-PV9FK68J" />
       <body className={cn("px-2", myFont.className)}>
         <Provider locale={locale}>
           <Navbar />
@@ -166,6 +169,7 @@ export default async function RootLayout({
         // charSet="UTF-8"
         src="//cdn.cookie-script.com/s/7339a3ea3dfbe31b512c9abbd5594d18.js"
       ></Script>
+      <GoogleAnalytics gaId="G-PCLR15Q7BD" />
     </html>
   );
 }
