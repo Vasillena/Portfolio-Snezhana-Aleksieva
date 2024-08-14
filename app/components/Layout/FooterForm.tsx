@@ -6,7 +6,7 @@ export default function FooterForm(): JSX.Element {
     <div className="mt-3 flex flex-col items-center lg:items-start">
       <form
         id="contact"
-        action="https://formsubmit.co/design.by.snezhana@gmail.com"
+        action="2d0857dbba159b53757b4cd8f4154f99"
         method="POST"
       >
         <div className="flex flex-col gap-5">
@@ -106,11 +106,7 @@ export default function FooterForm(): JSX.Element {
             <label htmlFor="email" />
             <input type="hidden" name="_subject" value="New submission!" />
             <input type="hidden" name="_captcha" value="false" />
-            <input
-              type="hidden"
-              name="_next"
-              value="http://localhost:3000/thank-you"
-            />
+            <input type="hidden" name="_next" value="/thank-you" />
           </div>
         </div>
       </form>
