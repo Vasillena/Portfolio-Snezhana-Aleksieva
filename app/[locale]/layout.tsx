@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "../components/Layout/Footer";
 import Navbar from "../components/Layout/Navbar";
 import { Provider } from "./provider";
+import Script from "next/script";
 import { cn } from "@/lib/utils";
 import futura from "next/font/local";
 
@@ -162,6 +163,11 @@ export default async function RootLayout({
           <Footer />
         </Provider>
       </body>
+      <Script
+        type="text/javascript"
+        charset="UTF-8"
+        src="//cdn.cookie-script.com/s/7339a3ea3dfbe31b512c9abbd5594d18.js"
+      ></Script>
     </html>
   );
 }
