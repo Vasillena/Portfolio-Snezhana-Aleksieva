@@ -9,10 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/third-parties": "^14.2.3",
+    "@next/third-parties": "^14.2.5",
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.21",
-    "next": "14.2.5",
+    "next": "^14.2.5",
     "next-international": "^1.2.4",
     "react": "^18",
     "react-dom": "^18",
