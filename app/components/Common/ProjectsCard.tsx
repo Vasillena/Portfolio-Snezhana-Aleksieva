@@ -66,7 +66,7 @@ export default async function ProjectsCard({
         </div>
       </div>
       <Reveal>
-        <div className="flex flex-wrap xl:flex-nowrap justify-center gap-20 mt-16">
+        <div className="flex flex-wrap xl:flex-nowrap justify-center gap-y-20 gap-x-14 mt-16">
           <Image
             src={image1}
             alt="Project image"
