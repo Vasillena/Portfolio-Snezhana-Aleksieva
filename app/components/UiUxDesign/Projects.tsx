@@ -14,7 +14,7 @@ export default async function Projects(): Promise<JSX.Element> {
       <ProjectsCard
         title={t("uiux-design.card-2")}
         text={t("uiux-design.card-2-text")}
-        href={"https://www.behance.net/gallery/204141765/TailMate-UIUX-Design"}
+        href={"https://www.behance.net/gallery/205302643/My-Web-Portfolio"}
         image1={image4}
         image2={image5}
         image3={image6}
