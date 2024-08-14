@@ -129,14 +129,12 @@ export async function generateMetadata({
   const alternates = {
     canonical: locale === "en" ? "/en" : "/",
     languages: {
-      bg: "/",
+      bg: "/bg",
       en: "/en",
     },
   };
 
-  const metadataBase = new URL(
-    `https://snezhana-aleksieva.com/${locale === "en" ? "/en" : "/"}`
-  );
+  const metadataBase = new URL("https://snezhana-aleksieva.com");
 
   return {
     title,
