@@ -10,7 +10,7 @@ Welcome to the portfolio page of this talented young designer. Finally had the o
   <br/>
 This project is built with Next.js, Tailwind and Framer motion.
   <br/>
-View project at: https://snezhana-aleksieva.vercel.app/bg
+View project at: https://snezhana-aleksieva.com
 
 
 ## 📜 Table of Contents
