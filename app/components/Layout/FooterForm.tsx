@@ -6,7 +6,7 @@ export default function FooterForm(): JSX.Element {
     <div className="mt-3 flex flex-col items-center lg:items-start">
       <form
         id="contact"
-        action="2d0857dbba159b53757b4cd8f4154f99"
+        action="https://formsubmit.co/2d0857dbba159b53757b4cd8f4154f99"
         method="POST"
       >
         <div className="flex flex-col gap-5">
