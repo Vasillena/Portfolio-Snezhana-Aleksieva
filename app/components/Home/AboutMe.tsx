@@ -63,7 +63,7 @@ export default async function AboutMe(): Promise<JSX.Element> {
             {t("home.text-9")}
           </p>
           <div className="flex justify-center lg:justify-start mt-16 text-center lg:text-left">
-            <MainButton href={"/about-me"} text={t("home.button-3")} />
+            <MainButton href={"/about"} text={t("home.button-3")} />
           </div>
         </Reveal>
       </div>

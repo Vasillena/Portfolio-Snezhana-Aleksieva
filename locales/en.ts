@@ -20,7 +20,7 @@ export default {
     "title-1": "to My Design Journey",
     "text-1":
       "Hi there! I'm Snezhana, a junior graphic and UI/UX designer with a passion for creating visually appealing and user-friendly designs.",
-    "text-2": "Welcome to my web portfolio - hope you enjoy it!",
+    "text-2": "Welcome to my portfolio - hope you enjoy it!",
     "text-3": "Ready to explore my work?",
     "button-1": "Explore My Projects",
     "button-2": "Get in Touch",
@@ -36,14 +36,14 @@ export default {
       "I bring a unique blend of creativity and strategic thinking to my projects.",
     "text-8":
       "Passionate about minimalist design and constantly expanding my skills, I strive to create visually stunning and functional work. My journey in design is driven by a commitment to continuous learning and innovation.",
-    "text-9": "Let’s create something extraordinary together!",
+    "text-9": "Let’s create something inspiring together!",
     "button-3": "Learn More",
     "title-3": "Featured",
     "text-10": "View All",
   },
   portfolio: {
     title: "My Portfolio",
-    "text-1": "Explore My Creative Works and Diverse Design Projects",
+    "text-1": "Explore my creative projects and design solutions.",
     "text-2": "Welcome to my portfolio!",
     "text-3":
       "Here, you can explore a variety of design projects that showcase my skills and creativity.",
@@ -72,8 +72,7 @@ export default {
     "text-1": "Selection of my creative projects",
     "text-2":
       "Explore a selection of my creative projects, showcasing my expertise in branding, logo design & layout design. Each project highlights my dedication to blending aesthetics with functionality.",
-    "text-3":
-      "Click on the links to view more details on Behance and dive into the visuals that bring my ideas to life.",
+    "text-3": "Click on the links to view more details on Behance.",
     "card-1": "My Personal Branding",
     "card-1-text-1":
       "This project embodies a simple and clean aesthetic with light tones and a touch of femininity, reflecting my unique style and professional identity.",
@@ -108,14 +107,19 @@ export default {
   "uiux-design": {
     title: "My UI/UX Projects",
     text: "Discover my user interface and user experience designs that prioritize usability and user satisfaction.",
+    "text-2": "Click on the links to view more details on Behance.",
     "card-1": "TailMate - Pet Adoption Website",
     "card-1-text":
       "Course project for a pet adoption platform. This is my first UI/UX project. The design focuses on creating an intuitive & engaging user experience. TailMate is a platform designed to simplify the pet adoption process. It connects shelters, users and volunteers.",
+    "card-2": "My portfolio website",
+    "card-2-text":
+      "My portfolio website was created with a clear objective: to showcase my design skills in an elegant and professional manner. The core idea behind the design was to blend femininity with functionality while maintaining aesthetic simplicity. ",
     "text-4": "Thank you for exploring my UI/UX Design Portfolio!",
   },
   "illustrations-digital": {
     title: "Illustrations and Digital Art",
     text: "Explore my collection of illustrations and digital drawings, where my journey in art began.",
+    "text-2": "Click on the links to view more details on Behance.",
     "card-1": "Self-Portrait",
     "card-1-text":
       "A digital representation of myself, capturing the essence of my personality. Created in Photoshop.",
@@ -130,7 +134,7 @@ export default {
     "text-2":
       "I’m Snezhana, a junior graphic and UI/UX designer with background in marketing and sales, currently based in Blagoevgrad, Bulgaria. I am a native Bulgarian speaker and am fluent in conversational English.",
     "text-3":
-      "With over 12 years of experience in the hospitality industry, I have acquired a unique blend of skills, but my true passion lies in visual art. My work aims to balance aesthetics and functionality, leveraging my marketing expertise to communicate effectively. I love minimalist graphic design, but sometimes I like to break the grid to create dynamic and engaging visuals.",
+      "With over 12 years of experience in the hospitality industry, I have acquired a unique blend of skills, but my true passion lies in visual art. My work aims to balance aesthetics and functionality, leveraging my marketing expertise to communicate effectively.",
     "text-4":
       "My design education began at SoftUni Creative - academy for design, creativity and visualisation. I am constantly expanding my knowledge and skills to stay up to date with the latest trends and techniques.",
     button: "Explore My Projects",

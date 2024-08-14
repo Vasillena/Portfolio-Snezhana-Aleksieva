@@ -72,18 +72,20 @@ export default function ImprintPage(): JSX.Element {
           </p>
           <p className="text-lg min-[400px]:text-xl">
             <span className="font-bold">Service provider name: </span>
+            SuperHosting.BG Ltd
           </p>
           <p className="text-lg min-[400px]:text-xl">
-            <span className="font-bold">Service provider address: </span>
+            <span className="font-bold">Service provider address: </span>36 G.M.
+            Dimitrov Blvd., Sofia, Bulgaria
           </p>
           <p className="text-lg min-[400px]:text-xl">
-            <span className="font-bold">Phone number: </span>
+            <span className="font-bold">Phone number: </span>+359 /2 81 08 990
           </p>
           <p className="text-lg min-[400px]:text-xl">
-            <span className="font-bold">E-mail: </span>
+            <span className="font-bold">E-mail: </span>sales@superhosting.bg
           </p>
           <p className="text-lg min-[400px]:text-xl">
-            <span className="font-bold">Website: </span>
+            <span className="font-bold">Website: </span>www.superhosting.bg
           </p>
         </div>
       </div>

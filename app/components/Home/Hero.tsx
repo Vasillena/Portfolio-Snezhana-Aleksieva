@@ -44,7 +44,7 @@ export default function Hero(): JSX.Element {
                 "text-3xl min-[400px]:text-4xl sm:text-6xl lg:mt-[-40px]",
                 locale === "en"
                   ? "pl-0 sm:pl-[30px] lg:pl-[72px]"
-                  : "pl-0 sm:text-[44px]",
+                  : "pl-0 sm:text-[40px]",
                 myFont.className
               )}
             >

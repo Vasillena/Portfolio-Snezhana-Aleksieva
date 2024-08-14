@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -22,6 +22,7 @@ export default function Navbar(): JSX.Element {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,6 +39,25 @@ export default function Navbar(): JSX.Element {
   const closeMenu = () => {
     setOpen(false);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event: TouchEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        closeMenu();
+      }
+    };
+
+    if (open && "ontouchstart" in window) {
+      // Only add listener for touch devices
+      document.addEventListener("touchstart", handleClickOutside);
+    } else {
+      document.removeEventListener("touchstart", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("touchstart", handleClickOutside);
+    };
+  }, [open]);
 
   useEffect(() => {
     closeMenu();
@@ -157,12 +177,11 @@ export default function Navbar(): JSX.Element {
               }}
             />
           </button>
-
-          {/* <MainNav /> */}
         </div>
       </div>
       {open && (
         <motion.div
+          ref={menuRef}
           className="fixed top-0 right-0 z-50 w-[240px] h-[324px] rounded-bl-full flex flex-col justify-center bg-[#f2eee9]"
           initial={{ y: "-100%" }}
           animate={{ y: 0 }}
@@ -175,7 +194,7 @@ export default function Navbar(): JSX.Element {
           >
             <Image
               src={image6}
-              alt="Menu image"
+              alt="Close image"
               style={{
                 width: "32px",
                 height: "auto",

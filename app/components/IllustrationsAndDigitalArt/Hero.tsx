@@ -1,14 +1,16 @@
+import { getCurrentLocale, getI18n } from "@/locales/server";
+
 import Image from "next/image";
 import Reveal from "../Common/Reveal";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
-import { getI18n } from "@/locales/server";
 import image1 from "@/public/hero-5.png";
 import image2 from "@/public/dots.svg";
 
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
 export default async function Hero(): Promise<JSX.Element> {
+  const locale = await getCurrentLocale();
   const t = await getI18n();
   const myFont = blackSansFont;
 
@@ -19,14 +21,18 @@ export default async function Hero(): Promise<JSX.Element> {
           <Reveal>
             <h1
               className={cn(
-                "text-3xl min-[400px]:text-4xl sm:text-6xl",
+                "text-3xl min-[400px]:text-4xl sm:text-[56px]",
+                locale === "en" ? "sm:text-6xl" : "sm:text-[56px]",
                 myFont.className
               )}
             >
               {t("illustrations-digital.title")}
             </h1>
-            <p className="mt-10 text-lg sm:text-xl xl:max-w-lg sm:leading-6">
+            <p className="mt-12 text-lg sm:text-xl sm:leading-6">
               {t("illustrations-digital.text")}
+            </p>
+            <p className="mt-4 text-lg sm:text-xl sm:leading-6">
+              {t("illustrations-digital.text-2")}
             </p>
           </Reveal>
         </div>

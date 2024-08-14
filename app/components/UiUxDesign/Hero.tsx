@@ -25,8 +25,11 @@ export default async function Hero(): Promise<JSX.Element> {
             >
               {t("uiux-design.title")}
             </h1>
-            <p className="mt-16 text-lg sm:text-xl xl:max-w-lg sm:leading-6">
+            <p className="mt-6 text-lg sm:text-xl xl:max-w-lg sm:leading-6">
               {t("uiux-design.text")}
+            </p>
+            <p className="mt-4 text-lg sm:text-xl sm:leading-6">
+              {t("uiux-design.text-2")}
             </p>
           </Reveal>
         </div>
