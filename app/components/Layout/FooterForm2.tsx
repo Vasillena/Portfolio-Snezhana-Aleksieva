@@ -1,31 +1,14 @@
-import { getI18n } from "@/locales/server";
+import { useI18n } from "@/locales/client";
 
-export default async function FooterForm(): Promise<JSX.Element> {
-  const t = await getI18n();
-  async function handleSubmit(e: any) {
-    e.preventDefault();
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        access_key: "YOUR_ACCESS_KEY_HERE",
-        name: e.target.name.value,
-        email: e.target.email.value,
-        message: e.target.message.value,
-      }),
-    });
-    const result = await response.json();
-    if (result.success) {
-      console.log(result);
-    }
-  }
-
+export default function FooterForm2(): JSX.Element {
+  const t = useI18n();
   return (
     <div className="mt-3 flex flex-col items-center lg:items-start">
-      <form onSubmit={handleSubmit}>
+      <form
+        id="contact"
+        action="https://formsubmit.co/design.by.snezhana@gmail.com"
+        method="POST"
+      >
         <div className="flex flex-col gap-5">
           <div className="relative">
             <input
@@ -121,11 +104,9 @@ export default async function FooterForm(): Promise<JSX.Element> {
 
           <div>
             <label htmlFor="email" />
-            <input
-              type="hidden"
-              name="apikey"
-              value="a89cba48-651f-4519-8814-e6234e609ccc"
-            />
+            <input type="hidden" name="_subject" value="New submission!" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="/thank-you" />
           </div>
         </div>
       </form>
