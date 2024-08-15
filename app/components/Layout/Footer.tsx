@@ -33,6 +33,7 @@ export default function Footer(): JSX.Element {
       className={cn(
         pathname === `/${locale}/contacts` && " flex flex-col min-h-screen",
         pathname === `/${locale}/thank-you` && "hidden",
+        pathname === `/${locale}/form-failed` && "hidden",
         pathname === `/${locale}/imprint` && "hidden"
       )}
     >

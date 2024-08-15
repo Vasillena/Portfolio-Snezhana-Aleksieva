@@ -68,6 +68,7 @@ export default function Navbar(): JSX.Element {
       className={cn(
         " max-w-7xl mx-auto",
         pathname === `/${locale}/thank-you` && "hidden",
+        pathname === `/${locale}/form-failed` && "hidden",
         pathname === `/${locale}/imprint` && "hidden"
       )}
     >
