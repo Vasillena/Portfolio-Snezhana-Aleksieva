@@ -19,11 +19,16 @@ export default function FooterForm(): JSX.Element {
         name: e.target.name.value,
         email: e.target.email.value,
         message: e.target.message.value,
+        apikey: "a89cba48-651f-4519-8814-e6234e609ccc",
+        redirect: "https://www.snezhana-aleksieva.com/thank-you",
       }),
     });
     const result = await response.json();
     if (result.success) {
+      window.location.href = "https://www.snezhana-aleksieva.com/thank-you";
       console.log(result);
+    } else {
+      console.error("Form submission failed:", result);
     }
   }
 
@@ -129,6 +134,11 @@ export default function FooterForm(): JSX.Element {
               type="hidden"
               name="apikey"
               value="a89cba48-651f-4519-8814-e6234e609ccc"
+            />
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://www.snezhana-aleksieva.com/thank-you"
             />
           </div>
         </div>
