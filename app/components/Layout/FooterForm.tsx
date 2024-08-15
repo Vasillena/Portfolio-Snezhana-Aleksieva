@@ -1,9 +1,6 @@
-// import { getI18n } from "@/locales/server";
-
 import { useI18n } from "@/locales/client";
 
 export default function FooterForm(): JSX.Element {
-  // const t = await getI18n();
   const t = useI18n();
 
   async function handleSubmit(e: any) {
@@ -29,6 +26,7 @@ export default function FooterForm(): JSX.Element {
       console.log(result);
     } else {
       console.error("Form submission failed:", result);
+      window.location.href = "https://www.snezhana-aleksieva.com/form-failed";
     }
   }
 

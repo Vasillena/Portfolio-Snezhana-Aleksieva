@@ -191,6 +191,9 @@ export default {
       "Your message has been successfully sent. I will get back to you as soon as possible. Thank you for reaching out!",
     button: "Back to Homepage",
   },
+  "form-failed": {
+    "text-1": "Something went wrong, please try again!",
+  },
   "privacy-policy": {
     title: "Privacy Policy",
     "text-1": "1. Introduction",
