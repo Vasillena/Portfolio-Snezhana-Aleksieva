@@ -39,7 +39,7 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
               width: locale === "en" ? "111px" : "197px",
               height: "auto",
               alignSelf: "flex-end",
-              marginLeft: "-50px",
+              marginLeft: "-36px",
               zIndex: 1,
             }}
           />

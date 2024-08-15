@@ -8,6 +8,7 @@ import Link from "next/link";
 import Reveal from "../Common/Reveal";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
+import image1 from "@/public/dots.svg";
 import image10 from "@/public/hero-6.png";
 import image2 from "@/public/icon-1.svg";
 import image3 from "@/public/icon-2.svg";
@@ -38,11 +39,31 @@ export default function Footer(): JSX.Element {
       <div
         className={cn(
           "max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 py-24",
-          pathname === `/${locale}/contacts` && "my-auto py-0 pt-44"
+          pathname === `/${locale}/contacts` && "my-auto py-0 pt-32 xl:pt-44"
         )}
       >
         <div>
-          <div className="mt-0 md:mt-24 flex flex-col items-center xl:items-start">
+          <div
+            className={cn(
+              "lg:hidden mt-4 lg:mt-5 mb-12 flex justify-center xl:justify-start",
+              pathname === `/${locale}/contacts` && "hidden lg:flex"
+            )}
+          >
+            <Image
+              src={image1}
+              alt="Dots"
+              style={{
+                width: "160px",
+                height: "auto",
+              }}
+            />
+          </div>
+          <div
+            className={cn(
+              "mt-0 md:mt-24 flex flex-col items-center xl:items-start",
+              pathname === `/${locale}/contacts` && "md:mt-[78px]"
+            )}
+          >
             <h2
               className={cn(
                 "text-3xl min-[400px]:text-4xl  lg:text-[40px] mb-3",

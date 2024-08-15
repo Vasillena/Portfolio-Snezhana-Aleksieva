@@ -64,7 +64,7 @@ export default function Hero(): JSX.Element {
           </Reveal>
           <div
             className={cn(
-              "flex flex-col items-center lg:flex-row gap-5 pt-8 min-[400px]:pt-12 sm:pt-[86px]",
+              "flex flex-col items-center lg:flex-row gap-y-5 gap-x-7 pt-8 min-[400px]:pt-12 sm:pt-[86px]",
               locale === "bg" && "sm:pt-[92px]"
             )}
           >
