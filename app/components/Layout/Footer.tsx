@@ -2,7 +2,7 @@
 
 import { useCurrentLocale, useI18n } from "@/locales/client";
 
-import FooterForm from "./FooterForm2";
+import FooterForm from "./FooterForm";
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "../Common/Reveal";

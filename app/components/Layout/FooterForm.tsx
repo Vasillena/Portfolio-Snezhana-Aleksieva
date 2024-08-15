@@ -1,7 +1,11 @@
-import { getI18n } from "@/locales/server";
+// import { getI18n } from "@/locales/server";
 
-export default async function FooterForm(): Promise<JSX.Element> {
-  const t = await getI18n();
+import { useI18n } from "@/locales/client";
+
+export default function FooterForm(): JSX.Element {
+  // const t = await getI18n();
+  const t = useI18n();
+
   async function handleSubmit(e: any) {
     e.preventDefault();
     const response = await fetch("https://api.web3forms.com/submit", {
@@ -11,7 +15,7 @@ export default async function FooterForm(): Promise<JSX.Element> {
         Accept: "application/json",
       },
       body: JSON.stringify({
-        access_key: "YOUR_ACCESS_KEY_HERE",
+        access_key: "a89cba48-651f-4519-8814-e6234e609ccc",
         name: e.target.name.value,
         email: e.target.email.value,
         message: e.target.message.value,
