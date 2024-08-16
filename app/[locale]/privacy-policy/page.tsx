@@ -10,6 +10,11 @@ import { useI18n } from "@/locales/client";
 
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
+export const metadata = {
+  title: "Privacy Policy | snezhana-aleksieva.com",
+  description: "Privacy Policy",
+};
+
 export default function PrivacyPolicyPage(): JSX.Element {
   const t = useI18n();
   const myFont = blackSansFont;

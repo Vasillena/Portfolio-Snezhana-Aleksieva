@@ -19,7 +19,7 @@ export async function generateMetadata({
   let title, description, keywords;
 
   if (locale === "bg") {
-    title = "Снежана Алексиева";
+    title = "Снежана Алексиева | snezhana-aleksieva.com";
     description =
       "Здравейте! Аз съм Снежана, графичен и UI/UX дизайнер с голяма страст към създаването на визуално привлекателен и лесен за ползване дизайн. Добре дошли в моето уеб портфолио – надявам се да ви хареса! Готови ли сте да разгледате моите проекти?";
     keywords = [
@@ -73,7 +73,7 @@ export async function generateMetadata({
       "Print design",
     ];
   } else if (locale === "en") {
-    title = "Snezhana Aleksieva";
+    title = "Snezhana Aleksieva | snezhana-aleksieva.com";
     description =
       "Hi there! I'm Snezhana, a junior graphic and UI/UX designer with a passion for creating visually appealing and user-friendly designs.Welcome to my web portfolio - hope you enjoy it! Ready to explore my work?";
     keywords = [
@@ -129,7 +129,7 @@ export async function generateMetadata({
   }
 
   const alternates = {
-    canonical: locale === "en" ? "/en" : "/",
+    canonical: locale === "en" ? "/en" : "/bg",
     languages: {
       bg: "/bg",
       en: "/en",

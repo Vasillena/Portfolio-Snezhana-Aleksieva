@@ -7,6 +7,11 @@ import image2 from "@/public/dots.svg";
 
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
+export const metadata = {
+  title: "Imprint | snezhana-aleksieva.com",
+  description: "Imprint",
+};
+
 export default function ImprintPage(): JSX.Element {
   const myFont = blackSansFont;
   return (

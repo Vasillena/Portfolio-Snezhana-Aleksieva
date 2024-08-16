@@ -4,6 +4,11 @@ import { getI18n } from "@/locales/server";
 import image1 from "@/public/hero-5.png";
 import image2 from "@/public/dots.svg";
 
+export const metadata = {
+  title: "Error | snezhana-aleksieva.com",
+  description: "Error",
+};
+
 export default async function FormFailedPage(): Promise<JSX.Element> {
   const t = await getI18n();
   return (

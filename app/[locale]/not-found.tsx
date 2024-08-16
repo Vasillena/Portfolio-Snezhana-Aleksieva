@@ -4,7 +4,7 @@ import image1 from "@/public/hero-5.png";
 import image2 from "@/public/404.svg";
 import image3 from "@/public/dots.svg";
 
-export default function NotFound() {
+export default function NotFound(): JSX.Element {
   return (
     <div className="max-w-7xl mx-auto flex flex-col items-center mb-10 text-center">
       <div className="hidden xl:inline-block w-[381px] h-[364px] self-end relative -top-32">
@@ -39,7 +39,7 @@ export default function NotFound() {
             loading incorrectly.
           </p>
         </div>
-        <div>
+        <div className="flex justify-center">
           <MainButton href={"/"} text={"Back to Homepage"} />
         </div>
       </div>

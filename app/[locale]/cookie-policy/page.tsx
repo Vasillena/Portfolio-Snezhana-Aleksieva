@@ -8,6 +8,11 @@ import image3 from "@/public/dots.svg";
 
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
+export const metadata = {
+  title: "Cookie Policy | snezhana-aleksieva.com",
+  description: "Cookie Policy",
+};
+
 export default async function CookiePolicyPage(): Promise<JSX.Element> {
   const t = await getI18n();
   const myFont = blackSansFont;

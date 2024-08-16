@@ -7,6 +7,11 @@ import image2 from "@/public/thank-you.svg";
 import image3 from "@/public/dots.svg";
 import image4 from "@/public/thank-you-2.svg";
 
+export const metadata = {
+  title: "Thank You | snezhana-aleksieva.com",
+  description: "Thank You",
+};
+
 export default async function ThankYouPage(): Promise<JSX.Element> {
   const locale = getCurrentLocale();
   const t = await getI18n();
