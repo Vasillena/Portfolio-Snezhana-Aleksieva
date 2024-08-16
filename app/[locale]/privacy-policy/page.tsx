@@ -1,12 +1,10 @@
-"use client";
-
 import Image from "next/image";
 import Reveal from "@/app/components/Common/Reveal";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
+import { getI18n } from "@/locales/server";
 import image2 from "@/public/hero-5.png";
 import image3 from "@/public/dots.svg";
-import { useI18n } from "@/locales/client";
 
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
@@ -15,8 +13,8 @@ export const metadata = {
   description: "Privacy Policy",
 };
 
-export default function PrivacyPolicyPage(): JSX.Element {
-  const t = useI18n();
+export default async function PrivacyPolicyPage(): Promise<JSX.Element> {
+  const t = await getI18n();
   const myFont = blackSansFont;
 
   return (
