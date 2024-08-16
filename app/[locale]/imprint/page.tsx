@@ -89,7 +89,7 @@ export default function ImprintPage(): JSX.Element {
           </p>
         </div>
       </div>
-      <div className="mt-16">
+      <div className="my-16">
         <MainButton href={"/"} text={"Back to Homepage"} />
       </div>
     </div>

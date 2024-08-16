@@ -34,7 +34,7 @@ export default async function FormFailedPage(): Promise<JSX.Element> {
           {t("form-failed.text-1")}
         </h2>
       </div>
-      <div className="mt-16">
+      <div className="my-16">
         <MainButton href={"/"} text={t("thank-you.button")} />
       </div>
     </div>

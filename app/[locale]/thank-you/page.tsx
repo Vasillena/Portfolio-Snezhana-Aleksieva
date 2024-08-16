@@ -48,7 +48,7 @@ export default async function ThankYouPage(): Promise<JSX.Element> {
           {t("thank-you.text-1")}
         </h2>
       </div>
-      <div className="mt-16">
+      <div className="my-16">
         <MainButton href={"/"} text={t("thank-you.button")} />
       </div>
     </div>
