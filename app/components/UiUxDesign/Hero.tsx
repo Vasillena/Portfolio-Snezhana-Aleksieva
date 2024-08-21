@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Reveal from "../Common/Reveal";
+import RevealDesktop from "../Common/RevealDesktop";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
@@ -16,7 +16,7 @@ export default async function Hero(): Promise<JSX.Element> {
     <>
       <div className="max-w-7xl mx-auto mt-28 sm:mt-44 xl:mt-32 grid lg:grid-cols-3 gap-16 text-center lg:text-left">
         <div className="col-span-2 ">
-          <Reveal>
+          <RevealDesktop>
             <h1
               className={cn(
                 "text-3xl min-[400px]:text-4xl sm:text-6xl",
@@ -31,7 +31,7 @@ export default async function Hero(): Promise<JSX.Element> {
             <p className="mt-4 text-lg sm:text-xl sm:leading-6">
               {t("uiux-design.text-2")}
             </p>
-          </Reveal>
+          </RevealDesktop>
         </div>
         <div className="hidden xl:inline-block w-[381px] h-[364px] justify-self-end relative -top-32">
           <Image src={image2} alt="Decor image" fill object-fit="contain" />

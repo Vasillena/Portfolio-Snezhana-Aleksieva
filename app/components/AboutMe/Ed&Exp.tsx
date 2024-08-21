@@ -1,6 +1,6 @@
 import Education from "./Education";
 import Experience from "./Experience";
-import Reveal from "../Common/Reveal";
+import RevealDesktop from "../Common/RevealDesktop";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
@@ -12,7 +12,7 @@ export default async function EdExp(): Promise<JSX.Element> {
   const myFont = blackSansFont;
   return (
     <>
-      <Reveal>
+      <RevealDesktop>
         <div className="ml-72 sm:ml-0">
           <div className="flex justify-between xl:justify-start h-[68px]">
             <div className="w-[150px] sm:w-[300px]" />
@@ -118,8 +118,8 @@ export default async function EdExp(): Promise<JSX.Element> {
             <div className="w-[150px] sm:w-[300px]" />
           </div>
         </div>
-      </Reveal>
-      <Reveal>
+      </RevealDesktop>
+      <RevealDesktop>
         <div className="sm:hidden mt-32 mr-72 sm:ml-32 md:ml-44">
           <div className="flex justify-between h-[68px]">
             <div className="w-[150px]" />
@@ -192,7 +192,7 @@ export default async function EdExp(): Promise<JSX.Element> {
             <div className="w-[150px]" />
           </div>
         </div>
-      </Reveal>
+      </RevealDesktop>
     </>
   );
 }

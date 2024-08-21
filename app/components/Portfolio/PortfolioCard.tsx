@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 
 import MainButton from "../Common/MainButton";
-import Reveal from "../Common/Reveal";
+import RevealDesktop from "../Common/RevealDesktop";
 import SecondaryButton from "../Common/SecondaryButton";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
@@ -35,7 +35,7 @@ export default async function PortfolioCard({
   const t = await getI18n();
   const myFont = blackSansFont;
   return (
-    <Reveal>
+    <RevealDesktop>
       <div className={cn("flex")}>
         <div className="z-10">
           <div>
@@ -98,6 +98,6 @@ export default async function PortfolioCard({
           </div>
         </div>
       </div>
-    </Reveal>
+    </RevealDesktop>
   );
 }

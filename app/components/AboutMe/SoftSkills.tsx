@@ -1,5 +1,5 @@
 import CreativeAndSoftSkillsCard from "./CreativeAndSoftSkillsCard";
-import Reveal from "../Common/Reveal";
+import RevealDesktop from "../Common/RevealDesktop";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
@@ -10,7 +10,7 @@ export default async function SoftSkills(): Promise<JSX.Element> {
   const t = await getI18n();
   const myFont = blackSansFont;
   return (
-    <Reveal>
+    <RevealDesktop>
       <div className="mt-[100px]">
         <div>
           <h2
@@ -29,6 +29,6 @@ export default async function SoftSkills(): Promise<JSX.Element> {
         <CreativeAndSoftSkillsCard title={t("about.card-6-text-5")} />
         <CreativeAndSoftSkillsCard title={t("about.card-6-text-6")} />
       </div>
-    </Reveal>
+    </RevealDesktop>
   );
 }

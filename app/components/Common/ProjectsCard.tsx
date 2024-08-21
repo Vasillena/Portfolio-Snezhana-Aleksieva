@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 
 import Link from "next/link";
-import Reveal from "./Reveal";
+import RevealDesktop from "./RevealDesktop";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
@@ -65,7 +65,7 @@ export default async function ProjectsCard({
           </Link>
         </div>
       </div>
-      <Reveal>
+      <RevealDesktop>
         <div className="flex flex-wrap xl:flex-nowrap justify-center gap-y-20 gap-x-14 mt-16">
           <Image
             src={image1}
@@ -92,7 +92,7 @@ export default async function ProjectsCard({
             }}
           />
         </div>
-      </Reveal>
+      </RevealDesktop>
       <div className="mt-16 mb-[68px] flex justify-center xl:justify-start">
         <Image
           src={image5}

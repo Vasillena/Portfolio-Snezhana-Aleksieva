@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 
-import Reveal from "../Common/Reveal";
+import RevealDesktop from "../Common/RevealDesktop";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 
@@ -19,7 +19,7 @@ export default function CreativeFieldsCard({
 }: CreativeFieldCardProps): JSX.Element {
   const myFont = blackSansFont;
   return (
-    <Reveal>
+    <RevealDesktop>
       <div className="flex justify-center items-center gap-4 ">
         <div className="w-[62px] h-[62px] sm:w-[92px] sm:h-[92px] relative">
           <Image
@@ -38,6 +38,6 @@ export default function CreativeFieldsCard({
           </p>
         </div>
       </div>
-    </Reveal>
+    </RevealDesktop>
   );
 }

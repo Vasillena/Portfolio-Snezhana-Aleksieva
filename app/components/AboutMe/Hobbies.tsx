@@ -1,5 +1,5 @@
 import HobbiesCard from "./HobbiesCard";
-import Reveal from "../Common/Reveal";
+import RevealDesktop from "../Common/RevealDesktop";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
@@ -17,7 +17,7 @@ export default async function Hobbies(): Promise<JSX.Element> {
   const t = await getI18n();
   const myFont = blackSansFont;
   return (
-    <Reveal>
+    <RevealDesktop>
       <div className="mt-36 xl:mt-[72px] flex flex-col items-center xl:items-start">
         <div>
           <h2
@@ -67,6 +67,6 @@ export default async function Hobbies(): Promise<JSX.Element> {
           />
         </div>
       </div>
-    </Reveal>
+    </RevealDesktop>
   );
 }

@@ -1,4 +1,4 @@
-import Reveal from "../Common/Reveal";
+import RevealDesktop from "../Common/RevealDesktop";
 import SkillsCard from "./SkillsCard";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
@@ -10,7 +10,7 @@ export default async function Languages(): Promise<JSX.Element> {
   const t = await getI18n();
   const myFont = blackSansFont;
   return (
-    <Reveal>
+    <RevealDesktop>
       <div className="mt-[72px] md:mt-0 xl:mt-[100px]">
         <div>
           <h2
@@ -33,6 +33,6 @@ export default async function Languages(): Promise<JSX.Element> {
           margin2={"ml-[220px]"}
         />
       </div>
-    </Reveal>
+    </RevealDesktop>
   );
 }

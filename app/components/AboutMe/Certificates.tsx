@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Reveal from "../Common/Reveal";
+import RevealDesktop from "../Common/RevealDesktop";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
@@ -28,7 +28,7 @@ export default async function Certificates(): Promise<JSX.Element> {
           </h2>
         </div>
         <div className="flex flex-wrap justify-center  gap-y-6 gap-1 mt-12">
-          <Reveal>
+          <RevealDesktop>
             <div className="justify-self-center">
               <Link href="https://creative.softuni.bg/certificates/details/47406/e9509b3a">
                 <Image
@@ -41,8 +41,8 @@ export default async function Certificates(): Promise<JSX.Element> {
                 />
               </Link>
             </div>
-          </Reveal>
-          <Reveal>
+          </RevealDesktop>
+          <RevealDesktop>
             <div className="justify-self-center">
               <Link href="https://creative.softuni.bg/certificates/details/49413/faf14f39">
                 <Image
@@ -55,8 +55,8 @@ export default async function Certificates(): Promise<JSX.Element> {
                 />
               </Link>
             </div>
-          </Reveal>
-          <Reveal>
+          </RevealDesktop>
+          <RevealDesktop>
             <div className=" justify-self-center">
               <Link href="https://creative.softuni.bg/certificates/details/50265/837eef76">
                 <Image
@@ -69,7 +69,7 @@ export default async function Certificates(): Promise<JSX.Element> {
                 />
               </Link>
             </div>
-          </Reveal>
+          </RevealDesktop>
         </div>
       </div>
     </div>

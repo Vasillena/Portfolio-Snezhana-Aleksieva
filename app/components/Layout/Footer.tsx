@@ -5,7 +5,7 @@ import { useCurrentLocale, useI18n } from "@/locales/client";
 import FooterForm from "./FooterForm";
 import Image from "next/image";
 import Link from "next/link";
-import Reveal from "../Common/Reveal";
+import RevealDesktop from "../Common/RevealDesktop";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/dots.svg";
@@ -111,7 +111,7 @@ export default function Footer(): JSX.Element {
           </div>
         </div>
         <div>
-          <Reveal>
+          <RevealDesktop>
             <div className="flex justify-center mt-12 lg:mt-0 ">
               <h2
                 className={cn(
@@ -136,7 +136,7 @@ export default function Footer(): JSX.Element {
                 }}
               />
             </div>
-          </Reveal>
+          </RevealDesktop>
           <div className="mt-6 flex flex-col items-center ">
             <FooterForm />
           </div>

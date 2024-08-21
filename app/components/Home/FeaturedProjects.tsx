@@ -2,7 +2,7 @@ import { getCurrentLocale, getI18n } from "@/locales/server";
 
 import Image from "next/image";
 import Link from "next/link";
-import Reveal from "../Common/Reveal";
+import RevealDesktop from "../Common/RevealDesktop";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/projects.svg";
@@ -45,7 +45,7 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
           />
         </div>
         <div className="mx-auto flex flex-wrap justify-center xl:justify-between gap-y-20 gap-x-20 xl:gap-x-0  mt-8">
-          <Reveal>
+          <RevealDesktop>
             <div className="w-[300px] h-[300px] relative flex justify-center">
               <Image
                 src={image2}
@@ -54,8 +54,8 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
                 object-fit="contain"
               />
             </div>
-          </Reveal>
-          <Reveal>
+          </RevealDesktop>
+          <RevealDesktop>
             <div className="w-[300px] h-[300px] relative flex justify-center">
               <Image
                 src={image3}
@@ -64,9 +64,9 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
                 object-fit="contain"
               />
             </div>
-          </Reveal>
+          </RevealDesktop>
 
-          <Reveal>
+          <RevealDesktop>
             <div className="w-[300px] h-[300px] relative flex justify-center">
               <Image
                 src={image4}
@@ -75,8 +75,8 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
                 object-fit="contain"
               />
             </div>
-          </Reveal>
-          <Reveal>
+          </RevealDesktop>
+          <RevealDesktop>
             <div className="w-[300px] h-[300px] relative flex justify-center">
               <Image
                 src={image5}
@@ -85,7 +85,7 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
                 object-fit="contain"
               />
             </div>
-          </Reveal>
+          </RevealDesktop>
         </div>
         <div className="mt-11 flex justify-center lg:justify-end">
           <Link

@@ -61,16 +61,17 @@ export default function Hero(): JSX.Element {
                 {t("home.text-3")}
               </p>
             </div>
+
+            <div
+              className={cn(
+                "flex flex-col items-center lg:flex-row gap-y-5 gap-x-7 pt-8 min-[400px]:pt-12 sm:pt-[86px]",
+                locale === "bg" && "sm:pt-[92px]"
+              )}
+            >
+              <MainButton href={"/portfolio"} text={t("home.button-1")} />
+              <SecondaryButton href={"/contacts"} text={t("home.button-2")} />
+            </div>
           </Reveal>
-          <div
-            className={cn(
-              "flex flex-col items-center lg:flex-row gap-y-5 gap-x-7 pt-8 min-[400px]:pt-12 sm:pt-[86px]",
-              locale === "bg" && "sm:pt-[92px]"
-            )}
-          >
-            <MainButton href={"/portfolio"} text={t("home.button-1")} />
-            <SecondaryButton href={"/contacts"} text={t("home.button-2")} />
-          </div>
         </div>
 
         <div
