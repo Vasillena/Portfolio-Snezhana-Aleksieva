@@ -1,3 +1,5 @@
+import FollowPointer from "@/app/components/Common/FollowPointer";
+
 export async function generateMetadata({
   params: { locale },
 }: {
@@ -133,5 +135,10 @@ export async function generateMetadata({
 }
 
 export default function ContactsPage(): JSX.Element {
-  return <div />;
+  return (
+  <>
+    <div />
+    <FollowPointer/>
+  </>
+  )
 }

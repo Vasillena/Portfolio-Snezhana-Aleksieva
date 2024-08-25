@@ -1,3 +1,4 @@
+import FollowPointer from "@/app/components/Common/FollowPointer";
 import Hero from "../../components/Portfolio/Hero";
 import Portfolio from "../../components/Portfolio/Portfolio";
 
@@ -141,6 +142,7 @@ export default function PortfolioPage(): JSX.Element {
   return (
     <>
       <Hero />
+      <FollowPointer />
       <Portfolio />
     </>
   );

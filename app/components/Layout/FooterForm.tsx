@@ -111,7 +111,7 @@ export default function FooterForm(): JSX.Element {
               type="checkbox"
               aria-label="Terms and Conditions"
               required
-              className="w-4 h-4 bg-[#F2EEE9] border-[#B0752A] rounded focus:ring-[#F2EEE9] focus:ring-2"
+              className="w-4 h-4 bg-[#f9f7f4] border-[#B0752A] rounded accent-[#F2EEE9] "
             />
             <label htmlFor="link-checkbox" className="ms-2 text-lg sm:text-xl">
               {t("footer.form-4")}

@@ -1,3 +1,4 @@
+import FollowPointer from "@/app/components/Common/FollowPointer";
 import Image from "next/image";
 import Reveal from "@/app/components/Common/Reveal";
 import blackSans from "next/font/local";
@@ -19,6 +20,7 @@ export default async function CookiePolicyPage(): Promise<JSX.Element> {
 
   return (
     <>
+      <FollowPointer />
       <div className="max-w-7xl mx-auto  mt-28 sm:mt-44 xl:mt-32 grid lg:grid-cols-3 gap-16 text-center lg:text-left">
         <div className="col-span-2">
           <Reveal>

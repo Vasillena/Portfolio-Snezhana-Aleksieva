@@ -1,3 +1,4 @@
+import FollowPointer from "@/app/components/Common/FollowPointer";
 import Hero from "../../../components/IllustrationsAndDigitalArt/Hero";
 import OtherProjects from "../../../components/IllustrationsAndDigitalArt/OtherProjects";
 import Projects from "../../../components/IllustrationsAndDigitalArt/Projects";
@@ -145,6 +146,7 @@ export default function IllustrationsAndDigitalDesignPage(): JSX.Element {
   return (
     <>
       <Hero />
+      <FollowPointer />
       <Projects />
       <OtherProjects />
     </>

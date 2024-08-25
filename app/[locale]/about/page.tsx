@@ -1,5 +1,6 @@
 import Certificates from "../../components/AboutMe/Certificates";
 import EdExp from "../../components/AboutMe/Ed&Exp";
+import FollowPointer from "@/app/components/Common/FollowPointer";
 import Hero from "../../components/AboutMe/Hero";
 import Hobbies from "../../components/AboutMe/Hobbies";
 import Skills from "../../components/AboutMe/Skills";
@@ -144,6 +145,7 @@ export default function AboutMePage(): JSX.Element {
   return (
     <>
       <Hero />
+      <FollowPointer/>
       <div className="max-w-7xl mx-auto flex flex-col xl:flex-row mt-20 justify-center xl:justify-between items-center">
         <div>
           <div>
