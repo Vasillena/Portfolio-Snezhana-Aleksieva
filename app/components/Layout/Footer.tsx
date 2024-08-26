@@ -15,7 +15,7 @@ import image3 from "@/public/icon-2.svg";
 import image4 from "@/public/icon-3.svg";
 import image5 from "@/public/icon-4.svg";
 import image6 from "@/public/connect.svg";
-import image7 from "@/public/footer.svg";
+import image7 from "@/public/footer.png";
 import image8 from "@/public/cookie.svg";
 import image9 from "@/public/connect-2.svg";
 import { usePathname } from "next/navigation";
@@ -143,7 +143,7 @@ export default function Footer(): JSX.Element {
         </div>
         <div
           className={cn(
-            "hidden xl:inline-block justify-self-end mt-20 lg:mt-5",
+            "hidden xl:inline-block justify-self-end mt-20 lg:mt-28",
             pathname === `/${locale}/contacts` && "xl:hidden"
           )}
         >
@@ -152,7 +152,7 @@ export default function Footer(): JSX.Element {
             alt="Text image"
             style={{
               // width: "263px",
-              width: "286px",
+              width: "328px",
               height: "auto",
             }}
           />
