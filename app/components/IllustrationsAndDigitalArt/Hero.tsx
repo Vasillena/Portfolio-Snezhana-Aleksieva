@@ -36,7 +36,7 @@ export default async function Hero(): Promise<JSX.Element> {
             </p>
           </RevealDesktop>
         </div>
-        <div className="hidden xl:inline-block w-[381px] h-[364px] justify-self-end relative -top-32">
+        <div className="hidden xl:inline-block w-[310px] h-[477px] justify-self-end relative -top-32">
           <Image src={image1} alt="Decor image" fill object-fit="contain" />
         </div>
       </div>

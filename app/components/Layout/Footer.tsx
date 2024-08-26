@@ -143,8 +143,9 @@ export default function Footer(): JSX.Element {
         </div>
         <div
           className={cn(
-            "hidden xl:inline-block justify-self-end mt-20 lg:mt-[100px]",
-            pathname === `/${locale}/contacts` && "xl:hidden"
+            "hidden xl:inline-block justify-self-end mt-20",
+            pathname === `/${locale}/contacts` && "xl:hidden",
+            locale === "en" ? "lg:mt-[100px]" : "lg:mt-[104px]"
           )}
         >
           <Image
@@ -158,7 +159,7 @@ export default function Footer(): JSX.Element {
         </div>
         <div
           className={cn(
-            "hidden xl:inline-block w-[320px] h-[670px] justify-self-end relative -top-64",
+            "hidden xl:inline-block w-[320px] h-[670px] justify-self-end relative -top-72",
             pathname !== `/${locale}/contacts` && "xl:hidden"
           )}
         >

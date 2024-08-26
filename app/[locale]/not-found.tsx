@@ -7,7 +7,7 @@ import image3 from "@/public/dots.svg";
 export default function NotFound(): JSX.Element {
   return (
     <div className="max-w-7xl mx-auto flex flex-col items-center mb-10 text-center">
-      <div className="hidden xl:inline-block w-[381px] h-[364px] self-end relative -top-32">
+      <div className="hidden xl:inline-block w-[310px] h-[364px] self-end relative ">
         <Image src={image1} alt="Decor image" fill object-fit="contain" />
       </div>
       <div className="mt-40 xl:mt-0">

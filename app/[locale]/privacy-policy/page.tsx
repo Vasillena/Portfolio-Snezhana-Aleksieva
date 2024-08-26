@@ -34,7 +34,7 @@ export default async function PrivacyPolicyPage(): Promise<JSX.Element> {
             </h1>
           </Reveal>
         </div>
-        <div className="hidden xl:inline-block w-[415px] h-[331px] justify-self-end relative -top-32">
+        <div className="hidden xl:inline-block w-[310px] h-[331px] justify-self-end relative -top-32">
           <Image src={image2} alt="Decor image" fill object-fit="contain" />
         </div>
       </div>

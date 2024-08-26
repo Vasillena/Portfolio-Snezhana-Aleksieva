@@ -19,12 +19,12 @@ export default function ImprintPage(): JSX.Element {
     <>
       <FollowPointer />
       <div className="max-w-7xl mx-auto flex flex-col items-center mb-10">
-        <div className="self-end relative -top-32">
+        <div className="self-end relative">
           <Image
             src={image1}
             alt="Decor image"
             style={{
-              width: "374px",
+              width: "310px",
               height: "auto",
             }}
           />
