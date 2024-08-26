@@ -76,7 +76,6 @@ export default function MainNav({
           </Link>
         );
       })}
-      {/* <Switch /> */}
     </nav>
   );
 }

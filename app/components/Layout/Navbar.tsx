@@ -48,7 +48,6 @@ export default function Navbar(): JSX.Element {
     };
 
     if (open && "ontouchstart" in window) {
-      // Only add listener for touch devices
       document.addEventListener("touchstart", handleClickOutside);
     } else {
       document.removeEventListener("touchstart", handleClickOutside);
