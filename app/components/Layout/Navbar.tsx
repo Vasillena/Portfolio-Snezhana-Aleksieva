@@ -80,19 +80,20 @@ export default function Navbar(): JSX.Element {
             : "transition-all duration-500"
         )}
       >
-        <div className="px-4 sm:px-6 lg:px-0 flex h-16 items-center">
-          <Link href="/" className="ml-4 flex lg:ml-0 lg:mr-6 gap-x-2">
-            <Image
-              src={logo}
-              alt="Logo"
-              priority
-              style={{
-                width: "171px",
-                height: "auto",
-              }}
-            />
-          </Link>
-          <MainNav />
+        <div className="px-4 sm:px-6 lg:px-0 flex h-16 justify-center items-center">
+          <MainNav>
+            <Link href="/" className="ml-4 flex lg:ml-0 lg:mr-6 gap-x-2">
+              <Image
+                src={logo}
+                alt="Logo"
+                priority
+                style={{
+                  width: "171px",
+                  height: "auto",
+                }}
+              />
+            </Link>
+          </MainNav>
         </div>
       </div>
       <div

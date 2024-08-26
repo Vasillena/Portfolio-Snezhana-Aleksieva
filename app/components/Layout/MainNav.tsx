@@ -7,12 +7,16 @@ import { Switch } from "@/app/[locale]/switch";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 
-export default function MainNav(): JSX.Element {
+export default function MainNav({
+  children,
+}: {
+  children?: React.ReactNode;
+}): JSX.Element {
   const pathname = usePathname();
   const locale = useCurrentLocale();
   const t = useI18n();
 
-  const links = [
+  const links1 = [
     { href: "/", label: t("nav.home"), active: pathname === `/${locale}` },
     {
       href: "/portfolio",
@@ -20,6 +24,9 @@ export default function MainNav(): JSX.Element {
       active:
         pathname === `/${locale}/portfolio` || pathname.includes("/portfolio/"),
     },
+  ];
+
+  const links2 = [
     {
       href: "/about",
       label: t("nav.about"),
@@ -34,7 +41,7 @@ export default function MainNav(): JSX.Element {
 
   return (
     <nav className="mx-6 flex flex-col sm:flex-row items-center sm:space-x-4 lg:space-x-6 space-y-4 sm:space-y-0 ml-12 mt-6 sm:ml-6 sm:mt-0">
-      {links.map((link) => {
+      {links1.map((link) => {
         return (
           <Link
             key={link.href}
@@ -51,7 +58,25 @@ export default function MainNav(): JSX.Element {
           </Link>
         );
       })}
-      <Switch />
+      {children}
+      {links2.map((link) => {
+        return (
+          <Link
+            key={link.href}
+            href={link.href}
+            className={cn(
+              "flex items-center text-xl font-bold hover:text-[#B0752A]",
+              link.active ? "text-[#6F848F]" : "text-[#415064]"
+            )}
+          >
+            {link.active && (
+              <div className="hidden sm:block w-[3px] h-[3px] bg-[#B0752A] rounded-full mr-2" />
+            )}
+            {link.label}
+          </Link>
+        );
+      })}
+      {/* <Switch /> */}
     </nav>
   );
 }

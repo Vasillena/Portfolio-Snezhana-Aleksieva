@@ -81,7 +81,7 @@ export default function Footer(): JSX.Element {
               | +359 882 94 95 98
             </p>
           </div>
-          <div className="mt-12 lg:mt-48 flex flex-col items-center xl:items-start">
+          <div className="mt-12 lg:mt-20 flex flex-col items-center xl:items-start">
             <h2
               className={cn(
                 "text-3xl min-[400px]:text-4xl  lg:text-[40px] mb-3",
@@ -143,7 +143,7 @@ export default function Footer(): JSX.Element {
         </div>
         <div
           className={cn(
-            "hidden xl:inline-block justify-self-end mt-20 lg:mt-28",
+            "hidden xl:inline-block justify-self-end mt-20 lg:mt-[100px]",
             pathname === `/${locale}/contacts` && "xl:hidden"
           )}
         >
@@ -151,8 +151,7 @@ export default function Footer(): JSX.Element {
             src={image7}
             alt="Text image"
             style={{
-              // width: "263px",
-              width: "328px",
+              width: "248px",
               height: "auto",
             }}
           />

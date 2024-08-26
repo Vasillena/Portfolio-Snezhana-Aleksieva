@@ -6,6 +6,7 @@ import Footer from "../components/Layout/Footer";
 import Navbar from "../components/Layout/Navbar";
 import { Provider } from "./provider";
 import Script from "next/script";
+import { Switch } from "./switch";
 import { cn } from "@/lib/utils";
 import futura from "next/font/local";
 
@@ -162,6 +163,7 @@ export default async function RootLayout({
           <Navbar />
           {children}
           <Footer />
+          <Switch />
         </Provider>
       </body>
       <Script
