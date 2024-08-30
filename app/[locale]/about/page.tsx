@@ -130,7 +130,7 @@ export async function generateMetadata({
     },
   };
 
-  const metadataBase = new URL("https://snezhana-aleksieva.com");
+  const metadataBase = new URL("https://www.snezhana-aleksieva.com");
 
   return {
     title,
@@ -145,7 +145,7 @@ export default function AboutMePage(): JSX.Element {
   return (
     <>
       <Hero />
-      <FollowPointer/>
+      <FollowPointer />
       <div className="max-w-7xl mx-auto flex flex-col xl:flex-row mt-20 justify-center xl:justify-between items-center">
         <div>
           <div>

@@ -8,54 +8,104 @@
 
 
 <url>
-  <loc>https://www.snezhana-aleksieva.com/en</loc>
-  <lastmod>2024-08-14T16:24:13+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://www.snezhana-aleksieva.com/bg</loc>
+<lastmod>2024-08-30T12:28:25+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.snezhana-aleksieva.com/en/portfolio</loc>
-  <lastmod>2024-08-14T16:24:13+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.snezhana-aleksieva.com/bg/portfolio</loc>
+<lastmod>2024-08-30T12:28:25+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.snezhana-aleksieva.com/en/about</loc>
-  <lastmod>2024-08-14T16:24:13+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.snezhana-aleksieva.com/bg/about</loc>
+<lastmod>2024-08-30T12:28:25+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.snezhana-aleksieva.com/en/contacts</loc>
-  <lastmod>2024-08-14T16:24:13+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.snezhana-aleksieva.com/bg/contacts</loc>
+<lastmod>2024-08-30T12:28:25+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.snezhana-aleksieva.com/en/cookie-policy</loc>
-  <lastmod>2024-08-14T16:24:13+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.snezhana-aleksieva.com/bg/cookie-policy</loc>
+<lastmod>2024-08-30T12:28:25+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.snezhana-aleksieva.com/en/privacy-policy</loc>
-  <lastmod>2024-08-14T16:24:13+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.snezhana-aleksieva.com/bg/privacy-policy</loc>
+<lastmod>2024-08-30T12:28:25+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.snezhana-aleksieva.com/en/imprint</loc>
-  <lastmod>2024-08-14T16:24:13+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.snezhana-aleksieva.com/bg/imprint</loc>
+<lastmod>2024-08-30T12:28:25+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.snezhana-aleksieva.com/en/portfolio/graphic-design</loc>
-  <lastmod>2024-08-14T16:24:13+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.snezhana-aleksieva.com/bg/portfolio/graphic-design</loc>
+<lastmod>2024-08-30T12:28:25+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.snezhana-aleksieva.com/en/portfolio/ui-ux-design</loc>
-  <lastmod>2024-08-14T16:24:13+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.snezhana-aleksieva.com/bg/portfolio/ui-ux-design</loc>
+<lastmod>2024-08-30T12:28:25+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.snezhana-aleksieva.com/en/portfolio/illustrations-and-digital-art</loc>
-  <lastmod>2024-08-14T16:24:13+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.snezhana-aleksieva.com/bg/portfolio/illustrations-and-digital-art</loc>
+<lastmod>2024-08-30T12:28:25+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.snezhana-aleksieva.com/en</loc>
+<lastmod>2024-08-30T12:31:17+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://www.snezhana-aleksieva.com/en/portfolio</loc>
+<lastmod>2024-08-30T12:31:17+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.snezhana-aleksieva.com/en/about</loc>
+<lastmod>2024-08-30T12:31:17+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.snezhana-aleksieva.com/en/contacts</loc>
+<lastmod>2024-08-30T12:31:17+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.snezhana-aleksieva.com/en/cookie-policy</loc>
+<lastmod>2024-08-30T12:31:17+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.snezhana-aleksieva.com/en/privacy-policy</loc>
+<lastmod>2024-08-30T12:31:17+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.snezhana-aleksieva.com/en/imprint</loc>
+<lastmod>2024-08-30T12:31:17+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.snezhana-aleksieva.com/en/portfolio/graphic-design</loc>
+<lastmod>2024-08-30T12:31:17+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.snezhana-aleksieva.com/en/portfolio/ui-ux-design</loc>
+<lastmod>2024-08-30T12:31:17+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.snezhana-aleksieva.com/en/portfolio/illustrations-and-digital-art</loc>
+<lastmod>2024-08-30T12:31:17+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 
 

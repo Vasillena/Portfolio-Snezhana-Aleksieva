@@ -12,7 +12,7 @@ import image3 from "@/public/icon-3.svg";
 import image4 from "@/public/icon-4.svg";
 import image5 from "@/public/menu.svg";
 import image6 from "@/public/close.svg";
-import logo from "@/public/logo.svg";
+import logo from "@/public/logo.png";
 import { motion } from "framer-motion";
 import { useCurrentLocale } from "@/locales/client";
 import { usePathname } from "next/navigation";
@@ -79,7 +79,7 @@ export default function Navbar(): JSX.Element {
             : "transition-all duration-500"
         )}
       >
-        <div className="px-4 sm:px-6 lg:px-0 flex h-16 justify-center items-center">
+        <div className="px-4 sm:px-6 lg:px-0 flex h-20 justify-center items-center">
           <MainNav>
             <Link href="/" className="ml-4 flex lg:ml-0 lg:mr-6 gap-x-2">
               <Image
@@ -87,7 +87,7 @@ export default function Navbar(): JSX.Element {
                 alt="Logo"
                 priority
                 style={{
-                  width: "171px",
+                  width: "60px",
                   height: "auto",
                 }}
               />
@@ -111,7 +111,7 @@ export default function Navbar(): JSX.Element {
                 alt="Logo"
                 priority
                 style={{
-                  width: "120px",
+                  width: "40px",
                   height: "auto",
                 }}
               />

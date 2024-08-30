@@ -123,7 +123,7 @@ export async function generateMetadata({
     },
   };
 
-  const metadataBase = new URL("https://snezhana-aleksieva.com");
+  const metadataBase = new URL("https://www.snezhana-aleksieva.com");
 
   return {
     title,
@@ -136,9 +136,9 @@ export async function generateMetadata({
 
 export default function ContactsPage(): JSX.Element {
   return (
-  <>
-    <div />
-    <FollowPointer/>
-  </>
-  )
+    <>
+      <div />
+      <FollowPointer />
+    </>
+  );
 }

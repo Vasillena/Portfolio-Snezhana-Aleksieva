@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 import image1 from "@/public/welcome.svg";
 import image2 from "@/public/hero-1.json";
 import image3 from "@/public/welcome-2.svg";
-import image4 from "@/public/logo-2.svg";
+import image4 from "@/public/logo-2.png";
 
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
@@ -75,19 +75,19 @@ export default function Hero(): JSX.Element {
         </div>
 
         <div
-          className="hidden xl:inline-block w-[555px] h-[555px] justify-self-end relative top-8 -mr-10 "
+          className="hidden xl:inline-block w-[555px] h-[555px] justify-self-end relative top-8 -mr-8 "
           style={{
             backgroundImage: `url(${image4.src})`,
-            backgroundSize: "20%",
+            backgroundSize: "60%",
             backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
+            backgroundPosition: "bottom 60px right 50px",
           }}
         >
           <Lottie
             animationData={image2}
             play
             loop
-            // style={{ width: "450px", height: "450px" }}
+            style={{ width: "650px", height: "650px" }}
           />
         </div>
       </div>

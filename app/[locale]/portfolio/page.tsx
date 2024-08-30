@@ -127,7 +127,7 @@ export async function generateMetadata({
     },
   };
 
-  const metadataBase = new URL("https://snezhana-aleksieva.com");
+  const metadataBase = new URL("https://www.snezhana-aleksieva.com");
 
   return {
     title,
