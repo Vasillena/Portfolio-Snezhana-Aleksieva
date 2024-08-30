@@ -75,21 +75,20 @@ export default function Hero(): JSX.Element {
         </div>
 
         <div
-          className="hidden xl:inline-block w-[555px] h-[555px] justify-self-end relative top-24 -mr-12 "
+          className="hidden xl:inline-block w-[555px] h-[555px] justify-self-end relative top-8 -mr-8 "
           style={{
             backgroundImage: `url(${image4.src})`,
-            backgroundSize: "100%",
+            backgroundSize: "60%",
             backgroundRepeat: "no-repeat",
-            // backgroundPosition: "bottom 60px right 50px",
-            backgroundPosition: "bottom 0 right 50px",
+            backgroundPosition: "bottom 60px right 60px",
           }}
         >
-          {/* <Lottie
+          <Lottie
             animationData={image2}
             play
             loop
             style={{ width: "650px", height: "650px" }}
-          /> */}
+          />
         </div>
       </div>
     </>
