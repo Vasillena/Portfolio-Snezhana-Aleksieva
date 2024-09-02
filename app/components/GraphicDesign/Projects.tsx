@@ -20,7 +20,13 @@ import image24 from "@/public/gd-33.png";
 import image25 from "@/public/gd-34.png";
 import image26 from "@/public/gd-35.png";
 import image27 from "@/public/gd-36.png";
+import image28 from "@/public/gd-40.png";
+import image29 from "@/public/gd-41.png";
 import image3 from "@/public/gd-3.png";
+import image30 from "@/public/gd-42.png";
+import image31 from "@/public/gd-43.png";
+import image32 from "@/public/gd-44.png";
+import image33 from "@/public/gd-45.png";
 import image4 from "@/public/gd-4.png";
 import image5 from "@/public/gd-5.png";
 import image6 from "@/public/gd-6.png";
@@ -33,6 +39,16 @@ export default async function Projects(): Promise<JSX.Element> {
   return (
     <div className="max-w-7xl mx-auto mt-20">
       <ProjectsCard
+        title={t("graphic-design.card-11")}
+        text={t("graphic-design.card-11-text")}
+        href={
+          "https://www.behance.net/gallery/206782931/Redesign-Personal-Logo"
+        }
+        image1={image31}
+        image2={image32}
+        image3={image33}
+      />
+      <ProjectsCard
         title={t("graphic-design.card-1")}
         text={t("graphic-design.card-1-text-1")}
         href={
@@ -41,6 +57,16 @@ export default async function Projects(): Promise<JSX.Element> {
         image1={image1}
         image2={image2}
         image3={image3}
+      />
+      <ProjectsCard
+        title={t("graphic-design.card-10")}
+        text={t("graphic-design.card-10-text")}
+        href={
+          "https://www.behance.net/gallery/206914957/Logo-Design-for-Front-End-Developer"
+        }
+        image1={image28}
+        image2={image29}
+        image3={image30}
       />
       <ProjectsCard
         title={t("graphic-design.card-6")}

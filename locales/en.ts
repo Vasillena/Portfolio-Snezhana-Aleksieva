@@ -101,6 +101,12 @@ export default {
     "card-9": "Music Cover ",
     "card-9-text":
       "A design project for my graphic design course - a cover for music product. This assignment was part of my Photoshop homework, and it provided a great opportunity to explore my skills and creativity.",
+    "card-10": "Logo Design for Front-End Developer",
+    "card-10-text":
+      'This logo was created for Vasilena Yoneva, a young and passionate front-end developer with a love for minimalism. The design centers around the letter "V", symbolizing her name, and integrates subtle html symbols to reflect her profession.',
+    "card-11": "Redesign Personal Logo",
+    "card-11-text":
+      'After some time with my previous logo, I decided it was time for a change. The new logo is simple and reflects my approach to design—an "S" in a handwritten font, encircled, with a small dot to mark a fresh start. It’s a small update, but one that better represents me.',
     "text-4": "Thank you for exploring my Graphic Design Portfolio!",
     "text-5": "Explore my other work:",
   },
