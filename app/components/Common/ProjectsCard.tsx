@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
 import image4 from "@/public/icon-3.svg";
 import image5 from "@/public/dots.svg";
+import overlayImage from "@/public/hover.png";
 
 const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
@@ -41,13 +42,8 @@ export default async function ProjectsCard({
         >
           {title}
         </h2>
-        <p
-          className="text-lg sm:text-2xl mt-6 sm:leading-6
-        "
-        >
-          {text}
-        </p>
-        <div className=" mt-3 font-bold">
+        <p className="text-lg sm:text-2xl mt-6 sm:leading-6">{text}</p>
+        <div className="mt-3 font-bold">
           <Link
             href={href}
             target="_blank"
@@ -67,30 +63,22 @@ export default async function ProjectsCard({
       </div>
       <RevealDesktop>
         <div className="flex flex-wrap xl:flex-nowrap justify-center gap-y-20 gap-x-14 mt-16">
-          <Image
-            src={image1}
-            alt="Project image"
-            style={{
-              width: "387px",
-              height: "auto",
-            }}
-          />
-          <Image
-            src={image2}
-            alt="Project image"
-            style={{
-              width: "387px",
-              height: "auto",
-            }}
-          />
-          <Image
-            src={image3}
-            alt="Project image"
-            style={{
-              width: "387px",
-              height: "auto",
-            }}
-          />
+          {[image1, image2, image3].map((image, index) => (
+            <div key={index} className="relative w-[387px] h-auto group">
+              <Link href={href} target="_blank">
+                <Image
+                  src={image}
+                  alt="Project image"
+                  className="w-full h-auto transition-opacity duration-300"
+                />
+                <Image
+                  src={overlayImage}
+                  alt="Overlay"
+                  className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                />
+              </Link>
+            </div>
+          ))}
         </div>
       </RevealDesktop>
       <div className="mt-16 mb-[68px] flex justify-center xl:justify-start">

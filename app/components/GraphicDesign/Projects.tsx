@@ -39,26 +39,6 @@ export default async function Projects(): Promise<JSX.Element> {
   return (
     <div className="max-w-7xl mx-auto mt-20">
       <ProjectsCard
-        title={t("graphic-design.card-11")}
-        text={t("graphic-design.card-11-text")}
-        href={
-          "https://www.behance.net/gallery/206782931/Redesign-Personal-Logo"
-        }
-        image1={image31}
-        image2={image32}
-        image3={image33}
-      />
-      <ProjectsCard
-        title={t("graphic-design.card-1")}
-        text={t("graphic-design.card-1-text-1")}
-        href={
-          "https://www.behance.net/gallery/201366607/Sn-Aleksieva-My-Personal-Branding"
-        }
-        image1={image1}
-        image2={image2}
-        image3={image3}
-      />
-      <ProjectsCard
         title={t("graphic-design.card-10")}
         text={t("graphic-design.card-10-text")}
         href={
@@ -67,16 +47,6 @@ export default async function Projects(): Promise<JSX.Element> {
         image1={image28}
         image2={image29}
         image3={image30}
-      />
-      <ProjectsCard
-        title={t("graphic-design.card-6")}
-        text={t("graphic-design.card-6-text")}
-        href={
-          "https://www.behance.net/gallery/205118819/Aurora-Hotel-Restaurant-Logo-Design"
-        }
-        image1={image16}
-        image2={image17}
-        image3={image18}
       />
       <ProjectsCard
         title={t("graphic-design.card-7")}
@@ -89,16 +59,6 @@ export default async function Projects(): Promise<JSX.Element> {
         image3={image21}
       />
       <ProjectsCard
-        title={t("graphic-design.card-8")}
-        text={t("graphic-design.card-8-text")}
-        href={
-          "https://www.behance.net/gallery/204968409/Fantasy-Book-Cover-Design"
-        }
-        image1={image22}
-        image2={image23}
-        image3={image24}
-      />
-      <ProjectsCard
         title={t("graphic-design.card-9")}
         text={t("graphic-design.card-9-text")}
         href={
@@ -107,6 +67,26 @@ export default async function Projects(): Promise<JSX.Element> {
         image1={image25}
         image2={image26}
         image3={image27}
+      />
+      <ProjectsCard
+        title={t("graphic-design.card-11")}
+        text={t("graphic-design.card-11-text")}
+        href={
+          "https://www.behance.net/gallery/206782931/Redesign-Personal-Logo"
+        }
+        image1={image31}
+        image2={image32}
+        image3={image33}
+      />
+      <ProjectsCard
+        title={t("graphic-design.card-6")}
+        text={t("graphic-design.card-6-text")}
+        href={
+          "https://www.behance.net/gallery/205118819/Aurora-Hotel-Restaurant-Logo-Design"
+        }
+        image1={image16}
+        image2={image17}
+        image3={image18}
       />
       <ProjectsCard
         title={t("graphic-design.card-2")}
@@ -127,6 +107,26 @@ export default async function Projects(): Promise<JSX.Element> {
         image1={image7}
         image2={image8}
         image3={image9}
+      />
+      <ProjectsCard
+        title={t("graphic-design.card-8")}
+        text={t("graphic-design.card-8-text")}
+        href={
+          "https://www.behance.net/gallery/204968409/Fantasy-Book-Cover-Design"
+        }
+        image1={image22}
+        image2={image23}
+        image3={image24}
+      />
+      <ProjectsCard
+        title={t("graphic-design.card-1")}
+        text={t("graphic-design.card-1-text-1")}
+        href={
+          "https://www.behance.net/gallery/201366607/Sn-Aleksieva-My-Personal-Branding"
+        }
+        image1={image1}
+        image2={image2}
+        image3={image3}
       />
       <ProjectsCard
         title={t("graphic-design.card-4")}
