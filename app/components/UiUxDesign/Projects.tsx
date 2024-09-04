@@ -6,6 +6,9 @@ import image3 from "@/public/gd-18.png";
 import image4 from "@/public/gd-37.png";
 import image5 from "@/public/gd-38.png";
 import image6 from "@/public/gd-39.png";
+import image7 from "@/public/gd-46.png";
+import image8 from "@/public/gd-47.png";
+import image9 from "@/public/gd-48.png";
 
 export default async function Projects(): Promise<JSX.Element> {
   const t = await getI18n();
@@ -18,6 +21,14 @@ export default async function Projects(): Promise<JSX.Element> {
         image1={image4}
         image2={image5}
         image3={image6}
+      />
+      <ProjectsCard
+        title={t("uiux-design.card-3")}
+        text={t("uiux-design.card-3-text")}
+        href={"https://www.behance.net/gallery/207166583/Q-bar-Landing-Page"}
+        image1={image7}
+        image2={image8}
+        image3={image9}
       />
       <ProjectsCard
         title={t("uiux-design.card-1")}

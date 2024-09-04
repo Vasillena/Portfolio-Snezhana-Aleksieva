@@ -120,6 +120,9 @@ export default {
     "card-2": "My portfolio website",
     "card-2-text":
       "My portfolio website was created with a clear objective: to showcase my design skills in an elegant and professional manner. The core idea behind the design was to blend femininity with functionality while maintaining aesthetic simplicity. ",
+    "card-3": "Q bar - Landing Page Design",
+    "card-3-text":
+      "The Q Bar website is a dynamic and visually captivating representation of the bar’s dual nature. With both day and night themes, the design adapts to showcase the vibrant, sunlit atmosphere as well as the electrifying energy of its famous nightlife.",
     "text-4": "Thank you for exploring my UI/UX Design Portfolio!",
   },
   "illustrations-digital": {
