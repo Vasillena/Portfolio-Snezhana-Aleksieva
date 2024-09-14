@@ -34,8 +34,8 @@ export default function FollowPointer() {
       style={{
         x,
         y,
-        width: "20px",
-        height: "20px",
+        width: "6px",
+        height: "6px",
         borderRadius: "50%",
         background: "#B0752A",
         position: "fixed",
