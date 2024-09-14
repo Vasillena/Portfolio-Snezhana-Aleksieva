@@ -18,12 +18,12 @@ export default async function Projects(): Promise<JSX.Element> {
   return (
     <div className="max-w-7xl mx-auto mt-20">
       <ProjectsCard
-        title={t("uiux-design.card-2")}
-        text={t("uiux-design.card-2-text")}
-        href={"https://www.behance.net/gallery/205302643/My-Web-Portfolio"}
-        image1={image4}
-        image2={image5}
-        image3={image6}
+        title={t("uiux-design.card-3")}
+        text={t("uiux-design.card-3-text")}
+        href={"https://www.behance.net/gallery/207166583/Q-bar-Landing-Page"}
+        image1={image7}
+        image2={image8}
+        image3={image9}
       />
       <ProjectsCard
         title={t("uiux-design.card-4")}
@@ -36,20 +36,20 @@ export default async function Projects(): Promise<JSX.Element> {
         image3={image12}
       />
       <ProjectsCard
-        title={t("uiux-design.card-3")}
-        text={t("uiux-design.card-3-text")}
-        href={"https://www.behance.net/gallery/207166583/Q-bar-Landing-Page"}
-        image1={image7}
-        image2={image8}
-        image3={image9}
-      />
-      <ProjectsCard
         title={t("uiux-design.card-1")}
         text={t("uiux-design.card-1-text")}
         href={"https://www.behance.net/gallery/204141765/TailMate-UIUX-Design"}
         image1={image1}
         image2={image2}
         image3={image3}
+      />
+      <ProjectsCard
+        title={t("uiux-design.card-2")}
+        text={t("uiux-design.card-2-text")}
+        href={"https://www.behance.net/gallery/205302643/My-Web-Portfolio"}
+        image1={image4}
+        image2={image5}
+        image3={image6}
       />
     </div>
   );
