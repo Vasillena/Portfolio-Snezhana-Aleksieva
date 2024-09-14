@@ -1,6 +1,9 @@
 import ProjectsCard from "../Common/ProjectsCard";
 import { getI18n } from "@/locales/server";
 import image1 from "@/public/gd-16.png";
+import image10 from "@/public/gd-49.png";
+import image11 from "@/public/gd-50.png";
+import image12 from "@/public/gd-51.png";
 import image2 from "@/public/gd-17.png";
 import image3 from "@/public/gd-18.png";
 import image4 from "@/public/gd-37.png";
@@ -21,6 +24,16 @@ export default async function Projects(): Promise<JSX.Element> {
         image1={image4}
         image2={image5}
         image3={image6}
+      />
+      <ProjectsCard
+        title={t("uiux-design.card-4")}
+        text={t("uiux-design.card-4-text")}
+        href={
+          "https://www.behance.net/gallery/207934983/Design-for-Personal-Blog-From-IVF-to-Baby"
+        }
+        image1={image10}
+        image2={image11}
+        image3={image12}
       />
       <ProjectsCard
         title={t("uiux-design.card-3")}

@@ -34,14 +34,14 @@ export default function FollowPointer() {
       style={{
         x,
         y,
-        width: "6px",
-        height: "6px",
+        width: "20px",
+        height: "20px",
         borderRadius: "50%",
-        background: "#B0752A",
+        background: "#F2EEE9",
+        mixBlendMode: "multiply",
         position: "fixed",
         top: 0,
         left: 0,
-        // zIndex: 9999,
         zIndex: 100,
         pointerEvents: "none",
       }}

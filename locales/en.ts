@@ -123,6 +123,9 @@ export default {
     "card-3": "Q bar - Landing Page Design",
     "card-3-text":
       "The Q Bar website is a dynamic and visually captivating representation of the bar’s dual nature. With both day and night themes, the design adapts to showcase the vibrant, sunlit atmosphere as well as the energy of its famous nightlife.",
+    "card-4": "Design for Personal Blog: From IVF to Baby",
+    "card-4-text":
+      "This project involves designing a personal blog titled 'From IVF to Baby.' My goal was to create a visual experience that reflects the sensitivity and importance of the topic through a minimalistic approach and a monochrome color scheme.",
     "text-4": "Thank you for exploring my UI/UX Design Portfolio!",
   },
   "illustrations-digital": {
