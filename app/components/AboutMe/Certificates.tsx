@@ -108,9 +108,8 @@ export default async function Certificates(): Promise<JSX.Element> {
                   src={image4}
                   alt="Certificate image"
                   style={{
-                    width: "194px",
+                    width: "200px",
                     height: "auto",
-                    marginTop: "2px",
                   }}
                 />
               </Link>
