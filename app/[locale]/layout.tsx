@@ -157,6 +157,9 @@ export default async function RootLayout({
 }) {
   return (
     <html lang={locale}>
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/bdo2yzs.css" />
+      </head>
       <GoogleTagManager gtmId="GTM-PV9FK68J" />
       <body className={cn("px-2", myFont.className)}>
         <Provider locale={locale}>
