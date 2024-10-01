@@ -160,7 +160,9 @@ export default async function RootLayout({
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/bdo2yzs.css" />
       </head>
-      <GoogleTagManager gtmId="GTM-PV9FK68J" />
+      <GoogleTagManager
+        gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID!}
+      />
       <body className={cn("px-2", myFont.className)}>
         <Provider locale={locale}>
           <Navbar />
@@ -174,7 +176,7 @@ export default async function RootLayout({
         // charSet="UTF-8"
         src="//cdn.cookie-script.com/s/7339a3ea3dfbe31b512c9abbd5594d18.js"
       ></Script>
-      <GoogleAnalytics gaId="G-PCLR15Q7BD" />
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID!} />
     </html>
   );
 }
