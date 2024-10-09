@@ -12,7 +12,8 @@ import image3 from "@/public/icon-3.svg";
 import image4 from "@/public/icon-4.svg";
 import image5 from "@/public/menu.svg";
 import image6 from "@/public/close.svg";
-import logo from "@/public/logo.png";
+import logo from "@/public/logo-3.png";
+import logoSmall from "@/public/logo.png";
 import { motion } from "framer-motion";
 import { useCurrentLocale } from "@/locales/client";
 import { usePathname } from "next/navigation";
@@ -87,7 +88,7 @@ export default function Navbar(): JSX.Element {
                 alt="Logo"
                 priority
                 style={{
-                  width: "60px",
+                  width: "160px",
                   height: "auto",
                 }}
               />
@@ -107,7 +108,7 @@ export default function Navbar(): JSX.Element {
           <div>
             <Link href="/">
               <Image
-                src={logo}
+                src={logoSmall}
                 alt="Logo"
                 priority
                 style={{

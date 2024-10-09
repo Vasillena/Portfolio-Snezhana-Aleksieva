@@ -39,9 +39,9 @@ export default function Footer(): JSX.Element {
     >
       <div
         className={cn(
-          "max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 py-24",
+          "max-w-7xl mx-auto flex justify-evenly py-24",
           pathname === `/${locale}/contacts` &&
-            "xl:grid-cols-3 my-auto py-0 pt-32 xl:pt-44"
+            "grid grid-cols-1 xl:grid-cols-3 my-auto py-0 pt-32 xl:pt-44"
         )}
       >
         <div className="justify-self-center">

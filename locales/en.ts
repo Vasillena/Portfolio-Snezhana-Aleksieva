@@ -18,10 +18,10 @@ export default {
   },
   home: {
     "title-1": "to My Design Journey",
-    "text-1":
-      "Hi there! I'm Snezhana, a junior graphic and UI/UX designer with a passion for creating visually appealing and user-friendly designs.",
-    "text-2": "Welcome to my portfolio - hope you enjoy it!",
-    "text-3": "Ready to explore my work?",
+    "text-1": "Hi there!",
+    "text-2":
+      "I'm Snezhana, a junior graphic and UI/UX designer from Bulgaria. I love creating clean, visually appealing designs that balance beauty with function.",
+    "text-3": "Ready to explore more?",
     "button-1": "Explore My Projects",
     "button-2": "Get in Touch",
     "card-1-1": "Brand",
@@ -30,13 +30,11 @@ export default {
     "card-3": "Layout",
     "card-4": "UI/UX",
     "title-2": "About",
-    "text-6":
-      "I’m a graphic and UI/UX designer with a strong background in marketing and sales.",
+    "text-6": "From hospitality to design",
     "text-7":
-      "I bring a unique blend of creativity and strategic thinking to my projects.",
+      "With over 12 years of experience in marketing and sales within the hospitality industry, I've learned the importance of connecting with people through thoughtful, engaging visuals. Now, as a junior designer, I’m channeling that experience into creating designs that are not just aesthetically pleasing, but truly functional.",
     "text-8":
-      "Passionate about minimalist design and constantly expanding my skills, I strive to create visually stunning and functional work. My journey in design is driven by a commitment to continuous learning and innovation.",
-    "text-9": "Let’s create something inspiring together!",
+      "I’m passionate about minimalist, eye-catching designs that bring together creativity and usability. My background gives me a unique perspective on how design can support both business goals and user needs. I’m always eager to learn and grow, pushing myself to continuously improve in this field.",
     "button-3": "Learn More",
     "title-3": "Featured",
     "text-10": "View All",
@@ -144,11 +142,13 @@ export default {
     title: "Snezhana Aleksieva",
     "text-1": "Graphic Design | UI/UX Design",
     "text-2":
-      "I’m Snezhana, a junior graphic and UI/UX designer with background in marketing and sales, currently based in Blagoevgrad, Bulgaria. I am a native Bulgarian speaker and am fluent in conversational English.",
+      "My professional journey ",
     "text-3":
-      "With over 12 years of experience in the hospitality industry, I have acquired a unique blend of skills, but my true passion lies in visual art. My work aims to balance aesthetics and functionality, leveraging my marketing expertise to communicate effectively.",
+      "At 34 years old, I’ve spent over a decade working in marketing and sales within the hospitality industry, helping businesses grow and connect with their customers. My passion for design grew alongside my career, leading me to pursue graphic and UI/UX design as a new path. Through dedicated self-study and professional training, I’ve been building my skills and diving deeper into this field.",
     "text-4":
-      "My design education began at SoftUni Creative - academy for design, creativity and visualisation. I am constantly expanding my knowledge and skills to stay up to date with the latest trends and techniques.",
+      "What I bring to the table is a strong foundation in understanding how design can drive results, thanks to my marketing experience. I know how to balance creativity with practicality—design should look great, but it also needs to work well and serve a purpose.",
+          "text-5":
+      "In addition to design, I’m passionate about learning new things, whether it's through online courses, books, or hands-on practice. I believe in continuously improving, and I’m excited about the opportunities ahead.",
     button: "Explore My Projects",
     "card-1-title": "Education",
     "card-1-text-1": "College Of Tourism",
@@ -176,18 +176,17 @@ export default {
     "card-4-text-1": "Bulgarian",
     "card-4-text-2": "English",
     "card-5-title": "Creative Fields",
-    "card-5-text-1": "Logo design",
-    "card-5-text-2": "Branding",
-    "card-5-text-3": "Layout design",
-    "card-5-text-4": "Social media design",
-    "card-5-text-5": "UX/UI design",
+    "card-5-text-1": "Graphic Design",
+    "card-5-text-2": "Web Design",
+    "card-5-text-3": "UI/UX Design",
+    "card-5-text-4": "Branding",
+    "card-5-text-5": "Visual Communication",
     "card-6-title": "Soft Skills",
-    "card-6-text-1": "Time managment",
-    "card-6-text-2": "Attention to details",
-    "card-6-text-3": "Team work",
-    "card-6-text-4": "Analytical thinking",
-    "card-6-text-5": "Critical analysis",
-    "card-6-text-6": "Receptiveness to feedback",
+    "card-6-text-1": "Creativity",
+    "card-6-text-2": "Precision",
+    "card-6-text-3": "Empathy",
+    "card-6-text-4": "Collaboration",
+    "card-6-text-5": "Adaptability",
     "card-7-title": "Hobbies",
     "card-7-text-1": "Traveling",
     "card-7-text-2": "Camping",

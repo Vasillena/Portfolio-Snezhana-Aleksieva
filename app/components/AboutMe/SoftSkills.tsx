@@ -27,7 +27,6 @@ export default async function SoftSkills(): Promise<JSX.Element> {
         <CreativeAndSoftSkillsCard title={t("about.card-6-text-3")} />
         <CreativeAndSoftSkillsCard title={t("about.card-6-text-4")} />
         <CreativeAndSoftSkillsCard title={t("about.card-6-text-5")} />
-        <CreativeAndSoftSkillsCard title={t("about.card-6-text-6")} />
       </div>
     </RevealDesktop>
   );
