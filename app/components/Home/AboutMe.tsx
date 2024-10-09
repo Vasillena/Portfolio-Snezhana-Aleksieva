@@ -26,7 +26,7 @@ export default async function AboutMe(): Promise<JSX.Element> {
           <div className="flex mt-6 justify-center lg:justify-start">
             <h2
               className={cn(
-                "text-3xl min-[400px]:text-4xl  lg:text-[40px]",
+                "text-3xl min-[400px]:text-4xl  lg:text-5xl",
                 myFont.className
               )}
             >
@@ -39,7 +39,7 @@ export default async function AboutMe(): Promise<JSX.Element> {
                 locale == "en" ? "mt-[22px] sm:mt-[20px]" : "mt-[10px]"
               }
               style={{
-                width: locale === "en" ? "53px" : "68px",
+                width: locale === "en" ? "60px" : "68px",
                 height: "auto",
                 alignSelf: "flex-end",
                 marginLeft: "-20px",

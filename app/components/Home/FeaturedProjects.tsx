@@ -25,7 +25,7 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
         <div className="flex justify-center">
           <h2
             className={cn(
-              "text-3xl min-[400px]:text-4xl  lg:text-[40px] ",
+              "text-3xl min-[400px]:text-4xl  lg:text-5xl ",
               myFont.className
             )}
           >
@@ -36,7 +36,7 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
             alt="Text image"
             className={locale === "en" ? "mt-[28px] sm:mt-[30px]" : "mt-[10px]"}
             style={{
-              width: locale === "en" ? "111px" : "197px",
+              width: locale === "en" ? "128px" : "197px",
               height: "auto",
               alignSelf: "flex-end",
               marginLeft: "-36px",

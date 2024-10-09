@@ -39,11 +39,12 @@ export default function Footer(): JSX.Element {
     >
       <div
         className={cn(
-          "max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 py-24",
-          pathname === `/${locale}/contacts` && "my-auto py-0 pt-32 xl:pt-44"
+          "max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 py-24",
+          pathname === `/${locale}/contacts` &&
+            "xl:grid-cols-3 my-auto py-0 pt-32 xl:pt-44"
         )}
       >
-        <div>
+        <div className="justify-self-center">
           <div
             className={cn(
               "lg:hidden mt-4 lg:mt-5 mb-12 flex justify-center xl:justify-start",
@@ -67,7 +68,7 @@ export default function Footer(): JSX.Element {
           >
             <h2
               className={cn(
-                "text-3xl min-[400px]:text-4xl  lg:text-[40px] mb-3",
+                "text-3xl min-[400px]:text-4xl  lg:text-5xl mb-3",
                 myFont.className
               )}
             >
@@ -84,7 +85,7 @@ export default function Footer(): JSX.Element {
           <div className="mt-12 lg:mt-20 flex flex-col items-center xl:items-start">
             <h2
               className={cn(
-                "text-3xl min-[400px]:text-4xl  lg:text-[40px] mb-3",
+                "text-3xl min-[400px]:text-4xl  lg:text-5xl mb-3",
                 myFont.className
               )}
             >
@@ -115,7 +116,7 @@ export default function Footer(): JSX.Element {
             <div className="flex justify-center mt-12 lg:mt-0 ">
               <h2
                 className={cn(
-                  "text-3xl min-[400px]:text-4xl lg:text-[40px]",
+                  "text-3xl min-[400px]:text-4xl lg:text-5xl",
                   myFont.className
                 )}
               >
@@ -125,13 +126,13 @@ export default function Footer(): JSX.Element {
                 src={locale === "en" ? image6 : image9}
                 alt="Text image"
                 className={
-                  locale == "en" ? "mt-[22px] sm:mt-[30px]" : "mt-[0px]"
+                  locale == "en" ? "mt-[22px] sm:mt-[30px]" : "mt-[10px]"
                 }
                 style={{
-                  width: locale == "en" ? "111px" : "104px",
+                  width: locale == "en" ? "118px" : "104px",
                   height: "auto",
                   alignSelf: "flex-end",
-                  marginLeft: "-20px",
+                  marginLeft: "-16px",
                   zIndex: 1,
                 }}
               />
@@ -141,7 +142,7 @@ export default function Footer(): JSX.Element {
             <FooterForm />
           </div>
         </div>
-        <div
+        {/* <div
           className={cn(
             "hidden xl:inline-block justify-self-end mt-20",
             pathname === `/${locale}/contacts` && "xl:hidden",
@@ -156,7 +157,7 @@ export default function Footer(): JSX.Element {
               height: "auto",
             }}
           />
-        </div>
+        </div> */}
         <div
           className={cn(
             "hidden xl:inline-block w-[320px] h-[670px] justify-self-end relative -top-72",
