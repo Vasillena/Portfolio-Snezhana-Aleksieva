@@ -4,7 +4,7 @@ import Image from "next/image";
 import Reveal from "../Common/Reveal";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
-import image3 from "@/public/dots.svg";
+import image1 from "@/public/dots.svg";
 
 export default async function Hero(): Promise<JSX.Element> {
   const t = await getI18n();
@@ -29,17 +29,16 @@ export default async function Hero(): Promise<JSX.Element> {
             <h2 className={cn("text-2xl md:text-4xl", shlapakScript.className)}>
               {t("portfolio.text-1")}
             </h2>
-            <p className="mt-4 sm:text-xl sm:leading-6">
+            <p className="mt-8 sm:text-xl sm:leading-6">
               {t("portfolio.text-2")}
             </p>
             <p className="sm:text-xl sm:leading-6">{t("portfolio.text-3")}</p>
-            <p className="sm:text-xl sm:leading-6">{t("portfolio.text-4")}</p>
           </Reveal>
         </div>
       </div>
       <div className="max-w-7xl mx-auto mt-16 flex justify-center lg:justify-start">
         <Image
-          src={image3}
+          src={image1}
           alt="Dots"
           style={{
             width: "160px",

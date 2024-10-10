@@ -1,3 +1,5 @@
+import { oranienbaum, shlapakScript } from "@/lib/fonts";
+
 import Image from "next/image";
 import MainButton from "../Common/MainButton";
 import Reveal from "../Common/Reveal";
@@ -5,7 +7,6 @@ import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
 import image1 from "@/public/hero-3.png";
 import image2 from "@/public/dots.svg";
-import { oranienbaum } from "@/lib/fonts";
 
 export default async function Hero(): Promise<JSX.Element> {
   const t = await getI18n();
@@ -23,7 +24,7 @@ export default async function Hero(): Promise<JSX.Element> {
             >
               {t("about.title")}
             </h1>
-            <h2 className="text-lg sm:text-xl font-bold">
+            <h2 className={cn("text-2xl md:text-4xl", shlapakScript.className)}>
               {t("about.text-1")}
             </h2>
             <div className="max-w-3xl">
@@ -36,9 +37,6 @@ export default async function Hero(): Promise<JSX.Element> {
               <p className="mt-4 text-lg sm:text-xl sm:leading-[26px]">
                 {t("about.text-4")}
               </p>
-              <p className="mt-4 text-lg sm:text-xl sm:leading-[26px]">
-                {t("about.text-5")}
-              </p>
             </div>
           </Reveal>
 
@@ -46,11 +44,11 @@ export default async function Hero(): Promise<JSX.Element> {
             <MainButton href={"/portfolio"} text={t("about.button")} />
           </div>
         </div>
-        <div className="hidden xl:inline-block w-[446px] h-[723px] justify-self-end relative -top-32">
+        <div className="hidden xl:inline-block w-[374px] h-[515px] justify-self-end relative">
           <Image src={image1} alt="Profile image" fill object-fit="contain" />
         </div>
       </div>
-      <div className="max-w-7xl mx-auto mt-36 xl:-mt-32 flex justify-center lg:justify-start">
+      <div className="max-w-7xl mx-auto mt-36 flex justify-center lg:justify-start">
         <Image
           src={image2}
           alt="Dots"

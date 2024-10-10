@@ -6,7 +6,7 @@ export default {
     contacts: "Contacts",
   },
   footer: {
-    "title-1": "Let's",
+    "title-1": "Let's connect",
     "title-2": "Contacts",
     "text-1": "Phone",
     "title-3": "Follow me on",
@@ -17,10 +17,10 @@ export default {
     button: "Submit",
   },
   home: {
-    "title-1": "to My Design Journey",
-    "text-1": "Hi there!",
+    "title-1": "Welcome to my Design Journey!",
+    "text-1": "I am Snezhana Aleksieva",
     "text-2":
-      "I'm Snezhana, a junior graphic and UI/UX designer from Bulgaria. I love creating clean, visually appealing designs that balance beauty with function.",
+      "Hi there! I'm Snezhana, a junior graphic and UI/UX designer from Bulgaria. I love creating clean, visually appealing designs that balance beauty with function.",
     "text-3": "Ready to explore more?",
     "button-1": "Explore My Projects",
     "button-2": "Get in Touch",
@@ -29,23 +29,22 @@ export default {
     "card-2": "Logo",
     "card-3": "Layout",
     "card-4": "UI/UX",
-    "title-2": "About",
+    "title-2": "About Me",
     "text-6": "From hospitality to design",
     "text-7":
       "With over 12 years of experience in marketing and sales within the hospitality industry, I've learned the importance of connecting with people through thoughtful, engaging visuals. Now, as a junior designer, I’m channeling that experience into creating designs that are not just aesthetically pleasing, but truly functional.",
     "text-8":
       "I’m passionate about minimalist, eye-catching designs that bring together creativity and usability. My background gives me a unique perspective on how design can support both business goals and user needs. I’m always eager to learn and grow, pushing myself to continuously improve in this field.",
     "button-3": "Learn More",
-    "title-3": "Featured",
+    "title-3": "Featured Projects",
     "text-10": "View All",
   },
   portfolio: {
     title: "My Portfolio",
     "text-1": "Explore my creative projects and design solutions.",
-    "text-2": "Welcome to my portfolio!",
-    "text-3":
+    "text-2":
       "Here, you can explore a variety of design projects that showcase my skills and creativity.",
-    "text-4": "Select a category to see my work in different areas of design.",
+    "text-3": "Select a category to see my work in different areas of design.",
     "card-1-1": "Graphic",
     "card-1-2": "Design",
     "card-1-text-1":
@@ -140,14 +139,12 @@ export default {
   },
   about: {
     title: "Snezhana Aleksieva",
-    "text-1": "Graphic Design | UI/UX Design",
+    "text-1": "My professional journey",
     "text-2":
-      "My professional journey ",
-    "text-3":
       "At 34 years old, I’ve spent over a decade working in marketing and sales within the hospitality industry, helping businesses grow and connect with their customers. My passion for design grew alongside my career, leading me to pursue graphic and UI/UX design as a new path. Through dedicated self-study and professional training, I’ve been building my skills and diving deeper into this field.",
-    "text-4":
+    "text-3":
       "What I bring to the table is a strong foundation in understanding how design can drive results, thanks to my marketing experience. I know how to balance creativity with practicality—design should look great, but it also needs to work well and serve a purpose.",
-          "text-5":
+    "text-4":
       "In addition to design, I’m passionate about learning new things, whether it's through online courses, books, or hands-on practice. I believe in continuously improving, and I’m excited about the opportunities ahead.",
     button: "Explore My Projects",
     "card-1-title": "Education",

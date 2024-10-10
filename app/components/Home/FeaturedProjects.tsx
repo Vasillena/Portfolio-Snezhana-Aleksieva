@@ -19,16 +19,17 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
   return (
     <div className="max-w-full mt-24 bg-[#F2EEE9] px-2">
       <div className=" max-w-7xl mx-auto py-11">
-        <div className="flex justify-center">
+        <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:gap-10">
           <h2
             className={cn(
-              "text-3xl min-[400px]:text-4xl  lg:text-5xl ",
+              "text-3xl min-[400px]:text-4xl  lg:text-5xl text-nowrap",
               oranienbaum.className
             )}
           >
             {t("home.title-3")}
           </h2>
-          <Image
+          <div className="w-2/3 lg:w-full pt-4 border-b border-[#B0752A]" />
+          {/* <Image
             src={locale === "en" ? image1 : image6}
             alt="Text image"
             className={locale === "en" ? "mt-[28px] sm:mt-[30px]" : "mt-[10px]"}
@@ -39,7 +40,7 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
               marginLeft: "-36px",
               zIndex: 1,
             }}
-          />
+          /> */}
         </div>
         <div className="mx-auto flex flex-wrap justify-center xl:justify-between gap-y-20 gap-x-20 xl:gap-x-0  mt-8">
           <RevealDesktop>
