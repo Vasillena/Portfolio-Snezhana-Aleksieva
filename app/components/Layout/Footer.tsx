@@ -59,7 +59,7 @@ export default function Footer(): JSX.Element {
           <div className={cn("flex flex-col items-center xl:items-start")}>
             <h2
               className={cn(
-                "text-3xl min-[400px]:text-4xl  lg:text-5xl mb-3",
+                "text-3xl min-[400px]:text-4xl mb-3",
                 oranienbaum.className
               )}
             >
@@ -73,10 +73,10 @@ export default function Footer(): JSX.Element {
               | +359 882 94 95 98
             </p>
           </div>
-          <div className="mt-12 lg:mt-14 flex flex-col items-center xl:items-start">
+          <div className="mt-12 lg:mt-20 flex flex-col items-center xl:items-start">
             <h2
               className={cn(
-                "text-3xl min-[400px]:text-4xl  lg:text-5xl mb-3",
+                "text-3xl min-[400px]:text-4xl mb-3",
                 oranienbaum.className
               )}
             >

@@ -22,7 +22,7 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
         <div>
           <h2
             className={cn(
-              "text-3xl min-[400px]:text-4xl lg:text-5xl text-center",
+              "text-3xl min-[400px]:text-4xl lg:text-5xl",
               oranienbaum.className
             )}
           >
@@ -41,7 +41,7 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
             }}
           /> */}
         </div>
-        <div className="mx-auto flex flex-wrap justify-center xl:justify-between gap-y-20 gap-x-20 xl:gap-x-0  mt-8">
+        <div className="mx-auto flex flex-wrap justify-center xl:justify-between gap-y-20 gap-x-20 xl:gap-x-0 mt-8">
           <RevealDesktop>
             <div className="w-[300px] h-[300px] relative flex justify-center">
               <Image
