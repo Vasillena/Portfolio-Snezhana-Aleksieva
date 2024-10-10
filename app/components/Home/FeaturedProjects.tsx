@@ -19,16 +19,15 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
   return (
     <div className="max-w-full mt-24 bg-[#F2EEE9] px-2">
       <div className=" max-w-7xl mx-auto py-11">
-        <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:gap-10">
+        <div>
           <h2
             className={cn(
-              "text-3xl min-[400px]:text-4xl  lg:text-5xl text-nowrap",
+              "text-3xl min-[400px]:text-4xl lg:text-5xl text-center",
               oranienbaum.className
             )}
           >
             {t("home.title-3")}
           </h2>
-          <div className="w-2/3 lg:w-full pt-4 border-b border-[#B0752A]" />
           {/* <Image
             src={locale === "en" ? image1 : image6}
             alt="Text image"

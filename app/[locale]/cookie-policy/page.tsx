@@ -3,8 +3,7 @@ import Image from "next/image";
 import Reveal from "@/app/components/Common/Reveal";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
-import image2 from "@/public/hero-5.png";
-import image3 from "@/public/dots.svg";
+import image from "@/public/dots.svg";
 import { oranienbaum } from "@/lib/fonts";
 
 export const metadata = {
@@ -31,13 +30,10 @@ export default async function CookiePolicyPage(): Promise<JSX.Element> {
             </h1>
           </Reveal>
         </div>
-        <div className="hidden xl:inline-block w-[310px] h-[331px] justify-self-end relative -top-32">
-          <Image src={image2} alt="Decor image" fill object-fit="contain" />
-        </div>
       </div>
-      <div className="max-w-7xl mx-auto mt-36 xl:-mt-[132px] flex justify-center lg:justify-start">
+      <div className="max-w-7xl mx-auto mt-20 flex justify-center lg:justify-start">
         <Image
-          src={image3}
+          src={image}
           alt="Dots"
           style={{
             width: "160px",

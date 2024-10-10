@@ -2,10 +2,9 @@ import { getCurrentLocale, getI18n } from "@/locales/server";
 
 import Image from "next/image";
 import MainButton from "../../components/Common/MainButton";
-import image1 from "@/public/hero-5.png";
-import image2 from "@/public/thank-you.svg";
-import image3 from "@/public/dots.svg";
-import image4 from "@/public/thank-you-2.svg";
+import image1 from "@/public/thank-you.svg";
+import image2 from "@/public/dots.svg";
+import image3 from "@/public/thank-you-2.svg";
 
 export const metadata = {
   title: "Thank You | snezhana-aleksieva.com",
@@ -17,19 +16,9 @@ export default async function ThankYouPage(): Promise<JSX.Element> {
   const t = await getI18n();
   return (
     <div className="max-w-7xl mx-auto flex flex-col items-center mb-10">
-      <div className="self-end relative ">
+      <div className="mt-60">
         <Image
-          src={image1}
-          alt="Decor image"
-          style={{
-            width: "310px",
-            height: "auto",
-          }}
-        />
-      </div>
-      <div className="-mt-16">
-        <Image
-          src={locale === "en" ? image2 : image4}
+          src={locale === "en" ? image1 : image3}
           alt="Thank you image"
           style={{
             width: "434px",
@@ -39,7 +28,7 @@ export default async function ThankYouPage(): Promise<JSX.Element> {
       </div>
       <div>
         <Image
-          src={image3}
+          src={image2}
           alt="Dots"
           style={{
             width: "160px",

@@ -20,7 +20,7 @@ export default {
     "title-1": "Welcome to my Design Journey!",
     "text-1": "I am Snezhana Aleksieva",
     "text-2":
-      "Hi there! I'm Snezhana, a junior graphic and UI/UX designer from Bulgaria. I love creating clean, visually appealing designs that balance beauty with function.",
+      "A junior graphic and UI/UX designer from Bulgaria. I love creating clean, visually appealing designs that balance beauty with function.",
     "text-3": "Ready to explore more?",
     "button-1": "Explore My Projects",
     "button-2": "Get in Touch",
@@ -41,7 +41,7 @@ export default {
   },
   portfolio: {
     title: "My Portfolio",
-    "text-1": "Explore my creative projects and design solutions.",
+    "text-1": "Explore my creative projects and design solutions",
     "text-2":
       "Here, you can explore a variety of design projects that showcase my skills and creativity.",
     "text-3": "Select a category to see my work in different areas of design.",
@@ -109,7 +109,7 @@ export default {
   },
   "uiux-design": {
     title: "My UI/UX Projects",
-    text: "Discover my user interface and user experience designs that prioritize usability and user satisfaction.",
+    text: "Discover my UI/UX designs",
     "text-2": "Click on the links to view more details on Behance.",
     "card-1": "TailMate - Pet Adoption Website",
     "card-1-text":
@@ -127,7 +127,7 @@ export default {
   },
   "illustrations-digital": {
     title: "Illustrations and Digital Art",
-    text: "Explore my collection of illustrations and digital drawings, where my journey in art began.",
+    text: "Explore my collection of illustrations and digital drawings",
     "text-2": "Click on the links to view more details on Behance.",
     "card-1": "Self-Portrait",
     "card-1-text":

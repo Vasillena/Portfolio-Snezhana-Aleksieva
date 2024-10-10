@@ -14,32 +14,34 @@ export default async function Hero(): Promise<JSX.Element> {
       <div className="max-w-7xl mx-auto mt-28 sm:mt-44 xl:mt-32  text-center lg:text-left">
         <div>
           <Reveal>
-            <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:gap-10">
-              <h1
-                className={cn(
-                  "text-3xl min-[400px]:text-4xl sm:text-6xl text-nowrap",
-                  oranienbaum.className
-                )}
-              >
-                {t("graphic-design.title")}
-              </h1>
-              <div className="w-2/3 lg:w-full pt-4 border-b border-[#B0752A]" />
-            </div>
-
-            <h2
+            <h1
               className={cn(
-                "mt-4 text-2xl md:text-4xl",
-                shlapakScript.className
+                "text-3xl min-[400px]:text-4xl sm:text-6xl",
+                oranienbaum.className
               )}
             >
-              {t("graphic-design.text-1")}
-            </h2>
-            <p className="mt-8 text-lg sm:text-xl sm:leading-6">
-              {t("graphic-design.text-2")}
-            </p>
-            <p className="text-lg sm:text-xl sm:leading-6">
-              {t("graphic-design.text-3")}
-            </p>
+              {t("graphic-design.title")}
+            </h1>
+
+            <div className="my-8 flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-10">
+              <h2
+                className={cn(
+                  "text-2xl md:text-4xl text-nowrap",
+                  shlapakScript.className
+                )}
+              >
+                {t("graphic-design.text-1")}
+              </h2>
+              <div className="w-2/3 lg:w-full border-b border-[#B0752A]" />
+            </div>
+            <div className="xl:max-w-[620px]">
+              <p className="mt-8 text-lg sm:text-xl sm:leading-6">
+                {t("graphic-design.text-2")}
+              </p>
+              <p className="mt-4 text-lg sm:text-xl sm:leading-6">
+                {t("graphic-design.text-3")}
+              </p>
+            </div>
           </Reveal>
         </div>
         {/* <div className="hidden xl:inline-block w-[310px] h-[427px] justify-self-end relative -top-32">

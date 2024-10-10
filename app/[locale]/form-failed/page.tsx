@@ -1,8 +1,7 @@
 import Image from "next/image";
 import MainButton from "../../components/Common/MainButton";
 import { getI18n } from "@/locales/server";
-import image1 from "@/public/hero-5.png";
-import image2 from "@/public/dots.svg";
+import image from "@/public/dots.svg";
 
 export const metadata = {
   title: "Error | snezhana-aleksieva.com",
@@ -13,19 +12,9 @@ export default async function FormFailedPage(): Promise<JSX.Element> {
   const t = await getI18n();
   return (
     <div className="max-w-7xl mx-auto flex flex-col items-center mb-10">
-      <div className="self-end relative -top-32">
+      <div className="mt-60">
         <Image
-          src={image1}
-          alt="Decor image"
-          style={{
-            width: "374px",
-            height: "auto",
-          }}
-        />
-      </div>
-      <div>
-        <Image
-          src={image2}
+          src={image}
           alt="Dots"
           style={{
             width: "160px",
