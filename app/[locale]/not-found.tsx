@@ -1,16 +1,12 @@
 import Image from "next/image";
 import MainButton from "../components/Common/MainButton";
-import image1 from "@/public/hero-5.png";
 import image2 from "@/public/404.svg";
 import image3 from "@/public/dots.svg";
 
 export default function NotFound(): JSX.Element {
   return (
     <div className="max-w-7xl mx-auto flex flex-col items-center mb-10 text-center">
-      <div className="hidden xl:inline-block w-[310px] h-[364px] self-end relative ">
-        <Image src={image1} alt="Decor image" fill object-fit="contain" />
-      </div>
-      <div className="mt-40 xl:mt-0">
+      <div className="mt-40">
         <div className="flex justify-center">
           <Image
             src={image2}
