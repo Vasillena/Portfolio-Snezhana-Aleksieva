@@ -3,7 +3,6 @@
 import { useCurrentLocale, useI18n } from "@/locales/client";
 
 import Link from "next/link";
-import { Switch } from "@/app/[locale]/switch";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 

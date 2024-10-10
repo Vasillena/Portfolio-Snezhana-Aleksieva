@@ -5,7 +5,7 @@ import MainButton from "../Common/MainButton";
 import Reveal from "../Common/Reveal";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
-import image1 from "@/public/about-short.png";
+import image from "@/public/about-short.png";
 
 export default async function AboutMe(): Promise<JSX.Element> {
   const t = await getI18n();
@@ -13,7 +13,7 @@ export default async function AboutMe(): Promise<JSX.Element> {
   return (
     <div className=" max-w-7xl mt-20 mx-auto grid grid-cols-1 xl:grid-cols-3 gap-y-20 lg:gap-72 text-center lg:text-left">
       <div className="mx-auto hidden xl:inline-block w-[374px] h-[515px] relative">
-        <Image src={image1} alt="Computer image" fill object-fit="contain" />
+        <Image src={image} alt="Profile image" fill object-fit="contain" />
       </div>
       <div className="col-span-2">
         <Reveal>

@@ -8,15 +8,11 @@ import Link from "next/link";
 import RevealDesktop from "../Common/RevealDesktop";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/dots.svg";
-import image10 from "@/public/hero-6.png";
 import image2 from "@/public/icon-1.svg";
 import image3 from "@/public/icon-2.svg";
 import image4 from "@/public/icon-3.svg";
 import image5 from "@/public/icon-4.svg";
-import image6 from "@/public/connect.svg";
-import image7 from "@/public/footer.png";
-import image8 from "@/public/cookie.svg";
-import image9 from "@/public/connect-2.svg";
+import image6 from "@/public/cookie.svg";
 import { oranienbaum } from "@/lib/fonts";
 import { usePathname } from "next/navigation";
 
@@ -113,50 +109,12 @@ export default function Footer(): JSX.Element {
               >
                 {t("footer.title-1")}
               </h2>
-              {/* <Image
-                src={locale === "en" ? image6 : image9}
-                alt="Text image"
-                className={
-                  locale == "en" ? "mt-[22px] sm:mt-[30px]" : "mt-[10px]"
-                }
-                style={{
-                  width: locale == "en" ? "118px" : "104px",
-                  height: "auto",
-                  alignSelf: "flex-end",
-                  marginLeft: "-16px",
-                  zIndex: 1,
-                }}
-              /> */}
             </div>
           </RevealDesktop>
           <div className="mt-6 flex flex-col items-center ">
             <FooterForm />
           </div>
         </div>
-        {/* <div
-          className={cn(
-            "hidden xl:inline-block justify-self-end mt-20",
-            pathname === `/${locale}/contacts` && "xl:hidden",
-            locale === "en" ? "lg:mt-[100px]" : "lg:mt-[104px]"
-          )}
-        >
-          <Image
-            src={image7}
-            alt="Text image"
-            style={{
-              width: "248px",
-              height: "auto",
-            }}
-          />
-        </div> */}
-        {/* <div
-          className={cn(
-            "hidden xl:inline-block w-[320px] h-[670px] justify-self-end relative -top-72",
-            pathname !== `/${locale}/contacts` && "xl:hidden"
-          )}
-        >
-          <Image src={image10} alt="Decor image" fill object-fit="contain" />
-        </div> */}
       </div>
       <div
         className={cn(
@@ -222,7 +180,7 @@ export default function Footer(): JSX.Element {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 py-6 items-center">
           <div className="flex justify-center lg:justify-start items-center gap-1 lg:gap-5">
             <Image
-              src={image8}
+              src={image6}
               alt="Cookie image"
               style={{
                 width: "32px",

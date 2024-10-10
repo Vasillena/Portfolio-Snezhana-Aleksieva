@@ -4,7 +4,7 @@ import Image from "next/image";
 import RevealDesktop from "../Common/RevealDesktop";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
-import image1 from "@/public/dots.svg";
+import image from "@/public/dots.svg";
 
 export default async function Hero(): Promise<JSX.Element> {
   const t = await getI18n();
@@ -41,7 +41,7 @@ export default async function Hero(): Promise<JSX.Element> {
       </div>
       <div className="max-w-7xl mx-auto mt-36 flex justify-center lg:justify-start">
         <Image
-          src={image1}
+          src={image}
           alt="Dots"
           style={{
             width: "160px",
