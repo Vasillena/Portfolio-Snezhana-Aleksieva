@@ -26,7 +26,12 @@ export default async function Hero(): Promise<JSX.Element> {
               <div className="w-2/3 lg:w-full pt-4 border-b border-[#B0752A]" />
             </div>
 
-            <h2 className={cn("text-2xl md:text-4xl", shlapakScript.className)}>
+            <h2
+              className={cn(
+                "mt-4 text-2xl md:text-4xl",
+                shlapakScript.className
+              )}
+            >
               {t("portfolio.text-1")}
             </h2>
             <p className="mt-8 sm:text-xl sm:leading-6">

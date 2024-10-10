@@ -38,7 +38,7 @@ export default async function PortfolioCard({
           <div>
             <h2
               className={cn(
-                "text-[20px] min-[400px]:text-[26px] sm:text-[32px] leading-3",
+                "text-[18px] min-[400px]:text-[22px] sm:text-[32px] leading-3",
                 oranienbaum.className
               )}
             >
@@ -46,7 +46,7 @@ export default async function PortfolioCard({
             </h2>
             <h2
               className={cn(
-                "text-[20px] min-[400px]:text-[26px] sm:text-[32px] ",
+                "text-[18px] min-[400px]:text-[22px] sm:text-[32px] ",
                 oranienbaum.className
               )}
             >

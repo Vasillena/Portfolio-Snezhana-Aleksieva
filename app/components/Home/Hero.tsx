@@ -3,16 +3,13 @@
 import { oranienbaum, shlapakScript } from "@/lib/fonts";
 import { useCurrentLocale, useI18n } from "@/locales/client";
 
-import Image from "next/image";
 import Lottie from "react-lottie-player";
 import MainButton from "../Common/MainButton";
 import Reveal from "../Common/Reveal";
 import SecondaryButton from "../Common/SecondaryButton";
 import { cn } from "@/lib/utils";
-import image1 from "@/public/welcome.svg";
-import image2 from "@/public/hero-1.json";
-import image3 from "@/public/welcome-2.svg";
-import image4 from "@/public/logo-2.png";
+import image1 from "@/public/hero-1.json";
+import image2 from "@/public/logo-2.png";
 
 export default function Hero(): JSX.Element {
   const locale = useCurrentLocale();
@@ -44,7 +41,7 @@ export default function Hero(): JSX.Element {
             >
               {t("home.title-1")}
             </h1>
-            <div className="flex flex-col lg:flex-row items-center lg:gap-10">
+            <div className="mt-4 flex flex-col lg:flex-row items-center lg:gap-10">
               <div className="w-1/3 pt-4 border-b border-[#B0752A]" />
               <h2
                 className={cn(
@@ -55,7 +52,7 @@ export default function Hero(): JSX.Element {
                 {t("home.text-1")}
               </h2>
             </div>
-            <div className="xl:max-w-[600px]">
+            <div className="xl:max-w-[620px]">
               <p className="mt-12 text-lg sm:text-xl sm:leading-[26px]">
                 {t("home.text-2")}
               </p>
@@ -79,14 +76,14 @@ export default function Hero(): JSX.Element {
         <div
           className="hidden xl:inline-block w-[555px] h-[555px] justify-self-end relative top-8 -mr-8 "
           style={{
-            backgroundImage: `url(${image4.src})`,
+            backgroundImage: `url(${image2.src})`,
             backgroundSize: "60%",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "bottom 60px right 60px",
           }}
         >
           <Lottie
-            animationData={image2}
+            animationData={image1}
             play
             loop
             style={{ width: "650px", height: "650px" }}
