@@ -57,8 +57,8 @@ export default {
       "Discover my user interface and user experience designs that prioritize usability and user satisfaction.",
     "card-2-text-2": "UI Design",
     "card-2-text-3": "UX Design",
-    "card-3-1": "Illustrations &",
-    "card-3-2": "Digital Art",
+    "card-3-1": "Illustrations",
+    "card-3-2": "& Digital Art",
     "card-3-text-1":
       "Explore my collection of illustrations and digital drawings, where my journey in art began.",
     "card-3-text-2": "Digital Drawings",
