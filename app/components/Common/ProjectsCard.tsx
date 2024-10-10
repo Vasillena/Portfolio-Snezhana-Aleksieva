@@ -2,14 +2,12 @@ import Image, { StaticImageData } from "next/image";
 
 import Link from "next/link";
 import RevealDesktop from "./RevealDesktop";
-import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
 import image4 from "@/public/icon-3.svg";
 import image5 from "@/public/dots.svg";
+import { oranienbaum } from "@/lib/fonts";
 import overlayImage from "@/public/hover.png";
-
-const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
 interface ProjectsCardProps {
   title: string;
@@ -29,7 +27,6 @@ export default async function ProjectsCard({
   image3,
 }: ProjectsCardProps): Promise<JSX.Element> {
   const t = await getI18n();
-  const myFont = blackSansFont;
 
   return (
     <div>
@@ -37,7 +34,7 @@ export default async function ProjectsCard({
         <h2
           className={cn(
             "text-3xl min-[400px]:text-4xl  lg:text-[40px]",
-            myFont.className
+            oranienbaum.className
           )}
         >
           {title}

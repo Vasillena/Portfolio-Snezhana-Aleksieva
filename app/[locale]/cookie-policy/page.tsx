@@ -1,13 +1,11 @@
 import FollowPointer from "@/app/components/Common/FollowPointer";
 import Image from "next/image";
 import Reveal from "@/app/components/Common/Reveal";
-import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
 import image2 from "@/public/hero-5.png";
 import image3 from "@/public/dots.svg";
-
-const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
+import { oranienbaum } from "@/lib/fonts";
 
 export const metadata = {
   title: "Cookie Policy | snezhana-aleksieva.com",
@@ -16,7 +14,6 @@ export const metadata = {
 
 export default async function CookiePolicyPage(): Promise<JSX.Element> {
   const t = await getI18n();
-  const myFont = blackSansFont;
 
   return (
     <>
@@ -27,7 +24,7 @@ export default async function CookiePolicyPage(): Promise<JSX.Element> {
             <h1
               className={cn(
                 "text-3xl min-[400px]:text-4xl sm:text-6xl",
-                myFont.className
+                oranienbaum.className
               )}
             >
               {t("cookie-policy.title")}
@@ -59,7 +56,7 @@ export default async function CookiePolicyPage(): Promise<JSX.Element> {
         </div>
 
         <div className="mt-10">
-          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
+          <h2 className={cn("text-lg sm:text-2xl ", oranienbaum.className)}>
             {t("cookie-policy.text-3")}
           </h2>
           <p className="text-lg sm:text-2xl mt-4">
@@ -68,7 +65,7 @@ export default async function CookiePolicyPage(): Promise<JSX.Element> {
         </div>
 
         <div className="mt-10">
-          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
+          <h2 className={cn("text-lg sm:text-2xl ", oranienbaum.className)}>
             {t("cookie-policy.text-5")}
           </h2>
           <p className="text-lg sm:text-2xl mt-4">
@@ -87,7 +84,7 @@ export default async function CookiePolicyPage(): Promise<JSX.Element> {
         </div>
 
         <div className="mt-10">
-          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
+          <h2 className={cn("text-lg sm:text-2xl ", oranienbaum.className)}>
             {t("cookie-policy.text-9")}
           </h2>
 
@@ -102,7 +99,7 @@ export default async function CookiePolicyPage(): Promise<JSX.Element> {
         </div>
 
         <div className="mt-10">
-          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
+          <h2 className={cn("text-lg sm:text-2xl ", oranienbaum.className)}>
             {t("cookie-policy.text-12")}
           </h2>
           <p className="text-lg sm:text-2xl mt-4">
@@ -111,7 +108,7 @@ export default async function CookiePolicyPage(): Promise<JSX.Element> {
         </div>
 
         <div className="mt-10">
-          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
+          <h2 className={cn("text-lg sm:text-2xl ", oranienbaum.className)}>
             {t("cookie-policy.text-14")}
           </h2>
           <p className="text-lg sm:text-2xl mt-4">

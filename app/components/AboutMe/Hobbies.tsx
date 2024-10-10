@@ -1,6 +1,5 @@
 import HobbiesCard from "./HobbiesCard";
 import RevealDesktop from "../Common/RevealDesktop";
-import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
 import image1 from "@/public/hobby-1.svg";
@@ -10,12 +9,10 @@ import image4 from "@/public/hobby-4.svg";
 import image5 from "@/public/hobby-5.svg";
 import image6 from "@/public/hobby-6.svg";
 import image7 from "@/public/hobby-7.svg";
-
-const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
+import { oranienbaum } from "@/lib/fonts";
 
 export default async function Hobbies(): Promise<JSX.Element> {
   const t = await getI18n();
-  const myFont = blackSansFont;
   return (
     <RevealDesktop>
       <div className="mt-36 xl:mt-[72px] flex flex-col items-center xl:items-start">
@@ -23,7 +20,7 @@ export default async function Hobbies(): Promise<JSX.Element> {
           <h2
             className={cn(
               "text-3xl min-[400px]:text-4xl lg:text-[40px] mb-7",
-              myFont.className
+              oranienbaum.className
             )}
           >
             {t("about.card-7-title")}

@@ -3,7 +3,6 @@ import { getCurrentLocale, getI18n } from "@/locales/server";
 import Image from "next/image";
 import Link from "next/link";
 import RevealDesktop from "../Common/RevealDesktop";
-import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/projects.svg";
 import image2 from "@/public/fproject-1.png";
@@ -11,13 +10,11 @@ import image3 from "@/public/fproject-2.png";
 import image4 from "@/public/fproject-3.png";
 import image5 from "@/public/fproject-4.png";
 import image6 from "@/public/projects-2.svg";
-
-const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
+import { oranienbaum } from "@/lib/fonts";
 
 export default async function FeaturedProjects(): Promise<JSX.Element> {
   const locale = await getCurrentLocale();
   const t = await getI18n();
-  const myFont = blackSansFont;
 
   return (
     <div className="max-w-full mt-24 bg-[#F2EEE9] px-2">
@@ -26,7 +23,7 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
           <h2
             className={cn(
               "text-3xl min-[400px]:text-4xl  lg:text-5xl ",
-              myFont.className
+              oranienbaum.className
             )}
           >
             {t("home.title-3")}

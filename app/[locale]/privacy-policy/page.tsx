@@ -1,13 +1,11 @@
 import FollowPointer from "@/app/components/Common/FollowPointer";
 import Image from "next/image";
 import Reveal from "@/app/components/Common/Reveal";
-import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
 import image2 from "@/public/hero-5.png";
 import image3 from "@/public/dots.svg";
-
-const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
+import { oranienbaum } from "@/lib/fonts";
 
 export const metadata = {
   title: "Privacy Policy | snezhana-aleksieva.com",
@@ -16,7 +14,6 @@ export const metadata = {
 
 export default async function PrivacyPolicyPage(): Promise<JSX.Element> {
   const t = await getI18n();
-  const myFont = blackSansFont;
 
   return (
     <>
@@ -27,7 +24,7 @@ export default async function PrivacyPolicyPage(): Promise<JSX.Element> {
             <h1
               className={cn(
                 "text-3xl min-[400px]:text-4xl sm:text-6xl",
-                myFont.className
+                oranienbaum.className
               )}
             >
               {t("privacy-policy.title")}
@@ -50,7 +47,7 @@ export default async function PrivacyPolicyPage(): Promise<JSX.Element> {
       </div>
       <div className="max-w-7xl mx-auto mt-20">
         <div>
-          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
+          <h2 className={cn("text-lg sm:text-2xl ", oranienbaum.className)}>
             {t("privacy-policy.text-1")}
           </h2>
           <p className="text-lg sm:text-2xl mt-4">
@@ -58,7 +55,7 @@ export default async function PrivacyPolicyPage(): Promise<JSX.Element> {
           </p>
         </div>
         <div className="mt-10">
-          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
+          <h2 className={cn("text-lg sm:text-2xl ", oranienbaum.className)}>
             {t("privacy-policy.text-3")}
           </h2>
           <div className="flex items-center">
@@ -73,7 +70,7 @@ export default async function PrivacyPolicyPage(): Promise<JSX.Element> {
           </div>
         </div>
         <div className="mt-10">
-          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
+          <h2 className={cn("text-lg sm:text-2xl ", oranienbaum.className)}>
             {t("privacy-policy.text-6")}
           </h2>
           <p className="text-lg sm:text-2xl mt-4">
@@ -81,7 +78,7 @@ export default async function PrivacyPolicyPage(): Promise<JSX.Element> {
           </p>
         </div>
         <div className="mt-10">
-          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
+          <h2 className={cn("text-lg sm:text-2xl ", oranienbaum.className)}>
             {t("privacy-policy.text-8")}
           </h2>
           <p className="text-lg sm:text-2xl mt-4">
@@ -89,7 +86,7 @@ export default async function PrivacyPolicyPage(): Promise<JSX.Element> {
           </p>
         </div>
         <div className="mt-10">
-          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
+          <h2 className={cn("text-lg sm:text-2xl ", oranienbaum.className)}>
             {t("privacy-policy.text-10")}
           </h2>
           <p className="text-lg sm:text-2xl mt-4">
@@ -97,7 +94,7 @@ export default async function PrivacyPolicyPage(): Promise<JSX.Element> {
           </p>
         </div>
         <div className="mt-10">
-          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
+          <h2 className={cn("text-lg sm:text-2xl ", oranienbaum.className)}>
             {t("privacy-policy.text-12")}
           </h2>
           <p className="text-lg sm:text-2xl mt-4">
@@ -105,7 +102,7 @@ export default async function PrivacyPolicyPage(): Promise<JSX.Element> {
           </p>
         </div>
         <div className="mt-10">
-          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
+          <h2 className={cn("text-lg sm:text-2xl ", oranienbaum.className)}>
             {t("privacy-policy.text-14")}
           </h2>
           <p className="text-lg sm:text-2xl mt-4">
@@ -125,7 +122,7 @@ export default async function PrivacyPolicyPage(): Promise<JSX.Element> {
           </div>
         </div>
         <div className="mt-10">
-          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
+          <h2 className={cn("text-lg sm:text-2xl ", oranienbaum.className)}>
             {t("privacy-policy.text-19")}
           </h2>
           <p className="text-lg sm:text-2xl mt-4">
@@ -141,7 +138,7 @@ export default async function PrivacyPolicyPage(): Promise<JSX.Element> {
           </div>
         </div>
         <div className="mt-10">
-          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
+          <h2 className={cn("text-lg sm:text-2xl ", oranienbaum.className)}>
             {t("privacy-policy.text-23")}
           </h2>
           <p className="text-lg sm:text-2xl mt-4">
@@ -149,7 +146,7 @@ export default async function PrivacyPolicyPage(): Promise<JSX.Element> {
           </p>
         </div>
         <div className="mt-10">
-          <h2 className={cn("text-lg sm:text-2xl ", myFont.className)}>
+          <h2 className={cn("text-lg sm:text-2xl ", oranienbaum.className)}>
             {t("privacy-policy.text-25")}
           </h2>
           <p className="text-lg sm:text-2xl mt-4">

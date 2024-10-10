@@ -6,7 +6,6 @@ import FooterForm from "./FooterForm";
 import Image from "next/image";
 import Link from "next/link";
 import RevealDesktop from "../Common/RevealDesktop";
-import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/dots.svg";
 import image10 from "@/public/hero-6.png";
@@ -18,14 +17,12 @@ import image6 from "@/public/connect.svg";
 import image7 from "@/public/footer.png";
 import image8 from "@/public/cookie.svg";
 import image9 from "@/public/connect-2.svg";
+import { oranienbaum } from "@/lib/fonts";
 import { usePathname } from "next/navigation";
-
-const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
 
 export default function Footer(): JSX.Element {
   const locale = useCurrentLocale();
   const t = useI18n();
-  const myFont = blackSansFont;
   const pathname = usePathname();
 
   return (
@@ -69,7 +66,7 @@ export default function Footer(): JSX.Element {
             <h2
               className={cn(
                 "text-3xl min-[400px]:text-4xl  lg:text-5xl mb-3",
-                myFont.className
+                oranienbaum.className
               )}
             >
               {t("footer.title-2")}
@@ -86,7 +83,7 @@ export default function Footer(): JSX.Element {
             <h2
               className={cn(
                 "text-3xl min-[400px]:text-4xl  lg:text-5xl mb-3",
-                myFont.className
+                oranienbaum.className
               )}
             >
               {t("footer.title-3")}
@@ -117,7 +114,7 @@ export default function Footer(): JSX.Element {
               <h2
                 className={cn(
                   "text-3xl min-[400px]:text-4xl lg:text-5xl",
-                  myFont.className
+                  oranienbaum.className
                 )}
               >
                 {t("footer.title-1")}

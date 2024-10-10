@@ -3,12 +3,11 @@ import RevealDesktop from "../Common/RevealDesktop";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
-
-const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
+import { oranienbaum } from "@/lib/fonts";
 
 export default async function CreativeFields(): Promise<JSX.Element> {
   const t = await getI18n();
-  const myFont = blackSansFont;
+
   return (
     <RevealDesktop>
       <div className="mt-[100px]">
@@ -16,7 +15,7 @@ export default async function CreativeFields(): Promise<JSX.Element> {
           <h2
             className={cn(
               "text-3xl min-[400px]:text-4xl  lg:text-[40px] mb-7 text-center xl:text-left",
-              myFont.className
+              oranienbaum.className
             )}
           >
             {t("about.card-5-title")}

@@ -2,17 +2,14 @@ import { getCurrentLocale, getI18n } from "@/locales/server";
 
 import Image from "next/image";
 import RevealDesktop from "../Common/RevealDesktop";
-import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/hero-5.png";
 import image2 from "@/public/dots.svg";
-
-const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
+import { oranienbaum } from "@/lib/fonts";
 
 export default async function Hero(): Promise<JSX.Element> {
   const locale = await getCurrentLocale();
   const t = await getI18n();
-  const myFont = blackSansFont;
 
   return (
     <>
@@ -23,7 +20,7 @@ export default async function Hero(): Promise<JSX.Element> {
               className={cn(
                 "text-3xl min-[400px]:text-4xl sm:text-[56px]",
                 locale === "en" ? "sm:text-6xl" : "sm:text-[56px]",
-                myFont.className
+                oranienbaum.className
               )}
             >
               {t("illustrations-digital.title")}

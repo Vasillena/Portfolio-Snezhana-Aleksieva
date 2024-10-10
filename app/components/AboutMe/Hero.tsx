@@ -1,17 +1,14 @@
 import Image from "next/image";
 import MainButton from "../Common/MainButton";
 import Reveal from "../Common/Reveal";
-import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
 import image1 from "@/public/hero-3.png";
 import image2 from "@/public/dots.svg";
-
-const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
+import { oranienbaum } from "@/lib/fonts";
 
 export default async function Hero(): Promise<JSX.Element> {
   const t = await getI18n();
-  const myFont = blackSansFont;
 
   return (
     <>
@@ -21,7 +18,7 @@ export default async function Hero(): Promise<JSX.Element> {
             <h1
               className={cn(
                 "text-3xl min-[400px]:text-4xl sm:text-6xl",
-                myFont.className
+                oranienbaum.className
               )}
             >
               {t("about.title")}

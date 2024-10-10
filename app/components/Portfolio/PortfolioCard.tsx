@@ -3,11 +3,9 @@ import Image, { StaticImageData } from "next/image";
 import MainButton from "../Common/MainButton";
 import RevealDesktop from "../Common/RevealDesktop";
 import SecondaryButton from "../Common/SecondaryButton";
-import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
-
-const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
+import { oranienbaum } from "@/lib/fonts";
 
 interface PortfolioCardProps {
   title1: string;
@@ -33,7 +31,6 @@ export default async function PortfolioCard({
   href,
 }: PortfolioCardProps): Promise<JSX.Element> {
   const t = await getI18n();
-  const myFont = blackSansFont;
   return (
     <RevealDesktop>
       <div className={cn("flex")}>
@@ -42,7 +39,7 @@ export default async function PortfolioCard({
             <h2
               className={cn(
                 "text-[20px] min-[400px]:text-[26px] sm:text-[32px] leading-3",
-                myFont.className
+                oranienbaum.className
               )}
             >
               {title1}
@@ -50,7 +47,7 @@ export default async function PortfolioCard({
             <h2
               className={cn(
                 "text-[20px] min-[400px]:text-[26px] sm:text-[32px] ",
-                myFont.className
+                oranienbaum.className
               )}
             >
               {title2}

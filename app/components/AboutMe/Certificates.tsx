@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import RevealDesktop from "../Common/RevealDesktop";
-import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
 import image1 from "@/public/certificate-1.png";
@@ -9,12 +8,10 @@ import image2 from "@/public/certificate-2.png";
 import image3 from "@/public/certificate-3.png";
 import image4 from "@/public/certificate-4.png";
 import image5 from "@/public/certificate-5.png";
-
-const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
+import { oranienbaum } from "@/lib/fonts";
 
 export default async function Certificates(): Promise<JSX.Element> {
   const t = await getI18n();
-  const myFont = blackSansFont;
 
   return (
     <div className="max-w-full mt-24 bg-[#F2EEE9]">
@@ -23,7 +20,7 @@ export default async function Certificates(): Promise<JSX.Element> {
           <h2
             className={cn(
               "text-3xl min-[400px]:text-4xl lg:text-[40px] text-center",
-              myFont.className
+              oranienbaum.className
             )}
           >
             {t("about.title-2")}

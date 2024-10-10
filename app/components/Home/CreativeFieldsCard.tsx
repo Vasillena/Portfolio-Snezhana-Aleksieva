@@ -1,10 +1,8 @@
 import Image, { StaticImageData } from "next/image";
 
 import RevealDesktop from "../Common/RevealDesktop";
-import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
-
-const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
+import { oranienbaum } from "@/lib/fonts";
 
 interface CreativeFieldCardProps {
   image: StaticImageData;
@@ -17,7 +15,6 @@ export default function CreativeFieldsCard({
   paragraph1,
   paragraph2,
 }: CreativeFieldCardProps): JSX.Element {
-  const myFont = blackSansFont;
   return (
     <RevealDesktop>
       <div className="flex justify-center items-center gap-4 ">
@@ -30,10 +27,10 @@ export default function CreativeFieldsCard({
           />
         </div>
         <div>
-          <p className={cn("text-2xl sm:text-3xl", myFont.className)}>
+          <p className={cn("text-2xl sm:text-3xl", oranienbaum.className)}>
             {paragraph1}
           </p>
-          <p className={cn("text-2xl sm:text-3xl pl-6", myFont.className)}>
+          <p className={cn("text-2xl sm:text-3xl pl-6", oranienbaum.className)}>
             {paragraph2}
           </p>
         </div>

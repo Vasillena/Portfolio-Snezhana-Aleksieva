@@ -7,19 +7,16 @@ import Lottie from "react-lottie-player";
 import MainButton from "../Common/MainButton";
 import Reveal from "../Common/Reveal";
 import SecondaryButton from "../Common/SecondaryButton";
-import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/welcome.svg";
 import image2 from "@/public/hero-1.json";
 import image3 from "@/public/welcome-2.svg";
 import image4 from "@/public/logo-2.png";
-
-const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
+import { oranienbaum } from "@/lib/fonts";
 
 export default function Hero(): JSX.Element {
   const locale = useCurrentLocale();
   const t = useI18n();
-  const myFont = blackSansFont;
 
   return (
     <>
@@ -45,7 +42,7 @@ export default function Hero(): JSX.Element {
                 locale === "en"
                   ? "pl-0 sm:pl-[30px] lg:pl-[72px]"
                   : "pl-0 sm:text-[40px]",
-                myFont.className
+                oranienbaum.className
               )}
             >
               {t("home.title-1")}

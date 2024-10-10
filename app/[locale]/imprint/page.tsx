@@ -1,12 +1,10 @@
 import FollowPointer from "@/app/components/Common/FollowPointer";
 import Image from "next/image";
 import MainButton from "../../components/Common/MainButton";
-import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import image1 from "@/public/hero-5.png";
 import image2 from "@/public/dots.svg";
-
-const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
+import { oranienbaum } from "@/lib/fonts";
 
 export const metadata = {
   title: "Imprint | snezhana-aleksieva.com",
@@ -14,7 +12,6 @@ export const metadata = {
 };
 
 export default function ImprintPage(): JSX.Element {
-  const myFont = blackSansFont;
   return (
     <>
       <FollowPointer />
@@ -33,7 +30,7 @@ export default function ImprintPage(): JSX.Element {
           <h1
             className={cn(
               "text-3xl min-[400px]:text-4xl sm:text-6xl -mt-24",
-              myFont.className
+              oranienbaum.className
             )}
           >
             Imprint
@@ -52,7 +49,12 @@ export default function ImprintPage(): JSX.Element {
         </div>
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center">
           <div>
-            <p className={cn("text-xl min-[400px]:text-2xl", myFont.className)}>
+            <p
+              className={cn(
+                "text-xl min-[400px]:text-2xl",
+                oranienbaum.className
+              )}
+            >
               Owner:
             </p>
             <p className="text-lg min-[400px]:text-xl">
@@ -75,7 +77,12 @@ export default function ImprintPage(): JSX.Element {
             </p>
           </div>
           <div>
-            <p className={cn("text-xl min-[400px]:text-2xl", myFont.className)}>
+            <p
+              className={cn(
+                "text-xl min-[400px]:text-2xl",
+                oranienbaum.className
+              )}
+            >
               Web hosting provider:
             </p>
             <p className="text-lg min-[400px]:text-xl">

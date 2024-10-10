@@ -1,15 +1,13 @@
 import Education from "./Education";
 import Experience from "./Experience";
 import RevealDesktop from "../Common/RevealDesktop";
-import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
-
-const blackSansFont = blackSans({ src: "../../../public/Blacker-Sans.ttf" });
+import { oranienbaum } from "@/lib/fonts";
 
 export default async function EdExp(): Promise<JSX.Element> {
   const t = await getI18n();
-  const myFont = blackSansFont;
+
   return (
     <>
       <RevealDesktop>
@@ -22,7 +20,7 @@ export default async function EdExp(): Promise<JSX.Element> {
                   <h2
                     className={cn(
                       "hidden sm:block text-3xl min-[400px]:text-4xl lg:text-[40px] -ml-10",
-                      myFont.className
+                      oranienbaum.className
                     )}
                   >
                     {t("about.card-2-title")}
@@ -34,7 +32,7 @@ export default async function EdExp(): Promise<JSX.Element> {
                   <h2
                     className={cn(
                       "text-3xl min-[400px]:text-4xl lg:text-[40px]",
-                      myFont.className
+                      oranienbaum.className
                     )}
                   >
                     {t("about.card-1-title")}
@@ -129,7 +127,7 @@ export default async function EdExp(): Promise<JSX.Element> {
                   <h2
                     className={cn(
                       "text-3xl min-[400px]:text-4xl lg:text-[40px]",
-                      myFont.className
+                      oranienbaum.className
                     )}
                   >
                     {t("about.card-2-title")}
