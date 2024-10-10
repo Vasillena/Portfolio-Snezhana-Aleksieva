@@ -42,7 +42,7 @@ export default function Hero(): JSX.Element {
               {t("home.title-1")}
             </h1>
             <div className="mt-4 flex flex-col lg:flex-row items-center lg:gap-10">
-              <div className="w-1/3 pt-4 border-b border-[#B0752A]" />
+              <div className="w-2/3 lg:w-1/3 pt-4 border-b border-[#B0752A]" />
               <h2
                 className={cn(
                   "text-2xl md:text-4xl text-nowrap",
