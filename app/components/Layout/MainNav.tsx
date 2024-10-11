@@ -39,7 +39,7 @@ export default function MainNav({
   ];
 
   return (
-    <nav className="mx-6 flex flex-col sm:flex-row items-center space-x-10 space-y-4 sm:space-y-0 ml-12 mt-6 sm:ml-6 sm:mt-0">
+    <nav className="mx-6 flex flex-col sm:flex-row items-center sm:space-x-10 space-y-4 sm:space-y-0 ml-12 mt-6 sm:ml-6 sm:mt-0">
       {links1.map((link) => {
         return (
           <Link

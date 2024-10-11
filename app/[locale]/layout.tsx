@@ -163,7 +163,7 @@ export default async function RootLayout({
       <GoogleTagManager
         gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID!}
       />
-      <body className={cn("px-2", myFont.className)}>
+      <body className={cn("px-4", myFont.className)}>
         <Provider locale={locale}>
           <Navbar />
           {children}

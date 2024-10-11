@@ -17,7 +17,7 @@ export default function Hero(): JSX.Element {
 
   return (
     <>
-      <div className="max-w-7xl mx-auto mt-14 lg:mt-20 xl:mt-10 grid lg:grid-cols-3 gap-x-12 text-center lg:text-left">
+      <div className="max-w-7xl mx-auto mt-28 lg:mt-20 xl:mt-10 grid lg:grid-cols-3 gap-x-12 text-center lg:text-left">
         <div className="sm:col-span-3 xl:col-span-2 flex flex-col items-center lg:items-start min-[400px]:mt-12 sm:mt-24">
           <Reveal>
             <h1
