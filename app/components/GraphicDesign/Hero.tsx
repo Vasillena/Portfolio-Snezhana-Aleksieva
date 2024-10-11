@@ -26,7 +26,7 @@ export default async function Hero(): Promise<JSX.Element> {
             <div className="my-8 flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-10">
               <h2
                 className={cn(
-                  "text-2xl md:text-4xl text-nowrap",
+                  "text-2xl md:text-4xl sm:text-nowrap",
                   shlapakScript.className
                 )}
               >
