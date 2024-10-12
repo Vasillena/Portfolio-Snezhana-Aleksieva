@@ -74,7 +74,7 @@ export default function Hero(): JSX.Element {
               animationData={image1}
               play
               loop
-              className="w-[300px] h-[300px] sm:w-[430px] sm:h-[430px] md:w-[650px] md:h-[650px]"
+              className="hidden md:block w-[300px] h-[300px] sm:w-[430px] sm:h-[430px] md:w-[650px] md:h-[650px]"
             />
           </div>
         </div>
