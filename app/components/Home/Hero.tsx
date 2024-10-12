@@ -17,8 +17,8 @@ export default function Hero(): JSX.Element {
 
   return (
     <>
-      <div className="max-w-7xl mx-auto mt-28 lg:mt-20 xl:mt-10 grid lg:grid-cols-3 gap-x-12 text-center lg:text-left">
-        <div className="sm:col-span-3 xl:col-span-2 flex flex-col items-center lg:items-start min-[400px]:mt-12 sm:mt-24">
+      <div className="max-w-7xl mx-auto mt-10 md:mt-20 xl:mt-10 grid lg:grid-cols-3 gap-x-12 text-center lg:text-left">
+        <div className="md:col-span-3 xl:col-span-2 flex flex-col items-center lg:items-start -mt-8 md:mt-20 order-2 md:order-1">
           <Reveal>
             <h1
               className={cn(
@@ -60,21 +60,23 @@ export default function Hero(): JSX.Element {
           </Reveal>
         </div>
 
-        <div
-          className="hidden xl:inline-block w-[555px] h-[555px] justify-self-end relative top-8 -mr-8 "
-          style={{
-            backgroundImage: `url(${image2.src})`,
-            backgroundSize: "60%",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "bottom 60px right 60px",
-          }}
-        >
-          <Lottie
-            animationData={image1}
-            play
-            loop
-            style={{ width: "650px", height: "650px" }}
-          />
+        <div className="flex justify-center items-center md:hidden xl:flex xl:justify-end w-full relative md:top-8 md:-mr-8 order-1 md:order-2">
+          <div
+            className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[555px] md:h-[555px]"
+            style={{
+              backgroundImage: `url(${image2.src})`,
+              backgroundSize: "60%",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "bottom 60px right 60px",
+            }}
+          >
+            <Lottie
+              animationData={image1}
+              play
+              loop
+              className="w-[300px] h-[300px] sm:w-[430px] sm:h-[430px] md:w-[650px] md:h-[650px]"
+            />
+          </div>
         </div>
       </div>
     </>
