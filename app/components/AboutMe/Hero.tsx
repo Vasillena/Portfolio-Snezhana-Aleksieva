@@ -16,21 +16,31 @@ export default async function Hero(): Promise<JSX.Element> {
       <div className="max-w-7xl mx-auto mt-28 sm:mt-44 xl:mt-32 grid lg:grid-cols-3 gap-16 text-center lg:text-left">
         <div className="sm:col-span-3 xl:col-span-2 flex flex-col items-center lg:items-start">
           <Reveal>
-            <h1
-              className={cn(
-                "text-3xl min-[400px]:text-4xl sm:text-6xl",
-                oranienbaum.className
-              )}
-            >
-              {t("about.title")}
-            </h1>
-            <div className="my-8 flex flex-col lg:flex-row items-center gap-10 lg:gap-6">
-              <div className="w-2/3 lg:w-1/6 border-b border-[#B0752A]" />
-              <h2
-                className={cn("text-2xl md:text-4xl", shlapakScript.className)}
-              >
-                {t("about.text-1")}
-              </h2>
+            <div className="flex justify-center lg:justify-start items-center min-[400px]:gap-4">
+              <div className="text-left md:text-center">
+                <h1
+                  className={cn(
+                    "text-3xl min-[400px]:text-4xl sm:text-6xl",
+                    oranienbaum.className
+                  )}
+                >
+                  {t("about.title")}
+                </h1>
+                <div className="my-8 flex flex-col lg:flex-row md:items-center gap-8 sm:gap-10 lg:gap-6">
+                  <div className="hidden md:block w-2/3 lg:w-1/6 border-b border-[#B0752A]" />
+                  <h2
+                    className={cn(
+                      "text-2xl md:text-4xl text-wrap md:text-nowrap",
+                      shlapakScript.className
+                    )}
+                  >
+                    {t("about.text-1")}
+                  </h2>
+                </div>
+              </div>
+              <div className="inline-block md:hidden  relative">
+                <Image src={image1} alt="Profile image" width={180} />
+              </div>
             </div>
 
             <div className="max-w-3xl">
