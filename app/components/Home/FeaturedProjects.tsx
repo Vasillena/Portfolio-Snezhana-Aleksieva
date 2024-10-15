@@ -27,43 +27,47 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
         </div>
         <div className="mx-auto flex flex-wrap justify-center xl:justify-between gap-y-20 gap-x-20 xl:gap-x-0 mt-8">
           <RevealDesktop>
-            <div className="w-[300px] h-[300px] relative flex justify-center">
+            <div className="w-[300px] h-[300px] relative flex justify-center transition-transform duration-300">
               <Image
                 src={image1}
                 alt="Project image"
                 fill
                 object-fit="contain"
+                className="hover:scale-125 transition-transform duration-300"
               />
             </div>
           </RevealDesktop>
           <RevealDesktop>
-            <div className="w-[300px] h-[300px] relative flex justify-center">
+            <div className="w-[300px] h-[300px] relative flex justify-center transition-transform duration-300">
               <Image
                 src={image2}
                 alt="Project image"
                 fill
                 object-fit="contain"
+                className="hover:scale-125 transition-transform duration-300"
               />
             </div>
           </RevealDesktop>
 
           <RevealDesktop>
-            <div className="w-[300px] h-[300px] relative flex justify-center">
+            <div className="w-[300px] h-[300px] relative flex justify-center transition-transform duration-300">
               <Image
                 src={image3}
                 alt="Project image"
                 fill
                 object-fit="contain"
+                className="hover:scale-125 transition-transform duration-300"
               />
             </div>
           </RevealDesktop>
           <RevealDesktop>
-            <div className="w-[300px] h-[300px] relative flex justify-center">
+            <div className="w-[300px] h-[300px] relative flex justify-center transition-transform duration-300">
               <Image
                 src={image4}
                 alt="Project image"
                 fill
                 object-fit="contain"
+                className="hover:scale-125 transition-transform duration-300"
               />
             </div>
           </RevealDesktop>

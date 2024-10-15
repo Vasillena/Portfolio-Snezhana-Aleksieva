@@ -64,7 +64,7 @@ export default async function Hero(): Promise<JSX.Element> {
           <Image src={image1} alt="Profile image" fill object-fit="contain" />
         </div>
       </div>
-      <div className="max-w-7xl mx-auto mt-36 flex justify-center lg:justify-start">
+      <div className="max-w-7xl mx-auto mt-24 flex justify-center lg:justify-start">
         <Image
           src={image2}
           alt="Dots"
