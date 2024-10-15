@@ -22,13 +22,13 @@ export default function Hero(): JSX.Element {
           <Reveal>
             <h1
               className={cn(
-                "text-3xl min-[400px]:text-4xl sm:text-6xl lg:mt-20",
+                "text-3xl min-[400px]:text-4xl sm:text-6xl mt-4 lg:mt-20",
                 oranienbaum.className
               )}
             >
               {t("home.title-1")}
             </h1>
-            <div className="my-8 flex flex-col lg:flex-row items-center gap-10">
+            <div className="my-6 sm:my-8 flex flex-col lg:flex-row items-center gap-4 sm:gap-10">
               <div className="w-2/3 lg:w-1/3 border-b border-[#B0752A]" />
               <h2
                 className={cn(
