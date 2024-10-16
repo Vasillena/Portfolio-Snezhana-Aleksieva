@@ -11,7 +11,7 @@ export default async function Hero(): Promise<JSX.Element> {
 
   return (
     <>
-      <div className="max-w-7xl mx-auto mt-28 sm:mt-44 xl:mt-32 text-center lg:text-left">
+      <div className="max-w-7xl mx-auto mt-28 sm:mt-44 xl:mt-32 text-center xl:text-left">
         <div>
           <RevealDesktop>
             <h1
@@ -22,16 +22,16 @@ export default async function Hero(): Promise<JSX.Element> {
             >
               {t("uiux-design.title")}
             </h1>
-            <div className="my-8 flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-10">
+            <div className="my-8 flex flex-col xl:flex-row justify-center lg:justify-between items-center gap-10">
               <h2
                 className={cn(
-                  "text-2xl md:text-4xl text-nowrap",
+                  "text-2xl md:text-4xl xl:text-nowrap order-2 xl:order-1",
                   shlapakScript.className
                 )}
               >
                 {t("uiux-design.text")}
               </h2>
-              <div className="w-2/3 lg:w-full border-b border-[#B0752A]" />
+              <div className="w-2/3 xl:w-full border-b border-[#B0752A] order-1 xl:order-2" />
             </div>
             <p className="mt-4 text-lg sm:text-xl sm:leading-6">
               {t("uiux-design.text-2")}

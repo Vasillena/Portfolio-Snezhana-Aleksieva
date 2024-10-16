@@ -13,10 +13,10 @@ export default async function Hero(): Promise<JSX.Element> {
 
   return (
     <>
-      <div className="max-w-7xl mx-auto mt-28 sm:mt-44 xl:mt-32 grid lg:grid-cols-3 gap-16 text-center lg:text-left">
-        <div className="sm:col-span-3 xl:col-span-2 flex flex-col items-center lg:items-start">
+      <div className="max-w-7xl mx-auto mt-28 sm:mt-44 xl:mt-32 grid lg:grid-cols-3 gap-16 text-center xl:text-left">
+        <div className="sm:col-span-3 xl:col-span-2 flex flex-col items-center xl:items-start">
           <Reveal>
-            <div className="flex justify-center lg:justify-start items-center min-[400px]:gap-4">
+            <div className="flex justify-center xl:justify-start items-center min-[400px]:gap-4">
               <div className="text-left md:text-center">
                 <h1
                   className={cn(
@@ -26,8 +26,8 @@ export default async function Hero(): Promise<JSX.Element> {
                 >
                   {t("about.title")}
                 </h1>
-                <div className="my-8 flex flex-col lg:flex-row md:items-center gap-8 sm:gap-10 lg:gap-6">
-                  <div className="hidden md:block w-2/3 lg:w-1/6 border-b border-[#B0752A]" />
+                <div className="my-8 flex flex-col xl:flex-row md:items-center gap-8 xl:gap-6">
+                  <div className="hidden md:block w-2/3 xl:w-1/6 border-b border-[#B0752A]" />
                   <h2
                     className={cn(
                       "text-2xl md:text-4xl text-wrap md:text-nowrap",
@@ -38,7 +38,7 @@ export default async function Hero(): Promise<JSX.Element> {
                   </h2>
                 </div>
               </div>
-              <div className="inline-block md:hidden  relative">
+              <div className="inline-block xl:hidden  relative">
                 <Image src={image1} alt="Profile image" width={180} />
               </div>
             </div>

@@ -119,7 +119,7 @@ export default function Footer(): JSX.Element {
       <div
         className={cn(
           "max-w-full ",
-          pathname === `/${locale}/contacts` && "mt-auto"
+          pathname === `/${locale}/contacts` && "mt-10"
         )}
       >
         <div className="flex justify-center items-center">

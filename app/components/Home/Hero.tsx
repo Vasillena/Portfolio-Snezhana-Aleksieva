@@ -17,22 +17,22 @@ export default function Hero(): JSX.Element {
 
   return (
     <>
-      <div className="max-w-7xl mx-auto mt-10 md:mt-20 xl:mt-10 grid lg:grid-cols-3 gap-x-12 text-center lg:text-left">
-        <div className="md:col-span-3 xl:col-span-2 flex flex-col items-center lg:items-start -mt-8 md:mt-20 order-2 md:order-1">
+      <div className="max-w-7xl mx-auto mt-10 md:mt-16 xl:mt-10 grid grid-cols-1 xl:grid-cols-3 xlgap-x-12 text-center xl:text-left">
+        <div className="col-span-2 flex flex-col items-center xl:items-start xl:mt-20 order-2 xl:order-1">
           <Reveal>
             <h1
               className={cn(
-                "text-3xl min-[400px]:text-4xl sm:text-6xl mt-4 lg:mt-20",
+                "text-3xl min-[400px]:text-4xl sm:text-6xl mt-4 xl:mt-20",
                 oranienbaum.className
               )}
             >
               {t("home.title-1")}
             </h1>
-            <div className="my-6 sm:my-8 flex flex-col lg:flex-row items-center gap-4 sm:gap-10">
-              <div className="w-2/3 lg:w-1/3 border-b border-[#B0752A]" />
+            <div className="my-6 sm:my-8 flex flex-col xl:flex-row items-center gap-4 sm:gap-10">
+              <div className="w-2/3 xl:w-1/3 border-b border-[#B0752A]" />
               <h2
                 className={cn(
-                  "text-2xl md:text-4xl text-nowrap",
+                  "text-2xl md:text-4xl xl:text-nowrap",
                   shlapakScript.className
                 )}
               >
@@ -50,7 +50,7 @@ export default function Hero(): JSX.Element {
 
             <div
               className={cn(
-                "flex flex-col items-center lg:flex-row gap-y-5 gap-x-7 pt-8 min-[400px]:pt-12 sm:pt-[86px]",
+                "flex flex-col items-center xl:flex-row gap-y-5 gap-x-7 pt-8 min-[400px]:pt-12 sm:pt-[86px]",
                 locale === "bg" && "sm:pt-[92px]"
               )}
             >
@@ -60,9 +60,9 @@ export default function Hero(): JSX.Element {
           </Reveal>
         </div>
 
-        <div className="flex justify-center items-center md:hidden xl:flex xl:justify-end w-full relative md:top-8 md:-mr-8 order-1 md:order-2">
+        <div className="flex justify-center items-center xl:justify-end w-full relative xl:top-8 xl:-mr-8 order-1 xl:order-2">
           <div
-            className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[555px] md:h-[555px]"
+            className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[455px] md:h-[455px] xl:w-[555px] xl:h-[555px]"
             style={{
               backgroundImage: `url(${image2.src})`,
               backgroundSize: "60%",
@@ -74,7 +74,7 @@ export default function Hero(): JSX.Element {
               animationData={image1}
               play
               loop
-              className="w-[300px] h-[300px] sm:w-[430px] sm:h-[430px] md:w-[650px] md:h-[650px]"
+              className="w-[300px] h-[300px] sm:w-[430px] sm:h-[430px] md:w-[510px] md:h-[510px] xl:w-[650px] xl:h-[650px]"
             />
           </div>
         </div>

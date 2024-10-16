@@ -11,7 +11,7 @@ export default async function CreativeFields(): Promise<JSX.Element> {
   const t = await getI18n();
   return (
     <>
-      <div className="max-w-7xl mx-auto mt-16 xl:mt-20 flex justify-center lg:justify-start">
+      <div className="max-w-7xl mx-auto mt-16 xl:mt-20 flex justify-center xl:justify-start">
         <Image
           src={image5}
           alt="Dots decor"

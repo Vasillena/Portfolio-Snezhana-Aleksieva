@@ -64,7 +64,7 @@ export default function MainNav({
             key={link.href}
             href={link.href}
             className={cn(
-              "flex items-center text-xl font-bold hover:text-[#B0752A]",
+              "flex items-center text-xl font-bold hover:text-[#B0752A] text-nowrap",
               link.active ? "text-[#6F848F]" : "text-[#415064]"
             )}
           >
