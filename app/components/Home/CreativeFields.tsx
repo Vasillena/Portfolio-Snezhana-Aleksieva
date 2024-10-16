@@ -43,7 +43,7 @@ export default async function CreativeFields(): Promise<JSX.Element> {
           paragraph2={t("home.card-1-2")}
         />
       </div>
-      <div className="max-w-7xl mx-auto mt-20 flex justify-center lg:justify-end">
+      <div className="max-w-7xl mx-auto mt-20 flex justify-center xl:justify-end">
         <Image
           src={image5}
           alt="Dots decor"

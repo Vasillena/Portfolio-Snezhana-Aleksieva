@@ -18,7 +18,7 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
         <div>
           <h2
             className={cn(
-              "text-3xl min-[400px]:text-4xl lg:text-5xl",
+              "text-3xl min-[400px]:text-4xl lg:text-5xl text-center xl:text-left",
               oranienbaum.className
             )}
           >
