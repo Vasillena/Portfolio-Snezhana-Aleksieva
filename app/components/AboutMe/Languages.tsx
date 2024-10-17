@@ -26,8 +26,8 @@ export default async function Languages(): Promise<JSX.Element> {
         />
         <SkillsCard
           title={t("about.card-4-text-2")}
-          margin1={"ml-[20px] sm:ml-[25px]"}
-          margin2={"ml-[220px]"}
+          margin1={"ml-[20px] sm:ml-0"}
+          margin2={"ml-[180px]"}
         />
       </div>
     </RevealDesktop>

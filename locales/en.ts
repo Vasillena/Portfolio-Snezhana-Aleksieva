@@ -123,6 +123,9 @@ export default {
     "card-4": "Design for Personal Blog: From IVF to Baby",
     "card-4-text":
       "This project involves designing a personal blog titled 'From IVF to Baby.' My goal was to create a visual experience that reflects the sensitivity and importance of the topic through a minimalistic approach and a monochrome color scheme.",
+    "card-5": "Bar The Post - Landing Page Design",
+    "card-5-text":
+      'Bar ‘The Post’ is a concept driven by the charm of vintage postal services, old-school typewriters, and the art of mixology. Blending traditional retro aesthetics with contemporary design elements to craft a unique experience for every guest.',
     "text-4": "Thank you for exploring my UI/UX Design Portfolio!",
   },
   "illustrations-digital": {

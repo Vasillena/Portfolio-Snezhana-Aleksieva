@@ -4,6 +4,9 @@ import image1 from "@/public/gd-16.png";
 import image10 from "@/public/gd-49.png";
 import image11 from "@/public/gd-50.png";
 import image12 from "@/public/gd-51.png";
+import image13 from "@/public/gd-52.png";
+import image14 from "@/public/gd-53.png";
+import image15 from "@/public/gd-54.png";
 import image2 from "@/public/gd-17.png";
 import image3 from "@/public/gd-18.png";
 import image4 from "@/public/gd-37.png";
@@ -17,6 +20,16 @@ export default async function Projects(): Promise<JSX.Element> {
   const t = await getI18n();
   return (
     <div className="max-w-7xl mx-auto mt-20">
+      <ProjectsCard
+        title={t("uiux-design.card-5")}
+        text={t("uiux-design.card-5-text")}
+        href={
+          "https://www.behance.net/gallery/210440095/Bar-The-Post-Landing-Page-Design"
+        }
+        image1={image13}
+        image2={image14}
+        image3={image15}
+      />
       <ProjectsCard
         title={t("uiux-design.card-3")}
         text={t("uiux-design.card-3-text")}
