@@ -27,6 +27,9 @@ import image30 from "@/public/gd-42.png";
 import image31 from "@/public/gd-43.png";
 import image32 from "@/public/gd-44.png";
 import image33 from "@/public/gd-45.png";
+import image34 from "@/public/gd-55.png";
+import image35 from "@/public/gd-56.png";
+import image36 from "@/public/gd-57.png";
 import image4 from "@/public/gd-4.png";
 import image5 from "@/public/gd-5.png";
 import image6 from "@/public/gd-6.png";
@@ -38,6 +41,16 @@ export default async function Projects(): Promise<JSX.Element> {
   const t = await getI18n();
   return (
     <div className="max-w-7xl mx-auto mt-20">
+      <ProjectsCard
+        title={t("graphic-design.card-12")}
+        text={t("graphic-design.card-12-text")}
+        href={
+          "https://www.behance.net/gallery/210578417/Jazz-Fest-Poster-Design"
+        }
+        image1={image34}
+        image2={image35}
+        image3={image36}
+      />
       <ProjectsCard
         title={t("graphic-design.card-10")}
         text={t("graphic-design.card-10-text")}

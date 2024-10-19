@@ -104,6 +104,9 @@ export default {
     "card-11": "Redesign Personal Logo",
     "card-11-text":
       'After some time with my previous logo, I decided it was time for a change. The new logo is simple and reflects my approach to design—an "S" in a handwritten font, encircled, with a small dot to mark a fresh start. It’s a small update, but one that better represents me.',
+    "card-12": "Jazz Festival Poster Design ",
+    "card-12-text":
+      "This is my final project from the Adobe Illustrator course I recently completed as part of my design education. The design reflects the skills I developed throughout the course, including vector illustration, composition, and typography handling.",
     "text-4": "Thank you for exploring my Graphic Design Portfolio!",
     "text-5": "Explore my other work:",
   },
@@ -125,7 +128,7 @@ export default {
       "This project involves designing a personal blog titled 'From IVF to Baby.' My goal was to create a visual experience that reflects the sensitivity and importance of the topic through a minimalistic approach and a monochrome color scheme.",
     "card-5": "Bar The Post - Landing Page Design",
     "card-5-text":
-      'Bar ‘The Post’ is a concept driven by the charm of vintage postal services, old-school typewriters, and the art of mixology. Blending traditional retro aesthetics with contemporary design elements to craft a unique experience for every guest.',
+      "Bar ‘The Post’ is a concept driven by the charm of vintage postal services, old-school typewriters, and the art of mixology. Blending traditional retro aesthetics with contemporary design elements to craft a unique experience for every guest.",
     "text-4": "Thank you for exploring my UI/UX Design Portfolio!",
   },
   "illustrations-digital": {
