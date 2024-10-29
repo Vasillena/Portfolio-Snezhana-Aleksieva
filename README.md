@@ -6,7 +6,7 @@
 
 ## ⭐️  Introduction
 
-Welcome to the portfolio page of this talented young designer. Finally had the opportunity to collaborate closely with a designer and to understand why developers and designers hate each other. Kidding, of course 😅. Amazing (and tough) experience, lessons well learned (like 1px to the left means exactly 1.000000px to the left). You can see her awesome work at: https://www.behance.net/snezhana-aleksieva
+Welcome to the portfolio page of this talented young designer. Finally had the opportunity to collaborate closely with a designer and to understand why developers and designers hate each other. Kidding, of course 😅. Amazing (and tough) experience, lessons well learned (like 1px to the left means exactly 1.000000px to the left). With that being said, Snezhana has a creative spirit that shines brightly, though it means we seem to change the design every other day! With hundreds of updates, let’s just say this code has taken on a life of its own 😅. But all in good fun! You can see her awesome work at: https://www.behance.net/snezhana-aleksieva
   <br/>
 This project is built with Next.js, Tailwind and Framer motion.
   <br/>
