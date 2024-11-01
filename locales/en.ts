@@ -107,6 +107,9 @@ export default {
     "card-12": "Jazz Festival Poster Design ",
     "card-12-text":
       "This is my final project from the Adobe Illustrator course I recently completed as part of my design education. The design reflects the skills I developed throughout the course, including vector illustration, composition, and typography handling.",
+    "card-13": "Social Media Post Design ",
+    "card-13-text":
+      "This project is a series of social media banners designed for the fictional furniture store \"Divano.\" The design combines a modern aesthetic with warm and neutral tones to evoke a sense of coziness and style.",
     "text-4": "Thank you for exploring my Graphic Design Portfolio!",
     "text-5": "Explore my other work:",
   },
