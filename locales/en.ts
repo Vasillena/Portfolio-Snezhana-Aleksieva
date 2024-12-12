@@ -110,9 +110,9 @@ export default {
     "card-13": "Social Media Post Design ",
     "card-13-text":
       'This project is a series of social media banners designed for the fictional furniture store "Divano." The design combines a modern aesthetic with warm and neutral tones to evoke a sense of coziness and style.',
-      "card-14": "Social Media Post Design ",
-      "card-14-text":
-        'For this Photoshop project, I created an original movie poster inspired by the Harry Potter series. This assignment, part of my graphic design course, challenged me to explore composition, blending techniques, and typography in Photoshop.',
+    "card-14": "Movie poster",
+    "card-14-text":
+      "For this Photoshop project, I created an original movie poster inspired by the Harry Potter series. This assignment, part of my graphic design course, challenged me to explore composition, blending techniques, and typography in Photoshop.",
     "text-4": "Thank you for exploring my Graphic Design Portfolio!",
     "text-5": "Explore my other work:",
   },
