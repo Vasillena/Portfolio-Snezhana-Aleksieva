@@ -113,6 +113,9 @@ export default {
     "card-14": "Movie poster",
     "card-14-text":
       "For this Photoshop project, I created an original movie poster inspired by the Harry Potter series. This assignment, part of my graphic design course, challenged me to explore composition, blending techniques, and typography in Photoshop.",
+    "card-15": "Tri Fold Brochure Design",
+    "card-15-text":
+      "This is my final project for the Adobe InDesign course, part of my ongoing journey in graphic design. The brochure is created for the Bansko Jazz Fest and reflects the skills I developed during the course, including layout design, grid systems, and working with typography in a print-ready format.",
     "text-4": "Thank you for exploring my Graphic Design Portfolio!",
     "text-5": "Explore my other work:",
   },

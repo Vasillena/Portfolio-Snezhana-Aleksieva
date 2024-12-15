@@ -33,10 +33,13 @@ import image36 from "@/public/gd-57.png";
 import image37 from "@/public/gd-58.png";
 import image38 from "@/public/gd-59.png";
 import image39 from "@/public/gd-60.png";
+import image4 from "@/public/gd-4.png";
 import image40 from "@/public/gd-61.png";
 import image41 from "@/public/gd-62.png";
 import image42 from "@/public/gd-63.png";
-import image4 from "@/public/gd-4.png";
+import image43 from "@/public/gd-64.png";
+import image44 from "@/public/gd-65.png";
+import image45 from "@/public/gd-66.png";
 import image5 from "@/public/gd-5.png";
 import image6 from "@/public/gd-6.png";
 import image7 from "@/public/gd-7.png";
@@ -47,12 +50,20 @@ export default async function Projects(): Promise<JSX.Element> {
   const t = await getI18n();
   return (
     <div className="max-w-7xl mx-auto mt-20">
-            <ProjectsCard
+      <ProjectsCard
+        title={t("graphic-design.card-15")}
+        text={t("graphic-design.card-15-text")}
+        href={
+          "https://www.behance.net/gallery/214772093/Jazz-Fest-Tri-Fold-Brochure-Design"
+        }
+        image1={image43}
+        image2={image44}
+        image3={image45}
+      />
+      <ProjectsCard
         title={t("graphic-design.card-14")}
         text={t("graphic-design.card-14-text")}
-        href={
-          "https://www.behance.net/gallery/212315035/Movie-Poster-Design"
-        }
+        href={"https://www.behance.net/gallery/212315035/Movie-Poster-Design"}
         image1={image40}
         image2={image41}
         image3={image42}
