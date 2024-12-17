@@ -70,9 +70,6 @@ export default {
     "text-2":
       "Explore a selection of my creative projects, showcasing my expertise in branding, logo design & layout design. Each project highlights my dedication to blending aesthetics with functionality.",
     "text-3": "Click on the links to view more details on Behance.",
-    "card-1": "My Personal Branding",
-    "card-1-text-1":
-      "This project embodies a simple and clean aesthetic with light tones and a touch of femininity, reflecting my unique style and professional identity.",
     "card-1-text-2": "View more on",
     "card-2": "Desire Handmade by Rossy",
     "card-2-text":
@@ -80,9 +77,6 @@ export default {
     "card-3": "Stanislava Vladimirova Photography",
     "card-3-text":
       "For photographer Stanislava Vladimirova, I designed an elegant logo intertwining her initials, S and V, into the shape of a camera. The visual identity features delicate floral motifs, graphite, and gold accents on a light background, complemented by fonts that enhance the gentle, feminine aesthetic.",
-    "card-4": "Brew Sphere Coffee Shop",
-    "card-4-text":
-      "For Brew Sphere Coffee Shop, I developed a clean yet attention-grabbing brand identity. The logo features the initials B and S with curves resembling steam, all within a circle symbolising a coffee cup. The visual elements use a graphite background paired with beige and white accents, creating a modern and inviting atmosphere.",
     "card-5": "M&D Nails & Hair Salon",
     "card-5-text":
       "For this beauty salon, I crafted a clean and modern brand identity. The logo combines the initials M and D with hand-drawn illustrations of a nail polish bottle and scissors. This project, my first as a graphic designer, aims to capture a youthful and elegant aesthetic.",
@@ -138,6 +132,9 @@ export default {
     "card-5": "Bar The Post - Landing Page Design",
     "card-5-text":
       "Bar ‘The Post’ is a concept driven by the charm of vintage postal services, old-school typewriters, and the art of mixology. Blending traditional retro aesthetics with contemporary design elements to craft a unique experience for every guest.",
+    "card-6": "SAVY Creations Design Concept",
+    "card-6-text":
+      "This project is part of an ambitious attempt to start a small business together with my colleague, a front-end developer. Unfortunately, due to unforeseen circumstances, we were unable to complete the project. However, the design remains a valuable reflection of our vision and efforts.",
     "text-4": "Thank you for exploring my UI/UX Design Portfolio!",
   },
   "illustrations-digital": {
@@ -176,13 +173,16 @@ export default {
     "card-2-text-3": "September 2011 - January 2016",
     "card-2-text-4": "Boyana Developers",
     "card-2-text-5": "Sales & Events Manager",
-    "card-2-text-6": "February 2016 - Present",
+    "card-2-text-6": "February 2016 - December 2024",
     "card-2-text-7": "Thracian Hoteliers",
     "card-2-text-8": "Marketing Specialist",
-    "card-2-text-9": "November 2017 - Present",
+    "card-2-text-9": "November 2017 - December 2024",
     "card-2-text-10": "Freelance",
     "card-2-text-11": "Graphic Designer",
-    "card-2-text-12": "October 2023 - Present",
+    "card-2-text-12": "October 2023 - December 2024",
+    "card-2-text-13": "Sky Prime",
+    "card-2-text-14": "Graphic Designer",
+    "card-2-text-15": "December 2024 - Present",
     "card-3-title": "Software skills",
     "card-4-title": "Languages",
     "card-4-text-1": "Bulgarian",

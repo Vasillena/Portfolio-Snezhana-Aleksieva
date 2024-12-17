@@ -7,6 +7,9 @@ import image12 from "@/public/gd-51.png";
 import image13 from "@/public/gd-52.png";
 import image14 from "@/public/gd-53.png";
 import image15 from "@/public/gd-54.png";
+import image16 from "@/public/gd-67.png";
+import image17 from "@/public/gd-68.png";
+import image18 from "@/public/gd-69.png";
 import image2 from "@/public/gd-17.png";
 import image3 from "@/public/gd-18.png";
 import image4 from "@/public/gd-37.png";
@@ -20,6 +23,16 @@ export default async function Projects(): Promise<JSX.Element> {
   const t = await getI18n();
   return (
     <div className="max-w-7xl mx-auto mt-20">
+      <ProjectsCard
+        title={t("uiux-design.card-6")}
+        text={t("uiux-design.card-6-text")}
+        href={
+          "https://www.behance.net/gallery/214821247/SAVY-Creations-Design-Concept"
+        }
+        image1={image16}
+        image2={image17}
+        image3={image18}
+      />
       <ProjectsCard
         title={t("uiux-design.card-5")}
         text={t("uiux-design.card-5-text")}

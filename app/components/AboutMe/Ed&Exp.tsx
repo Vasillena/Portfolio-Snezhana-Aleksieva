@@ -1,5 +1,6 @@
 import Education from "./Education";
 import Experience from "./Experience";
+import Experience2 from "./Experience2";
 import RevealDesktop from "../Common/RevealDesktop";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
@@ -103,6 +104,13 @@ export default async function EdExp(): Promise<JSX.Element> {
               period={t("about.card-2-text-12")}
             />
           </div>
+          <div className="hidden sm:block">
+            <Experience2
+              place={t("about.card-2-text-13")}
+              position={t("about.card-2-text-14")}
+              period={t("about.card-2-text-15")}
+            />
+          </div>
 
           <div className="flex justify-between xl:justify-start h-[120px]">
             <div className="w-[150px] sm:w-[300px]" />
@@ -175,6 +183,13 @@ export default async function EdExp(): Promise<JSX.Element> {
               place={t("about.card-2-text-10")}
               position={t("about.card-2-text-11")}
               period={t("about.card-2-text-12")}
+            />
+          </div>
+          <div>
+            <Experience2
+              place={t("about.card-2-text-13")}
+              position={t("about.card-2-text-14")}
+              period={t("about.card-2-text-15")}
             />
           </div>
 

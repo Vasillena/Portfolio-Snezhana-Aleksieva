@@ -1,9 +1,5 @@
 import ProjectsCard from "../Common/ProjectsCard";
 import { getI18n } from "@/locales/server";
-import image1 from "@/public/gd-1.png";
-import image10 from "@/public/gd-10.png";
-import image11 from "@/public/gd-11.png";
-import image12 from "@/public/gd-12.png";
 import image13 from "@/public/gd-13.png";
 import image14 from "@/public/gd-14.png";
 import image15 from "@/public/gd-15.png";
@@ -11,7 +7,6 @@ import image16 from "@/public/gd-25.png";
 import image17 from "@/public/gd-26.png";
 import image18 from "@/public/gd-27.png";
 import image19 from "@/public/gd-28.png";
-import image2 from "@/public/gd-2.png";
 import image20 from "@/public/gd-29.png";
 import image21 from "@/public/gd-30.png";
 import image22 from "@/public/gd-31.png";
@@ -22,7 +17,6 @@ import image26 from "@/public/gd-35.png";
 import image27 from "@/public/gd-36.png";
 import image28 from "@/public/gd-40.png";
 import image29 from "@/public/gd-41.png";
-import image3 from "@/public/gd-3.png";
 import image30 from "@/public/gd-42.png";
 import image31 from "@/public/gd-43.png";
 import image32 from "@/public/gd-44.png";
@@ -167,26 +161,6 @@ export default async function Projects(): Promise<JSX.Element> {
         image1={image22}
         image2={image23}
         image3={image24}
-      />
-      <ProjectsCard
-        title={t("graphic-design.card-1")}
-        text={t("graphic-design.card-1-text-1")}
-        href={
-          "https://www.behance.net/gallery/201366607/Sn-Aleksieva-My-Personal-Branding"
-        }
-        image1={image1}
-        image2={image2}
-        image3={image3}
-      />
-      <ProjectsCard
-        title={t("graphic-design.card-4")}
-        text={t("graphic-design.card-4-text")}
-        href={
-          "https://www.behance.net/gallery/201777479/Brew-Sphere-Coffee-Shop-Logo-Branding"
-        }
-        image1={image10}
-        image2={image11}
-        image3={image12}
       />
       <ProjectsCard
         title={t("graphic-design.card-5")}
