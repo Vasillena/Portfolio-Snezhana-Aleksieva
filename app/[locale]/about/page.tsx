@@ -146,7 +146,7 @@ export default function AboutMePage(): JSX.Element {
     <>
       <Hero />
       <FollowPointer />
-      <div className="max-w-7xl mx-auto flex flex-col xl:flex-row mt-20 justify-center xl:justify-between items-center">
+      <div className="max-w-7xl mx-auto flex flex-col xl:flex-row mt-20 justify-center xl:justify-between items-center xl:items-start">
         <div>
           <div>
             <EdExp />
@@ -155,7 +155,7 @@ export default function AboutMePage(): JSX.Element {
             <Hobbies />
           </div>
         </div>
-        <div className="mt-32 xl:mt-0 flex flex-col items-center">
+        <div className="mt-32 xl:mt-4 flex flex-col items-center">
           <div>
             <Skills />
           </div>

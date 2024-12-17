@@ -8,7 +8,7 @@ export default async function Languages(): Promise<JSX.Element> {
   const t = await getI18n();
   return (
     <RevealDesktop>
-      <div className="mt-[72px] md:mt-0 xl:mt-[100px]">
+      <div className="mt-[72px] md:mt-0 xl:mt-16">
         <div>
           <h2
             className={cn(

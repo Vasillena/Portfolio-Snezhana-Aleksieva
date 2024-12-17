@@ -10,7 +10,7 @@ export default async function CreativeFields(): Promise<JSX.Element> {
 
   return (
     <RevealDesktop>
-      <div className="mt-[100px]">
+      <div className="mt-16">
         <div>
           <h2
             className={cn(

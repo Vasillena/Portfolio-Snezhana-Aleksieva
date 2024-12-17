@@ -8,7 +8,7 @@ export default async function SoftSkills(): Promise<JSX.Element> {
   const t = await getI18n();
   return (
     <RevealDesktop>
-      <div className="mt-[100px]">
+      <div className="mt-16">
         <div>
           <h2
             className={cn(
