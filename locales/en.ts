@@ -110,6 +110,9 @@ export default {
     "card-15": "Tri Fold Brochure Design",
     "card-15-text":
       "This is my final project for the Adobe InDesign course, part of my ongoing journey in graphic design. The brochure is created for the Bansko Jazz Fest and reflects the skills I developed during the course, including layout design, grid systems, and working with typography in a print-ready format.",
+    "card-16": "Social Media Banner Design Concept",
+    "card-16-text":
+      "Over a quiet weekend, I took on a fun, personal challenge: creating a series of social media banners for a fictional luxury hotel. My aim was to create clean and visually engaging designs that connect with audiences while maintaining a modern and elegant aesthetic.",
     "text-4": "Thank you for exploring my Graphic Design Portfolio!",
     "text-5": "Explore my other work:",
   },
