@@ -6,11 +6,24 @@ import image3 from "@/public/gd-21.png";
 import image4 from "@/public/gd-22.png";
 import image5 from "@/public/gd-23.png";
 import image6 from "@/public/gd-24.png";
+import image7 from "@/public/gd-73.png";
+import image8 from "@/public/gd-74.png";
+import image9 from "@/public/gd-75.png";
 
 export default async function Projects(): Promise<JSX.Element> {
   const t = await getI18n();
   return (
     <div className="max-w-7xl mx-auto mt-20">
+      <ProjectsCard
+        title={t("illustrations-digital.card-3")}
+        text={t("illustrations-digital.card-3-text")}
+        href={
+          "https://www.behance.net/gallery/216038525/Illustration-of-a-woman-with-an-Afro-style"
+        }
+        image1={image7}
+        image2={image8}
+        image3={image9}
+      />
       <ProjectsCard
         title={t("illustrations-digital.card-1")}
         text={t("illustrations-digital.card-1-text")}

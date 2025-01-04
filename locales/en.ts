@@ -150,6 +150,9 @@ export default {
     "card-2": "Chocho the Chow Chow",
     "card-2-text":
       "A digital portrait of my beloved dog, Chocho. Focused on capturing the unique charm and fluffy features of his head. Created in Photoshop.",
+    "card-3": " Natural beauty with boho vibes",
+    "card-3-text":
+      "This design features a portrait of a woman with an Afro style, highlighted by vibrant colors and intricate accessories. Warm tones are used to create a sense of harmony and balance.",
     "text-4": "Thank you for exploring my Illustration Design Portfolio!",
   },
   about: {
