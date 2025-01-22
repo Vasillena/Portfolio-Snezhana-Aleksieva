@@ -10,6 +10,7 @@ import image4 from "@/public/certificate-4.png";
 import image5 from "@/public/certificate-5.png";
 import image6 from "@/public/certificate-6.png";
 import image7 from "@/public/certificate-7.png";
+import image8 from "@/public/certificate-8.png";
 import { oranienbaum } from "@/lib/fonts";
 
 export default async function Certificates(): Promise<JSX.Element> {
@@ -133,6 +134,25 @@ export default async function Certificates(): Promise<JSX.Element> {
               >
                 <Image
                   src={image7}
+                  alt="Certificate image"
+                  className="hover:scale-125 transition-transform duration-300"
+                  style={{
+                    width: "200px",
+                    height: "auto",
+                  }}
+                />
+              </Link>
+            </div>
+          </RevealDesktop>
+          <RevealDesktop>
+            <div className="justify-self-center">
+              <Link
+                href="https://creative.softuni.bg/certificates/details/53642/1238fab4"
+                target="_blank"
+                className="transition-transform duration-300"
+              >
+                <Image
+                  src={image8}
                   alt="Certificate image"
                   className="hover:scale-125 transition-transform duration-300"
                   style={{
