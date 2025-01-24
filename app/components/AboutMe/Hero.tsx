@@ -1,4 +1,4 @@
-import { oranienbaum, shlapakScript } from "@/lib/fonts";
+import { liana, oranienbaum } from "@/lib/fonts";
 
 import Image from "next/image";
 import MainButton from "../Common/MainButton";
@@ -31,7 +31,7 @@ export default async function Hero(): Promise<JSX.Element> {
                   <h2
                     className={cn(
                       "text-2xl md:text-4xl text-wrap md:text-nowrap",
-                      shlapakScript.className
+                      liana.className
                     )}
                   >
                     {t("about.text-1")}

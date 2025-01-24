@@ -6,6 +6,6 @@ export const oranienbaum = Oranienbaum({
   weight: ["400"],
 });
 
-export const shlapakScript = localFont({
-  src: "../public/ShlapakScript.otf",
+export const liana = localFont({
+  src: "../public/Liana.ttf",
 });

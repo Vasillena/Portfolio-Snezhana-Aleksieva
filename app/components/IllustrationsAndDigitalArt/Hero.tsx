@@ -1,5 +1,5 @@
 import { getCurrentLocale, getI18n } from "@/locales/server";
-import { oranienbaum, shlapakScript } from "@/lib/fonts";
+import { liana, oranienbaum } from "@/lib/fonts";
 
 import Image from "next/image";
 import RevealDesktop from "../Common/RevealDesktop";
@@ -28,7 +28,7 @@ export default async function Hero(): Promise<JSX.Element> {
               <h2
                 className={cn(
                   "text-2xl md:text-4xl xl:text-nowrap order-2 xl:order-1",
-                  shlapakScript.className
+                  liana.className
                 )}
               >
                 {t("illustrations-digital.text")}

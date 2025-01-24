@@ -1,6 +1,6 @@
 "use client";
 
-import { oranienbaum, shlapakScript } from "@/lib/fonts";
+import { liana, oranienbaum } from "@/lib/fonts";
 import { useCurrentLocale, useI18n } from "@/locales/client";
 
 import Lottie from "react-lottie-player";
@@ -33,7 +33,7 @@ export default function Hero(): JSX.Element {
               <h2
                 className={cn(
                   "text-2xl md:text-4xl xl:text-nowrap",
-                  shlapakScript.className
+                  liana.className
                 )}
               >
                 {t("home.text-1")}
