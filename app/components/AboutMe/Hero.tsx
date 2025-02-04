@@ -30,7 +30,7 @@ export default async function Hero(): Promise<JSX.Element> {
                   <div className="hidden md:block w-2/3 xl:w-1/6 border-b border-[#B0752A]" />
                   <h2
                     className={cn(
-                      "text-2xl md:text-4xl text-wrap md:text-nowrap text-[#B0752A]",
+                      "text-2xl md:text-4xl text-wrap md:text-nowrap text-[#8D5002]",
                       liana.className
                     )}
                   >

@@ -25,7 +25,7 @@ export default async function Hero(): Promise<JSX.Element> {
             <div className="my-8 flex flex-col xl:flex-row justify-center lg:justify-between items-center gap-10">
               <h2
                 className={cn(
-                  "text-2xl md:text-4xl xl:text-nowrap order-2 xl:order-1 text-[#B0752A]",
+                  "text-2xl md:text-4xl xl:text-nowrap order-2 xl:order-1 text-[#8D5002]",
                   liana.className
                 )}
               >
