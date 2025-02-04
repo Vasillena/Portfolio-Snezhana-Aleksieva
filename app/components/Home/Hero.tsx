@@ -32,14 +32,14 @@ export default function Hero(): JSX.Element {
               <div className="w-2/3 xl:w-1/3 border-b border-[#B0752A]" />
               <h2
                 className={cn(
-                  "text-2xl md:text-4xl xl:text-nowrap",
+                  "text-2xl md:text-4xl xl:text-nowrap text-[#B0752A]",
                   liana.className
                 )}
               >
                 {t("home.text-1")}
               </h2>
             </div>
-            <div className="xl:max-w-[620px]">
+            <div className="xl:max-w-[620px] ">
               <p className="text-lg sm:text-xl sm:leading-[26px]">
                 {t("home.text-2")}
               </p>
