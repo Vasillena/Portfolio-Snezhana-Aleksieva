@@ -113,6 +113,9 @@ export default {
     "card-16": "Social Media Banner Design Concept",
     "card-16-text":
       "Over a quiet weekend, I took on a fun, personal challenge: creating a series of social media banners for a fictional luxury hotel. My aim was to create clean and visually engaging designs that connect with audiences while maintaining a modern and elegant aesthetic.",
+    "card-17": "Thrivo - Logo and Visual Identity Design",
+    "card-17-text":
+      "Part of my university course in Logo and Visual Identity Design. The brief was to develop a full brand identity for a fictional tech company — from naming and logo creation to color system, typography, and brand applications. Designed to be modern, trustworthy, and tech-forward.",
     "text-4": "Thank you for exploring my Graphic Design Portfolio!",
     "text-5": "Explore my other work:",
   },

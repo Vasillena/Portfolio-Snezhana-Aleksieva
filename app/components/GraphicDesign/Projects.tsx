@@ -37,7 +37,10 @@ import image45 from "@/public/gd-66.png";
 import image46 from "@/public/gd-70.png";
 import image47 from "@/public/gd-71.png";
 import image48 from "@/public/gd-72.png";
+import image49 from "@/public/gd-73.png";
 import image5 from "@/public/gd-5.png";
+import image50 from "@/public/gd-74.png";
+import image51 from "@/public/gd-75.png";
 import image6 from "@/public/gd-6.png";
 import image7 from "@/public/gd-7.png";
 import image8 from "@/public/gd-8.png";
@@ -47,6 +50,16 @@ export default async function Projects(): Promise<JSX.Element> {
   const t = await getI18n();
   return (
     <div className="max-w-7xl mx-auto mt-20">
+      <ProjectsCard
+        title={t("graphic-design.card-17")}
+        text={t("graphic-design.card-17-text")}
+        href={
+          "https://www.behance.net/gallery/223157495/THRIVO-WEB-Hosting-Logo-and-Visual-Identity"
+        }
+        image1={image49}
+        image2={image50}
+        image3={image51}
+      />
       <ProjectsCard
         title={t("graphic-design.card-16")}
         text={t("graphic-design.card-16-text")}
