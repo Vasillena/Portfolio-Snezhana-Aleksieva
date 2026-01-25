@@ -13,7 +13,7 @@ export const metadata = {
 };
 
 export default async function ThankYouPage(): Promise<JSX.Element> {
-  const locale = getCurrentLocale();
+  const locale = await getCurrentLocale();
   const t = await getI18n();
   return (
     <div className="max-w-7xl mx-auto flex flex-col items-center mb-10">
