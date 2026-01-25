@@ -3,6 +3,7 @@ import CreativeFields from "../components/Home/CreativeFields";
 import FeaturedProjects from "../components/Home/FeaturedProjects";
 import FollowPointer from "../components/Common/FollowPointer";
 import Hero from "../components/Home/Hero";
+import { JSX } from "react";
 
 export default function HomePage(): JSX.Element {
   return (

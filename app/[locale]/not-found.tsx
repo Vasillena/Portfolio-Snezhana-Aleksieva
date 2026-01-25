@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { JSX } from "react";
 import MainButton from "../components/Common/MainButton";
 import image2 from "@/public/404.svg";
 import image3 from "@/public/dots.svg";

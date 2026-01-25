@@ -1,5 +1,6 @@
 import FollowPointer from "@/app/components/Common/FollowPointer";
 import Image from "next/image";
+import { JSX } from "react";
 import Reveal from "@/app/components/Common/Reveal";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";

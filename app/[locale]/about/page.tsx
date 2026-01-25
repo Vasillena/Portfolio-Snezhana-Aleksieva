@@ -3,6 +3,7 @@ import EdExp from "../../components/AboutMe/Ed&Exp";
 import FollowPointer from "@/app/components/Common/FollowPointer";
 import Hero from "../../components/AboutMe/Hero";
 import Hobbies from "../../components/AboutMe/Hobbies";
+import { JSX } from "react";
 import Skills from "../../components/AboutMe/Skills";
 
 export async function generateMetadata({

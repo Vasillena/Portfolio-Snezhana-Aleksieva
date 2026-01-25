@@ -1,4 +1,5 @@
 import FollowPointer from "@/app/components/Common/FollowPointer";
+import { JSX } from "react";
 
 export async function generateMetadata({
   params: { locale },

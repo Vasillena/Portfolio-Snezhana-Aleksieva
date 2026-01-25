@@ -1,5 +1,6 @@
 import FollowPointer from "@/app/components/Common/FollowPointer";
 import Hero from "../../../components/UiUxDesign/Hero";
+import { JSX } from "react";
 import OtherProjects from "../../../components/UiUxDesign/OtherPrjects";
 import Projects from "../../../components/UiUxDesign/Projects";
 

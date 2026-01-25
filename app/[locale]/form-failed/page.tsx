@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { JSX } from "react";
 import MainButton from "../../components/Common/MainButton";
 import { getI18n } from "@/locales/server";
 import image from "@/public/dots.svg";

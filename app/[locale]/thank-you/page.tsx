@@ -1,6 +1,7 @@
 import { getCurrentLocale, getI18n } from "@/locales/server";
 
 import Image from "next/image";
+import { JSX } from "react";
 import MainButton from "../../components/Common/MainButton";
 import image1 from "@/public/thank-you.svg";
 import image2 from "@/public/dots.svg";

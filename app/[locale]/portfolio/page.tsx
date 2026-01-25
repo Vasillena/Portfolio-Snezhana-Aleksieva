@@ -1,5 +1,6 @@
 import FollowPointer from "@/app/components/Common/FollowPointer";
 import Hero from "../../components/Portfolio/Hero";
+import { JSX } from "react";
 import Portfolio from "../../components/Portfolio/Portfolio";
 
 export async function generateMetadata({
