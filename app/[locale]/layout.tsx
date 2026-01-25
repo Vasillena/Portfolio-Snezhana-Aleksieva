@@ -5,6 +5,7 @@ import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import Footer from "../components/Layout/Footer";
 import Navbar from "../components/Layout/Navbar";
 import { Provider } from "./provider";
+import { ReactNode } from "react";
 import Script from "next/script";
 import { Switch } from "./switch";
 import { cn } from "@/lib/utils";
