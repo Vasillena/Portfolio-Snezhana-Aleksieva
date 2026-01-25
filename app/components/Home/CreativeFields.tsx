@@ -1,5 +1,6 @@
 import CreativeFieldsCard from "./CreativeFieldsCard";
 import Image from "next/image";
+import { JSX } from "react";
 import { getI18n } from "@/locales/server";
 import image1 from "@/public/cards-1.svg";
 import image2 from "@/public/cards-2.svg";

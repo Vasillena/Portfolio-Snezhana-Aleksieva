@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 
 import Image from "next/image";
+import { JSX } from "react";
 import Link from "next/link";
 import MainNav from "./MainNav";
 import { cn } from "@/lib/utils";

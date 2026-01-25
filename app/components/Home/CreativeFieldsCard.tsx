@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 
+import { JSX } from "react";
 import RevealDesktop from "../Common/RevealDesktop";
 import { cn } from "@/lib/utils";
 import { oranienbaum } from "@/lib/fonts";

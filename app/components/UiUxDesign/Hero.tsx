@@ -1,6 +1,7 @@
 import { liana, oranienbaum } from "@/lib/fonts";
 
 import Image from "next/image";
+import { JSX } from "react";
 import RevealDesktop from "../Common/RevealDesktop";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";

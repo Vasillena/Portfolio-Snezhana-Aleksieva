@@ -1,3 +1,4 @@
+import { JSX } from "react";
 import PortfolioCard from "../Portfolio/PortfolioCard";
 import { getI18n } from "@/locales/server";
 import image1 from "@/public/portfolio-card-1.png";

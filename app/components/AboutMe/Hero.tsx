@@ -1,6 +1,7 @@
 import { liana, oranienbaum } from "@/lib/fonts";
 
 import Image from "next/image";
+import { JSX } from "react";
 import MainButton from "../Common/MainButton";
 import Reveal from "../Common/Reveal";
 import { cn } from "@/lib/utils";

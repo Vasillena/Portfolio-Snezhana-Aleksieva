@@ -1,4 +1,5 @@
 import CreativeFields from "./CreativeFields";
+import { JSX } from "react";
 import Languages from "./Languages";
 import SoftSkills from "./SoftSkills";
 import SoftwareSkills from "./SoftwareSkills";

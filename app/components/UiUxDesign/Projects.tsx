@@ -1,3 +1,4 @@
+import { JSX } from "react";
 import ProjectsCard from "../Common/ProjectsCard";
 import { getI18n } from "@/locales/server";
 import image1 from "@/public/gd-16.png";

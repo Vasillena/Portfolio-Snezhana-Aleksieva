@@ -1,3 +1,4 @@
+import { JSX } from "react";
 import RevealDesktop from "../Common/RevealDesktop";
 import SkillsCard from "./SkillsCard";
 import { cn } from "@/lib/utils";

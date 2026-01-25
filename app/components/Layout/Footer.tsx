@@ -4,6 +4,7 @@ import { useCurrentLocale, useI18n } from "@/locales/client";
 
 import FooterForm from "./FooterForm";
 import Image from "next/image";
+import { JSX } from "react";
 import Link from "next/link";
 import RevealDesktop from "../Common/RevealDesktop";
 import { cn } from "@/lib/utils";

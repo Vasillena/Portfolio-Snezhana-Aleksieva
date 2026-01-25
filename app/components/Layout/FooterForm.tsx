@@ -1,3 +1,4 @@
+import { JSX } from "react";
 import { useI18n } from "@/locales/client";
 
 export default function FooterForm(): JSX.Element {

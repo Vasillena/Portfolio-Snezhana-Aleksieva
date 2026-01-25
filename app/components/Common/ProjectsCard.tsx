@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 
+import { JSX } from "react";
 import Link from "next/link";
 import RevealDesktop from "./RevealDesktop";
 import { cn } from "@/lib/utils";

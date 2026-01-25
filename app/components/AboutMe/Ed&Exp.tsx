@@ -1,6 +1,7 @@
 import Education from "./Education";
 import Experience from "./Experience";
 import Experience2 from "./Experience2";
+import { JSX } from "react";
 import RevealDesktop from "../Common/RevealDesktop";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";

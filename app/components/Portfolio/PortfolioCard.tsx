@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 
+import { JSX } from "react";
 import MainButton from "../Common/MainButton";
 import RevealDesktop from "../Common/RevealDesktop";
 import SecondaryButton from "../Common/SecondaryButton";

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { JSX } from "react";
 import { cn } from "@/lib/utils";
 
 interface HobbiesCardProps {

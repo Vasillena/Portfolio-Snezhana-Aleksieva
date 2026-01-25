@@ -1,4 +1,5 @@
 import CreativeAndSoftSkillsCard from "./CreativeAndSoftSkillsCard";
+import { JSX } from "react";
 import RevealDesktop from "../Common/RevealDesktop";
 import blackSans from "next/font/local";
 import { cn } from "@/lib/utils";

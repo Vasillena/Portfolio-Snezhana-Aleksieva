@@ -1,3 +1,5 @@
+import { JSX } from "react";
+
 interface ExperienceProps {
   place: string;
   position: string;

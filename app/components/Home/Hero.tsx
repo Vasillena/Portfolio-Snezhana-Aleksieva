@@ -3,6 +3,7 @@
 import { liana, oranienbaum } from "@/lib/fonts";
 import { useCurrentLocale, useI18n } from "@/locales/client";
 
+import { JSX } from "react";
 import Lottie from "react-lottie-player";
 import MainButton from "../Common/MainButton";
 import Reveal from "../Common/Reveal";
