@@ -9,14 +9,19 @@ import Script from "next/script";
 import { Switch } from "./switch";
 import { cn } from "@/lib/utils";
 import futura from "next/font/local";
+import { setStaticParamsLocale } from "@/locales/server";
 
 const myFont = futura({ src: "../../public/FuturaL.ttf" });
 
 export async function generateMetadata({
-  params: { locale },
+  params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
+
+  setStaticParamsLocale(locale);
+
   let title, description, keywords;
 
   if (locale === "bg") {
@@ -150,11 +155,14 @@ export async function generateMetadata({
 
 export default async function RootLayout({
   children,
-  params: { locale },
+  params,
 }: {
-  children: React.ReactNode;
-  params: { locale: string };
+  children: <ReactNode></ReactNode>;
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
+
+  setStaticParamsLocale(locale);
   return (
     <html lang={locale}>
       <head>
