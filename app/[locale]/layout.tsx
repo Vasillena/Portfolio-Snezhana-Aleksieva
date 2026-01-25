@@ -157,12 +157,13 @@ export default async function RootLayout({
   children,
   params,
 }: {
-  children: <ReactNode></ReactNode>;
+  children: ReactNode;
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
 
   setStaticParamsLocale(locale);
+
   return (
     <html lang={locale}>
       <head>
