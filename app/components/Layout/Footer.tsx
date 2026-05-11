@@ -33,9 +33,9 @@ export default function Footer(): JSX.Element {
     >
       <div
         className={cn(
-          "max-w-7xl w-full mx-auto flex flex-col lg:flex-row justify-evenly -mt-6 lg:mt-24 pb-24",
-          pathname === `/${locale}/contacts` && "my-auto py-0 pt-32 xl:pt-20"
-          // pathname === `/${locale}` && "my-auto py-0 -mt-8 lg:mt-12 xl:-mt-10"
+          "max-w-7xl w-full mx-auto flex flex-col lg:flex-row justify-evenly mt-6 lg:mt-24 pb-24",
+          pathname === `/${locale}/contacts` && "my-auto py-0 pt-20 xl:pt-20",
+          pathname === `/${locale}` && "my-auto py-0 xl:mt-4"
         )}
       >
         <div className="justify-self-center">
