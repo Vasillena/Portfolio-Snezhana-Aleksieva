@@ -39,25 +39,23 @@ export default {
     "text-10": "View All",
   },
   portfolio: {
-    title: "My Portfolio",
-    "text-1": "Explore my creative projects and design solutions",
+    title: "Portfolio",
+    "text-1": "Welcome to my portfolio!",
     "text-2":
       "Here, you can explore a variety of design projects that showcase my skills and creativity.",
     "text-3": "Select a category to see my work in different areas of design.",
-    "card-1-1": "Graphic",
-    "card-1-2": "Design",
+    "card-1-1": "Graphic Design",
     "card-1-text-1":
       "From logo design to layouts and brand identity, explore my graphic design projects that combine aesthetics and functionality.",
     "card-1-text-2": "Logo Design",
     "card-1-text-3": "Layouts",
     "card-1-text-4": "Brand Design",
-    "card-2": "UI/UX",
+    "card-2": "UI/UX Design",
     "card-2-text-1":
       "Discover my user interface and user experience designs that prioritize usability and user satisfaction.",
     "card-2-text-2": "UI Design",
     "card-2-text-3": "UX Design",
-    "card-3-1": "Illustrations",
-    "card-3-2": "& Digital Art",
+    "card-3-1": "Digital Art",
     "card-3-text-1":
       "Explore my collection of illustrations and digital drawings, where my journey in art began.",
     "card-3-text-2": "Digital Drawings",

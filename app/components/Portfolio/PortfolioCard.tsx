@@ -10,7 +10,6 @@ import { oranienbaum } from "@/lib/fonts";
 
 interface PortfolioCardProps {
   title1: string;
-  title2: string;
   image: StaticImageData;
   color: string;
   text1: string;
@@ -22,7 +21,6 @@ interface PortfolioCardProps {
 
 export default async function PortfolioCard({
   title1,
-  title2,
   image,
   color,
   text1,
@@ -35,34 +33,31 @@ export default async function PortfolioCard({
   return (
     <RevealDesktop>
       <div className={cn("flex")}>
-        <div className="z-10">
+        <div className="flex flex-col gap-6">
           <div>
             <h2
               className={cn(
-                "text-[18px] min-[400px]:text-[22px] sm:text-[32px] leading-3",
+                "text-[18px] sm:text-[32px] leading-3 text-center",
                 oranienbaum.className
               )}
             >
               {title1}
-            </h2>
-            <h2
-              className={cn(
-                "text-[18px] min-[400px]:text-[22px] sm:text-[32px] ",
-                oranienbaum.className
-              )}
-            >
-              {title2}
             </h2>
           </div>
           <div>
             <Image
               src={image}
               alt="Project image"
-              style={{ width: "314px", height: "auto" }}
+              style={{ width: "300px", height: "auto" }}
             />
           </div>
+          <MainButton
+            href={href}
+            text={t("portfolio.button")}
+            classProp={"w-full"}
+          />
         </div>
-        <div className="flex flex-col -ml-16">
+        {/* <div className="flex flex-col -ml-16">
           <div
             className={cn(
               "w-[314px] h-[362px] rounded-tr-[100px] rounded-bl-[100px] flex flex-col justify-center sm:block",
@@ -94,7 +89,7 @@ export default async function PortfolioCard({
               <MainButton href={href} text={t("portfolio.button")} />
             )}
           </div>
-        </div>
+        </div> */}
       </div>
     </RevealDesktop>
   );

@@ -12,7 +12,7 @@ export default async function Hero(): Promise<JSX.Element> {
 
   return (
     <>
-      <div className="max-w-7xl mx-auto mt-28 sm:mt-44 xl:mt-32 text-center xl:text-left">
+      <div className="max-w-7xl mx-auto mt-28 sm:mt-44 xl:mt-32 text-center">
         <div>
           <Reveal>
             <h1
@@ -24,20 +24,20 @@ export default async function Hero(): Promise<JSX.Element> {
               {t("portfolio.title")}
             </h1>
             <div className="my-8 flex flex-col xl:flex-row justify-center xl:justify-between items-center gap-10 ">
-              <h2
+              {/* <h2
                 className={cn(
                   "text-[12px] uppercase tracking-[30%] text-[#8D5002]",
                   jost.className
                 )}
               >
                 {t("portfolio.text-1")}
-              </h2>
+              </h2> */}
               {/* <div className="w-2/3 xl:w-full pt-4 border-b border-[#B0752A] order-1 xl:order-2" /> */}
             </div>
-
             <p className="mt-8 sm:text-xl sm:leading-6">
-              {t("portfolio.text-2")}
+              {t("portfolio.text-1")}
             </p>
+            <p className="sm:text-xl sm:leading-6">{t("portfolio.text-2")}</p>
             <p className="sm:text-xl sm:leading-6">{t("portfolio.text-3")}</p>
           </Reveal>
         </div>
