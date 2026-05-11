@@ -20,7 +20,6 @@ export default async function OtherProjects(): Promise<JSX.Element> {
         <div className=" flex flex-wrap justify-center xl:justify-between gap-20 mt-20">
           <PortfolioCard
             title1={t("portfolio.card-1-1")}
-            title2={t("portfolio.card-1-2")}
             image={image1}
             color={"bg-[#F7F4F1]"}
             text1={t("portfolio.card-1-text-1")}
@@ -31,7 +30,6 @@ export default async function OtherProjects(): Promise<JSX.Element> {
           />
           <PortfolioCard
             title1={t("portfolio.card-3-1")}
-            title2={t("portfolio.card-3-2")}
             image={image2}
             // mx={"mx-auto"}
             color={"bg-[#F7F4F1]"}
