@@ -15,7 +15,7 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
   const t = await getI18n();
 
   return (
-    <div className="max-w-full mt-0 xl:mt-24 px-2">
+    <div className="max-w-full -mt-16 xl:mt-12 px-2">
       <div className="max-w-7xl mx-auto py-11">
         <div>
           <h2
@@ -74,7 +74,7 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
             </div>
           </RevealDesktop>
         </div>
-        <div className="pr-2 mt-11 flex justify-center xl:justify-end">
+        <div className="pr-2 mt-6 flex justify-center xl:justify-end">
           <Link
             href="/portfolio"
             className="text-lg sm:text-xl text-[#B0752A] font-bold hover:text-[#415064]"

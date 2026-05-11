@@ -33,8 +33,9 @@ export default function Footer(): JSX.Element {
     >
       <div
         className={cn(
-          "max-w-7xl w-full mx-auto flex flex-col lg:flex-row justify-evenly py-24",
-          pathname === `/${locale}/contacts` && "my-auto py-0 pt-32 xl:pt-44"
+          "max-w-7xl w-full mx-auto flex flex-col lg:flex-row justify-evenly -mt-6 xl:mt-24 pb-24",
+          pathname === `/${locale}/contacts` && "my-auto py-0 pt-32 xl:pt-20"
+          // pathname === `/${locale}` && "my-auto py-0 -mt-8 lg:mt-12 xl:-mt-10"
         )}
       >
         <div className="justify-self-center">
@@ -213,7 +214,7 @@ export default function Footer(): JSX.Element {
               .
             </p>
             <p>
-              Mockups, Images & Icons by{" "}
+              Mockups & Icons by{" "}
               <span>
                 <Link
                   href="https://www.freepik.com/"
@@ -226,7 +227,7 @@ export default function Footer(): JSX.Element {
             </p>
           </div>
           <div className="justify-self-center lg:justify-self-end text-center">
-            <p>Copyright © 2024 - All rights reserved</p>
+            <p>Copyright © 2026 - All rights reserved</p>
           </div>
         </div>
       </div>
