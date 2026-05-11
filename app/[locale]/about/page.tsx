@@ -152,7 +152,7 @@ export default function AboutMePage(): JSX.Element {
           <div>
             <EdExp />
           </div>
-          <div className="hidden xl:block">
+          <div className="hidden xl:block pt-8">
             <Hobbies />
           </div>
         </div>

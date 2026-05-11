@@ -14,9 +14,9 @@ export default function SkillsCard({
 }: SkillsCardProps): JSX.Element {
   return (
     <div>
-      <div className="flex items-center ml-4 sm:ml-10 lg:ml-10 xl:ml-0">
+      <div className="flex items-center">
         <p className="text-xl sm:text-2xl mb-1 mr-4">{title}</p>
-        <div className="w-1/6 flex justify-center relative">
+        {/* <div className="w-1/6 flex justify-center relative">
           <div
             className={cn(
               "absolute top-1/2 transform -translate-y-1/2 left-1/2 w-[108px] h-[0.5px] bg-[#B0752A]",
@@ -29,7 +29,7 @@ export default function SkillsCard({
               margin2
             )}
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );
