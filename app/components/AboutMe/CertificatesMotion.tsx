@@ -73,7 +73,7 @@ export default function GalleryMotion({
               `}
                 style={{
                   transform: `
-                  translateX(${offset * 35}%)
+                  translateX(${offset * 25}%)
                   scale(${index === activeIndex ? 1 : 0.82})
                 `,
                   zIndex: index === activeIndex ? 20 : 10,
@@ -95,7 +95,7 @@ export default function GalleryMotion({
             );
           })}
 
-          <button onClick={prevSlide} className="absolute left-0 z-30 p-2">
+          <button onClick={prevSlide} className="absolute left-0 z-30 -ml-1">
             <Image
               src={arrowL}
               alt="Icon image"
@@ -106,7 +106,7 @@ export default function GalleryMotion({
             />
           </button>
 
-          <button onClick={nextSlide} className="absolute right-0 z-30 p-2">
+          <button onClick={nextSlide} className="absolute right-0 z-30 -mr-1">
             <Image
               src={arrowR}
               alt="Icon image"
