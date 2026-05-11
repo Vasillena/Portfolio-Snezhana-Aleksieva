@@ -7,7 +7,6 @@ import Reveal from "../Common/Reveal";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
 import image1 from "@/public/hero-3.png";
-import image2 from "@/public/dots.svg";
 
 export default async function Hero(): Promise<JSX.Element> {
   const t = await getI18n();

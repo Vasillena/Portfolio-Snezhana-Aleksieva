@@ -1,6 +1,8 @@
 "use client";
 
 import Image from "next/image";
+import arrowL from "@/public/arrow-l.svg";
+import arrowR from "@/public/arrow-r.svg";
 import { useState } from "react";
 
 interface CardData {
@@ -94,11 +96,25 @@ export default function GalleryMotion({
           })}
 
           <button onClick={prevSlide} className="absolute left-0 z-30 p-2">
-            L
+            <Image
+              src={arrowL}
+              alt="Icon image"
+              style={{
+                minWidth: "42px",
+                height: "auto",
+              }}
+            />
           </button>
 
           <button onClick={nextSlide} className="absolute right-0 z-30 p-2">
-            R
+            <Image
+              src={arrowR}
+              alt="Icon image"
+              style={{
+                minWidth: "42px",
+                height: "auto",
+              }}
+            />
           </button>
         </div>
       </div>
