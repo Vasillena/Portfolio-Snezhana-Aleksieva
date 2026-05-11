@@ -47,7 +47,7 @@ export default function Hero(): JSX.Element {
               </h2>
             </div>
             <div className="xl:max-w-[620px] ">
-              <p className="mx-auto xl:mx-0 w-[400px] text-lg sm:text-xl sm:leading-[26px]">
+              <p className="mx-auto xl:mx-0 px-16 sm:px-0 sm:w-[400px] text-lg sm:text-xl sm:leading-[26px]">
                 {t("home.text-2")}
               </p>
               {/* <p className="mt-4 text-lg sm:text-xl sm:leading-[26px]">

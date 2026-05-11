@@ -13,7 +13,7 @@ export default async function SoftwareSkills(): Promise<JSX.Element> {
         <div>
           <h2
             className={cn(
-              "text-3xl min-[400px]:text-4xl  lg:text-[40px] mb-7 text-center xl:text-left",
+              "text-3xl min-[400px]:text-4xl lg:text-[40px] mb-7 text-center md:text-left",
               oranienbaum.className
             )}
           >

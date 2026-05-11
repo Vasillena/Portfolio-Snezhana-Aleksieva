@@ -15,7 +15,7 @@ export default function SkillsCard({
   return (
     <div>
       <div className="flex items-center">
-        <p className="text-xl sm:text-2xl mb-1 mr-4">{title}</p>
+        <p className="text-xl sm:text-2xl mb-1">{title}</p>
         {/* <div className="w-1/6 flex justify-center relative">
           <div
             className={cn(

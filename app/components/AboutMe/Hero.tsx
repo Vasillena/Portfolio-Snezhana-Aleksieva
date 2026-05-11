@@ -14,7 +14,7 @@ export default async function Hero(): Promise<JSX.Element> {
 
   return (
     <>
-      <div className="max-w-7xl mx-auto mt-28 sm:mt-44 xl:mt-32 grid lg:grid-cols-3 gap-16 text-center xl:text-left">
+      <div className="max-w-7xl mx-auto mt-28 sm:mt-44 xl:mt-32 grid lg:grid-cols-3 gap-16 text-left">
         <div className="sm:col-span-3 xl:col-span-2 flex flex-col items-center xl:items-start">
           <Reveal>
             <div className="flex justify-center xl:justify-start items-center min-[400px]:gap-4">

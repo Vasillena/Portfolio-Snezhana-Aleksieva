@@ -23,9 +23,6 @@ const cardsData = Array.from({ length: 10 }, (_, i) => ({
   title: `Certificate Image ${i + 1}`,
 }));
 
-const firstRow = cardsData.slice(0, 5);
-const secondRow = cardsData.slice(5, 10);
-
 export default async function Certificates(): Promise<JSX.Element> {
   const t = await getI18n();
 
@@ -234,13 +231,8 @@ export default async function Certificates(): Promise<JSX.Element> {
             </div>
           </RevealDesktop> */}
           {/* <div className="max-w-[1440px] mx-auto mt-40 sm:mt-0 sm:h-screen grid place-items-center"> */}
-          <div className="hidden sm:block w-full">
+          <div className="w-full">
             <GalleryMotion cardsData={cardsData} />
-          </div>
-
-          <div className="block sm:hidden w-full space-y-4">
-            <GalleryMotion cardsData={firstRow} />
-            <GalleryMotion cardsData={secondRow} />
           </div>
           {/* </div> */}
         </div>

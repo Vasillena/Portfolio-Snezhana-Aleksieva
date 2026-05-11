@@ -9,11 +9,11 @@ export default async function SoftSkills(): Promise<JSX.Element> {
   const t = await getI18n();
   return (
     <RevealDesktop>
-      <div className="mt-32">
+      <div className="mt-[72px] xl:mt-36">
         <div>
           <h2
             className={cn(
-              "text-3xl min-[400px]:text-4xl  lg:text-[40px] mb-7 text-center xl:text-left",
+              "text-3xl min-[400px]:text-4xl  lg:text-[40px] mb-7 text-center md:text-left",
               oranienbaum.className
             )}
           >

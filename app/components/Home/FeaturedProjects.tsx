@@ -20,7 +20,7 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
         <div>
           <h2
             className={cn(
-              "pl-2 text-3xl min-[400px]:text-4xl lg:text-5xl text-center xl:text-left",
+              "xl:pl-2 text-3xl min-[400px]:text-4xl lg:text-5xl text-center xl:text-left",
               oranienbaum.className
             )}
           >
@@ -74,7 +74,7 @@ export default async function FeaturedProjects(): Promise<JSX.Element> {
             </div>
           </RevealDesktop>
         </div>
-        <div className="pr-2 mt-6 flex justify-center xl:justify-end">
+        <div className="xl:pr-2 mt-6 flex justify-center xl:justify-end">
           <Link
             href="/portfolio"
             className="text-lg sm:text-xl text-[#B0752A] font-bold hover:text-[#415064]"
