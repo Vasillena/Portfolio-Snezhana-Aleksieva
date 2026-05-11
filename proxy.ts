@@ -3,7 +3,7 @@ import { createI18nMiddleware } from "next-international/middleware";
 
 const I18nProxy = createI18nMiddleware({
   locales: ["en", "bg"],
-  defaultLocale: "bg",
+  defaultLocale: "en",
 });
 
 export function proxy(request: NextRequest) {
