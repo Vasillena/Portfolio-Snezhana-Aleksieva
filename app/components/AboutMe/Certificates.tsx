@@ -1,3 +1,4 @@
+import GalleryMotion from "./CertificatesMotion";
 import Image from "next/image";
 import { JSX } from "react";
 import Link from "next/link";
@@ -16,6 +17,15 @@ import image8 from "@/public/certificate-8.png";
 import image9 from "@/public/certificate-9.png";
 import { oranienbaum } from "@/lib/fonts";
 
+const cardsData = Array.from({ length: 10 }, (_, i) => ({
+  id: i + 1,
+  img: `/certificate-${i + 1}.png`,
+  title: `Certificate Image ${i + 1}`,
+}));
+
+const firstRow = cardsData.slice(0, 5);
+const secondRow = cardsData.slice(5, 10);
+
 export default async function Certificates(): Promise<JSX.Element> {
   const t = await getI18n();
 
@@ -33,7 +43,7 @@ export default async function Certificates(): Promise<JSX.Element> {
           </h2>
         </div>
         <div className="flex flex-wrap justify-center gap-y-6 gap-20 mt-12">
-          <RevealDesktop>
+          {/* <RevealDesktop>
             <div className="justify-self-center">
               <Link
                 href="https://creative.softuni.bg/certificates/details/47406/e9509b3a"
@@ -222,7 +232,17 @@ export default async function Certificates(): Promise<JSX.Element> {
                 />
               </Link>
             </div>
-          </RevealDesktop>
+          </RevealDesktop> */}
+          {/* <div className="max-w-[1440px] mx-auto mt-40 sm:mt-0 sm:h-screen grid place-items-center"> */}
+          <div className="hidden sm:block w-full">
+            <GalleryMotion cardsData={cardsData} />
+          </div>
+
+          <div className="block sm:hidden w-full space-y-4">
+            <GalleryMotion cardsData={firstRow} />
+            <GalleryMotion cardsData={secondRow} />
+          </div>
+          {/* </div> */}
         </div>
       </div>
     </div>

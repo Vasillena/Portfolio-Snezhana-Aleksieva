@@ -1,4 +1,4 @@
-import { liana, oranienbaum } from "@/lib/fonts";
+import { jost, oranienbaum } from "@/lib/fonts";
 
 import Image from "next/image";
 import { JSX } from "react";
@@ -28,18 +28,18 @@ export default async function Hero(): Promise<JSX.Element> {
                   {t("about.title")}
                 </h1>
                 <div className="my-8 flex flex-col xl:flex-row md:items-center gap-8 xl:gap-6">
-                  <div className="hidden md:block w-2/3 xl:w-1/6 border-b border-[#B0752A]" />
+                  {/* <div className="hidden md:block w-2/3 xl:w-1/6 border-b border-[#B0752A]" /> */}
                   <h2
                     className={cn(
-                      "text-2xl md:text-4xl text-wrap md:text-nowrap text-[#8D5002]",
-                      liana.className
+                      "text-[12px] uppercase tracking-[30%] text-[#8D5002]",
+                      jost.className
                     )}
                   >
-                    {t("about.text-1")}
+                    {t("home.text-1")}
                   </h2>
                 </div>
               </div>
-              <div className="inline-block xl:hidden  relative">
+              <div className="inline-block xl:hidden relative">
                 <Image src={image1} alt="Profile image" width={180} />
               </div>
             </div>
@@ -61,11 +61,11 @@ export default async function Hero(): Promise<JSX.Element> {
             <MainButton href={"/portfolio"} text={t("about.button")} />
           </div>
         </div>
-        <div className="hidden xl:inline-block w-[374px] h-[515px] justify-self-end relative">
+        <div className="hidden xl:inline-block w-[330px] h-[460px] justify-self-end relative">
           <Image src={image1} alt="Profile image" fill object-fit="contain" />
         </div>
       </div>
-      <div className="max-w-7xl mx-auto mt-24 flex justify-center lg:justify-start">
+      {/* <div className="max-w-7xl mx-auto mt-24 flex justify-center lg:justify-start">
         <Image
           src={image2}
           alt="Dots"
@@ -74,7 +74,7 @@ export default async function Hero(): Promise<JSX.Element> {
             height: "auto",
           }}
         />
-      </div>
+      </div> */}
     </>
   );
 }

@@ -17,11 +17,10 @@ export default {
     button: "Submit",
   },
   home: {
-    "title-1": "Welcome to my Design Journey!",
-    "text-1": "I am Snezhana Aleksieva",
+    "title-1": "Snezhana Aleksieva",
+    "text-1": "Graphic & UI/UX Designer",
     "text-2":
-      "A junior graphic and UI/UX designer from Bulgaria. I love creating clean, visually appealing designs that balance beauty with function.",
-    "text-3": "Ready to explore more?",
+      "Designing clean digital experiences with focus on clarity, aesthetics and structure.",
     "button-1": "Explore My Projects",
     "button-2": "Get in Touch",
     "card-1-1": "Brand",
@@ -162,11 +161,11 @@ export default {
     title: "Snezhana Aleksieva",
     "text-1": "My professional journey",
     "text-2":
-      "At 34 years old, I’ve spent over a decade working in marketing and sales within the hospitality industry, helping businesses grow and connect with their customers. My passion for design grew alongside my career, leading me to pursue graphic and UI/UX design as a new path. Through dedicated self-study and professional training, I’ve been building my skills and diving deeper into this field.",
+      "I create clean and visually refined digital experiences focused on clarity, aesthetics and usability.",
     "text-3":
-      "What I bring to the table is a strong foundation in understanding how design can drive results, thanks to my marketing experience. I know how to balance creativity with practicality—design should look great, but it also needs to work well and serve a purpose.",
+      "My background in hospitality, marketing and digital communication shaped the way I think about design — I start from the logic behind a decision, not from the visual itself. I pay attention to how a single element connects to a wider campaign, a brand, and the system behind it.",
     "text-4":
-      "In addition to design, I’m passionate about learning new things, whether it's through online courses, books, or hands-on practice. I believe in continuously improving, and I’m excited about the opportunities ahead.",
+      "This perspective allows me to work across graphic design, UI/UX and digital communication with both creative and strategic thinking — balancing aesthetics, structure and purpose.",
     button: "Explore My Projects",
     "card-1-title": "Education",
     "card-1-text-1": "College Of Tourism",

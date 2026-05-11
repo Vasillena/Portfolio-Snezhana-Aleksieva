@@ -10,8 +10,8 @@ export default function HomePage(): JSX.Element {
     <>
       <Hero />
       <FollowPointer />
-      <CreativeFields />
-      <AboutMe />
+      {/* <CreativeFields /> */}
+      {/* <AboutMe /> */}
       <FeaturedProjects />
     </>
   );

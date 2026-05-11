@@ -38,12 +38,13 @@ export default function Footer(): JSX.Element {
         )}
       >
         <div className="justify-self-center">
-          <div
+          {/* <div
             className={cn(
               "mt-4 lg:mt-5 mb-12 flex justify-center xl:justify-start",
               pathname === `/${locale}/contacts` && "hidden lg:flex"
             )}
-          >
+          > */}
+          <div className="invisible mt-4 lg:mt-5 mb-12 flex justify-center xl:justify-start">
             <Image
               src={image1}
               alt="Dots"
