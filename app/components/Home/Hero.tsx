@@ -22,7 +22,7 @@ export default function Hero(): JSX.Element {
   return (
     <>
       <div className="-mx-8 mt-20 md:mt-28 xl:mt-10 text-center xl:text-left xl:bg-[url('/hero.webp')] bg-cover bg-no-repeat bg-center">
-        <div className="max-w-7xl mx-auto xl:mt-20 xl:pl-20 xl:py-4">
+        <div className="max-w-7xl mx-auto xl:mt-20 xl:pl-4 xl:py-4">
           <div className="xl:hidden">
             <Image src={hero} alt="Profile image" />
           </div>
