@@ -17,7 +17,7 @@ export default async function OtherProjects(): Promise<JSX.Element> {
             {t("graphic-design.text-5")}
           </p>
         </div>
-        <div className=" flex flex-wrap justify-center xl:justify-between gap-20 mt-20">
+        <div className=" flex flex-wrap justify-center gap-20 mt-20">
           <PortfolioCard
             title1={t("portfolio.card-2")}
             image={image1}

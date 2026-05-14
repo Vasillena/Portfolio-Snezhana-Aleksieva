@@ -60,7 +60,7 @@ export default function Hero(): JSX.Element {
                 "flex flex-col items-center xl:flex-row gap-y-5 gap-x-7 pt-8 min-[400px]:pt-12 sm:pt-10 pb-28"
               )}
             >
-              <MainButton href={"/portfolio"} text={t("home.button-3")} />
+              <MainButton href={"/about"} text={t("home.button-3")} />
               {/* <SecondaryButton href={"/contacts"} text={t("home.button-2")} /> */}
             </div>
           </Reveal>
