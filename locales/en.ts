@@ -113,6 +113,12 @@ export default {
     "card-17": "Thrivo - Logo and Visual Identity Design",
     "card-17-text":
       "Part of my university course in Logo and Visual Identity Design. The brief was to develop a full brand identity for a fictional tech company — from naming and logo creation to color system, typography, and brand applications. Designed to be modern, trustworthy, and tech-forward.",
+    "card-18": "Eden Cacao - Logo and Visual Identity Design",
+    "card-18-text":
+      "This project was created as part of my university course in Logo and Visual Identity Design. The brief was to develop a full brand identity for a fictional luxury chocolate brand — from naming and logo creation to color palette, typography, packaging, and brand applications.",
+    "card-19": "Satellite Events & Experiences – Corporate Presentation Design",
+    "card-19-text":
+      "This corporate presentation was created for Satellite Events & Experiences. The goal was to develop a clean and sophisticated presentation that communicates the company's expertise, service portfolio, and unique approach through a carefully structured visual narrative. The design combines elegant typography, refined layouts, and high-quality imagery to create a premium brand experience across every page.",
     "text-4": "Thank you for exploring my Graphic Design Portfolio!",
     "text-5": "Explore my other work:",
   },
@@ -138,6 +144,9 @@ export default {
     "card-6": "SAVY Creations Design Concept",
     "card-6-text":
       "This project is part of an ambitious attempt to start a small business together with my colleague, a front-end developer. Unfortunately, due to unforeseen circumstances, we were unable to complete the project. However, the design remains a valuable reflection of our vision and efforts.",
+    "card-7": "SATELLITE - Luxury Events & Experiences Website Design",
+    "card-7-text":
+      "Satellite is a luxury events and experiences website designed to present bespoke travel, corporate events and lifestyle services  through an elegant and structured digital experience. The project focused on clear information architecture, premium visual  presentation and intuitive navigation across multiple service categories.",
     "text-4": "Thank you for exploring my UI/UX Design Portfolio!",
   },
   "illustrations-digital": {
