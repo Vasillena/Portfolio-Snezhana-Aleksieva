@@ -36,9 +36,9 @@ export default async function Hero(): Promise<JSX.Element> {
               {/* <div className="w-2/3 xl:w-full border-b border-[#B0752A] order-1 xl:order-2" /> */}
             </div>
             <div className="xl:max-w-[620px]">
-              <p className="mt-8 text-lg sm:text-xl sm:leading-6">
+              {/* <p className="mt-8 text-lg sm:text-xl sm:leading-6">
                 {t("graphic-design.text-2")}
-              </p>
+              </p> */}
               <p className="mt-4 text-lg sm:text-xl sm:leading-6">
                 {t("graphic-design.text-3")}
               </p>
