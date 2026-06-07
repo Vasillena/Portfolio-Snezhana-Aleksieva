@@ -37,9 +37,9 @@ import image57 from "@/public/gd-84.png";
 import image58 from "@/public/gd-88.png";
 import image59 from "@/public/gd-89.png";
 import image60 from "@/public/gd-90.png";
-import image7 from "@/public/gd-7.png";
-import image8 from "@/public/gd-8.png";
-import image9 from "@/public/gd-9.png";
+import image7 from "@/public/gd-7.webp";
+import image8 from "@/public/gd-8.webp";
+import image9 from "@/public/gd-9.webp";
 
 export default async function Projects(): Promise<JSX.Element> {
   const t = await getI18n();

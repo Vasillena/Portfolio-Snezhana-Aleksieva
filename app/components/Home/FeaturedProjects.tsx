@@ -5,10 +5,10 @@ import MainButton from "../Common/MainButton";
 import RevealDesktop from "../Common/RevealDesktop";
 import { cn } from "@/lib/utils";
 import { getI18n } from "@/locales/server";
-import image1 from "@/public/fproject-1.png";
-import image2 from "@/public/fproject-2.png";
-import image3 from "@/public/fproject-3.png";
-import image4 from "@/public/fproject-4.png";
+import image1 from "@/public/fproject-1.webp";
+import image2 from "@/public/fproject-2.webp";
+import image3 from "@/public/fproject-3.webp";
+import image4 from "@/public/fproject-4.webp";
 import { oranienbaum } from "@/lib/fonts";
 
 export default async function FeaturedProjects(): Promise<JSX.Element> {
