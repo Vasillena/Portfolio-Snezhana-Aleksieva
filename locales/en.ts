@@ -119,6 +119,9 @@ export default {
     "card-19": "Satellite Events & Experiences – Corporate Presentation Design",
     "card-19-text":
       "This corporate presentation was created for Satellite Events & Experiences. The goal was to develop a clean and sophisticated presentation that communicates the company's expertise, service portfolio, and unique approach through a carefully structured visual narrative. The design combines elegant typography, refined layouts, and high-quality imagery to create a premium brand experience across every page.",
+    "card-20": "ARTEVAL – Logo & Visual Identity Design",
+    "card-20-text":
+      "ARTEVAL is a modern corporate website created to present the company’s aluminium and PVC solutions in a clear and professional way. The design combines intuitive navigation, structured content, and a clean visual identity to enhance the overall user experience.",
     "text-4": "Thank you for exploring my Graphic Design Portfolio!",
     "text-5": "Explore my other work:",
   },

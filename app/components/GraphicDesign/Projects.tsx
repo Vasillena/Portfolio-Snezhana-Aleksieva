@@ -34,6 +34,9 @@ import image54 from "@/public/gd-81.png";
 import image55 from "@/public/gd-82.png";
 import image56 from "@/public/gd-83.png";
 import image57 from "@/public/gd-84.png";
+import image58 from "@/public/gd-88.png";
+import image59 from "@/public/gd-89.png";
+import image60 from "@/public/gd-90.png";
 import image7 from "@/public/gd-7.png";
 import image8 from "@/public/gd-8.png";
 import image9 from "@/public/gd-9.png";
@@ -53,14 +56,14 @@ export default async function Projects(): Promise<JSX.Element> {
         image3={image57}
       />
       <ProjectsCard
-        title={t("graphic-design.card-18")}
-        text={t("graphic-design.card-18-text")}
+        title={t("graphic-design.card-20")}
+        text={t("graphic-design.card-20-text")}
         href={
-          "https://www.behance.net/gallery/229318315/Eden-Cacao-Logo-Design"
+          "https://www.behance.net/gallery/250701123/ARTEVAL-Logo-Visual-Identity-Design"
         }
-        image1={image52}
-        image2={image53}
-        image3={image54}
+        image1={image58}
+        image2={image59}
+        image3={image60}
       />
       <ProjectsCard
         title={t("graphic-design.card-17")}
@@ -73,14 +76,14 @@ export default async function Projects(): Promise<JSX.Element> {
         image3={image51}
       />
       <ProjectsCard
-        title={t("graphic-design.card-16")}
-        text={t("graphic-design.card-16-text")}
+        title={t("graphic-design.card-18")}
+        text={t("graphic-design.card-18-text")}
         href={
-          "https://www.behance.net/gallery/215834459/Social-Media-Post-Design-Concept"
+          "https://www.behance.net/gallery/229318315/Eden-Cacao-Logo-Design"
         }
-        image1={image46}
-        image2={image47}
-        image3={image48}
+        image1={image52}
+        image2={image53}
+        image3={image54}
       />
       <ProjectsCard
         title={t("graphic-design.card-15")}
@@ -91,16 +94,6 @@ export default async function Projects(): Promise<JSX.Element> {
         image1={image43}
         image2={image44}
         image3={image45}
-      />
-      <ProjectsCard
-        title={t("graphic-design.card-13")}
-        text={t("graphic-design.card-13-text")}
-        href={
-          "https://www.behance.net/gallery/211556525/Social-Media-Post-Design"
-        }
-        image1={image37}
-        image2={image38}
-        image3={image39}
       />
       <ProjectsCard
         title={t("graphic-design.card-12")}
@@ -123,14 +116,24 @@ export default async function Projects(): Promise<JSX.Element> {
         image3={image21}
       />
       <ProjectsCard
-        title={t("graphic-design.card-9")}
-        text={t("graphic-design.card-9-text")}
+        title={t("graphic-design.card-16")}
+        text={t("graphic-design.card-16-text")}
         href={
-          "https://www.behance.net/gallery/205123379/Music-Cover-part-of-my-Photoshop-homework"
+          "https://www.behance.net/gallery/215834459/Social-Media-Post-Design-Concept"
         }
-        image1={image25}
-        image2={image26}
-        image3={image27}
+        image1={image46}
+        image2={image47}
+        image3={image48}
+      />
+      <ProjectsCard
+        title={t("graphic-design.card-13")}
+        text={t("graphic-design.card-13-text")}
+        href={
+          "https://www.behance.net/gallery/211556525/Social-Media-Post-Design"
+        }
+        image1={image37}
+        image2={image38}
+        image3={image39}
       />
       <ProjectsCard
         title={t("graphic-design.card-6")}
@@ -143,14 +146,14 @@ export default async function Projects(): Promise<JSX.Element> {
         image3={image18}
       />
       <ProjectsCard
-        title={t("graphic-design.card-3")}
-        text={t("graphic-design.card-3-text")}
+        title={t("graphic-design.card-9")}
+        text={t("graphic-design.card-9-text")}
         href={
-          "https://www.behance.net/gallery/198600533/Stanislava-Vladimirova-photography-Logo-Branding"
+          "https://www.behance.net/gallery/205123379/Music-Cover-part-of-my-Photoshop-homework"
         }
-        image1={image7}
-        image2={image8}
-        image3={image9}
+        image1={image25}
+        image2={image26}
+        image3={image27}
       />
       <ProjectsCard
         title={t("graphic-design.card-8")}
@@ -161,6 +164,16 @@ export default async function Projects(): Promise<JSX.Element> {
         image1={image22}
         image2={image23}
         image3={image24}
+      />
+      <ProjectsCard
+        title={t("graphic-design.card-3")}
+        text={t("graphic-design.card-3-text")}
+        href={
+          "https://www.behance.net/gallery/198600533/Stanislava-Vladimirova-photography-Logo-Branding"
+        }
+        image1={image7}
+        image2={image8}
+        image3={image9}
       />
     </div>
   );
